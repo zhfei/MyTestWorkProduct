@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0to-cK-5Ho">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ap0-pQ-rFa">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="wI5-K0-0TS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uDd-ee-tMr"/>
+                        <viewControllerLayoutGuide type="bottom" id="wIw-4p-ooz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J1p-Gv-EpX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsb-U9-PJh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30486739309999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hsb-U9-PJh" firstAttribute="top" secondItem="uDd-ee-tMr" secondAttribute="bottom" constant="99" id="Gul-EW-zOH"/>
+                            <constraint firstItem="hsb-U9-PJh" firstAttribute="leading" secondItem="J1p-Gv-EpX" secondAttribute="leadingMargin" constant="47" id="PbA-La-5wC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hsb-U9-PJh" secondAttribute="trailing" constant="104" id="lw3-2h-U4C"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hsb-U9-PJh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Gul-EW-zOH"/>
+                                <exclude reference="PbA-La-5wC"/>
+                                <exclude reference="lw3-2h-U4C"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hsb-U9-PJh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Gul-EW-zOH"/>
+                                <include reference="PbA-La-5wC"/>
+                                <include reference="lw3-2h-U4C"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Lw-rp-mi2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tak-Jt-CKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762.5" y="313.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8SK-Wd-Qnm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0to-cK-5Ho" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LjH-3R-RNm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wI5-K0-0TS" kind="relationship" relationship="rootViewController" id="uUT-ub-x7c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddU-Db-Uja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.5" y="313.5"/>
+        </scene>
+    </scenes>
+</document>
