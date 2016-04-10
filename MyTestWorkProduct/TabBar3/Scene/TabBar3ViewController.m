@@ -56,7 +56,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [HUDView hide];
+//    [HUDView hide];
 
 }
 

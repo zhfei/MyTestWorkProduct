@@ -30,9 +30,10 @@ static HUDView *HUD;
     HUD.mode = MBProgressHUDModeText;
     HUD.labelText = text;
     
-    [HUD show:YES];
+    [HUD show:NO];
     
-    [HUD hide:YES afterDelay:1.5];
+    HUD.removeFromSuperViewOnHide=YES;
+    [HUD hide:NO afterDelay:1.5];
 
     return HUD;
     
@@ -76,7 +77,9 @@ static HUDView *HUD;
 {
     if (HUD) {
         
+        HUD.removeFromSuperViewOnHide=YES;
         [HUD hide:YES];
+
         HUD = Nil;
     }
    

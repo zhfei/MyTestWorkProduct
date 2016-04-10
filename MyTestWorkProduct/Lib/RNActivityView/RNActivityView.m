@@ -338,6 +338,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		self.alpha = 0.0f;
 		[self done];
 	}
+    
 	self.showStarted = nil;
 }
 
