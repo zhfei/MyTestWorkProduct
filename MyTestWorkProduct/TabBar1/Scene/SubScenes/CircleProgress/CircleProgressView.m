@@ -19,8 +19,8 @@
 @implementation CircleProgressView
 - (void)drawRect:(CGRect)rect
 {
-    CGFloat width =180;
-    CGFloat height =180;
+    CGFloat width =rect.size.width;
+    CGFloat height =rect.size.height;
     
     CGFloat progressAngle = _progress * 360.0 - 90;
     CGPoint center = CGPointMake(width / 2.0f, height / 2.0f);

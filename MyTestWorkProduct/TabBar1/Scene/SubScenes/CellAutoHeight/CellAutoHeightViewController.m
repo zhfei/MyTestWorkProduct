@@ -31,6 +31,11 @@ static NSString * cellID=@"AutoHeightCell";
     [self.tableView registerClass:[AutoHeightCell class] forCellReuseIdentifier:cellID];
 }
 
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -24,7 +24,7 @@
 {
     // 1.取出设置主题的对象
     UINavigationBar *navBar = [UINavigationBar appearance];
-    
+//    navBar.translucent=NO;
     // 2.设置导航栏的背景图片 背景颜色
     if (iOS7) { // iOS7 以上
        

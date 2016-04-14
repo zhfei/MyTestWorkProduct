@@ -99,7 +99,7 @@
         [imagView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
-        [UIView addSimpleReflectionToView:imagView];
+//        [UIView addSimpleReflectionToView:imagView];
     }else if (indexPath.row==12) {
         UILabel *label =[[UILabel alloc]init];
         label.numberOfLines=0;
@@ -128,19 +128,28 @@
         label.numberOfLines=2;
         label.backgroundColor=[UIColor lightGrayColor];
         
+        NSTextAttachment *textAtt =[[NSTextAttachment alloc]init];
+        textAtt.image=[UIImage imageNamed:@"starPress_"];
+        NSAttributedString *attributed =[NSAttributedString attributedStringWithAttachment:textAtt];
+        
+        
         NSMutableParagraphStyle *paraM =[[NSMutableParagraphStyle alloc]init];
-        paraM.firstLineHeadIndent=12.1;
+        paraM.firstLineHeadIndent=15;
         NSDictionary *attri =@{NSFontAttributeName:[UIFont systemFontOfSize:13],
                                NSParagraphStyleAttributeName:paraM};
-        NSAttributedString *attributed =[[NSAttributedString alloc]initWithString:@"桃花潭水深千尺，不及汪伦送我情。" attributes:attri];
-        label.attributedText=attributed;
+        
+        
+        NSMutableAttributedString *attributed3=[[NSMutableAttributedString alloc]initWithString:@"桃花潭水深千尺，不及汪伦送我情。" attributes:attri];
+        [attributed3 insertAttributedString:attributed atIndex:0];
+        
+        label.attributedText=attributed3;
         
         [cell.contentView addSubview:label];
         [label mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(5, 5, 5, 5));
         }];
         
-        NSMutableString *string =[[NSMutableString alloc]initWithCapacity:20];
+        
         
     }
     

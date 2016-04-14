@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9102046F1CA433380073E7DC /* DIYDownLoadProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102046E1CA433380073E7DC /* DIYDownLoadProgressViewController.m */; };
+		91020AFC1CBE8E3D00F5E55E /* ForwardInvocationOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 91020AFB1CBE8E3D00F5E55E /* ForwardInvocationOBJ.m */; };
+		91020AFF1CBE974100F5E55E /* NSObject+RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */; };
 		91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91022A481CACE1470084DC67 /* Bugtags.bundle */; };
 		9102AAFD1C4F34E9008D8C28 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102AAF91C4F34E9008D8C28 /* SSKeychain.m */; };
 		9102AAFE1C4F34E9008D8C28 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102AAFB1C4F34E9008D8C28 /* SSKeychainQuery.m */; };
@@ -31,6 +33,7 @@
 		9114E76E1C86CF300087E5AC /* XProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E76D1C86CF300087E5AC /* XProduct.m */; };
 		9114E7711C86D5BD0087E5AC /* XSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7701C86D5BD0087E5AC /* XSqliteManager.m */; };
 		9114E7741C86D6B10087E5AC /* XFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7731C86D6B10087E5AC /* XFileManager.m */; };
+		912A3CE91CBF765C0052D32E /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91020B011CBE97E600F5E55E /* TestPerson.m */; };
 		913D7EA41C92BFA200A862A4 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7E7A1C92BFA200A862A4 /* MJRefreshAutoFooter.m */; };
 		913D7EA51C92BFA200A862A4 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7E7C1C92BFA200A862A4 /* MJRefreshBackFooter.m */; };
 		913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7E7E1C92BFA200A862A4 /* MJRefreshComponent.m */; };
@@ -570,6 +573,12 @@
 /* Begin PBXFileReference section */
 		9102046D1CA433380073E7DC /* DIYDownLoadProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYDownLoadProgressViewController.h; sourceTree = "<group>"; };
 		9102046E1CA433380073E7DC /* DIYDownLoadProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYDownLoadProgressViewController.m; sourceTree = "<group>"; };
+		91020AFA1CBE8E3D00F5E55E /* ForwardInvocationOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardInvocationOBJ.h; sourceTree = "<group>"; };
+		91020AFB1CBE8E3D00F5E55E /* ForwardInvocationOBJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardInvocationOBJ.m; sourceTree = "<group>"; };
+		91020AFD1CBE974100F5E55E /* NSObject+RunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RunTime.h"; sourceTree = "<group>"; };
+		91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RunTime.m"; sourceTree = "<group>"; };
+		91020B001CBE97E600F5E55E /* TestPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestPerson.h; path = MyTestWorkProduct/Utilities/TestPerson.h; sourceTree = SOURCE_ROOT; };
+		91020B011CBE97E600F5E55E /* TestPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestPerson.m; path = MyTestWorkProduct/Utilities/TestPerson.m; sourceTree = SOURCE_ROOT; };
 		91022A481CACE1470084DC67 /* Bugtags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Bugtags.bundle; path = ../Bugtags.bundle; sourceTree = "<group>"; };
 		9102AAF81C4F34E9008D8C28 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		9102AAF91C4F34E9008D8C28 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
@@ -1432,6 +1441,8 @@
 				91FA2C4F1C78C3AD007E5FD2 /* FileSingleDownloader.m */,
 				91FA2C511C78C69E007E5FD2 /* FileMultiDownloader.h */,
 				91FA2C521C78C69E007E5FD2 /* FileMultiDownloader.m */,
+				91020AFD1CBE974100F5E55E /* NSObject+RunTime.h */,
+				91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1508,6 +1519,8 @@
 				91DB3AB61CB69D690019A1EB /* CellAutoHeightViewController.m */,
 				91DB3AB81CB6A0800019A1EB /* AutoHeightCell.h */,
 				91DB3AB91CB6A0800019A1EB /* AutoHeightCell.m */,
+				91020AFA1CBE8E3D00F5E55E /* ForwardInvocationOBJ.h */,
+				91020AFB1CBE8E3D00F5E55E /* ForwardInvocationOBJ.m */,
 			);
 			path = CellAutoHeight;
 			sourceTree = "<group>";
@@ -1769,6 +1782,8 @@
 		91DC45B31BE7C04800E86CC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91020B001CBE97E600F5E55E /* TestPerson.h */,
+				91020B011CBE97E600F5E55E /* TestPerson.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2482,6 +2497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912A3CE91CBF765C0052D32E /* TestPerson.m in Sources */,
 				9114E75E1C86CD360087E5AC /* NSObject+YYModel.m in Sources */,
 				91DAB0E11BE90639006695B7 /* README.mdown in Sources */,
 				91DC44FD1BE7A60900E86CC0 /* ViewController.m in Sources */,
@@ -2557,6 +2573,7 @@
 				91DD19751C4556CA00B0FF70 /* RACTargetQueueScheduler.m in Sources */,
 				91DD19481C4556CA00B0FF70 /* NSURLConnection+RACSupport.m in Sources */,
 				913D7EAD1C92BFA200A862A4 /* MJRefreshBackNormalFooter.m in Sources */,
+				91020AFC1CBE8E3D00F5E55E /* ForwardInvocationOBJ.m in Sources */,
 				91DD19891C4556CA00B0FF70 /* UIStepper+RACSignalSupport.m in Sources */,
 				91DD19621C4556CA00B0FF70 /* RACObjCRuntime.m in Sources */,
 				9102E0941C8584BB0086D752 /* XDownLoadOriginalManager.m in Sources */,
@@ -2632,6 +2649,7 @@
 				91DD19801C4556CA00B0FF70 /* UICollectionReusableView+RACSignalSupport.m in Sources */,
 				913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */,
 				9114E7681C86CE860087E5AC /* NSString+HTML.m in Sources */,
+				91020AFF1CBE974100F5E55E /* NSObject+RunTime.m in Sources */,
 				91DD19651C4556CA00B0FF70 /* RACReplaySubject.m in Sources */,
 				91DD19731C4556CA00B0FF70 /* RACSubscriptingAssignmentTrampoline.m in Sources */,
 				9114E7741C86D6B10087E5AC /* XFileManager.m in Sources */,

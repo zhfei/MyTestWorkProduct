@@ -9,6 +9,8 @@
 #import "CircleProgressViewController.h"
 #import "Masonry.h"
 #import "UIView+Image.h"
+#import "NSObject+RunTime.h"
+#import "TestPerson.h"
 
 #import "CircleProgressView.h"
 
@@ -25,22 +27,36 @@
     self.title=@"圆形进度条";
     
     CircleProgressView *circle =[[CircleProgressView alloc]init];
-    [circle setBounds:CGRectMake(0, 0, 300, 300)];
-    [circle setCenter:self.view.center];
     [self.view addSubview:circle];
     self.circle=circle;
     [circle setProgress:0.1];
     [circle setBackgroundColor:[UIColor whiteColor]];
+    [circle mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(200, 200));
+        make.centerX.mas_equalTo(0);
+        make.top.mas_equalTo(20);
+    }];
     
     UISlider *slider =[[UISlider alloc]init];
     [self.view addSubview:slider];
     [slider addTarget:self action:@selector(sliderValue:) forControlEvents:UIControlEventValueChanged];
     
     [slider mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(200, 20));
+        make.width.mas_equalTo(circle.mas_width);
         make.left.equalTo(circle.mas_left);
-        make.top.equalTo(circle.mas_bottom).with.offset(100);
+        make.top.equalTo(circle.mas_bottom);
     }];
+    
+    TestPerson *person=[[TestPerson alloc]init];
+    person.collegeName=@"hello";
+    person.sex=@"man";
+    person.name=@"xiao ming";
+    person.address=@"十里胡同";
+    person.age=@(20);
+    
+    MyLog(@"person.property:%@",[person getObjectAllPropertyName]);
+    MyLog(@"person.method:%@",[person getObjectAllMethodName]);
+    MyLog(@"person.protocol:%@",[person getObjectAllAgreeProtocolName]);
     
 }
 
@@ -53,7 +69,7 @@
 {
     [self.circle setProgress:slider.value];
     
-    [UIView addSimpleReflectionToView:self.circle];
+//    [UIView addSimpleReflectionToView:self.circle];
 }
 
 
