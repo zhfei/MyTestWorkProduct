@@ -11,6 +11,7 @@
 #import "UIView+Image.h"
 #import "NSObject+RunTime.h"
 #import "TestPerson.h"
+#import "UIButton+Interval.h"
 
 #import "CircleProgressView.h"
 
@@ -57,6 +58,23 @@
     MyLog(@"person.property:%@",[person getObjectAllPropertyName]);
     MyLog(@"person.method:%@",[person getObjectAllMethodName]);
     MyLog(@"person.protocol:%@",[person getObjectAllAgreeProtocolName]);
+    
+    UIButton * btn =[[UIButton alloc]init];
+    
+    btn.bounds=CGRectMake(0, 0, 200, 44);
+    btn.center=self.view.center;
+    [btn setTitle:@"支 付" forState:UIControlStateNormal];
+    btn.titleLabel.font=[UIFont systemFontOfSize:20];
+    
+    btn.layer.cornerRadius=5;
+    btn.layer.masksToBounds=YES;
+    
+    [btn setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageWithColor:[UIColor blueColor]] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageWithColor:[UIColor lightGrayColor]] forState:UIControlStateDisabled];
+
+    btn.showsTouchWhenHighlighted=YES;
+    [self.view addSubview:btn];
     
 }
 

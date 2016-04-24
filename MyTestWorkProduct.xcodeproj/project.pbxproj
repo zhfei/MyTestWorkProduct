@@ -558,6 +558,7 @@
 		91FF876D1CAAD4B700B63004 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87661CAAD4B700B63004 /* BaiduMapAPI_Radar.framework */; };
 		91FF876E1CAAD4B700B63004 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */; };
 		91FF876F1CAAD4B700B63004 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */; };
+		DC90B4C61CCB18D9003A4432 /* UIButton+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1112,6 +1113,8 @@
 		91FF87661CAAD4B700B63004 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
 		91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Interval.h"; sourceTree = "<group>"; };
+		DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Interval.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1443,6 +1446,8 @@
 				91FA2C521C78C69E007E5FD2 /* FileMultiDownloader.m */,
 				91020AFD1CBE974100F5E55E /* NSObject+RunTime.h */,
 				91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */,
+				DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */,
+				DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -2684,6 +2689,7 @@
 				91DC45C21BE7C0A400E86CC0 /* TabBar1ViewController.m in Sources */,
 				91DD19671C4556CA00B0FF70 /* RACScheduler.m in Sources */,
 				913D7EA81C92BFA200A862A4 /* MJRefreshHeader.m in Sources */,
+				DC90B4C61CCB18D9003A4432 /* UIButton+Interval.m in Sources */,
 				91FA2C501C78C3AD007E5FD2 /* FileSingleDownloader.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
 				913D7EA71C92BFA200A862A4 /* MJRefreshFooter.m in Sources */,
