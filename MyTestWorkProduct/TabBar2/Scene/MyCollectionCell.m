@@ -7,6 +7,7 @@
 //
 
 #import "MyCollectionCell.h"
+#import "Masonry.h"
 
 @interface MyCollectionCell()
 
@@ -19,6 +20,17 @@
     self.contentView.layer.borderWidth=1.f;
     self.contentView.layer.borderColor=[UIColor lightGrayColor].CGColor;
     self.contentView.layer.masksToBounds=YES;
+    
+    UITextView *textV =[[UITextView alloc]init];
+    [textV setBackgroundColor:[UIColor clearColor]];
+    [self.contentView addSubview:textV];
+    textV.textAlignment=NSTextAlignmentCenter;
+    [textV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
+    }];
+    textV.font=[UIFont systemFontOfSize:18];
+    textV.userInteractionEnabled=NO;
+    self.textV=textV;
 }
 
 - (void)drawRect:(CGRect)rect

@@ -47,14 +47,18 @@
     
     NSMutableArray *array =[NSMutableArray arrayWithObjects:@"1",@"2", nil];
     self.arrayM=array;
-    
+    [array willChangeValueForKey:nil];
     [self.arrayM insertObject:@"0" atIndex:0];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

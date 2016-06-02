@@ -11,11 +11,14 @@
 #import "NSString+UUID.h"
 
 #import "AnimationScene2.h"
+#import "SwizzingViewController.h"
+
 #import "Utilities.h"
+#import "MyCollectionCell.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
-
+@property (strong,nonatomic)NSArray *dataSource;
 @end
 
 @implementation TabBar2ViewController
@@ -23,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing"];
+    
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     [self.myCollectionView setCollectionViewLayout:flowLayout];
 
@@ -62,8 +67,16 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * CellIdentifier = @"MyCollectionCell";
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    MyCollectionCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     [cell.contentView setBackgroundColor:RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1)];
+    
+    
+    if (indexPath.row>2) {
+        cell.textV.text=@"展示的内容";
+    }else{
+        cell.textV.text=self.dataSource[indexPath.row];
+    }
+    
     return cell;
 }
 #pragma mark --UICollectionViewDelegateFlowLayout
@@ -87,9 +100,12 @@
         SubScene1 * subScene1=[[SubScene1 alloc]init];
         subScene1.index=indexPath.row;
         [self.navigationController pushViewController:subScene1 animated:YES];
-    }else{
+    }else if(indexPath.row==1){
         AnimationScene2 *scene2 =[[AnimationScene2 alloc]init];
         [self.navigationController pushViewController:scene2 animated:YES];
+    }else if (indexPath.row==2){
+        SwizzingViewController *swizzing=[[SwizzingViewController alloc]init];
+        [self.navigationController pushViewController:swizzing animated:YES];
     }
     
     
