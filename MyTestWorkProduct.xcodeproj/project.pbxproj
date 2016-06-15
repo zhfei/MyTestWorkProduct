@@ -75,6 +75,8 @@
 		913D99A41C910079005FC05E /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D99941C910079005FC05E /* UIImageView+HighlightedWebCache.m */; };
 		913D99A51C910079005FC05E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D99961C910079005FC05E /* UIImageView+WebCache.m */; };
 		913D99A61C910079005FC05E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D99981C910079005FC05E /* UIView+WebCacheOperation.m */; };
+		9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */; };
+		9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */; };
 		9144B6B21CAB603F003146B2 /* mapapi.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87601CAAD35900B63004 /* mapapi.bundle */; };
 		9144B6B41CAB609C003146B2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144B6B31CAB609C003146B2 /* OpenGLES.framework */; };
 		9144B6B61CAB60D3003146B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144B6B51CAB60D3003146B2 /* CoreGraphics.framework */; };
@@ -248,6 +250,7 @@
 		91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E9C2C91C0802DA0044D617 /* NSString+FontAwesome.m */; };
 		91E9C2D01C0802DA0044D617 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E9C2CB1C0802DA0044D617 /* UIFont+FontAwesome.m */; };
 		91E9C2D11C0802DA0044D617 /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E9C2CD1C0802DA0044D617 /* UIImage+FontAwesome.m */; };
+		91EC16801D01BFC7000322B5 /* BoundFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EC167F1D01BFC7000322B5 /* BoundFlowLayout.m */; };
 		91F00BC31CFF26600000D48A /* SwizzingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F00BC21CFF26600000D48A /* SwizzingViewController.m */; };
 		91F072461CA180F5007923EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F072451CA180F5007923EC /* UIKit.framework */; };
 		91F072481CA18103007923EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F072471CA18103007923EC /* QuartzCore.framework */; };
@@ -279,6 +282,12 @@
 		91FA2C4D1C78C2A2007E5FD2 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FA2C4C1C78C2A2007E5FD2 /* FileDownloader.m */; };
 		91FA2C501C78C3AD007E5FD2 /* FileSingleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FA2C4F1C78C3AD007E5FD2 /* FileSingleDownloader.m */; };
 		91FA2C531C78C69E007E5FD2 /* FileMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FA2C521C78C69E007E5FD2 /* FileMultiDownloader.m */; };
+		91FAFFBE1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFBD1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m */; };
+		91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFC01D057BFA004F4CE8 /* CollectionViewHeaderCell.m */; };
+		91FAFFC41D057E45004F4CE8 /* CollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFC31D057E45004F4CE8 /* CollectionViewHeader.m */; };
+		91FAFFC71D0582AB004F4CE8 /* LeftAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFC61D0582AB004F4CE8 /* LeftAlignedFlowLayout.m */; };
+		91FC89161D0074F300527C4B /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FC89151D0074F300527C4B /* CollectionViewController.m */; };
+		91FC89191D007BEC00527C4B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FC89181D007BEC00527C4B /* CollectionViewCell.m */; };
 		91FDCA161C9F92FB00A5E684 /* DIYCollectionViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FDCA151C9F92FB00A5E684 /* DIYCollectionViewLayoutViewController.m */; };
 		91FDCA191C9FEAB100A5E684 /* DIYCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FDCA181C9FEAB100A5E684 /* DIYCollectionViewLayout.m */; };
 		91FE24C01CB20129001C6DF0 /* AutoLayoutAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FE24BF1CB20129001C6DF0 /* AutoLayoutAnimViewController.m */; };
@@ -712,6 +721,8 @@
 		913D99961C910079005FC05E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		913D99971C910079005FC05E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		913D99981C910079005FC05E /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editor_list_icon@2x.png"; sourceTree = "<group>"; };
+		9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_framework_icon@2x.png"; sourceTree = "<group>"; };
 		9144B6B31CAB609C003146B2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9144B6B51CAB60D3003146B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9144B6B71CAB60FF003146B2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -1056,6 +1067,8 @@
 		91E9C2CB1C0802DA0044D617 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 		91E9C2CC1C0802DA0044D617 /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
 		91E9C2CD1C0802DA0044D617 /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		91EC167E1D01BFC7000322B5 /* BoundFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundFlowLayout.h; sourceTree = "<group>"; };
+		91EC167F1D01BFC7000322B5 /* BoundFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoundFlowLayout.m; sourceTree = "<group>"; };
 		91F00BC11CFF26600000D48A /* SwizzingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzingViewController.h; sourceTree = "<group>"; };
 		91F00BC21CFF26600000D48A /* SwizzingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzingViewController.m; sourceTree = "<group>"; };
 		91F072421CA18033007923EC /* Bugtags.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugtags.framework; path = ../Bugtags.framework; sourceTree = "<group>"; };
@@ -1106,6 +1119,18 @@
 		91FA2C4F1C78C3AD007E5FD2 /* FileSingleDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSingleDownloader.m; sourceTree = "<group>"; };
 		91FA2C511C78C69E007E5FD2 /* FileMultiDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileMultiDownloader.h; sourceTree = "<group>"; };
 		91FA2C521C78C69E007E5FD2 /* FileMultiDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileMultiDownloader.m; sourceTree = "<group>"; };
+		91FAFFBC1D057BB3004F4CE8 /* CollectionViewHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderViewController.h; sourceTree = "<group>"; };
+		91FAFFBD1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeaderViewController.m; sourceTree = "<group>"; };
+		91FAFFBF1D057BFA004F4CE8 /* CollectionViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderCell.h; sourceTree = "<group>"; };
+		91FAFFC01D057BFA004F4CE8 /* CollectionViewHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeaderCell.m; sourceTree = "<group>"; };
+		91FAFFC21D057E44004F4CE8 /* CollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeader.h; sourceTree = "<group>"; };
+		91FAFFC31D057E45004F4CE8 /* CollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeader.m; sourceTree = "<group>"; };
+		91FAFFC51D0582AB004F4CE8 /* LeftAlignedFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAlignedFlowLayout.h; sourceTree = "<group>"; };
+		91FAFFC61D0582AB004F4CE8 /* LeftAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayout.m; sourceTree = "<group>"; };
+		91FC89141D0074F300527C4B /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		91FC89151D0074F300527C4B /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		91FC89171D007BEC00527C4B /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		91FC89181D007BEC00527C4B /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		91FDCA141C9F92FB00A5E684 /* DIYCollectionViewLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYCollectionViewLayoutViewController.h; sourceTree = "<group>"; };
 		91FDCA151C9F92FB00A5E684 /* DIYCollectionViewLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYCollectionViewLayoutViewController.m; sourceTree = "<group>"; };
 		91FDCA171C9FEAB100A5E684 /* DIYCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -1456,6 +1481,15 @@
 				913D99981C910079005FC05E /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		9140D1FC1D0662130033BA62 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */,
+				9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		91DAB0D11BE9055C006695B7 /* Utilities */ = {
@@ -1829,6 +1863,8 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				91FAFFBB1D057B84004F4CE8 /* CollectionViewHeader */,
+				91FC89131D0074BF00527C4B /* CollectionView */,
 				91F00BC01CFF26600000D48A /* Swizzing */,
 				91DE33DD1C3FD02700125B25 /* AnimationScene2 */,
 				91E188D51C0700DE006BA41C /* SubScene1 */,
@@ -2299,6 +2335,35 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		91FAFFBB1D057B84004F4CE8 /* CollectionViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				9140D1FC1D0662130033BA62 /* images */,
+				91FAFFBC1D057BB3004F4CE8 /* CollectionViewHeaderViewController.h */,
+				91FAFFBD1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m */,
+				91FAFFBF1D057BFA004F4CE8 /* CollectionViewHeaderCell.h */,
+				91FAFFC01D057BFA004F4CE8 /* CollectionViewHeaderCell.m */,
+				91FAFFC21D057E44004F4CE8 /* CollectionViewHeader.h */,
+				91FAFFC31D057E45004F4CE8 /* CollectionViewHeader.m */,
+				91FAFFC51D0582AB004F4CE8 /* LeftAlignedFlowLayout.h */,
+				91FAFFC61D0582AB004F4CE8 /* LeftAlignedFlowLayout.m */,
+			);
+			path = CollectionViewHeader;
+			sourceTree = "<group>";
+		};
+		91FC89131D0074BF00527C4B /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				91FC89141D0074F300527C4B /* CollectionViewController.h */,
+				91FC89151D0074F300527C4B /* CollectionViewController.m */,
+				91FC89171D007BEC00527C4B /* CollectionViewCell.h */,
+				91FC89181D007BEC00527C4B /* CollectionViewCell.m */,
+				91EC167E1D01BFC7000322B5 /* BoundFlowLayout.h */,
+				91EC167F1D01BFC7000322B5 /* BoundFlowLayout.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		91FDCA131C9F92CD00A5E684 /* DIYCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -2453,9 +2518,11 @@
 				91FF87611CAAD35900B63004 /* mapapi.bundle in Resources */,
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
 				91DC45CD1BE7C0C700E86CC0 /* TabBar3ViewController.xib in Resources */,
+				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
+				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
 				91DE33E21C3FD04F00125B25 /* AnimationScene2.xib in Resources */,
 				91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */,
@@ -2543,6 +2610,7 @@
 				91DAB0E11BE90639006695B7 /* README.mdown in Sources */,
 				91DC44FD1BE7A60900E86CC0 /* ViewController.m in Sources */,
 				91DD193B1C4556CA00B0FF70 /* NSInvocation+RACTypeParsing.m in Sources */,
+				91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */,
 				91DE33E61C3FF12100125B25 /* MyHUDView.m in Sources */,
 				913D999B1C910079005FC05E /* SDWebImageCompat.m in Sources */,
 				91DD197F1C4556CA00B0FF70 /* UIButton+RACCommandSupport.m in Sources */,
@@ -2666,6 +2734,8 @@
 				91DD18731C45568900B0FF70 /* UIView+RNActivityView.m in Sources */,
 				91DC45A31BE7B7F300E86CC0 /* MainTabBarViewController.mm in Sources */,
 				9102AB011C4F36E0008D8C28 /* NSString+UUID.m in Sources */,
+				91EC16801D01BFC7000322B5 /* BoundFlowLayout.m in Sources */,
+				91FC89161D0074F300527C4B /* CollectionViewController.m in Sources */,
 				91DC45C71BE7C0B500E86CC0 /* TabBar2ViewController.m in Sources */,
 				91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */,
 				91DD193F1C4556CA00B0FF70 /* NSObject+RACKVOWrapper.m in Sources */,
@@ -2678,6 +2748,7 @@
 				91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */,
 				913D7EAB1C92BFA200A862A4 /* MJRefreshAutoStateFooter.m in Sources */,
 				913D7EA41C92BFA200A862A4 /* MJRefreshAutoFooter.m in Sources */,
+				91FAFFBE1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m in Sources */,
 				913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */,
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				91FA2C4D1C78C2A2007E5FD2 /* FileDownloader.m in Sources */,
@@ -2695,6 +2766,7 @@
 				91DD19731C4556CA00B0FF70 /* RACSubscriptingAssignmentTrampoline.m in Sources */,
 				9114E7741C86D6B10087E5AC /* XFileManager.m in Sources */,
 				91DD193C1C4556CA00B0FF70 /* NSNotificationCenter+RACSupport.m in Sources */,
+				91FC89191D007BEC00527C4B /* CollectionViewCell.m in Sources */,
 				91DC45701BE7B17000E86CC0 /* UITextField+YYAdditions.m in Sources */,
 				9114E7621C86CE340087E5AC /* XObject.m in Sources */,
 				9114D6CE1C8688C70087E5AC /* unzip.c in Sources */,
@@ -2708,6 +2780,7 @@
 				91DC45981BE7B78E00E86CC0 /* MASConstraint.m in Sources */,
 				91F00BC31CFF26600000D48A /* SwizzingViewController.m in Sources */,
 				91DC456C1BE7B17000E86CC0 /* UIColor+YYAdditions.m in Sources */,
+				91FAFFC71D0582AB004F4CE8 /* LeftAlignedFlowLayout.m in Sources */,
 				91F1FE0C1CA56EF30042DCE3 /* VideoPlayerViewController.m in Sources */,
 				9102046F1CA433380073E7DC /* DIYDownLoadProgressViewController.m in Sources */,
 				91DD195D1C4556CA00B0FF70 /* RACIndexSetSequence.m in Sources */,
@@ -2767,6 +2840,7 @@
 				91E9C2D11C0802DA0044D617 /* UIImage+FontAwesome.m in Sources */,
 				913D7EAE1C92BFA200A862A4 /* MJRefreshBackStateFooter.m in Sources */,
 				91DD19761C4556CA00B0FF70 /* RACTestScheduler.m in Sources */,
+				91FAFFC41D057E45004F4CE8 /* CollectionViewHeader.m in Sources */,
 				91DD19571C4556CA00B0FF70 /* RACEmptySequence.m in Sources */,
 				913D999D1C910079005FC05E /* SDWebImageDownloader.m in Sources */,
 				9134AC561CFFD9CE00C2C49E /* UIButton+Interval.m in Sources */,

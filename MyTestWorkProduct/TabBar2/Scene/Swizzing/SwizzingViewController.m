@@ -14,7 +14,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.tableView.separatorInset=UIEdgeInsetsZero;
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
@@ -46,7 +45,7 @@
 #pragma mark UITableViewDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 0.0000001;
+    return 0.5;
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

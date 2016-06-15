@@ -15,6 +15,8 @@
 
 #import "Utilities.h"
 #import "MyCollectionCell.h"
+#import "CollectionViewController.h"
+#import "CollectionViewHeaderViewController.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
@@ -26,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing"];
+    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头"];
     
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     [self.myCollectionView setCollectionViewLayout:flowLayout];
@@ -71,7 +73,7 @@
     [cell.contentView setBackgroundColor:RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1)];
     
     
-    if (indexPath.row>2) {
+    if (indexPath.row>4) {
         cell.textV.text=@"展示的内容";
     }else{
         cell.textV.text=self.dataSource[indexPath.row];
@@ -106,6 +108,12 @@
     }else if (indexPath.row==2){
         SwizzingViewController *swizzing=[[SwizzingViewController alloc]init];
         [self.navigationController pushViewController:swizzing animated:YES];
+    }else if (indexPath.row==3){
+        CollectionViewController *collectionV=[[CollectionViewController alloc]init];
+        [self.navigationController pushViewController:collectionV animated:YES];
+    }else if (indexPath.row==4){
+        CollectionViewHeaderViewController *collectionHeaderV=[[CollectionViewHeaderViewController alloc]init];
+        [self.navigationController pushViewController:collectionHeaderV animated:YES];
     }
     
     
