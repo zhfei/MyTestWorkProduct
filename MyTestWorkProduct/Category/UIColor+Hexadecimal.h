@@ -11,5 +11,13 @@
 @interface UIColor (Hexadecimal)
 
 + (UIColor *)colorWithHex:(NSString *)string;
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 随机色
+ *
+ *  @return 返回的颜色对象
+ */
++ (UIColor *)randomColor;
 
 @end

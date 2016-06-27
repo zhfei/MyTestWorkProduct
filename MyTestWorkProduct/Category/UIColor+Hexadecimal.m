@@ -33,4 +33,9 @@
     return [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
 }
 
++ (UIColor *)randomColor
+{
+    return RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1);
+}
+
 @end

@@ -45,6 +45,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
 {
+    [NSThread callStackSymbols];
     return CGSizeZero;
 }
 
