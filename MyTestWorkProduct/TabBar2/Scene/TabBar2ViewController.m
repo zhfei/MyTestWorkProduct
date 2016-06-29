@@ -18,6 +18,7 @@
 #import "CollectionViewController.h"
 #import "CollectionViewHeaderViewController.h"
 #import "AnimationViewController.h"
+#import "TransitionAnimation.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
@@ -29,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画"];
+    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画"];
     
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     [self.myCollectionView setCollectionViewLayout:flowLayout];
@@ -74,7 +75,7 @@
     [cell.contentView setBackgroundColor:RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1)];
     
     
-    if (indexPath.row>5) {
+    if (indexPath.row>6) {
         cell.textV.text=@"展示的内容";
     }else{
         cell.textV.text=self.dataSource[indexPath.row];
@@ -119,6 +120,10 @@
         AnimationViewController *animation=[[AnimationViewController alloc]initWithLayout];
         [self.navigationController pushViewController:animation animated:YES];
 
+    }else if (indexPath.row==6){
+        TransitionAnimation *animation=[[TransitionAnimation alloc]init];
+        [self.navigationController pushViewController:animation animated:YES];
+        
     }
     
     

@@ -39,6 +39,8 @@
     
     self.navigationController.tabBarItem.title=@"Table";
     self.myTableView.separatorInset=UIEdgeInsetsMake(0, 0, 0, 0);
+    
+    [self.view snapshotViewAfterScreenUpdates:NO];
    
 }
 
@@ -168,6 +170,11 @@
                 case 2:
                 {
                     DIYCollectionViewLayoutViewController *diyLayout =[[DIYCollectionViewLayoutViewController alloc]initWitDefontLayout];
+                    [diyLayout.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                        diyLayout.collectionView.backgroundColor=[UIColor blueColor];
+                    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                        
+                    }];
                     [self.navigationController pushViewController:diyLayout animated:YES];
                 }
                     break;

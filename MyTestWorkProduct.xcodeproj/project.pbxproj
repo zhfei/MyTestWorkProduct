@@ -15,6 +15,7 @@
 		9102AB011C4F36E0008D8C28 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102AB001C4F36E0008D8C28 /* NSString+UUID.m */; };
 		9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102E08E1C8541D50086D752 /* XDownLoadProgressView.m */; };
 		9102E0941C8584BB0086D752 /* XDownLoadOriginalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102E0931C8584BB0086D752 /* XDownLoadOriginalManager.m */; };
+		9104E2EE1D2123B100AB0EBE /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */; };
 		910AC4E11D200D940094A250 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 910AC4DA1D200D940094A250 /* UIImage+Color.m */; };
 		910AC4E21D200D940094A250 /* UIImage+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 910AC4DC1D200D940094A250 /* UIImage+Custom.m */; };
 		910AC4E31D200D940094A250 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 910AC4DE1D200D940094A250 /* UIImage+ImageEffects.m */; };
@@ -611,6 +612,8 @@
 		9102E08E1C8541D50086D752 /* XDownLoadProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDownLoadProgressView.m; sourceTree = "<group>"; };
 		9102E0921C8584BB0086D752 /* XDownLoadOriginalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDownLoadOriginalManager.h; sourceTree = "<group>"; };
 		9102E0931C8584BB0086D752 /* XDownLoadOriginalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDownLoadOriginalManager.m; sourceTree = "<group>"; };
+		9104E2EC1D2123B100AB0EBE /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
+		9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
 		910AC4D91D200D940094A250 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		910AC4DA1D200D940094A250 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		910AC4DB1D200D940094A250 /* UIImage+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Custom.h"; sourceTree = "<group>"; };
@@ -1281,6 +1284,15 @@
 			path = SSKeyChain;
 			sourceTree = "<group>";
 		};
+		9104E2EB1D2123A000AB0EBE /* TransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				9104E2EC1D2123B100AB0EBE /* TransitionAnimation.h */,
+				9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */,
+			);
+			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
 		910BDE051CA9741400A499CF /* FontSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -1916,6 +1928,7 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				9104E2EB1D2123A000AB0EBE /* TransitionAnimation */,
 				91ED409B1D198D9D00190FC5 /* Animation */,
 				91FAFFBB1D057B84004F4CE8 /* CollectionViewHeader */,
 				91FC89131D0074BF00527C4B /* CollectionView */,
@@ -2769,6 +2782,7 @@
 				91DD19461C4556CA00B0FF70 /* NSString+RACSequenceAdditions.m in Sources */,
 				91DE33E11C3FD04F00125B25 /* AnimationScene2.m in Sources */,
 				91DAB0E81BE907F3006695B7 /* UserSingle.m in Sources */,
+				9104E2EE1D2123B100AB0EBE /* TransitionAnimation.m in Sources */,
 				91E188D91C070106006BA41C /* SubScene1.m in Sources */,
 				91F90D821C77068300215E3B /* AFURLRequestSerialization.m in Sources */,
 				91DD194A1C4556CA00B0FF70 /* RACArraySequence.m in Sources */,
