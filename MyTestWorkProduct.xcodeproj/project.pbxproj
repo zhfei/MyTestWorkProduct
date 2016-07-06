@@ -559,6 +559,7 @@
 		91FF876E1CAAD4B700B63004 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */; };
 		91FF876F1CAAD4B700B63004 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */; };
 		DC90B4C61CCB18D9003A4432 /* UIButton+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */; };
+		DCCCD6251D28B520007E4575 /* UIButton+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCCD6241D28B520007E4575 /* UIButton+Method.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1115,6 +1116,8 @@
 		91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
 		DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Interval.h"; sourceTree = "<group>"; };
 		DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Interval.m"; sourceTree = "<group>"; };
+		DCCCD6231D28B520007E4575 /* UIButton+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Method.h"; sourceTree = "<group>"; };
+		DCCCD6241D28B520007E4575 /* UIButton+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Method.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1448,6 +1451,8 @@
 				91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */,
 				DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */,
 				DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */,
+				DCCCD6231D28B520007E4575 /* UIButton+Method.h */,
+				DCCCD6241D28B520007E4575 /* UIButton+Method.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -2644,6 +2649,7 @@
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				91FA2C4D1C78C2A2007E5FD2 /* FileDownloader.m in Sources */,
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
+				DCCCD6251D28B520007E4575 /* UIButton+Method.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				91DD19371C4556CA00B0FF70 /* NSDictionary+RACSequenceAdditions.m in Sources */,
@@ -3103,11 +3109,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/MyTestWorkProduct",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Main/BaiduMap",
+					"$(PROJECT_DIR)/MyTestWorkProduct/FrameWork",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3142,11 +3150,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/MyTestWorkProduct",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Main/BaiduMap",
+					"$(PROJECT_DIR)/MyTestWorkProduct/FrameWork",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=0";

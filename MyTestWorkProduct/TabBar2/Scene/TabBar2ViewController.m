@@ -12,6 +12,8 @@
 
 #import "AnimationScene2.h"
 #import "Utilities.h"
+#import "UIButton+Method.h"
+#import "Person.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
@@ -31,6 +33,22 @@
     
     //self.title=@"主题二";
     MyLog(@"path:%@",NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]);
+    
+    UIButton *btn =[[UIButton alloc] initMethod];
+    
+    [btn setImage:[UIImage imageNamed:@"a"] forState:UIControlStateNormal];
+    
+    [btn performSelector:@selector(eat:) withObject:@11];
+    
+    btn.name=@"123";
+    NSLog(@"btn.name:%@",btn.name);
+    
+    NSDictionary *dict =@{};
+    Person  *p =[[Person alloc]init];
+    
+    [p setValuesForKeysWithDictionary:dict];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -19,12 +19,13 @@
 #import "AutoLayoutAnimViewController.h"
 #import "CellAutoHeightViewController.h"
 
+#import <objc/message.h>
+
 @interface TabBar1ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 
-@property (strong,nonatomic)NSMutableArray *dataSource;
-
+@property (strong,nonatomic)NSMutableArray*dataSource;
 
 @end
 
@@ -38,7 +39,7 @@
     
     self.navigationController.tabBarItem.title=@"Table";
     self.myTableView.separatorInset=UIEdgeInsetsMake(0, 0, 0, 0);
-   
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
