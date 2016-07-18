@@ -20,4 +20,15 @@
     label.backgroundColor = backgroundColor;
     return label;
 }
+
++ (UILabel *)label
+{
+    UILabel * label =[[UILabel alloc]init];
+    label.text=@"这是一个label";
+    label.textColor=[UIColor lightGrayColor];
+    label.center=CGPointMake(ScreenWidth/2, ScreenHight/2);
+    [label sizeToFit];
+    return label;
+}
+
 @end

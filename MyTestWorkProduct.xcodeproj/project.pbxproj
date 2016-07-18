@@ -48,6 +48,9 @@
 		9134AC571CFFD9CE00C2C49E /* UIColor+Hexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134AC4D1CFFD9CE00C2C49E /* UIColor+Hexadecimal.m */; };
 		9134AC581CFFD9CE00C2C49E /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134AC4F1CFFD9CE00C2C49E /* UIImage+Scale.m */; };
 		9134AC591CFFD9CE00C2C49E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134AC511CFFD9CE00C2C49E /* UIView+Frame.m */; };
+		913A95A41D3C7B5900237473 /* PeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913A95A31D3C7B5900237473 /* PeripheralViewController.m */; };
+		913A95A71D3C7BB700237473 /* CentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913A95A61D3C7BB700237473 /* CentralViewController.m */; };
+		913A95AA1D3C7EF700237473 /* UITextView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 913A95A91D3C7EF700237473 /* UITextView+Additions.m */; };
 		913D7EA41C92BFA200A862A4 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7E7A1C92BFA200A862A4 /* MJRefreshAutoFooter.m */; };
 		913D7EA51C92BFA200A862A4 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7E7C1C92BFA200A862A4 /* MJRefreshBackFooter.m */; };
 		913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7E7E1C92BFA200A862A4 /* MJRefreshComponent.m */; };
@@ -279,8 +282,10 @@
 		91F26B071CF9529000D5C3DC /* user_header_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F26B061CF9529000D5C3DC /* user_header_bg@2x.png */; };
 		91F2888F1CF93931004B726B /* BlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F2888E1CF93931004B726B /* BlurEffectViewController.m */; };
 		91F5B6D41C946A4F00C578B3 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F5B6D31C946A4F00C578B3 /* UIView+Image.m */; };
+		91F650951D34E36400212FD0 /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F650941D34E36400212FD0 /* BluetoothViewController.m */; };
 		91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E2DF1D1BE14B00A5A587 /* NSDate+IntervalSeconds.m */; };
 		91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F7CEF11C50A68A0036D938 /* UUIDString.plist */; };
+		91F802031D2BA50A00C8C791 /* FZMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F802021D2BA50A00C8C791 /* FZMapViewController.m */; };
 		91F90D671C77057600215E3B /* XDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D661C77057600215E3B /* XDownLoadManager.m */; };
 		91F90D7C1C77068300215E3B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D6A1C77068300215E3B /* AFHTTPRequestOperation.m */; };
 		91F90D7D1C77068300215E3B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D6C1C77068300215E3B /* AFHTTPRequestOperationManager.m */; };
@@ -678,6 +683,12 @@
 		9134AC4F1CFFD9CE00C2C49E /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
 		9134AC501CFFD9CE00C2C49E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		9134AC511CFFD9CE00C2C49E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		913A95A21D3C7B5900237473 /* PeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralViewController.h; sourceTree = "<group>"; };
+		913A95A31D3C7B5900237473 /* PeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralViewController.m; sourceTree = "<group>"; };
+		913A95A51D3C7BB700237473 /* CentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentralViewController.h; sourceTree = "<group>"; };
+		913A95A61D3C7BB700237473 /* CentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralViewController.m; sourceTree = "<group>"; };
+		913A95A81D3C7EF700237473 /* UITextView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Additions.h"; sourceTree = "<group>"; };
+		913A95A91D3C7EF700237473 /* UITextView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Additions.m"; sourceTree = "<group>"; };
 		913D7E791C92BFA200A862A4 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		913D7E7A1C92BFA200A862A4 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		913D7E7B1C92BFA200A862A4 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -1125,9 +1136,13 @@
 		91F2888E1CF93931004B726B /* BlurEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurEffectViewController.m; sourceTree = "<group>"; };
 		91F5B6D21C946A4F00C578B3 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		91F5B6D31C946A4F00C578B3 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		91F650931D34E36400212FD0 /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
+		91F650941D34E36400212FD0 /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
 		91F6E2DE1D1BE14B00A5A587 /* NSDate+IntervalSeconds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+IntervalSeconds.h"; sourceTree = "<group>"; };
 		91F6E2DF1D1BE14B00A5A587 /* NSDate+IntervalSeconds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+IntervalSeconds.m"; sourceTree = "<group>"; };
 		91F7CEF11C50A68A0036D938 /* UUIDString.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UUIDString.plist; sourceTree = "<group>"; };
+		91F802011D2BA50A00C8C791 /* FZMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMapViewController.h; sourceTree = "<group>"; };
+		91F802021D2BA50A00C8C791 /* FZMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMapViewController.m; sourceTree = "<group>"; };
 		91F90D651C77057600215E3B /* XDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDownLoadManager.h; sourceTree = "<group>"; };
 		91F90D661C77057600215E3B /* XDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDownLoadManager.m; sourceTree = "<group>"; };
 		91F90D691C77068300215E3B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -1790,6 +1805,8 @@
 				91DC45651BE7B17000E86CC0 /* YYAdditionsHeader.h */,
 				9102AAFF1C4F36E0008D8C28 /* NSString+UUID.h */,
 				9102AB001C4F36E0008D8C28 /* NSString+UUID.m */,
+				913A95A81D3C7EF700237473 /* UITextView+Additions.h */,
+				913A95A91D3C7EF700237473 /* UITextView+Additions.m */,
 			);
 			path = YYCategory;
 			sourceTree = "<group>";
@@ -1928,6 +1945,8 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				91F650921D34E34D00212FD0 /* Bluetooth */,
+				91F802001D2BA4F300C8C791 /* Map */,
 				9104E2EB1D2123A000AB0EBE /* TransitionAnimation */,
 				91ED409B1D198D9D00190FC5 /* Animation */,
 				91FAFFBB1D057B84004F4CE8 /* CollectionViewHeader */,
@@ -2385,6 +2404,28 @@
 			path = SubScenes;
 			sourceTree = "<group>";
 		};
+		91F650921D34E34D00212FD0 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				91F650931D34E36400212FD0 /* BluetoothViewController.h */,
+				91F650941D34E36400212FD0 /* BluetoothViewController.m */,
+				913A95A21D3C7B5900237473 /* PeripheralViewController.h */,
+				913A95A31D3C7B5900237473 /* PeripheralViewController.m */,
+				913A95A51D3C7BB700237473 /* CentralViewController.h */,
+				913A95A61D3C7BB700237473 /* CentralViewController.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		91F802001D2BA4F300C8C791 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				91F802011D2BA50A00C8C791 /* FZMapViewController.h */,
+				91F802021D2BA50A00C8C791 /* FZMapViewController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		91F90D681C77068300215E3B /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -2707,6 +2748,7 @@
 				913D999F1C910079005FC05E /* SDWebImageManager.m in Sources */,
 				910AC4F01D200FBA0094A250 /* UIButton+Badge.m in Sources */,
 				91DC456D1BE7B17000E86CC0 /* UIImage+YYAdditions.m in Sources */,
+				913A95A71D3C7BB700237473 /* CentralViewController.m in Sources */,
 				91DD19861C4556CA00B0FF70 /* UIRefreshControl+RACCommandSupport.m in Sources */,
 				913D99991C910079005FC05E /* NSData+ImageContentType.m in Sources */,
 				91FE24C01CB20129001C6DF0 /* AutoLayoutAnimViewController.m in Sources */,
@@ -2757,6 +2799,7 @@
 				91DD19361C4556CA00B0FF70 /* NSData+RACSupport.m in Sources */,
 				91DC45661BE7B17000E86CC0 /* NSDictionary+YYAdditions.m in Sources */,
 				91DD19681C4556CA00B0FF70 /* RACScopedDisposable.m in Sources */,
+				91F802031D2BA50A00C8C791 /* FZMapViewController.m in Sources */,
 				9102AAFD1C4F34E9008D8C28 /* SSKeychain.m in Sources */,
 				91DC456B1BE7B17000E86CC0 /* UIButton+YYAdditions.m in Sources */,
 				91F90D7D1C77068300215E3B /* AFHTTPRequestOperationManager.m in Sources */,
@@ -2820,6 +2863,7 @@
 				91DC45C71BE7C0B500E86CC0 /* TabBar2ViewController.m in Sources */,
 				91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */,
 				91DD193F1C4556CA00B0FF70 /* NSObject+RACKVOWrapper.m in Sources */,
+				913A95A41D3C7B5900237473 /* PeripheralViewController.m in Sources */,
 				91DC459C1BE7B78E00E86CC0 /* MASViewConstraint.m in Sources */,
 				91E032C11C3E607D0083842B /* Person.m in Sources */,
 				91DC45971BE7B78E00E86CC0 /* MASCompositeConstraint.m in Sources */,
@@ -2921,12 +2965,14 @@
 				91DD19441C4556CA00B0FF70 /* NSSet+RACSequenceAdditions.m in Sources */,
 				913D99A21C910079005FC05E /* UIImage+GIF.m in Sources */,
 				91DD195B1C4556CA00B0FF70 /* RACGroupedSignal.m in Sources */,
+				91F650951D34E36400212FD0 /* BluetoothViewController.m in Sources */,
 				91F90D841C77068300215E3B /* AFURLSessionManager.m in Sources */,
 				91DC44F71BE7A60900E86CC0 /* main.m in Sources */,
 				91E9C2D11C0802DA0044D617 /* UIImage+FontAwesome.m in Sources */,
 				913D7EAE1C92BFA200A862A4 /* MJRefreshBackStateFooter.m in Sources */,
 				910AC4E11D200D940094A250 /* UIImage+Color.m in Sources */,
 				91DD19761C4556CA00B0FF70 /* RACTestScheduler.m in Sources */,
+				913A95AA1D3C7EF700237473 /* UITextView+Additions.m in Sources */,
 				91FAFFC41D057E45004F4CE8 /* CollectionViewHeader.m in Sources */,
 				91DD19571C4556CA00B0FF70 /* RACEmptySequence.m in Sources */,
 				913D999D1C910079005FC05E /* SDWebImageDownloader.m in Sources */,
@@ -3231,6 +3277,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -3253,6 +3300,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "835cf7e9-84f8-4b28-8ade-ecff94f82244";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -3274,6 +3322,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3289,6 +3338,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "835cf7e9-84f8-4b28-8ade-ecff94f82244";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3331,7 +3381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "835cf7e9-84f8-4b28-8ade-ecff94f82244";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -3369,7 +3419,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "835cf7e9-84f8-4b28-8ade-ecff94f82244";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
 			};
 			name = Release;
