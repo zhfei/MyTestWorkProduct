@@ -22,6 +22,7 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:title forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:font];
+    [btn setTitleColor:RGB(234, 38, 37) forState:UIControlStateNormal];
     btn.frame = frame;
     [btn setBackgroundImage:image forState:UIControlStateNormal];
     [btn setBackgroundImage:highImage forState:UIControlStateHighlighted];

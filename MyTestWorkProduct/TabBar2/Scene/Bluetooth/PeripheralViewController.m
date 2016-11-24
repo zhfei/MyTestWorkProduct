@@ -5,9 +5,11 @@
 //  Created by zhoufei on 16/7/18.
 //  Copyright © 2016年 zhoufei. All rights reserved.
 //
+//  外围设备
 
 #import "PeripheralViewController.h"
 #import "UITextView+Additions.h"
+#import "UIButton+YYAdditions.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 #define kPeripheralName @"Kenshin Cui's Device" //外围设备名称
 #define kServiceUUID @"C4FB2349-72FE-4CA2-94D6-1F3CB16331EE" //服务的UUID
@@ -31,8 +33,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"启动" style:UIBarButtonItemStylePlain target:self action:@selector(startClick:)];
-    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"更新" style:UIBarButtonItemStylePlain target:self action:@selector(transferClick:)];
+    UIButton *btn=[UIButton buttonWithTitle:@"启动服务" font:16 frame:CGRectMake(0, 0, 100, 40) backgroundImage:nil highBackgroundImage:nil];
+    [btn addTarget:self action:@selector(startClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    UIButton *rightbtn=[UIButton buttonWithTitle:@"更新" font:16 frame:CGRectMake(ScreenWidth-100, 0, 100, 40) backgroundImage:nil highBackgroundImage:nil];
+    [rightbtn addTarget:self action:@selector(transferClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:rightbtn];
+    
+//    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"启动" style:UIBarButtonItemStylePlain target:self action:@selector(startClick:)];
+//    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"更新" style:UIBarButtonItemStylePlain target:self action:@selector(transferClick:)];
     
     self.log=[UITextView textView];
     [self.view addSubview:self.log];

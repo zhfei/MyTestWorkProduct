@@ -22,6 +22,11 @@
 #import "BluetoothViewController.h"
 #import "PeripheralViewController.h"
 #import "CentralViewController.h"
+#import "BluetoothTransmissionViewController.h"
+#import "LeftEdgeTitleViewController.h"
+
+#import "NSArray+Additions.h"
+#import "SearchBarViewController.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
@@ -33,7 +38,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务"];
+    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务",@"左边缘标题",@"搜索条"];
+    
+    NSDictionary *dict= [NSArray pinYinGroupSortWithArray:self.dataSource];
     
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     [self.myCollectionView setCollectionViewLayout:flowLayout];
@@ -78,7 +85,7 @@
     [cell.contentView setBackgroundColor:RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1)];
     
     
-    if (indexPath.row>9) {
+    if (indexPath.row>11) {
         cell.textV.text=@"展示的内容";
     }else{
         cell.textV.text=self.dataSource[indexPath.row];
@@ -131,13 +138,17 @@
         BluetoothViewController *bluetooth =[[BluetoothViewController alloc]init];
         [self.navigationController pushViewController:bluetooth animated:YES];
     }else if (indexPath.row==8){
-        PeripheralViewController*Peripheral=[[PeripheralViewController alloc]init];
+        BluetoothTransmissionViewController*Peripheral=[[BluetoothTransmissionViewController alloc]init];
         [self.navigationController pushViewController:Peripheral animated:YES];
     }else if (indexPath.row==9){
         CentralViewController *Central=[[CentralViewController alloc]init];
         [self.navigationController pushViewController:Central animated:YES];
     }else if (indexPath.row==10){
-        
+        LeftEdgeTitleViewController *left =[[LeftEdgeTitleViewController alloc]initWithLayout];
+        [self.navigationController pushViewController:left animated:YES];
+    }else if (indexPath.row==11){
+        SearchBarViewController *search =[[SearchBarViewController alloc]init];
+        [self.navigationController pushViewController:search animated:YES];
     }
     
     

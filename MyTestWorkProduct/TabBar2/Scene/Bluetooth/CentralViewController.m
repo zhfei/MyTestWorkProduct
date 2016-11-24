@@ -5,9 +5,11 @@
 //  Created by zhoufei on 16/7/18.
 //  Copyright © 2016年 zhoufei. All rights reserved.
 //
+//  中心服务
 
 #import "CentralViewController.h"
 #import "UITextView+Additions.h"
+#import "UIButton+YYAdditions.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 #define kServiceUUID @"C4FB2349-72FE-4CA2-94D6-1F3CB16331EE" //服务的UUID
 #define kCharacteristicUUID @"6A3E4B28-522D-4B3B-82A9-D5E2004534FC" //特征的UUID
@@ -26,12 +28,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"启动" style:UIBarButtonItemStylePlain target:self action:@selector(startClick:)];
+    UIButton *btn=[UIButton buttonWithTitle:@"启动" font:16 frame:CGRectMake(0, 0, 100, 40) backgroundImage:nil highBackgroundImage:nil];
+    [btn addTarget:self action:@selector(startClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    
+//    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"启动" style:UIBarButtonItemStylePlain target:self action:@selector(startClick:)];
     
     self.log=[UITextView textView];
     [self.view addSubview:self.log];
     
 }
+
 
 #pragma mark - UI事件
 - (void)startClick:(UIBarButtonItem *)sender {

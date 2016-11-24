@@ -41,6 +41,10 @@
     self.myTableView.separatorInset=UIEdgeInsetsMake(0, 0, 0, 0);
     
     [self.view snapshotViewAfterScreenUpdates:NO];
+    
+    self.automaticallyAdjustsScrollViewInsets=YES;
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars=YES;
    
 }
 

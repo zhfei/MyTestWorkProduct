@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface TabBar1ViewController : BaseViewController
+@interface TabBar1ViewController : UIViewController
 
 @end
