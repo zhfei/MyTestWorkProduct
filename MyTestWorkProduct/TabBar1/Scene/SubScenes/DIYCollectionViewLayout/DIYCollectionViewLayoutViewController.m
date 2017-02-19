@@ -22,7 +22,6 @@ static NSString * const reuseIdentifier = @"Cell";
     DIYCollectionViewLayout *flow =[[DIYCollectionViewLayout alloc]init];
     flow.minimumLineSpacing=10;
     flow.minimumInteritemSpacing=20;
-    flow.itemSize=CGSizeMake(100, 100);
     flow.sectionInset=UIEdgeInsetsMake(10, 10, 10, 10);
     
     self=[[[self class]alloc]initWithCollectionViewLayout:flow];
@@ -112,5 +111,10 @@ static NSString * const reuseIdentifier = @"Cell";
 	
 }
 */
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(100, 100);
+}
 
 @end

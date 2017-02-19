@@ -11,14 +11,29 @@
 #import "NSString+UUID.h"
 
 #import "AnimationScene2.h"
+#import "SwizzingViewController.h"
+
 #import "Utilities.h"
 #import "UIButton+Method.h"
 #import "Person.h"
 #import "NSObject+ChainCoding.h"
+#import "MyCollectionCell.h"
+#import "CollectionViewController.h"
+#import "CollectionViewHeaderViewController.h"
+#import "AnimationViewController.h"
+#import "TransitionAnimation.h"
+#import "BluetoothViewController.h"
+#import "PeripheralViewController.h"
+#import "CentralViewController.h"
+#import "BluetoothTransmissionViewController.h"
+#import "LeftEdgeTitleViewController.h"
+
+#import "NSArray+Additions.h"
+#import "SearchBarViewController.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
-
+@property (strong,nonatomic)NSArray *dataSource;
 @end
 
 @implementation TabBar2ViewController
@@ -26,6 +41,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务",@"左边缘标题",@"搜索条"];
+    
+    NSDictionary *dict= [NSArray pinYinGroupSortWithArray:self.dataSource];
+    
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     [self.myCollectionView setCollectionViewLayout:flowLayout];
 
@@ -99,8 +118,16 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * CellIdentifier = @"MyCollectionCell";
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    MyCollectionCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     [cell.contentView setBackgroundColor:RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1)];
+    
+    
+    if (indexPath.row>11) {
+        cell.textV.text=@"展示的内容";
+    }else{
+        cell.textV.text=self.dataSource[indexPath.row];
+    }
+    
     return cell;
 }
 #pragma mark --UICollectionViewDelegateFlowLayout
@@ -124,9 +151,41 @@
         SubScene1 * subScene1=[[SubScene1 alloc]init];
         subScene1.index=indexPath.row;
         [self.navigationController pushViewController:subScene1 animated:YES];
-    }else{
+    }else if(indexPath.row==1){
         AnimationScene2 *scene2 =[[AnimationScene2 alloc]init];
         [self.navigationController pushViewController:scene2 animated:YES];
+    }else if (indexPath.row==2){
+        SwizzingViewController *swizzing=[[SwizzingViewController alloc]init];
+        [self.navigationController pushViewController:swizzing animated:YES];
+    }else if (indexPath.row==3){
+        CollectionViewController *collectionV=[[CollectionViewController alloc]init];
+        [self.navigationController pushViewController:collectionV animated:YES];
+    }else if (indexPath.row==4){
+        CollectionViewHeaderViewController *collectionHeaderV=[[CollectionViewHeaderViewController alloc]init];
+        [self.navigationController pushViewController:collectionHeaderV animated:YES];
+    }else if (indexPath.row==5){
+        AnimationViewController *animation=[[AnimationViewController alloc]initWithLayout];
+        [self.navigationController pushViewController:animation animated:YES];
+
+    }else if (indexPath.row==6){
+        TransitionAnimation *animation=[[TransitionAnimation alloc]init];
+        [self.navigationController pushViewController:animation animated:YES];
+        
+    }else if (indexPath.row==7){
+        BluetoothViewController *bluetooth =[[BluetoothViewController alloc]init];
+        [self.navigationController pushViewController:bluetooth animated:YES];
+    }else if (indexPath.row==8){
+        BluetoothTransmissionViewController*Peripheral=[[BluetoothTransmissionViewController alloc]init];
+        [self.navigationController pushViewController:Peripheral animated:YES];
+    }else if (indexPath.row==9){
+        CentralViewController *Central=[[CentralViewController alloc]init];
+        [self.navigationController pushViewController:Central animated:YES];
+    }else if (indexPath.row==10){
+        LeftEdgeTitleViewController *left =[[LeftEdgeTitleViewController alloc]initWithLayout];
+        [self.navigationController pushViewController:left animated:YES];
+    }else if (indexPath.row==11){
+        SearchBarViewController *search =[[SearchBarViewController alloc]init];
+        [self.navigationController pushViewController:search animated:YES];
     }
     
     

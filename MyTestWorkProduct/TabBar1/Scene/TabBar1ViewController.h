@@ -11,5 +11,6 @@
 @interface TabBar1ViewController<ObjectType> : BaseViewController
 
 @property (strong,nonatomic)ObjectType lanage;
+@interface TabBar1ViewController : UIViewController
 
 @end

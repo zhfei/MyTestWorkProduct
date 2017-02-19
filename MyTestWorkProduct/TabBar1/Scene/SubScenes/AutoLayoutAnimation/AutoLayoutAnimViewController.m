@@ -9,7 +9,7 @@
 #import "AutoLayoutAnimViewController.h"
 
 
-@interface AutoLayoutAnimViewController ()<NSCopying>
+@interface AutoLayoutAnimViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftToSuperViewRight;
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 - (IBAction)switchChanged:(UISwitch *)sender;
@@ -47,14 +47,17 @@
     
     NSMutableArray *array =[NSMutableArray arrayWithObjects:@"1",@"2", nil];
     self.arrayM=array;
-    
     [self.arrayM insertObject:@"0" atIndex:0];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

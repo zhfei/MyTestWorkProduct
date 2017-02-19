@@ -18,6 +18,7 @@
 #import "MapViewController.h"
 #import "AutoLayoutAnimViewController.h"
 #import "CellAutoHeightViewController.h"
+#import "BlurEffectViewController.h"
 
 #import <objc/message.h>
 
@@ -40,12 +41,18 @@
     self.navigationController.tabBarItem.title=@"Table";
     self.myTableView.separatorInset=UIEdgeInsetsMake(0, 0, 0, 0);
     
+    [self.view snapshotViewAfterScreenUpdates:NO];
+    
+    self.automaticallyAdjustsScrollViewInsets=YES;
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars=YES;
+   
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataSource=[NSMutableArray arrayWithObjects:@"drawRect绘画",@"圆形进度条",@"自定义UICollectionViewLayout",@"自定义下载进度条",@"视频播放器",@"字体设置",@"地图",@"自动布局动画",@"Cell自适应高度",@"小树", nil];
+    self.dataSource=[NSMutableArray arrayWithObjects:@"drawRect绘画",@"圆形进度条",@"自定义UICollectionViewLayout",@"自定义下载进度条",@"视频播放器",@"字体设置",@"地图",@"自动布局动画",@"Cell自适应高度",@"图片模糊效果", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -130,7 +137,7 @@
     
     
     cell.textLabel.text=[self.dataSource objectAtIndex:indexPath.row];
-    if (indexPath.row>8) {
+    if (indexPath.row>9) {
         cell.detailTextLabel.text=@"春眠不觉晓、处处闻啼鸟。";
 
     }
@@ -168,6 +175,11 @@
                 case 2:
                 {
                     DIYCollectionViewLayoutViewController *diyLayout =[[DIYCollectionViewLayoutViewController alloc]initWitDefontLayout];
+                    [diyLayout.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                        diyLayout.collectionView.backgroundColor=[UIColor blueColor];
+                    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                        
+                    }];
                     [self.navigationController pushViewController:diyLayout animated:YES];
                 }
                     break;
@@ -205,6 +217,13 @@
                 {
                     CellAutoHeightViewController *cellAuto =[[CellAutoHeightViewController alloc] init];
                     [self.navigationController pushViewController:cellAuto animated:YES];
+                }
+                    break;
+                    case 9:
+                {
+                    BlurEffectViewController *blurEffect =[[BlurEffectViewController alloc] init];
+                    
+                    [self.navigationController pushViewController:blurEffect animated:YES];
                 }
                     break;
                     

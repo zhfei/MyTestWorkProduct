@@ -10,6 +10,6 @@
 
 @interface MyCollectionCell : UICollectionViewCell
 
-
+@property (strong,nonatomic)UITextView *textV;
 
 @end

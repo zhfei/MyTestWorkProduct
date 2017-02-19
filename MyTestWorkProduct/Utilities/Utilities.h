@@ -56,4 +56,22 @@
 //获取当前日期
 +(NSString *)getCurrentDay;
 
++(NSString*)pathInBundleWithImageName:(NSString*)imageName;
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 当前app版本号
+ *
+ *  @return 当前app版本号
+ */
++(NSString*)appVersion;
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 当前系统版本号
+ *
+ *  @return 当前系统版本号
+ */
++(NSString*)systemVerson;
+
 @end

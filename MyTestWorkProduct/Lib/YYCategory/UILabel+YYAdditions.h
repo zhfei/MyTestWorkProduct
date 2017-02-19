@@ -22,4 +22,13 @@
  *  @return UILabel
  */
 + (UILabel *)labelWithtext:(NSString *)text frame:(CGRect)frame font:(UIFont *)font textColor:(UIColor *)color backgroundColor:(UIColor *)backgroundColor textAlignment:(NSTextAlignment)textAlignment;
+
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 快速创建一个label
+ */
+
++ (UILabel *)label;
+
 @end
