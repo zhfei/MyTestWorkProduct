@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NSString * const nameKey=@"myName";
+//extern NSString * const nameKey=@"myName";
 
 @interface Person : NSObject
 

@@ -14,6 +14,7 @@
 #import "Utilities.h"
 #import "UIButton+Method.h"
 #import "Person.h"
+#import "NSObject+ChainCoding.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
@@ -47,6 +48,24 @@
     Person  *p =[[Person alloc]init];
     
     [p setValuesForKeysWithDictionary:dict];
+    
+    [NSObject zf_makeCalculat:^(CalculatorManager *manager) {
+        manager.add(2).add(2).add(2);
+    }];
+    
+    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    NSLog(@"%p",p);
+    
+    CalculatorManager *manager=[[CalculatorManager alloc]init];
+    
+    [[manager multiply:^int(int result) {
+        
+        result +=5;
+        
+        return result;
+    }] result];
+    
     
     
 }
