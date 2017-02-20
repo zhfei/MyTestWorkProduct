@@ -63,18 +63,18 @@
     btn.name=@"123";
     NSLog(@"btn.name:%@",btn.name);
     
-    NSDictionary *dict =@{};
-    Person  *p =[[Person alloc]init];
-    
-    [p setValuesForKeysWithDictionary:dict];
-    
-    [NSObject zf_makeCalculat:^(CalculatorManager *manager) {
-        manager.add(2).add(2).add(2);
-    }];
-    
-    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
-    
-    NSLog(@"%p",p);
+//    NSDictionary *dict =@{};
+//    Person  *p =[[Person alloc]init];
+//    
+//    [p setValuesForKeysWithDictionary:dict];
+//    
+//    [NSObject zf_makeCalculat:^(CalculatorManager *manager) {
+//        manager.add(2).add(2).add(2);
+//    }];
+//    
+//    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+//    
+//    NSLog(@"%p",p);
     
     CalculatorManager *manager=[[CalculatorManager alloc]init];
     
@@ -112,7 +112,7 @@
 //定义展示的Section的个数
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return 1;
 }
 //每个UICollectionView展示的内容
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath

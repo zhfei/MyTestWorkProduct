@@ -600,12 +600,13 @@
 		91FF876D1CAAD4B700B63004 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87661CAAD4B700B63004 /* BaiduMapAPI_Radar.framework */; };
 		91FF876E1CAAD4B700B63004 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */; };
 		91FF876F1CAAD4B700B63004 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */; };
-
 		DC5FFF181D2D3F71002BA46C /* NSObject+ChainCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5FFF171D2D3F71002BA46C /* NSObject+ChainCoding.m */; };
-		DC90B4C61CCB18D9003A4432 /* UIButton+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */; };
+		DCB7CA7D1E59D95E0099FC64 /* TabBar5.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB7CA7C1E59D95E0099FC64 /* TabBar5.plist */; };
+		DCB7CA821E59DE620099FC64 /* SingletonTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB7CA811E59DE620099FC64 /* SingletonTemplate.m */; };
+		DCB7CA861E59E29E0099FC64 /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB7CA841E59E29E0099FC64 /* SingletonViewController.m */; };
+		DCB7CA871E59E29E0099FC64 /* SingletonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7CA851E59E29E0099FC64 /* SingletonViewController.xib */; };
 		DCCCD6251D28B520007E4575 /* UIButton+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCCD6241D28B520007E4575 /* UIButton+Method.m */; };
 		DCEEA5F91D2D4075009E9FCE /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEEA5F81D2D4075009E9FCE /* CalculatorManager.m */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1247,16 +1248,21 @@
 		91FF87661CAAD4B700B63004 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
 		91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
-
+		DC594A0C1E5B36340043845D /* SingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
 		DC5FFF161D2D3F71002BA46C /* NSObject+ChainCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ChainCoding.h"; sourceTree = "<group>"; };
 		DC5FFF171D2D3F71002BA46C /* NSObject+ChainCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ChainCoding.m"; sourceTree = "<group>"; };
 		DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Interval.h"; sourceTree = "<group>"; };
 		DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Interval.m"; sourceTree = "<group>"; };
+		DCB7CA7C1E59D95E0099FC64 /* TabBar5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBar5.plist; sourceTree = "<group>"; };
+		DCB7CA801E59DE620099FC64 /* SingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonTemplate.h; sourceTree = "<group>"; };
+		DCB7CA811E59DE620099FC64 /* SingletonTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonTemplate.m; sourceTree = "<group>"; };
+		DCB7CA831E59E29E0099FC64 /* SingletonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
+		DCB7CA841E59E29E0099FC64 /* SingletonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
+		DCB7CA851E59E29E0099FC64 /* SingletonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
 		DCCCD6231D28B520007E4575 /* UIButton+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Method.h"; sourceTree = "<group>"; };
 		DCCCD6241D28B520007E4575 /* UIButton+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Method.m"; sourceTree = "<group>"; };
 		DCEEA5F71D2D4075009E9FCE /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
 		DCEEA5F81D2D4075009E9FCE /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1693,9 +1699,6 @@
 				91FA2C4F1C78C3AD007E5FD2 /* FileSingleDownloader.m */,
 				91FA2C511C78C69E007E5FD2 /* FileMultiDownloader.h */,
 				91FA2C521C78C69E007E5FD2 /* FileMultiDownloader.m */,
-
-				91020AFD1CBE974100F5E55E /* NSObject+RunTime.h */,
-				91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */,
 				DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */,
 				DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */,
 				DCCCD6231D28B520007E4575 /* UIButton+Method.h */,
@@ -1704,7 +1707,6 @@
 				DC5FFF171D2D3F71002BA46C /* NSObject+ChainCoding.m */,
 				DCEEA5F71D2D4075009E9FCE /* CalculatorManager.h */,
 				DCEEA5F81D2D4075009E9FCE /* CalculatorManager.m */,
-
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1743,6 +1745,7 @@
 		91DAB0E91BE90C4C006695B7 /* TabBar5 */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7CA7B1E59D95E0099FC64 /* Resource */,
 				91DAB0EA1BE90C77006695B7 /* Model */,
 				91DAB0EB1BE90C77006695B7 /* Scene */,
 				91DAB0EC1BE90C77006695B7 /* SceneModel */,
@@ -1760,6 +1763,7 @@
 		91DAB0EB1BE90C77006695B7 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7CA7E1E59DD380099FC64 /* SubScene */,
 				91DAB0ED1BE90CA0006695B7 /* TabBar5ViewController.h */,
 				91DAB0EE1BE90CA0006695B7 /* TabBar5ViewController.m */,
 				91DAB0EF1BE90CA0006695B7 /* TabBar5ViewController.xib */,
@@ -2668,6 +2672,35 @@
 			path = BaiduMap;
 			sourceTree = "<group>";
 		};
+		DCB7CA7B1E59D95E0099FC64 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7CA7C1E59D95E0099FC64 /* TabBar5.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DCB7CA7E1E59DD380099FC64 /* SubScene */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7CA7F1E59DE040099FC64 /* Singleton */,
+			);
+			path = SubScene;
+			sourceTree = "<group>";
+		};
+		DCB7CA7F1E59DE040099FC64 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				DC594A0C1E5B36340043845D /* SingletonMacro.h */,
+				DCB7CA801E59DE620099FC64 /* SingletonTemplate.h */,
+				DCB7CA811E59DE620099FC64 /* SingletonTemplate.m */,
+				DCB7CA831E59E29E0099FC64 /* SingletonViewController.h */,
+				DCB7CA841E59E29E0099FC64 /* SingletonViewController.m */,
+				DCB7CA851E59E29E0099FC64 /* SingletonViewController.xib */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2783,11 +2816,13 @@
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
+				DCB7CA871E59E29E0099FC64 /* SingletonViewController.xib in Resources */,
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
 				910C52B01D3DC74200F3873C /* unicode_to_hanyu_pinyin.txt in Resources */,
 				91DE33E21C3FD04F00125B25 /* AnimationScene2.xib in Resources */,
 				91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */,
+				DCB7CA7D1E59D95E0099FC64 /* TabBar5.plist in Resources */,
 				91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */,
 				91DC45C31BE7C0A400E86CC0 /* TabBar1ViewController.xib in Resources */,
 				91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */,
@@ -2880,6 +2915,7 @@
 				913D99A61C910079005FC05E /* UIView+WebCacheOperation.m in Sources */,
 				91DC457D1BE7B74B00E86CC0 /* BaseViewController.m in Sources */,
 				91DD195A1C4556CA00B0FF70 /* RACEvent.m in Sources */,
+				DCB7CA821E59DE620099FC64 /* SingletonTemplate.m in Sources */,
 				913D99A01C910079005FC05E /* SDWebImagePrefetcher.m in Sources */,
 				91DC457A1BE7B59200E86CC0 /* pinyin.c in Sources */,
 				91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */,
@@ -2910,9 +2946,7 @@
 				91DD19511C4556CA00B0FF70 /* RACCompoundDisposableProvider.d in Sources */,
 				91DD19851C4556CA00B0FF70 /* UIImagePickerController+RACSignalSupport.m in Sources */,
 				913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */,
-
 				DCEEA5F91D2D4075009E9FCE /* CalculatorManager.m in Sources */,
-
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				91DD19791C4556CA00B0FF70 /* RACUnarySequence.m in Sources */,
 				91DD19821C4556CA00B0FF70 /* UIControl+RACSignalSupportPrivate.m in Sources */,
@@ -3006,6 +3040,7 @@
 				913D7EB41C92BFA200A862A4 /* UIScrollView+MJExtension.m in Sources */,
 				91DD196D1C4556CA00B0FF70 /* RACSignalProvider.d in Sources */,
 				91DD19501C4556CA00B0FF70 /* RACCompoundDisposable.m in Sources */,
+				DCB7CA861E59E29E0099FC64 /* SingletonViewController.m in Sources */,
 				91E4B3C51C3C086E001DD5B2 /* FMDatabaseQueue.m in Sources */,
 				91DD18731C45568900B0FF70 /* UIView+RNActivityView.m in Sources */,
 				91DC45A31BE7B7F300E86CC0 /* MainTabBarViewController.mm in Sources */,

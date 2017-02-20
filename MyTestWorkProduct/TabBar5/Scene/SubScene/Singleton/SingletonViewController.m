@@ -7,6 +7,7 @@
 //
 
 #import "SingletonViewController.h"
+#import "SingletonTemplate.h"
 
 @interface SingletonViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+//    SingletonTemplate *staa =[[SingletonTemplate alloc] init];
+//    
+//    NSLog(@"staa:%@",staa);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
