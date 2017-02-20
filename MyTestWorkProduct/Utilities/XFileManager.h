@@ -20,6 +20,8 @@
 //返回 "document/dir/filename" 路径,没有则创建
 + (NSString*)getFilePathForDocuments:(NSString *)filename inDir:(NSString*)dir;
 
++ (void)createDirectoryInDocuments:(void(^)(NSString *dirPath, NSError *error)) resultBlock path:(NSString*) path;
+
 //返回根目录路径 "Library"
 + (NSString *)getLibraryPath;
 //返回路径 "Library/Cache"
@@ -58,5 +60,9 @@
 
 //将标准错误和标准输出重定向到文件
 + (BOOL)redirectNSlogToDocumentFolder;
+
+
+
+
 
 @end
