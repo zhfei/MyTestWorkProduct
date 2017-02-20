@@ -36,6 +36,36 @@
     return [[self getDirectoryForDocuments:dir] stringByAppendingPathComponent:filename];
 }
 
++ (void)createDirectoryInDocuments:(void(^)(NSString *dirPath, NSError *error)) resultBlock path:(NSString*) path{
+
+    NSString* dirPath = [[self getDocumentPath] stringByAppendingPathComponent:path];
+
+    BOOL isDir = NO;
+    BOOL isCreated = [[NSFileManager defaultManager] fileExistsAtPath:dirPath isDirectory:&isDir];
+    if ( isCreated == NO || isDir == NO )
+    {
+        NSError* error = nil;
+        BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:dirPath withIntermediateDirectories:YES attributes:nil error:&error];
+        if(success == NO) {
+           NSLog(@"create dir error: %@",error.debugDescription);
+            if (resultBlock) {
+                resultBlock(nil,error);
+            }
+        } else {
+            if (resultBlock) {
+                resultBlock(dirPath,nil);
+            }
+        }
+        
+    }else{
+    
+        if (resultBlock) {
+            resultBlock(dirPath,nil);
+        }
+    }
+    
+}
+
 //返回根目录路径 "Library"
 + (NSString *)getLibraryPath
 {
@@ -180,9 +210,9 @@
     NSString *path = [XFileManager getFilePathForDocuments:fileName];
     return path;
 }
-//
-//+ (BOOL)redirectNSlogToDocumentFolder
-//{
+
++ (BOOL)redirectNSlogToDocumentFolder
+{
 //    if (NeedSaveLogsInFiles && !TARGET_IPHONE_SIMULATOR) {//if is debug and not simulator
 //        NSString *appName = [XAppInforManager sharedInstance].appName;
 //        NSString *versionNum = [XAppInforManager sharedInstance].appVersion;
@@ -223,7 +253,7 @@
 //    }else {
 //        XLog_WARNING(@"The log is not saved in file.");
 //    }
-//    return NO;
-//}
-//
+    return NO;
+}
+
 @end
