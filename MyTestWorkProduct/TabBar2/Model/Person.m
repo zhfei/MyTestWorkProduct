@@ -7,6 +7,7 @@
 //
 
 #import "Person.h"
+#import <objc/runtime.h>
 
 #define PersonErrorDomain @"com.xkeshi.person"
 
@@ -50,6 +51,7 @@
   return YES;
 }
 
+// kvc时，找不到对应的属性时，会报错
 - (id)valueForUndefinedKey:(NSString *)key
 {
     
@@ -57,9 +59,41 @@
     return key;
 }
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    if ([key isEqualToString:@"id"]) {
+        _ID =[value intValue];
+    }
+}
+
 - (void)dealloc
 {
     [self removeObserver:self forKeyPath:@"name" context:nil];
+}
+
++ (instancetype)personWithDict:(NSDictionary *)dict
+{
+    Person *p =[[Person alloc]init];
+    
+    unsigned int count=0;
+    
+    Ivar *ivar= class_copyIvarList([self class], &count);
+    
+    for (int i=0; i<count; i++) {
+        Ivar var =ivar[i];
+        
+        NSString *varName= [NSString stringWithUTF8String:ivar_getName(var)];
+        NSString *varTypeEncode= [NSString stringWithUTF8String:ivar_getTypeEncoding(var)];
+        
+        varName=[varName substringFromIndex:1];
+        
+        id value =dict[varName];
+        if (value) {
+            [p setValue:value forKey:varName];
+        }
+        
+    }
+    return p;
 }
 
 @end

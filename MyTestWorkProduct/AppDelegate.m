@@ -10,7 +10,7 @@
 #import "MainTabBarViewController.h"
 #import <Bugtags/Bugtags.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
-
+#import <objc/runtime.h>
 
 //
 
@@ -26,6 +26,10 @@ BMKMapManager* _mapManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    instrumentObjcMessageSends(YES);
+    
+    
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     

@@ -610,6 +610,12 @@
 		91FF876D1CAAD4B700B63004 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87661CAAD4B700B63004 /* BaiduMapAPI_Radar.framework */; };
 		91FF876E1CAAD4B700B63004 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */; };
 		91FF876F1CAAD4B700B63004 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */; };
+
+		DC5FFF181D2D3F71002BA46C /* NSObject+ChainCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5FFF171D2D3F71002BA46C /* NSObject+ChainCoding.m */; };
+		DC90B4C61CCB18D9003A4432 /* UIButton+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */; };
+		DCCCD6251D28B520007E4575 /* UIButton+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCCD6241D28B520007E4575 /* UIButton+Method.m */; };
+		DCEEA5F91D2D4075009E9FCE /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEEA5F81D2D4075009E9FCE /* CalculatorManager.m */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1267,9 +1273,21 @@
 		91FF87661CAAD4B700B63004 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
 		91FF87671CAAD4B700B63004 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		91FF87681CAAD4B700B63004 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+
 		9264B5EFA07B8AF6F99EB747 /* Pods-MyTestWorkProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestWorkProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		DCE16E75864F3D4F6A797AB5 /* libPods-MyTestWorkProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTestWorkProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCD553C6C7BCA0A743DB3C2 /* Pods-MyTestWorkProduct.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestWorkProduct.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct.dailybuild.xcconfig"; sourceTree = "<group>"; };
+
+
+		DC5FFF161D2D3F71002BA46C /* NSObject+ChainCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ChainCoding.h"; sourceTree = "<group>"; };
+		DC5FFF171D2D3F71002BA46C /* NSObject+ChainCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ChainCoding.m"; sourceTree = "<group>"; };
+		DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Interval.h"; sourceTree = "<group>"; };
+		DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Interval.m"; sourceTree = "<group>"; };
+		DCCCD6231D28B520007E4575 /* UIButton+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Method.h"; sourceTree = "<group>"; };
+		DCCCD6241D28B520007E4575 /* UIButton+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Method.m"; sourceTree = "<group>"; };
+		DCEEA5F71D2D4075009E9FCE /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
+		DCEEA5F81D2D4075009E9FCE /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1761,6 +1779,18 @@
 				91FA2C4F1C78C3AD007E5FD2 /* FileSingleDownloader.m */,
 				91FA2C511C78C69E007E5FD2 /* FileMultiDownloader.h */,
 				91FA2C521C78C69E007E5FD2 /* FileMultiDownloader.m */,
+
+				91020AFD1CBE974100F5E55E /* NSObject+RunTime.h */,
+				91020AFE1CBE974100F5E55E /* NSObject+RunTime.m */,
+				DC90B4C41CCB18D9003A4432 /* UIButton+Interval.h */,
+				DC90B4C51CCB18D9003A4432 /* UIButton+Interval.m */,
+				DCCCD6231D28B520007E4575 /* UIButton+Method.h */,
+				DCCCD6241D28B520007E4575 /* UIButton+Method.m */,
+				DC5FFF161D2D3F71002BA46C /* NSObject+ChainCoding.h */,
+				DC5FFF171D2D3F71002BA46C /* NSObject+ChainCoding.m */,
+				DCEEA5F71D2D4075009E9FCE /* CalculatorManager.h */,
+				DCEEA5F81D2D4075009E9FCE /* CalculatorManager.m */,
+
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -3006,6 +3036,7 @@
 				91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */,
 				91DD194C1C4556CA00B0FF70 /* RACBehaviorSubject.m in Sources */,
 				913D7EA51C92BFA200A862A4 /* MJRefreshBackFooter.m in Sources */,
+				DC5FFF181D2D3F71002BA46C /* NSObject+ChainCoding.m in Sources */,
 				91DD19871C4556CA00B0FF70 /* UISegmentedControl+RACSignalSupport.m in Sources */,
 				9134AC591CFFD9CE00C2C49E /* UIView+Frame.m in Sources */,
 				91DD19381C4556CA00B0FF70 /* NSEnumerator+RACSequenceAdditions.m in Sources */,
@@ -3031,6 +3062,9 @@
 				91DD19511C4556CA00B0FF70 /* RACCompoundDisposableProvider.d in Sources */,
 				91DD19851C4556CA00B0FF70 /* UIImagePickerController+RACSignalSupport.m in Sources */,
 				913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */,
+
+				DCEEA5F91D2D4075009E9FCE /* CalculatorManager.m in Sources */,
+
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				91DD19791C4556CA00B0FF70 /* RACUnarySequence.m in Sources */,
 				91DD19821C4556CA00B0FF70 /* UIControl+RACSignalSupportPrivate.m in Sources */,
@@ -3152,6 +3186,7 @@
 				9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */,
 				91FA2C4D1C78C2A2007E5FD2 /* FileDownloader.m in Sources */,
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
+				DCCCD6251D28B520007E4575 /* UIButton+Method.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				91DD19371C4556CA00B0FF70 /* NSDictionary+RACSequenceAdditions.m in Sources */,
@@ -3760,12 +3795,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/MyTestWorkProduct",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Main/BaiduMap",
+					"$(PROJECT_DIR)/MyTestWorkProduct/FrameWork",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -3805,12 +3843,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/MyTestWorkProduct",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Main/BaiduMap",
+					"$(PROJECT_DIR)/MyTestWorkProduct/FrameWork",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=0";
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;

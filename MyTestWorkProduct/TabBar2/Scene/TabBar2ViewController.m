@@ -14,6 +14,9 @@
 #import "SwizzingViewController.h"
 
 #import "Utilities.h"
+#import "UIButton+Method.h"
+#import "Person.h"
+#import "NSObject+ChainCoding.h"
 #import "MyCollectionCell.h"
 #import "CollectionViewController.h"
 #import "CollectionViewHeaderViewController.h"
@@ -52,6 +55,40 @@
     
     //self.title=@"主题二";
     MyLog(@"path:%@",NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]);
+    
+    UIButton *btn =[[UIButton alloc] initMethod];
+    
+    [btn setImage:[UIImage imageNamed:@"a"] forState:UIControlStateNormal];
+    
+    [btn performSelector:@selector(eat:) withObject:@11];
+    
+    btn.name=@"123";
+    NSLog(@"btn.name:%@",btn.name);
+    
+    NSDictionary *dict =@{};
+    Person  *p =[[Person alloc]init];
+    
+    [p setValuesForKeysWithDictionary:dict];
+    
+    [NSObject zf_makeCalculat:^(CalculatorManager *manager) {
+        manager.add(2).add(2).add(2);
+    }];
+    
+    [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    NSLog(@"%p",p);
+    
+    CalculatorManager *manager=[[CalculatorManager alloc]init];
+    
+    [[manager multiply:^int(int result) {
+        
+        result +=5;
+        
+        return result;
+    }] result];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
