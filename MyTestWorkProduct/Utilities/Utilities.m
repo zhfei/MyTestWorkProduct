@@ -219,12 +219,13 @@
 
 +(NSString *)getUserID
 {
-    NSString *uid=[UserSingle  defaultUser].userInfo.uid;
-    BOOL islogin=[UserSingle defaultUser].userInfo.isLogin;
-    if (islogin==NO) {
-        uid=@"0";
-    }
-    return uid;
+//    NSString *uid=[UserSingle  defaultUser].userInfo.uid;
+//    BOOL islogin=[UserSingle defaultUser].userInfo.isLogin;
+//    if (islogin==NO) {
+//        uid=@"0";
+//    }
+//    return uid;
+    return @"";
 }
 
 //获取当前月份第一天

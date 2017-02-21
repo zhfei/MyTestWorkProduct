@@ -17,15 +17,13 @@
 #import "Header.h"
 
 #import "YYAdditionsHeader.h"
-#import "Masonry.h"
-#import "UserSingle.h"
+#import <Masonry/Masonry.h>
 #import "MyNavigationtroller.h"
 #import "UIView+Frame.h"
 #import "HUDView.h"
 //#import "ReactiveCocoa.h"
 #import "UserLoginInfo.h"
 #import "Main.h"
-#import "DBFile/DBFile.h"
 #import "FMDB.h"
 #import "YYAdditionsHeader.h"
 
