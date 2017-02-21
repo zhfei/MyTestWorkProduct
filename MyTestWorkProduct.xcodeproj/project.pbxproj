@@ -47,6 +47,9 @@
 		9114E76E1C86CF300087E5AC /* XProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E76D1C86CF300087E5AC /* XProduct.m */; };
 		9114E7711C86D5BD0087E5AC /* XSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7701C86D5BD0087E5AC /* XSqliteManager.m */; };
 		9114E7741C86D6B10087E5AC /* XFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7731C86D6B10087E5AC /* XFileManager.m */; };
+		911F2A921E5C6EC10057FE33 /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */; };
+		911F2A931E5C6EC10057FE33 /* NSObject+ChainCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A911E5C6EC10057FE33 /* NSObject+ChainCoding.m */; };
+		911F2A961E5C6F3D0057FE33 /* UIButton+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A951E5C6F3D0057FE33 /* UIButton+Method.m */; };
 		9121B2891E51A10100C16145 /* AsyncFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9121B2881E51A10100C16145 /* AsyncFileManager.m */; };
 		912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912365921E557BD90062B2E4 /* QRCodeViewController.m */; };
 		912365951E557BD90062B2E4 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912365931E557BD90062B2E4 /* QRCodeViewController.xib */; };
@@ -709,6 +712,12 @@
 		9114E7701C86D5BD0087E5AC /* XSqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSqliteManager.m; sourceTree = "<group>"; };
 		9114E7721C86D6B10087E5AC /* XFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFileManager.h; sourceTree = "<group>"; };
 		9114E7731C86D6B10087E5AC /* XFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFileManager.m; sourceTree = "<group>"; };
+		911F2A8E1E5C6EC10057FE33 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
+		911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
+		911F2A901E5C6EC10057FE33 /* NSObject+ChainCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ChainCoding.h"; sourceTree = "<group>"; };
+		911F2A911E5C6EC10057FE33 /* NSObject+ChainCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ChainCoding.m"; sourceTree = "<group>"; };
+		911F2A941E5C6F3D0057FE33 /* UIButton+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Method.h"; sourceTree = "<group>"; };
+		911F2A951E5C6F3D0057FE33 /* UIButton+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Method.m"; sourceTree = "<group>"; };
 		9121B2871E51A10100C16145 /* AsyncFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncFileManager.h; sourceTree = "<group>"; };
 		9121B2881E51A10100C16145 /* AsyncFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncFileManager.m; sourceTree = "<group>"; };
 		912365911E557BD90062B2E4 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
@@ -1752,6 +1761,12 @@
 		91DAB0D11BE9055C006695B7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				911F2A941E5C6F3D0057FE33 /* UIButton+Method.h */,
+				911F2A951E5C6F3D0057FE33 /* UIButton+Method.m */,
+				911F2A8E1E5C6EC10057FE33 /* CalculatorManager.h */,
+				911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */,
+				911F2A901E5C6EC10057FE33 /* NSObject+ChainCoding.h */,
+				911F2A911E5C6EC10057FE33 /* NSObject+ChainCoding.m */,
 				9114E7721C86D6B10087E5AC /* XFileManager.h */,
 				9114E7731C86D6B10087E5AC /* XFileManager.m */,
 				9121B2871E51A10100C16145 /* AsyncFileManager.h */,
@@ -3133,6 +3148,7 @@
 				91DD194A1C4556CA00B0FF70 /* RACArraySequence.m in Sources */,
 				910BDE081CA9742D00A499CF /* FontSettingsViewController.m in Sources */,
 				91E9C2D01C0802DA0044D617 /* UIFont+FontAwesome.m in Sources */,
+				911F2A961E5C6F3D0057FE33 /* UIButton+Method.m in Sources */,
 				91DD19711C4556CA00B0FF70 /* RACSubject.m in Sources */,
 				913D999C1C910079005FC05E /* SDWebImageDecoder.m in Sources */,
 				91FDCA161C9F92FB00A5E684 /* DIYCollectionViewLayoutViewController.m in Sources */,
@@ -3167,6 +3183,7 @@
 				91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */,
 				91DD193F1C4556CA00B0FF70 /* NSObject+RACKVOWrapper.m in Sources */,
 				913A95A41D3C7B5900237473 /* PeripheralViewController.m in Sources */,
+				911F2A921E5C6EC10057FE33 /* CalculatorManager.m in Sources */,
 				91DC459C1BE7B78E00E86CC0 /* MASViewConstraint.m in Sources */,
 				91E032C11C3E607D0083842B /* Person.m in Sources */,
 				91DC45971BE7B78E00E86CC0 /* MASCompositeConstraint.m in Sources */,
@@ -3263,6 +3280,7 @@
 				910AC4ED1D200F8C0094A250 /* UIButton+ImageTitle.m in Sources */,
 				9134AC531CFFD9CE00C2C49E /* NSObject+MethodSwizzing.m in Sources */,
 				91DD198B1C4556CA00B0FF70 /* UITableViewCell+RACSignalSupport.m in Sources */,
+				911F2A931E5C6EC10057FE33 /* NSObject+ChainCoding.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				91DD19781C4556CA00B0FF70 /* RACTupleSequence.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,

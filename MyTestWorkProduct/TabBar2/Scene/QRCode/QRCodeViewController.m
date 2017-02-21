@@ -8,7 +8,7 @@
 
 #import "QRCodeViewController.h"
 
-#define iOS8_OR_LATER []
+#define iOS8_OR_LATER 1
 
 @interface QRCodeViewController ()
 - (IBAction)CreateQRCodeAction:(UIButton *)sender;
@@ -82,8 +82,8 @@
         UIGraphicsEndImageContext();
         
         CGImageRelease(cgImage);
-    } else {
-        codeImage = [QRCodeGenerator qrImageForString:content imageSize:size.width];
+//    } else {
+//        codeImage = [QRCodeGenerator qrImageForString:content imageSize:size.width];
     }
     return codeImage;
 }

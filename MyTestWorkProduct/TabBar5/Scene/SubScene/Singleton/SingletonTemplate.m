@@ -8,28 +8,32 @@
 
 #import "SingletonTemplate.h"
 
+static SingletonTemplate *_instance=nil;
+
 @implementation SingletonTemplate
 
 + (instancetype)sharedSingletonTemplate {
     
     static dispatch_once_t onceToken;
-    static SingletonTemplate *st=nil;
+    
     dispatch_once(&onceToken, ^{
-        st=[[self alloc] init];
+        _instance=[[self alloc] init];
     });
-    
-    return st;
+    return _instance;
 }
 
-+(id) allocWithZone:(struct _NSZone *)zone {
-    
-    return [SingletonTemplate sharedSingletonTemplate];
-    
++ (instancetype)allocWithZone:(struct _NSZone *)zone
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [super allocWithZone:zone];
+    });
+    return _instance;
 }
 
--(id) copyWithZone:(struct _NSZone *)zone {
-    
-    return [SingletonTemplate sharedSingletonTemplate];
+- (id)copyWithZone:(NSZone *)zone
+{
+    return _instance;
 }
 
 
