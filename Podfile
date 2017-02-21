@@ -7,5 +7,5 @@ target "MyTestWorkProduct" do
    pod 'MBProgressHUD'
 
    pod 'SDWebImage'
-#   pod 'ReactiveCocoa', '2.5'
+   pod 'ReactiveCocoa', '~> 2.5'
 end

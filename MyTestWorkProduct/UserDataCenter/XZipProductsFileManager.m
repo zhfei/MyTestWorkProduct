@@ -7,7 +7,7 @@
 //
 
 #import "XZipProductsFileManager.h"
-#import "XCommodity.h"
+//#import "XCommodity.h"
 #import "XSqliteManager.h"
 
 @implementation XZipProductsFileManager
@@ -46,7 +46,7 @@
     FMDatabase * fmdb =[FMDatabase databaseWithPath:dbPath];
     if ([fmdb open]) {
         //创建商品表
-        [fmdb executeUpdate:kCreateCommodityTable];
+//        [fmdb executeUpdate:kCreateCommodityTable];
     }else{
     
     }
@@ -67,17 +67,17 @@
         
         for (NSDictionary *dict in obj) {
             
-            XCommodity *comm =[XCommodity yy_modelWithDictionary:dict];
-            [arrayM addObject:comm];
+//            XCommodity *comm =[XCommodity yy_modelWithDictionary:dict];
+//            [arrayM addObject:comm];
             
         }
         
         
-        for (XCommodity *commodity  in arrayM) {
-            NSString *sqlStr = [NSString stringWithFormat:@"INSERT INTO %@( %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@) VALUES( \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\')",kCommodityTable,kCommodityTableCategoryId,kCommodityTableCommodityId,kCommodityTableName,kCommodityTableSequence,kCommodityTablePrice,kCommodityTableInventory,kCommodityTableUnit,kCommodityTableUnitType,kCommodityTableCode,kCommodityTableBarCode,kCommodityTableDemand,kCommodityTableCategory,kCommodityTablePrinterId,kCommodityTableGenre,kCommodityTablePinyin,kCommodityTableType,commodity.categoryId,commodity.commodityID,commodity.commodityName,@(commodity.sequence),@(commodity.price),@(commodity.quantity),commodity.unit,commodity.unitType,commodity.commodityNumber,[NSNull null],[NSNull null],@(0),commodity.printID,@(0), commodity.searchPinyin,commodity.type];
-            
-            [totalArrayM addObject:sqlStr];
-        }
+//        for (XCommodity *commodity  in arrayM) {
+//            NSString *sqlStr = [NSString stringWithFormat:@"INSERT INTO %@( %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@, %@) VALUES( \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\', \'%@\')",kCommodityTable,kCommodityTableCategoryId,kCommodityTableCommodityId,kCommodityTableName,kCommodityTableSequence,kCommodityTablePrice,kCommodityTableInventory,kCommodityTableUnit,kCommodityTableUnitType,kCommodityTableCode,kCommodityTableBarCode,kCommodityTableDemand,kCommodityTableCategory,kCommodityTablePrinterId,kCommodityTableGenre,kCommodityTablePinyin,kCommodityTableType,commodity.categoryId,commodity.commodityID,commodity.commodityName,@(commodity.sequence),@(commodity.price),@(commodity.quantity),commodity.unit,commodity.unitType,commodity.commodityNumber,[NSNull null],[NSNull null],@(0),commodity.printID,@(0), commodity.searchPinyin,commodity.type];
+//            
+//            [totalArrayM addObject:sqlStr];
+//        }
         [[XSqliteManager sharedDBManager:dbPath] executeBatchSQL:totalArrayM];
         
         ++count;
