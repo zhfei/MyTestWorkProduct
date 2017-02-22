@@ -7,10 +7,10 @@
 //
 
 #import "TabBar1ViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "ImageLabelViewController.h"
 #import "Masonry.h"
 #import "CircleProgressViewController.h"
-#import "UIImageView+WebCache.h"
 #import "DIYCollectionViewLayoutViewController.h"
 #import "DIYDownLoadProgressViewController.h"
 #import "VideoPlayerViewController.h"
@@ -62,15 +62,6 @@
 
 #pragma mark UITableViewDataSource
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 0;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-
-    return 0;
-}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -104,12 +95,6 @@
     return footerLabel;
 }
 
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.dataSource count];
@@ -132,7 +117,7 @@
         cell.imageView.layer.masksToBounds=YES;
         cell.imageView.layer.cornerRadius=30;
     }
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@ZF_Header_0%li.png",API_HOST,arc4random_uniform(8)+1]] placeholderImage:[UIImage imageNamed:@"我的互动-消息提示_10"]];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@ZF_Header_0%u.png",API_HOST,arc4random_uniform(8)+1]] placeholderImage:[UIImage imageNamed:@"我的互动-消息提示_10"]];
     
     
     
@@ -156,90 +141,79 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch (indexPath.section) {
-        case 0:
-        {
-            switch (indexPath.row) {
-                case 0:
-                {
-                    ImageLabelViewController *imageLabelVC =[[ImageLabelViewController alloc]initWithCollectionViewLayout:nil];
-                    imageLabelVC.title=[tableView cellForRowAtIndexPath:indexPath].textLabel.text;
-                    [self.navigationController pushViewController:imageLabelVC animated:YES];
-                }
-                    break;
-                case 1:
-                {
-                    CircleProgressViewController *circle =[[CircleProgressViewController alloc]init];
-                    [self.navigationController pushViewController:circle animated:YES];
-                }
-                    break;
-                case 2:
-                {
-                    DIYCollectionViewLayoutViewController *diyLayout =[[DIYCollectionViewLayoutViewController alloc]initWitDefontLayout];
-                    [diyLayout.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-                        diyLayout.collectionView.backgroundColor=[UIColor blueColor];
-                    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-                        
-                    }];
-                    [self.navigationController pushViewController:diyLayout animated:YES];
-                }
-                    break;
-                    case 3:
-                {
-                    DIYDownLoadProgressViewController *downLoad =[[DIYDownLoadProgressViewController alloc]init];
-                    [self.navigationController pushViewController:downLoad animated:YES];
-                }
-                    break;
-                    case 4:
-                {
-                    VideoPlayerViewController *video =[[VideoPlayerViewController alloc]init];
-                    [self.navigationController pushViewController:video animated:YES];
-                }
-                    break;
-                    case 5:
-                {
-                    FontSettingsViewController *fontSetting=[[FontSettingsViewController alloc]init];
-                    [self.navigationController pushViewController:fontSetting animated:YES];
-                }
-                    break;
-                    case 6:
-                {
-                    MapViewController *map =[[MapViewController alloc]init];
-                    [self.navigationController pushViewController:map animated:YES];
-                }
-                    break;
-                    case 7:
-                {
-                    AutoLayoutAnimViewController *layoutAnim =[[AutoLayoutAnimViewController alloc]init];
-                    [self.navigationController pushViewController:layoutAnim animated:YES];
-                }
-                    break;
-                    case 8:
-                {
-                    CellAutoHeightViewController *cellAuto =[[CellAutoHeightViewController alloc] init];
-                    [self.navigationController pushViewController:cellAuto animated:YES];
-                }
-                    break;
-                    case 9:
-                {
-                    BlurEffectViewController *blurEffect =[[BlurEffectViewController alloc] init];
-                    
-                    [self.navigationController pushViewController:blurEffect animated:YES];
-                }
-                    break;
-                    
-                default:
-                    break;
+        switch (indexPath.row) {
+            case 0:
+            {
+                ImageLabelViewController *imageLabelVC =[[ImageLabelViewController alloc]initWithCollectionViewLayout:nil];
+                imageLabelVC.title=[tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+                [self.navigationController pushViewController:imageLabelVC animated:YES];
             }
+                break;
+            case 1:
+            {
+                CircleProgressViewController *circle =[[CircleProgressViewController alloc]init];
+                [self.navigationController pushViewController:circle animated:YES];
+            }
+                break;
+            case 2:
+            {
+                DIYCollectionViewLayoutViewController *diyLayout =[[DIYCollectionViewLayoutViewController alloc]initWitDefontLayout];
+                [diyLayout.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                    diyLayout.collectionView.backgroundColor=[UIColor blueColor];
+                } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                    
+                }];
+                [self.navigationController pushViewController:diyLayout animated:YES];
+            }
+                break;
+                case 3:
+            {
+                DIYDownLoadProgressViewController *downLoad =[[DIYDownLoadProgressViewController alloc]init];
+                [self.navigationController pushViewController:downLoad animated:YES];
+            }
+                break;
+                case 4:
+            {
+                VideoPlayerViewController *video =[[VideoPlayerViewController alloc]init];
+                [self.navigationController pushViewController:video animated:YES];
+            }
+                break;
+                case 5:
+            {
+                FontSettingsViewController *fontSetting=[[FontSettingsViewController alloc]init];
+                [self.navigationController pushViewController:fontSetting animated:YES];
+            }
+                break;
+                case 6:
+            {
+                MapViewController *map =[[MapViewController alloc]init];
+                [self.navigationController pushViewController:map animated:YES];
+            }
+                break;
+                case 7:
+            {
+                AutoLayoutAnimViewController *layoutAnim =[[AutoLayoutAnimViewController alloc]init];
+                [self.navigationController pushViewController:layoutAnim animated:YES];
+            }
+                break;
+                case 8:
+            {
+                CellAutoHeightViewController *cellAuto =[[CellAutoHeightViewController alloc] init];
+                [self.navigationController pushViewController:cellAuto animated:YES];
+            }
+                break;
+                case 9:
+            {
+                BlurEffectViewController *blurEffect =[[BlurEffectViewController alloc] init];
+                
+                [self.navigationController pushViewController:blurEffect animated:YES];
+            }
+                break;
+                
+            default:
+                break;
         }
-            break;
-        case 1:
-        {
-        
-        }
-            break;
-            
-        default:
-            break;
+   
     }
     
 }

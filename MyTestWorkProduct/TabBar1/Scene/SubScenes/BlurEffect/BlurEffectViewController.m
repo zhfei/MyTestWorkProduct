@@ -25,11 +25,6 @@
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
     
-    
-//    UIImage *image=[UIImage imageNamed:@"user_header_bg"];
-    
-    NSString *path=[Utilities pathInBundleWithImageName:@"user_header_bg"];
-    
     CIContext *context = [CIContext contextWithOptions:nil];
     CIImage *image = [CIImage imageWithContentsOfURL:[NSURL URLWithString: [Utilities pathInBundleWithImageName:@"user_header_bg"]
 ]];

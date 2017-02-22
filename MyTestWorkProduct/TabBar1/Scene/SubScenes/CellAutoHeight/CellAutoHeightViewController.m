@@ -61,11 +61,7 @@ static NSString * cellID=@"AutoHeightCell";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AutoHeightCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-//    if (!cell) {
-//        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-//    }
-    
+    AutoHeightCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];    
     // Configure the cell...
     cell.contentLabel.text=[self.dataSouce objectAtIndex:indexPath.row];
     

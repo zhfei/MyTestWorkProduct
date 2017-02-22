@@ -51,8 +51,7 @@
      
                                              object:movie.moviePlayer];
     
-    NSArray *array;
-    NSSet *set;
+ 
     
     
 }

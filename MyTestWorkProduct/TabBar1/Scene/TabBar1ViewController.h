@@ -13,7 +13,4 @@
 @property (strong,nonatomic)ObjectType lanage;
 
 @end
-//
-//@interface TabBar1ViewController : UIViewController
-//
-//@end
+

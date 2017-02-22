@@ -37,6 +37,10 @@
 		9114E75F1C86CD360087E5AC /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E75C1C86CD360087E5AC /* YYClassInfo.m */; };
 		9114E7621C86CE340087E5AC /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7611C86CE340087E5AC /* XObject.m */; };
 		9114E7711C86D5BD0087E5AC /* XSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7701C86D5BD0087E5AC /* XSqliteManager.m */; };
+		911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */; };
+		911CBA3C1E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA371E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m */; };
+		911CBA3D1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */; };
+		911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911CBA3A1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib */; };
 		911F2A921E5C6EC10057FE33 /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */; };
 		911F2AB41E5C77480057FE33 /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A991E5C77480057FE33 /* NSObject+AutoDescription.m */; };
 		911F2AB51E5C77480057FE33 /* NSObject+CallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A9B1E5C77480057FE33 /* NSObject+CallStack.m */; };
@@ -435,6 +439,13 @@
 		9114E7611C86CE340087E5AC /* XObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XObject.m; sourceTree = "<group>"; };
 		9114E76F1C86D5BD0087E5AC /* XSqliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSqliteManager.h; sourceTree = "<group>"; };
 		9114E7701C86D5BD0087E5AC /* XSqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSqliteManager.m; sourceTree = "<group>"; };
+		911CBA341E5DD46E00C3AE53 /* CHDBaseCommodity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDBaseCommodity.h; sourceTree = "<group>"; };
+		911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDBaseCommodity.m; sourceTree = "<group>"; };
+		911CBA361E5DD46E00C3AE53 /* CHDShoppingCartCommodity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDShoppingCartCommodity.h; sourceTree = "<group>"; };
+		911CBA371E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDShoppingCartCommodity.m; sourceTree = "<group>"; };
+		911CBA381E5DD46E00C3AE53 /* ModelDictionaryTransferVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDictionaryTransferVC.h; sourceTree = "<group>"; };
+		911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelDictionaryTransferVC.m; sourceTree = "<group>"; };
+		911CBA3A1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelDictionaryTransferVC.xib; sourceTree = "<group>"; };
 		911F2A8E1E5C6EC10057FE33 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
 		911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
 		911F2A981E5C77480057FE33 /* NSObject+AutoDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDescription.h"; sourceTree = "<group>"; };
@@ -967,6 +978,28 @@
 				9114E75D1C86CD360087E5AC /* YYModel.h */,
 			);
 			path = YYModel;
+			sourceTree = "<group>";
+		};
+		911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				911CBA331E5DD46E00C3AE53 /* Model */,
+				911CBA381E5DD46E00C3AE53 /* ModelDictionaryTransferVC.h */,
+				911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */,
+				911CBA3A1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib */,
+			);
+			path = ModelDictionaryTransfer;
+			sourceTree = "<group>";
+		};
+		911CBA331E5DD46E00C3AE53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911CBA341E5DD46E00C3AE53 /* CHDBaseCommodity.h */,
+				911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */,
+				911CBA361E5DD46E00C3AE53 /* CHDShoppingCartCommodity.h */,
+				911CBA371E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		911F2A971E5C77480057FE33 /* NSObject_Category */ = {
@@ -1609,6 +1642,7 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */,
 				912365901E557BC00062B2E4 /* QRCode */,
 				91752AA51E4D8C0300F6C634 /* LocalFileReadingAndWriting */,
 				914354071E026CFF00608E58 /* GCD */,
@@ -2135,6 +2169,7 @@
 			files = (
 				917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
+				911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */,
 				91DC45051BE7A60900E86CC0 /* LaunchScreen.storyboard in Resources */,
 				913D7EB21C92BFA200A862A4 /* MJRefresh.bundle in Resources */,
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
@@ -2280,6 +2315,7 @@
 				912A3CE91CBF765C0052D32E /* TestPerson.m in Sources */,
 				9114E75E1C86CD360087E5AC /* NSObject+YYModel.m in Sources */,
 				911F2AC31E5C77CA0057FE33 /* NSObject+ChainCoding.m in Sources */,
+				911CBA3D1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m in Sources */,
 				91DC44FD1BE7A60900E86CC0 /* ViewController.m in Sources */,
 				91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */,
 				91DE33E61C3FF12100125B25 /* MyHUDView.m in Sources */,
@@ -2329,6 +2365,7 @@
 				91DE33E11C3FD04F00125B25 /* AnimationScene2.m in Sources */,
 				9104E2EE1D2123B100AB0EBE /* TransitionAnimation.m in Sources */,
 				91E188D91C070106006BA41C /* SubScene1.m in Sources */,
+				911CBA3C1E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m in Sources */,
 				91F90D821C77068300215E3B /* AFURLRequestSerialization.m in Sources */,
 				911F2AC61E5C77DA0057FE33 /* UIButton+Method.m in Sources */,
 				910BDE081CA9742D00A499CF /* FontSettingsViewController.m in Sources */,
@@ -2377,6 +2414,7 @@
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
+				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
 				9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */,
 				91F90D831C77068300215E3B /* AFURLResponseSerialization.m in Sources */,

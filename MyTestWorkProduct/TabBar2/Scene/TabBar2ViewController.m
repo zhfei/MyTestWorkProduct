@@ -45,7 +45,7 @@
     // Do any additional setup after loading the view from its nib.
     self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务",@"左边缘标题",@"搜索条",@"GCD测试",@"读写本地数据流"];
     
-    NSDictionary *dict= [NSArray pinYinGroupSortWithArray:self.dataSource];
+//    NSDictionary *dict= [NSArray pinYinGroupSortWithArray:self.dataSource];
     
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     [self.myCollectionView setCollectionViewLayout:flowLayout];
@@ -86,9 +86,11 @@
         
         return result;
     }] result];
-    
-    
-    
+
+}
+
+- (void)eat:(NSNumber*)number {
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -195,12 +197,7 @@
         LocalFileReadingAndWritingVC *ReadingAndWritingVC =[[LocalFileReadingAndWritingVC alloc]init];
         [self.navigationController pushViewController:ReadingAndWritingVC animated:YES];
     }
-    
-    
-    
-    
-    
-    
+ 
 }
 //返回这个UICollectionView是否可以被选择
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath

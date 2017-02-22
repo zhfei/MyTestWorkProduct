@@ -16,6 +16,9 @@
 @implementation MyCollectionCell
 
 - (void)awakeFromNib {
+    
+    [super awakeFromNib];
+    
     self.contentView.layer.cornerRadius=5.f;
     self.contentView.layer.borderWidth=1.f;
     self.contentView.layer.borderColor=[UIColor lightGrayColor].CGColor;
@@ -67,10 +70,7 @@
 //    
 //    
 //    [self.layer addSublayer:layer];
-    
-    
-    
-    
+
 }
 
 @end

@@ -94,7 +94,6 @@
 //        RecursiveMethod(5);
 //    });
     
-    NSString *str =@"";
 
     self.mySwitch.onImage=[UIImage imageNamed:@"button_blueline"];
     self.mySwitch.offImage=[UIImage imageNamed:@"BTScannerGun_Disconnect@2x"];
