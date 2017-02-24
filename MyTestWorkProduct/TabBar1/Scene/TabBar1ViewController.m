@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title=@"UITableView相关的测试用例";
+    self.title=@"TableView布局的Demo标题列表";
     
     
     self.navigationController.tabBarItem.title=@"Table";

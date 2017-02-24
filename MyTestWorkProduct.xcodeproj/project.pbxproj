@@ -41,6 +41,8 @@
 		911CBA3C1E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA371E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m */; };
 		911CBA3D1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */; };
 		911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911CBA3A1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib */; };
+		911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */ = {isa = PBXBuildFile; fileRef = 911CBA3F1E5DDC8A00C3AE53 /* OptionHeadline.plist */; };
+		911CBA431E5DDD3D00C3AE53 /* OptionHeadlineHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA421E5DDD3D00C3AE53 /* OptionHeadlineHelper.m */; };
 		911F2A921E5C6EC10057FE33 /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */; };
 		911F2AB41E5C77480057FE33 /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A991E5C77480057FE33 /* NSObject+AutoDescription.m */; };
 		911F2AB51E5C77480057FE33 /* NSObject+CallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2A9B1E5C77480057FE33 /* NSObject+CallStack.m */; };
@@ -74,6 +76,10 @@
 		911F2AF11E5C7BC80057FE33 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 911F2AE91E5C7BC80057FE33 /* mapapi.bundle */; };
 		912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912365921E557BD90062B2E4 /* QRCodeViewController.m */; };
 		912365951E557BD90062B2E4 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912365931E557BD90062B2E4 /* QRCodeViewController.xib */; };
+		9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */; };
+		9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */; };
+		9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9124D79F1E5F2023008E01F3 /* TabBar5.plist */; };
+		9124D8291E5F250F008E01F3 /* SelectBoxAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9124D8281E5F250F008E01F3 /* SelectBoxAlertController.m */; };
 		912A3CE91CBF765C0052D32E /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91020B011CBE97E600F5E55E /* TestPerson.m */; };
 		9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9130FB131D47315D00EE5275 /* LeftEdgeTitleViewController.m */; };
 		9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9130FB191D47511E00EE5275 /* LeftEdgeCollectionViewCell.m */; };
@@ -446,6 +452,9 @@
 		911CBA381E5DD46E00C3AE53 /* ModelDictionaryTransferVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelDictionaryTransferVC.h; sourceTree = "<group>"; };
 		911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelDictionaryTransferVC.m; sourceTree = "<group>"; };
 		911CBA3A1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelDictionaryTransferVC.xib; sourceTree = "<group>"; };
+		911CBA3F1E5DDC8A00C3AE53 /* OptionHeadline.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OptionHeadline.plist; sourceTree = "<group>"; };
+		911CBA411E5DDD3D00C3AE53 /* OptionHeadlineHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionHeadlineHelper.h; sourceTree = "<group>"; };
+		911CBA421E5DDD3D00C3AE53 /* OptionHeadlineHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionHeadlineHelper.m; sourceTree = "<group>"; };
 		911F2A8E1E5C6EC10057FE33 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
 		911F2A8F1E5C6EC10057FE33 /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
 		911F2A981E5C77480057FE33 /* NSObject+AutoDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDescription.h"; sourceTree = "<group>"; };
@@ -503,6 +512,12 @@
 		912365911E557BD90062B2E4 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		912365921E557BD90062B2E4 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		912365931E557BD90062B2E4 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		9124D79A1E5F1D41008E01F3 /* DateFormatterTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatterTableVC.h; sourceTree = "<group>"; };
+		9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatterTableVC.m; sourceTree = "<group>"; };
+		9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateFormatterTableVC.xib; sourceTree = "<group>"; };
+		9124D79F1E5F2023008E01F3 /* TabBar5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBar5.plist; sourceTree = "<group>"; };
+		9124D8271E5F250F008E01F3 /* SelectBoxAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBoxAlertController.h; sourceTree = "<group>"; };
+		9124D8281E5F250F008E01F3 /* SelectBoxAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBoxAlertController.m; sourceTree = "<group>"; };
 		9130FB121D47315D00EE5275 /* LeftEdgeTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftEdgeTitleViewController.h; sourceTree = "<group>"; };
 		9130FB131D47315D00EE5275 /* LeftEdgeTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftEdgeTitleViewController.m; sourceTree = "<group>"; };
 		9130FB181D47511E00EE5275 /* LeftEdgeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftEdgeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1128,6 +1143,16 @@
 			path = QRCode;
 			sourceTree = "<group>";
 		};
+		9124D7941E5F1CA1008E01F3 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				9124D79A1E5F1D41008E01F3 /* DateFormatterTableVC.h */,
+				9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */,
+				9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
 		9130FB111D47314000EE5275 /* LeftEdgeTitle */ = {
 			isa = PBXGroup;
 			children = (
@@ -1320,6 +1345,8 @@
 		91DAB0D11BE9055C006695B7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9124D8271E5F250F008E01F3 /* SelectBoxAlertController.h */,
+				9124D8281E5F250F008E01F3 /* SelectBoxAlertController.m */,
 				911F2AC71E5C79420057FE33 /* DownloadUtilities */,
 				911F2ACE1E5C79420057FE33 /* FileManagerUtitlities */,
 				911F2A8E1E5C6EC10057FE33 /* CalculatorManager.h */,
@@ -1328,6 +1355,8 @@
 				9114E7701C86D5BD0087E5AC /* XSqliteManager.m */,
 				91DAB0D61BE9058B006695B7 /* Utilities.h */,
 				91DAB0D71BE9058B006695B7 /* Utilities.m */,
+				911CBA411E5DDD3D00C3AE53 /* OptionHeadlineHelper.h */,
+				911CBA421E5DDD3D00C3AE53 /* OptionHeadlineHelper.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1797,6 +1826,8 @@
 			isa = PBXGroup;
 			children = (
 				91E9C2C01C0801B60044D617 /* FontAwesome.ttf */,
+				911CBA3F1E5DDC8A00C3AE53 /* OptionHeadline.plist */,
+				9124D79F1E5F2023008E01F3 /* TabBar5.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -2042,6 +2073,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				9124D7941E5F1CA1008E01F3 /* DateFormatter */,
 				DC594A0E1E5B3D580043845D /* Singleton */,
 			);
 			path = SubScene;
@@ -2170,15 +2202,18 @@
 				917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
 				911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */,
+				911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */,
 				91DC45051BE7A60900E86CC0 /* LaunchScreen.storyboard in Resources */,
 				913D7EB21C92BFA200A862A4 /* MJRefresh.bundle in Resources */,
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
 				9143540C1E026D1E00608E58 /* GCDTestViewController.xib in Resources */,
+				9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */,
 				91DC45CD1BE7C0C700E86CC0 /* TabBar3ViewController.xib in Resources */,
 				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
+				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
 				911F2AF11E5C7BC80057FE33 /* mapapi.bundle in Resources */,
@@ -2313,13 +2348,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				912A3CE91CBF765C0052D32E /* TestPerson.m in Sources */,
+				911CBA431E5DDD3D00C3AE53 /* OptionHeadlineHelper.m in Sources */,
 				9114E75E1C86CD360087E5AC /* NSObject+YYModel.m in Sources */,
 				911F2AC31E5C77CA0057FE33 /* NSObject+ChainCoding.m in Sources */,
 				911CBA3D1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m in Sources */,
 				91DC44FD1BE7A60900E86CC0 /* ViewController.m in Sources */,
 				91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */,
 				91DE33E61C3FF12100125B25 /* MyHUDView.m in Sources */,
+				9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */,
 				913A95AD1D3CFC9200237473 /* BluetoothTransmissionViewController.m in Sources */,
+				9124D8291E5F250F008E01F3 /* SelectBoxAlertController.m in Sources */,
 				911F2ABB1E5C77480057FE33 /* UIButton+XStyle.m in Sources */,
 				91DC457D1BE7B74B00E86CC0 /* BaseViewController.m in Sources */,
 				91DC457A1BE7B59200E86CC0 /* pinyin.c in Sources */,

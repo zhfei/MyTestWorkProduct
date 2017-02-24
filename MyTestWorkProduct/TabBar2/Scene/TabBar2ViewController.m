@@ -42,6 +42,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title=@"CollectionView随机宽高布局";
+     self.navigationController.tabBarItem.title=@"Collection";
     // Do any additional setup after loading the view from its nib.
     self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务",@"左边缘标题",@"搜索条",@"GCD测试",@"读写本地数据流"];
     
@@ -126,11 +129,7 @@
     [cell.contentView setBackgroundColor:RGBACOLOR(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255), 1)];
     
     
-    if (indexPath.row>13) {
-        cell.textV.text=@"展示的内容";
-    }else{
-        cell.textV.text=self.dataSource[indexPath.row];
-    }
+    cell.textV.text=self.dataSource[indexPath.row];
     
     return cell;
 }

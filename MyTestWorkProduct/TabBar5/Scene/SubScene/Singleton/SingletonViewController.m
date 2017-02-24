@@ -23,7 +23,10 @@
 //    
 //    NSLog(@"staa:%@",staa);
     
+    [SingletonTemplate sharedSingletonTemplate];
     
+    sleep(2);
+    [SingletonTemplate destroyInstance];
 }
 
 - (void)didReceiveMemoryWarning {

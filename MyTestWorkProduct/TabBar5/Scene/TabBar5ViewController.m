@@ -9,6 +9,7 @@
 #import "TabBar5ViewController.h"
 #import "XFileManager.h"
 #import "SingletonViewController.h"
+#import "DateFormatterTableVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,retain)UIActivityIndicatorView *act;
@@ -23,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+//    self.navigationController.tabBarItem.title=@"Collection";
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
@@ -30,6 +32,15 @@
    
     self.dataSource=[NSArray arrayWithContentsOfFile:path];
     
+    NSString *dateString=@"2017-02-23 08:07:40 +0000";
+    NSDateFormatter *format=[[NSDateFormatter alloc] init];
+    [format setDateFormat:@"yyyy-MM-dd HH:mm:ss Z"];
+    NSDate * value=[format dateFromString:dateString];
+    
+//    NSData *data= [NSJSONSerialization dataWithJSONObject:value options:NSJSONWritingPrettyPrinted error:nil];
+    
+    
+    NSLog(@"%@:----%@",NSStringFromSelector(_cmd),value);
 }
 
 
@@ -108,11 +119,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row==0) {
-        SingletonViewController *svc=[[SingletonViewController alloc]init];
-        [self.navigationController pushViewController:svc animated:YES];
+    switch (indexPath.row) {
+        case 0: {
+            SingletonViewController *svc=[[SingletonViewController alloc]init];
+            [self.navigationController pushViewController:svc animated:YES];
+        }
+            break;
+        case 1: {
+            DateFormatterTableVC *dft=[[DateFormatterTableVC alloc]init];
+            [self.navigationController pushViewController:dft animated:YES];
+        }
+            break;
+            
+        default:
+            break;
     }
-
 }
 
 @end

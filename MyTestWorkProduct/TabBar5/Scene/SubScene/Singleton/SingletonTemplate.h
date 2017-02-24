@@ -13,4 +13,5 @@
 
 + (instancetype)sharedSingletonTemplate;
 
++ (void)destroyInstance;
 @end

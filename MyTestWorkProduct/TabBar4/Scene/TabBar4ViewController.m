@@ -34,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationController.tabBarItem.title=@"待使用";
  
     
     //[MyNavigationtroller createRightBtnTitle:@"注册" target:self action:@selector(<#selector#>)];

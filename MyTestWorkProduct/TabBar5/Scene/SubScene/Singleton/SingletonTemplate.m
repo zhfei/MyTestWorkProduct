@@ -18,6 +18,8 @@ static SingletonTemplate *_instance=nil;
     
     dispatch_once(&onceToken, ^{
         _instance=[[self alloc] init];
+        
+        NSLog(@"%@:----创建了",NSStringFromSelector(_cmd));
     });
     return _instance;
 }
@@ -31,11 +33,18 @@ static SingletonTemplate *_instance=nil;
     return _instance;
 }
 
++ (void)destroyInstance {
+
+    _instance=nil;
+}
+
 - (id)copyWithZone:(NSZone *)zone
 {
     return _instance;
 }
 
-
+- (void)dealloc {
+    NSLog(@"%@:----释放了",NSStringFromSelector(_cmd));
+}
 
 @end

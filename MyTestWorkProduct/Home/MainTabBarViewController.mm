@@ -17,6 +17,7 @@
 #import "UIImage+FontAwesome.h"
 #import "NSString+FontAwesome.h"
 #import "UIImage+YYAdditions.h"
+#import "OptionHeadlineHelper.h"
 
 #define kTopY -15
 
@@ -31,6 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[OptionHeadlineHelper sharedOptionHeadlineHelper] dictionayInfo];
     
     [self createControls];
 }

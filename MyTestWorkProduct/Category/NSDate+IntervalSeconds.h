@@ -20,7 +20,6 @@
 
 //两个时间间隔秒数
 + (NSInteger)intervalSecondsWithSmallDate:(NSDate*)smallDate bigDate:(NSDate*)bigDate;
-
 //将yyyy-MM-dd HH:mm:ss格式时间转换成时间戳
 +(NSInteger)changeTimeStringToTimeSp:(NSString *)timeStr;
 

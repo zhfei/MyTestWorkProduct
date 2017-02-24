@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationController.tabBarItem.title=@"网页";
     
     NSURLRequest *req =[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
     
