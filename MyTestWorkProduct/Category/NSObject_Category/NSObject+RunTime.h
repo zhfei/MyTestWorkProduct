@@ -28,4 +28,8 @@
  */
 - (NSArray*)getObjectAllAgreeProtocolName;
 
++ (instancetype)ys_objectWithDictionary:(NSDictionary *)dictionary;
+
+@property (strong,nonatomic)NSArray *IgnoredPropertyNames;
+
 @end

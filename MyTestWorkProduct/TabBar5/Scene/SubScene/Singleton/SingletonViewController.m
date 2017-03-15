@@ -8,6 +8,8 @@
 
 #import "SingletonViewController.h"
 #import "SingletonTemplate.h"
+#import "CodingSubClass.h"
+
 
 @interface SingletonViewController ()
 
@@ -26,7 +28,23 @@
     [SingletonTemplate sharedSingletonTemplate];
     
     sleep(2);
+    
     [SingletonTemplate destroyInstance];
+    
+    
+//    CodingSubClass *csc=[CodingSubClass codingSubClass];
+//    
+//    CodingSubClass *csc1=[CodingSubClass codingSubClass];
+//    CodingSubClass *csc2=[CodingSubClass codingSubClass];
+//    
+//    csc.demands=@[csc1,csc2];
+//    
+//    NSData *data= [NSKeyedArchiver archivedDataWithRootObject:csc];
+//    
+//    id obj= [NSKeyedUnarchiver unarchiveObjectWithData:data];
+//    
+//   
+//    NSLog(@"%@:----%@",NSStringFromSelector(_cmd),obj);
 }
 
 - (void)didReceiveMemoryWarning {

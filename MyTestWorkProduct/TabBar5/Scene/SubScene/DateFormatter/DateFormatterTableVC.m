@@ -39,7 +39,10 @@ static NSString * cellID =@"UITableViewCell";
 //公元前/后:公元  年份:2013=2013=13 季度:3=三季度=第三季度 月份:8=8月=8月 今天是今年第几周:32 今天是本月第几周:2  今天是今天第几天:219 今天是本月第几天:7 星期:4=周三=星期三 上午/下午:上午 小时:1=1 分钟:44 秒:30 毫秒:360  这一天已过多少毫秒:6270360  时区名称:中国标准时间=中国标准时间 时区编号:+0800
 
     
-    [self setDateWithDateFomtterString:@"yyyy-MM-dd a HH:mm:ss EEEE"];
+//    [self setDateWithDateFomtterString:@"yyyy-MM-dd a HH:mm:ss EEEE"];
+    
+    [self dateString1];
+    [self dateString2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,27 +69,27 @@ static NSString * cellID =@"UITableViewCell";
     NSDateFormatter *format=[[NSDateFormatter alloc] init];
     [format setDateFormat:defaultFomtter];
     
-    // 英文
-    //[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-    //这使用的系统提供的格式化字符串，通过 fmt.dateStyle 和 fmt.timeStyle 进行的设置。实例中使用的参数是 kCFDateFormatterShortStyle，此外还有：
-    //typedef CF_ENUM(CFIndex, CFDateFormatterStyle) {    // date and time format styles
-    //    kCFDateFormatterNoStyle = 0,       // 无输出
-    //    kCFDateFormatterShortStyle = 1,    // 10/29/12, 2:27 PM
-    //    kCFDateFormatterMediumStyle = 2,   // Oct 29, 2012, 2:36:59 PM
-    //    kCFDateFormatterLongStyle = 3,     // October 29, 2012, 2:38:46 PM GMT+08:00
-    //    kCFDateFormatterFullStyle = 4      // Monday, October 29, 2012, 2:39:56 PM China Standard Time
-    //};
-    
-    // 中文
-    //fmt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
-    //则对应的输出为：
-    //typedef CF_ENUM(CFIndex, CFDateFormatterStyle) {    // date and time format styles
-    //    kCFDateFormatterNoStyle = 0,       // 无输出
-    //    kCFDateFormatterShortStyle = 1,    // 12-10-29 下午2:52
-    //    kCFDateFormatterMediumStyle = 2,   // 2012-10-29 下午2:51:43
-    //    kCFDateFormatterLongStyle = 3,     // 2012年10月29日 GMT+0800下午2时51分08秒
-    //    kCFDateFormatterFullStyle = 4      // 2012年10月29日星期一 中国标准时间下午2时46分49秒
-    //};
+// 英文
+//[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+//这使用的系统提供的格式化字符串，通过 fmt.dateStyle 和 fmt.timeStyle 进行的设置。实例中使用的参数是 kCFDateFormatterShortStyle，此外还有：
+//typedef CF_ENUM(CFIndex, CFDateFormatterStyle) {    // date and time format styles
+//    kCFDateFormatterNoStyle = 0,       // 无输出
+//    kCFDateFormatterShortStyle = 1,    // 10/29/12, 2:27 PM
+//    kCFDateFormatterMediumStyle = 2,   // Oct 29, 2012, 2:36:59 PM
+//    kCFDateFormatterLongStyle = 3,     // October 29, 2012, 2:38:46 PM GMT+08:00
+//    kCFDateFormatterFullStyle = 4      // Monday, October 29, 2012, 2:39:56 PM China Standard Time
+//};
+
+// 中文
+//fmt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+//则对应的输出为：
+//typedef CF_ENUM(CFIndex, CFDateFormatterStyle) {    // date and time format styles
+//    kCFDateFormatterNoStyle = 0,       // 无输出
+//    kCFDateFormatterShortStyle = 1,    // 12-10-29 下午2:52
+//    kCFDateFormatterMediumStyle = 2,   // 2012-10-29 下午2:51:43
+//    kCFDateFormatterLongStyle = 3,     // 2012年10月29日 GMT+0800下午2时51分08秒
+//    kCFDateFormatterFullStyle = 4      // 2012年10月29日星期一 中国标准时间下午2时46分49秒
+//};
     
     format.dateStyle = kCFDateFormatterFullStyle;
     format.timeStyle = kCFDateFormatterFullStyle;
@@ -101,6 +104,32 @@ static NSString * cellID =@"UITableViewCell";
     NSLog(@"%@:----%@",NSStringFromSelector(_cmd),dateString);
     
 
+}
+
+
+- (void)dateString1 {
+
+    NSDateFormatter *format=[[NSDateFormatter alloc] init];
+    [format setDateFormat:@"yyyy-MM-dd a HH:mm:ss EEEE"];
+    format.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+    [format setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+    NSString *dateString = [format stringFromDate:[NSDate date]];
+    
+    NSLog(@"%@:----%@",NSStringFromSelector(_cmd),dateString);
+
+}
+
+- (void)dateString2 {
+    
+    NSDateFormatter *format=[[NSDateFormatter alloc] init];
+    format.dateStyle = kCFDateFormatterFullStyle;
+    format.timeStyle = kCFDateFormatterFullStyle;
+    format.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    [format setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    NSString *dateString = [format stringFromDate:[NSDate date]];
+    
+    NSLog(@"%@:----%@",NSStringFromSelector(_cmd),dateString);
+    
 }
 
 #pragma mark - Table view data source

@@ -12,11 +12,11 @@
 
 @implementation NSObject (ChainCoding)
 
-+ (int)zf_makeCalculat:(void(^)(CalculatorManager *))block
-{
-    CalculatorManager *manager =[[CalculatorManager alloc]init];
-    block(manager);
-    return manager.result;
-}
+//+ (int)zf_makeCalculat:(void(^)(CalculatorManager *))block
+//{
+//    CalculatorManager *manager =[[CalculatorManager alloc]init];
+//    block(manager);
+//    return manager.result;
+//}
 
 @end

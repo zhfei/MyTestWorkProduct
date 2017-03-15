@@ -9,11 +9,11 @@
 //  计算器
 
 #import <Foundation/Foundation.h>
-#import "CalculatorManager.h"
+//#import "CalculatorManager.h"
 
 @interface NSObject (ChainCoding)
 
-+ (int)zf_makeCalculat:(void(^)(CalculatorManager *))block ;
+//+ (int)zf_makeCalculat:(void(^)(CalculatorManager *))block ;
 
 
 @end

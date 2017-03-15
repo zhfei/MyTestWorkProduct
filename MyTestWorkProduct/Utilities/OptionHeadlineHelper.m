@@ -46,8 +46,11 @@ static OptionHeadlineHelper *ohh=nil;
 
     NSString *path =[[NSBundle mainBundle] pathForResource:@"OptionHeadline" ofType:@"plist"];
     
-    self.dictInfo=[NSDictionary dictionaryWithContentsOfFile:path];
+    path =[[NSBundle mainBundle] pathForResource:@"TabBar5" ofType:@"plist"];
     
+    _dictInfo=[[NSDictionary alloc]initWithContentsOfFile:path];
+    
+    NSLog(@"%@:----%@",NSStringFromSelector(_cmd),_dictInfo);
 }
 
 - (NSDictionary *)dictionayInfo {

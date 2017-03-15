@@ -33,7 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [[OptionHeadlineHelper sharedOptionHeadlineHelper] dictionayInfo];
+    NSDictionary * dict=[[OptionHeadlineHelper sharedOptionHeadlineHelper] dictionayInfo];
     
     [self createControls];
 }

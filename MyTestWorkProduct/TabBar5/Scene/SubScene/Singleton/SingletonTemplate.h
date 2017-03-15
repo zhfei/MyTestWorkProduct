@@ -11,7 +11,8 @@
 
 @interface SingletonTemplate : NSObject
 
+/*!**生成单例***/
 + (instancetype)sharedSingletonTemplate;
-
+/*!**销毁单例***/
 + (void)destroyInstance;
 @end
