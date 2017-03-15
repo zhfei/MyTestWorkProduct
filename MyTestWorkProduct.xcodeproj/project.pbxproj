@@ -74,6 +74,7 @@
 		9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */; };
 		9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9124D79F1E5F2023008E01F3 /* TabBar5.plist */; };
 		912A3CE91CBF765C0052D32E /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91020B011CBE97E600F5E55E /* TestPerson.m */; };
+		912E4B331E78D31200B6A254 /* test1.sh in Resources */ = {isa = PBXBuildFile; fileRef = 912E4B321E78D31200B6A254 /* test1.sh */; };
 		9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9130FB131D47315D00EE5275 /* LeftEdgeTitleViewController.m */; };
 		9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9130FB191D47511E00EE5275 /* LeftEdgeCollectionViewCell.m */; };
 		9134AC551CFFD9CE00C2C49E /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134AC491CFFD9CE00C2C49E /* NSString+HTML.m */; };
@@ -506,6 +507,7 @@
 		9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatterTableVC.m; sourceTree = "<group>"; };
 		9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateFormatterTableVC.xib; sourceTree = "<group>"; };
 		9124D79F1E5F2023008E01F3 /* TabBar5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBar5.plist; sourceTree = "<group>"; };
+		912E4B321E78D31200B6A254 /* test1.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test1.sh; sourceTree = "<group>"; };
 		9130FB121D47315D00EE5275 /* LeftEdgeTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftEdgeTitleViewController.h; sourceTree = "<group>"; };
 		9130FB131D47315D00EE5275 /* LeftEdgeTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftEdgeTitleViewController.m; sourceTree = "<group>"; };
 		9130FB181D47511E00EE5275 /* LeftEdgeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftEdgeCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1137,6 +1139,14 @@
 				9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */,
 			);
 			path = DateFormatter;
+			sourceTree = "<group>";
+		};
+		912E4B311E78D31200B6A254 /* ShellStudy */ = {
+			isa = PBXGroup;
+			children = (
+				912E4B321E78D31200B6A254 /* test1.sh */,
+			);
+			path = ShellStudy;
 			sourceTree = "<group>";
 		};
 		9130FB111D47314000EE5275 /* LeftEdgeTitle */ = {
@@ -2007,6 +2017,7 @@
 		91E07A281C0205E0009773B9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				912E4B311E78D31200B6A254 /* ShellStudy */,
 				91F26B051CF9529000D5C3DC /* images */,
 				91E4B3C71C3C0887001DD5B2 /* DBManager */,
 				91E9C2BF1C08019B0044D617 /* Resource */,
@@ -2448,6 +2459,7 @@
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
+				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
 				911F2AF11E5C7BC80057FE33 /* mapapi.bundle in Resources */,
