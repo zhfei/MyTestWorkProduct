@@ -43,7 +43,72 @@ echo ${your_name4:8:3}
 
 # 查找子字符串
 your_name5="runoob is a great company"
-echo `expr index "${your_name5}" is`
+#echo `expr index "${your_name5}" is`
+
+# 数组
+array_name=(name1 name2 name3)
+echo "这是一个数组-${array_name[@]}"
+array_name[3]='name4'
+echo "这是一个数组-${array_name[@]}"
+echo "数组的长度：${#array_name[@]}"
+echo "数组中第0个元素的长度：${#array_name[0]}"
+
+# Shell传递参数 $n
+echo 'Shell传递参数验证如下：'
+echo "文件名：$0"
+echo "第一个参数：$1"
+echo "第二个参数：$2"
+echo "脚本执行的进程ID号：$$"
+
+# Shell运算符
+# expr 是一个计算工具，完成表达式的求值操作
+val1=`expr 1 + 1`
+echo "expr 运算符的执行结果是$val1"
+
+# 算术运算符
+a=10
+b=20
+val2=`expr $a + $b`
+val3=`expr $a - $b`
+val4=`expr $a \* $b`
+val5=`expr $a / $b`
+val6=`expr $a % $b`
+echo "a + b : $val2"
+echo "a - b : $val3"
+echo "a * b : $val4"
+echo "a / b : $val5"
+echo "a % b : $val6"
+if [ $a == $b ]; then
+	echo "a 等于 b"
+fi
+if [ $a != $b ]; then
+	echo "a 不等于 b"
+fi
+
+# 关系运算符
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
