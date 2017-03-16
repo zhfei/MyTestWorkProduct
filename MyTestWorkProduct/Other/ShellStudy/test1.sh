@@ -46,6 +46,7 @@ your_name5="runoob is a great company"
 #echo `expr index "${your_name5}" is`
 
 # 数组
+echo "----------数组---------"
 array_name=(name1 name2 name3)
 echo "这是一个数组-${array_name[@]}"
 array_name[3]='name4'
@@ -54,6 +55,7 @@ echo "数组的长度：${#array_name[@]}"
 echo "数组中第0个元素的长度：${#array_name[0]}"
 
 # Shell传递参数 $n
+echo "----------Shell传递参数---------"
 echo 'Shell传递参数验证如下：'
 echo "文件名：$0"
 echo "第一个参数：$1"
@@ -66,6 +68,7 @@ val1=`expr 1 + 1`
 echo "expr 运算符的执行结果是$val1"
 
 # 算术运算符
+echo "----------算术运算符---------"
 a=10
 b=20
 val2=`expr $a + $b`
@@ -86,6 +89,7 @@ if [ $a != $b ]; then
 fi
 
 # 关系运算符
+echo "----------关系运算符---------"
 if [[ $a -eq $b ]]; then
 	echo "a 等于 b"
 fi
@@ -105,10 +109,32 @@ if [[ $a -le $b ]]; then
 	echo "a 小于等于 b"
 fi
 
+# 布尔运算符 ！、-o、-a
+echo "----------布尔运算符---------"
+if [[ $a != $b ]]; then
+	echo "a 不等于 b"
+fi
+if [ $a -lt $b -o $a -eq $b ]; then
+	echo "a 大于等于 b"
+fi
+if [ $a -gt 1 -a $b -lt 10 ]; then
+	echo "a > 1 并且 b < 10"
+else
+	echo "a > 1 并且 b < 10 是错误的！"
+fi
 
-
-
-
+# 逻辑运算符 && ||
+echo "----------逻辑运算符---------"
+if [[ $a -gt 1 && $a -lt 100 ]]; then
+	echo "a 大于1 并且 a 小于100 成立"
+else
+	echo "a 大于1 并且 a 小于100 不成立"
+fi
+if [[ $a -le 10 || $a -gt 100 ]]; then
+	echo 'a 小于等于10 或者 a 大于 100 有一个成立'
+else
+	echo 'a 小于等于10 或者 a 大于 100 都不成立'
+fi
 
 
 
