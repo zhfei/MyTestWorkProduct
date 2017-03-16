@@ -136,11 +136,54 @@ else
 	echo 'a 小于等于10 或者 a 大于 100 都不成立'
 fi
 
+# 字符串运算符
+echo "----------字符串运算符---------"
+string1='string1'
+string2='string2'
+if [[ $string2 = $string1 ]]; then
+	echo "string1 等于 string2"
+else
+	echo "string1 不等于 string2"
+fi
+if [[ $string2 != $string1 ]]; then
+	echo "string2 不等于 string1"
+fi
+if [[ -z $string1 ]]; then
+	echo "string1 长度是：0"
+fi
+if [[ -n $string1 ]]; then
+	echo "string1 长度不是：0"
+fi
+if [[ $string1 ]]; then
+	echo "string1 不为nil"
+fi
 
+# 文件测试运算符
+echo "----------文件测试运算符---------"
+file1='假如为：文件'
+file2='假如为：文件夹'
+if [[ -d $file2 ]]; then
+	echo '检测文件为文件夹'
+fi
+if [[ -f $file1 ]]; then
+	echo '检测文件为普通文件'
+fi
+if [[ -s $file1 ]]; then
+	echo '检测文件为空'
+fi
+if [[ -e $file1 ]]; then
+	echo '检测文件为存在的'
+fi
 
-
-
-
+# echo命令
+echo "----------echo命令---------"
+echo "It is a test"
+echo "\"It is a test\""
+echo "下面换行 \n"
+echo -e "下面不换行 \c"  # -e 开启转义 \c 不换行
+echo "字符串重定向到文件中" > myfile
+echo '字符串原样输出 $a'
+echo `date` #显示执行结果
 
 
 
