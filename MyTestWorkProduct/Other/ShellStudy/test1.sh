@@ -185,14 +185,39 @@ echo "字符串重定向到文件中" > myfile
 echo '字符串原样输出 $a'
 echo `date` #显示执行结果
 
+# printf命令
+# printf  format-string  [arguments...]
+# %s %c %d %f都是格式替代符
+# %-10s 指一个宽度为10个字符（-表示左对齐，没有则表示右对齐），任何字符都会被显示在10个字符宽的字符内，如果不足则自动以空格填充，超过也会将内容全部显示出来。
+# %-4.2f 指格式化为小数，其中.2指保留2位小数。
+# \n换行  \r回车
+echo "----------printf命令---------"
+echo 'Hello, Shell,能够自动换行'
+printf "Hello, Shell,不能自动换行，需要手动加换行符 \n"
+printf "%-10s %-8s %-4s\n" 姓名 性别 体重
+printf "%-10s %-8s %-4.2f\n" 郭靖 男 66.12345
+printf "%-10s %-8s %-4.2f\n" 杨过 男 77.12345
 
-
-
-
-
-
-
-
+# test命令
+# Shell中的 test 命令用于检查某个条件是否成立，它可以进行数值、字符和文件三个方面的测试。
+echo "----------test命令---------"
+test1=100
+test2=101
+testString1='testString1'
+testString2='testString2'
+if test $test1 -lt $test2 ; then
+	printf "%s\n" test1小于test2 
+fi
+if test -z testString1 ; then
+	printf "testString1长度为0"
+else
+	printf "testString1长度不为0 ，:%s\n" testString1
+fi
+if test -e ./test1.sh ; then
+	printf "文件名：test1.sh 存在\n"
+else
+	printf "文件名：test1.sh 不存在\n"
+fi
 
 
 
