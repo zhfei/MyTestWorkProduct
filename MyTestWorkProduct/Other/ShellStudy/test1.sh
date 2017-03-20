@@ -219,6 +219,151 @@ else
 	printf "文件名：test1.sh 不存在\n"
 fi
 
+# Shell流程控制
+echo "----------Shell流程控制---------"
+# if else-if else
+if [[ $a == $b ]]; then
+	echo "a 等于 b"
+elif [[ $a -gt $b ]]; then
+	echo "a 大于 b"
+elif [[ $a -lt $b ]]; then
+	echo "a 小于 b"
+else
+	echo "没有符合条件的"
+fi
+num1=$[2*3]
+num2=$[1+5]
+if  test $num1 -eq $num2 ; then
+	echo "num2 等于 num1"
+else
+	echo "num1 不等于 num2"
+fi
+# for 循环
+for loop in  1 2 3 4 5 6; do
+	# echo "当前输入的值是：$loop"
+	printf "当前输入的值是：%s\n" $loop 
+done
+for string in 'This is a String!'; do
+	echo "$string"
+done
+# while 语句
+# let 命令，它用于执行一个或多个表达式
+ignore0(){
+	count=1;
+	while [[ $count -lt 10 ]]; do
+		echo "while 执行结果：$count"
+		let "count++"
+	done
+	echo '按下 <CTRL-D> 退出'
+	echo -n '输入你最喜欢的电影名: '
+	while read Film ; do
+		echo "是的！ $Film 是一部好电影！"
+	done
+}
+#ignore0
+ignore1(){
+	while true:
+	do
+	    echo "无限循环!"
+	done
+	until false ; do
+		echo "无限循环!"
+	done
+}
+#ignore1
+# case语句
+ignore2(){
+	echo '请输入1到4之间的数字'
+	echo '你输入的数字是：'
+	read aNum
+	case $aNum in
+		1 )
+	 echo "输入的数字为：$aNum"
+		;;
+		2 )
+	 echo "输入的数字为：$aNum"
+		;;
+		3 )
+	 echo "输入的数字为：$aNum"
+		;;
+		4 )
+	 echo "输入的数字为：$aNum"
+		;;
+		* )
+	 echo "你输入的数字不在1-4之间"
+		;;
+	esac
+}
+#ignore2
+# break命令
+ignore3(){   
+    while true
+	do
+		echo '输入1-5之间的数据'
+		read aNum
+		case $aNum in
+			1|2|3|4|5 )
+	         echo "输入的数字为：$aNum"
+				;;
+			* )
+	         echo "你输入的数字不在1-4之间"
+	         break
+	         #continue
+	         echo "游戏结束"
+	        
+		esac
+	done
+}
+#ignore3
+# Shell 函数
+echo "----------Shell 函数---------"
+demoFunc(){
+	echo '这是第一个函数'
+}
+echo '第一个函数开始'
+demoFunc
+echo '第一个函数结束'
+funWithReture(){
+	echo '这个函数会对输入的参数进行加法运行...'
+	echo '输入第一个参数：'
+	read para1
+	echo '输入第二个参数：'
+	read para2
+	echo "两次输入的参数分别是：$para1---$para2"
+    return $(($para1+$para2))
+}
+funWithReture 
+echo "输入的数字之和为：$?"
+
+# Shell 输入/输出重定向
+echo "----------Shell 输入/输出重定向---------"
+date >> myfile
+cat myfile
+wc -l << EOF
+标题
+测试 Head Document 类型
+的追加重定向命令
+EOF
+ls > myfile 2>&1
+ls > /dev/null 2>&1
+
+# Shell 文件包含
+echo "----------Shell 文件包含---------"
+source ./test2.sh
+echo "引用外部的test2.sh文件中的url变量，URL变量为：$url"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

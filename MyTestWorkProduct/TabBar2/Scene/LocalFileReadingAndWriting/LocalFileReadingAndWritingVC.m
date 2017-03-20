@@ -33,20 +33,20 @@
 //         NSLog(@"error:%@",error.description);
 //    }
     
-    RealmPerson *rp =[[RealmPerson alloc]init];
-    rp.name=@"小明";
-    rp.address=@"北京人";
-    rp.age=18;
-    
-    [[MyRealm defaultCashier] transactionWithBlock:^{
-        [[MyRealm defaultCashier] addObject:rp];
-    }];
-    
-    
-    
-    RLMResults *results= [RealmPerson allObjects];
-    
-    NSLog(@"path:%@--%@",NSHomeDirectory(),results);
+//    RealmPerson *rp =[[RealmPerson alloc]init];
+//    rp.name=@"小明";
+//    rp.address=@"北京人";
+//    rp.age=18;
+//    
+//    [[MyRealm defaultCashier] transactionWithBlock:^{
+//        [[MyRealm defaultCashier] addObject:rp];
+//    }];
+//    
+//    
+//    
+//    RLMResults *results= [RealmPerson allObjects];
+//    
+//    NSLog(@"path:%@--%@",NSHomeDirectory(),results);
 }
 
 - (void)didReceiveMemoryWarning {

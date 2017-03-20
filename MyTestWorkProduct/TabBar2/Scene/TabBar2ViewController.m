@@ -32,6 +32,7 @@
 
 #import "NSArray+Additions.h"
 #import "SearchBarViewController.h"
+#import "CalculatorManager.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
