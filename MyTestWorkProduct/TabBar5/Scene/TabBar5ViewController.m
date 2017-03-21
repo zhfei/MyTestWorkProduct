@@ -10,6 +10,7 @@
 #import "XFileManager.h"
 #import "SingletonViewController.h"
 #import "DateFormatterTableVC.h"
+#import "ZFObject.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,retain)UIActivityIndicatorView *act;
@@ -41,6 +42,13 @@
     
     
     NSLog(@"%@:----%@",NSStringFromSelector(_cmd),value);
+    
+    
+    ZFObject *obj =[ZFObject zfObjectWith:nil];
+    [obj.changePropertiesDict setObject:@"南京" forKey:@"address"];
+    [obj updateObjectUsingChangePropertiesDict];
+    MyLog(@"obj:%@",obj.address)
+    
 }
 
 

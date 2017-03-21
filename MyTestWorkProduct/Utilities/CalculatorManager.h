@@ -14,7 +14,6 @@
 //链式编程思想
 - (CalculatorManager *(^)(int))add;
 
-
 //函数式编程思想
 - (instancetype)multiply:(int(^)(int))multiply;
 

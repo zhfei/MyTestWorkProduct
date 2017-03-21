@@ -35,7 +35,6 @@
 		9114E7531C86B67D0087E5AC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9114E7521C86B67D0087E5AC /* libz.tbd */; };
 		9114E75E1C86CD360087E5AC /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E75A1C86CD360087E5AC /* NSObject+YYModel.m */; };
 		9114E75F1C86CD360087E5AC /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E75C1C86CD360087E5AC /* YYClassInfo.m */; };
-		9114E7621C86CE340087E5AC /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7611C86CE340087E5AC /* XObject.m */; };
 		911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */; };
 		911CBA3C1E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA371E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m */; };
 		911CBA3D1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */; };
@@ -295,7 +294,6 @@
 		91FE25571CB219AE001C6DF0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D791C77068300215E3B /* AFURLResponseSerialization.m */; };
 		91FE255A1CB219AE001C6DF0 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7EB91C92C07100A862A4 /* CircleProgressView.m */; };
 		91FE25601CB219AE001C6DF0 /* UITextField+YYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DC45621BE7B17000E86CC0 /* UITextField+YYAdditions.m */; };
-		91FE25611CB219AE001C6DF0 /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9114E7611C86CE340087E5AC /* XObject.m */; };
 		91FE25621CB219AE001C6DF0 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 9114D6C71C8688C70087E5AC /* unzip.c */; };
 		91FE25651CB219AE001C6DF0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E4B3BC1C3C086E001DD5B2 /* FMDatabasePool.m */; };
 		91FE25671CB219AE001C6DF0 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 9114D6C51C8688C70087E5AC /* mztools.c */; };
@@ -364,6 +362,8 @@
 		DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A111E5B3D580043845D /* SingletonTemplate.m */; };
 		DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A131E5B3D580043845D /* SingletonViewController.m */; };
 		DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC594A141E5B3D580043845D /* SingletonViewController.xib */; };
+		DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA41E81791E008FCAEF /* ZFObject.m */; };
+		DC7B7BA81E817999008FCAEF /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA71E817999008FCAEF /* XObject.m */; };
 		DC8D141F1E7E4EC1009EA61E /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14171E7E4EC1009EA61E /* BaiduMapAPI_Base.framework */; };
 		DC8D14201E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14181E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework */; };
 		DC8D14211E7E4EC1009EA61E /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14191E7E4EC1009EA61E /* BaiduMapAPI_Location.framework */; };
@@ -441,8 +441,6 @@
 		9114E75B1C86CD360087E5AC /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		9114E75C1C86CD360087E5AC /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		9114E75D1C86CD360087E5AC /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
-		9114E7601C86CE340087E5AC /* XObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XObject.h; sourceTree = "<group>"; };
-		9114E7611C86CE340087E5AC /* XObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XObject.m; sourceTree = "<group>"; };
 		911CBA341E5DD46E00C3AE53 /* CHDBaseCommodity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDBaseCommodity.h; sourceTree = "<group>"; };
 		911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDBaseCommodity.m; sourceTree = "<group>"; };
 		911CBA361E5DD46E00C3AE53 /* CHDShoppingCartCommodity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDShoppingCartCommodity.h; sourceTree = "<group>"; };
@@ -803,6 +801,10 @@
 		DC594A121E5B3D580043845D /* SingletonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		DC594A131E5B3D580043845D /* SingletonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		DC594A141E5B3D580043845D /* SingletonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
+		DC7B7BA31E81791E008FCAEF /* ZFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFObject.h; sourceTree = "<group>"; };
+		DC7B7BA41E81791E008FCAEF /* ZFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFObject.m; sourceTree = "<group>"; };
+		DC7B7BA61E817999008FCAEF /* XObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XObject.h; sourceTree = "<group>"; };
+		DC7B7BA71E817999008FCAEF /* XObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XObject.m; sourceTree = "<group>"; };
 		DC8D14171E7E4EC1009EA61E /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		DC8D14181E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		DC8D14191E7E4EC1009EA61E /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -1089,8 +1091,12 @@
 		911F2ADC1E5C7AC30057FE33 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DC7B7BA61E817999008FCAEF /* XObject.h */,
+				DC7B7BA71E817999008FCAEF /* XObject.m */,
 				911F2ADD1E5C7B140057FE33 /* HUDView.h */,
 				911F2ADE1E5C7B140057FE33 /* HUDView.m */,
+				DC7B7BA31E81791E008FCAEF /* ZFObject.h */,
+				DC7B7BA41E81791E008FCAEF /* ZFObject.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1349,7 +1355,6 @@
 				9189307D1E653FAF007D6879 /* SelectBoxAlertController.m */,
 				918930801E653FAF007D6879 /* Utilities.h */,
 				918930811E653FAF007D6879 /* Utilities.m */,
-				918930821E653FAF007D6879 /* XKSCommonSDK */,
 				9189309C1E653FAF007D6879 /* XSqliteManager.h */,
 				9189309D1E653FAF007D6879 /* XSqliteManager.m */,
 			);
@@ -1387,213 +1392,6 @@
 				918930AA1E653FCF007D6879 /* ModelJSON.m */,
 			);
 			path = ModelJSON;
-			sourceTree = "<group>";
-		};
-		918930821E653FAF007D6879 /* XKSCommonSDK */ = {
-			isa = PBXGroup;
-			children = (
-				918930831E653FAF007D6879 /* Src */,
-			);
-			path = XKSCommonSDK;
-			sourceTree = "<group>";
-		};
-		918930831E653FAF007D6879 /* Src */ = {
-			isa = PBXGroup;
-			children = (
-				918930841E653FAF007D6879 /* AssistantModule */,
-				9189308B1E653FAF007D6879 /* FuntionModule */,
-				918930991E653FAF007D6879 /* GlobalModule */,
-			);
-			path = Src;
-			sourceTree = "<group>";
-		};
-		918930841E653FAF007D6879 /* AssistantModule */ = {
-			isa = PBXGroup;
-			children = (
-				918930851E653FAF007D6879 /* Categroy */,
-				918930891E653FAF007D6879 /* Function */,
-				9189308A1E653FAF007D6879 /* NetWorking */,
-			);
-			path = AssistantModule;
-			sourceTree = "<group>";
-		};
-		918930851E653FAF007D6879 /* Categroy */ = {
-			isa = PBXGroup;
-			children = (
-				918930861E653FAF007D6879 /* NSString */,
-				918930871E653FAF007D6879 /* UIImage */,
-				918930881E653FAF007D6879 /* UIView */,
-			);
-			path = Categroy;
-			sourceTree = "<group>";
-		};
-		918930861E653FAF007D6879 /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSString;
-			sourceTree = "<group>";
-		};
-		918930871E653FAF007D6879 /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIImage;
-			sourceTree = "<group>";
-		};
-		918930881E653FAF007D6879 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		918930891E653FAF007D6879 /* Function */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Function;
-			sourceTree = "<group>";
-		};
-		9189308A1E653FAF007D6879 /* NetWorking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetWorking;
-			sourceTree = "<group>";
-		};
-		9189308B1E653FAF007D6879 /* FuntionModule */ = {
-			isa = PBXGroup;
-			children = (
-				9189308C1E653FAF007D6879 /* AlertView */,
-				9189308D1E653FAF007D6879 /* BluetoothList */,
-				9189308E1E653FAF007D6879 /* Encrypt */,
-				918930941E653FAF007D6879 /* HeartBeat */,
-				918930951E653FAF007D6879 /* KeyChain */,
-				918930961E653FAF007D6879 /* PaperSwitch */,
-				918930971E653FAF007D6879 /* QRCode */,
-				918930981E653FAF007D6879 /* Signature */,
-			);
-			path = FuntionModule;
-			sourceTree = "<group>";
-		};
-		9189308C1E653FAF007D6879 /* AlertView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AlertView;
-			sourceTree = "<group>";
-		};
-		9189308D1E653FAF007D6879 /* BluetoothList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BluetoothList;
-			sourceTree = "<group>";
-		};
-		9189308E1E653FAF007D6879 /* Encrypt */ = {
-			isa = PBXGroup;
-			children = (
-				9189308F1E653FAF007D6879 /* Base */,
-				918930901E653FAF007D6879 /* Impl */,
-			);
-			path = Encrypt;
-			sourceTree = "<group>";
-		};
-		9189308F1E653FAF007D6879 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		918930901E653FAF007D6879 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				918930911E653FAF007D6879 /* DSA */,
-				918930921E653FAF007D6879 /* MD5 */,
-				918930931E653FAF007D6879 /* RSA */,
-			);
-			path = Impl;
-			sourceTree = "<group>";
-		};
-		918930911E653FAF007D6879 /* DSA */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DSA;
-			sourceTree = "<group>";
-		};
-		918930921E653FAF007D6879 /* MD5 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MD5;
-			sourceTree = "<group>";
-		};
-		918930931E653FAF007D6879 /* RSA */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RSA;
-			sourceTree = "<group>";
-		};
-		918930941E653FAF007D6879 /* HeartBeat */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeartBeat;
-			sourceTree = "<group>";
-		};
-		918930951E653FAF007D6879 /* KeyChain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = KeyChain;
-			sourceTree = "<group>";
-		};
-		918930961E653FAF007D6879 /* PaperSwitch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PaperSwitch;
-			sourceTree = "<group>";
-		};
-		918930971E653FAF007D6879 /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = QRCode;
-			sourceTree = "<group>";
-		};
-		918930981E653FAF007D6879 /* Signature */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Signature;
-			sourceTree = "<group>";
-		};
-		918930991E653FAF007D6879 /* GlobalModule */ = {
-			isa = PBXGroup;
-			children = (
-				9189309A1E653FAF007D6879 /* Configuration */,
-				9189309B1E653FAF007D6879 /* Definition */,
-			);
-			path = GlobalModule;
-			sourceTree = "<group>";
-		};
-		9189309A1E653FAF007D6879 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		9189309B1E653FAF007D6879 /* Definition */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Definition;
 			sourceTree = "<group>";
 		};
 		91DAB0E21BE907A4006695B7 /* UserDataCenter */ = {
@@ -1748,8 +1546,6 @@
 			children = (
 				910C529C1D3DC74200F3873C /* PinYin4Objc */,
 				913D7E771C92BFA200A862A4 /* MJRefresh */,
-				9114E7601C86CE340087E5AC /* XObject.h */,
-				9114E7611C86CE340087E5AC /* XObject.m */,
 				9114E7581C86CD360087E5AC /* YYModel */,
 				9114D6BE1C8688C70087E5AC /* Zip */,
 				91F90D681C77068300215E3B /* AFNetworking */,
@@ -2691,6 +2487,7 @@
 				913D7EA41C92BFA200A862A4 /* MJRefreshAutoFooter.m in Sources */,
 				91FAFFBE1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m in Sources */,
 				910C52B31D3DC7BA00F3873C /* NSArray+Additions.m in Sources */,
+				DC7B7BA81E817999008FCAEF /* XObject.m in Sources */,
 				913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */,
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
@@ -2706,8 +2503,8 @@
 				913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */,
 				91FC89191D007BEC00527C4B /* CollectionViewCell.m in Sources */,
 				91DC45701BE7B17000E86CC0 /* UITextField+YYAdditions.m in Sources */,
-				9114E7621C86CE340087E5AC /* XObject.m in Sources */,
 				9114D6CE1C8688C70087E5AC /* unzip.c in Sources */,
+				DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */,
 				91E4B3C41C3C086E001DD5B2 /* FMDatabasePool.m in Sources */,
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
 				9114D6CD1C8688C70087E5AC /* mztools.c in Sources */,
@@ -2844,7 +2641,6 @@
 				91FE25571CB219AE001C6DF0 /* AFURLResponseSerialization.m in Sources */,
 				91FE255A1CB219AE001C6DF0 /* CircleProgressView.m in Sources */,
 				91FE25601CB219AE001C6DF0 /* UITextField+YYAdditions.m in Sources */,
-				91FE25611CB219AE001C6DF0 /* XObject.m in Sources */,
 				91FE25621CB219AE001C6DF0 /* unzip.c in Sources */,
 				91FE25651CB219AE001C6DF0 /* FMDatabasePool.m in Sources */,
 				91FE25671CB219AE001C6DF0 /* mztools.c in Sources */,
