@@ -196,6 +196,110 @@ Breakpoint 7: where = TLLDB`-[ViewController text:] + 30 at ViewController.m:37,
 (lldb) breakpoint set -n text: -o
 'breakpoint 3': where = TLLDB`-[ViewController text:] + 30 at ViewController.m:37, address = 0x000000010b6f97ce
 
+B. breakpoint command 命令 子命令
+在程序走到断点后，有时候需要执行一些命令，而这些命令是可以操作的。我们可以为断点添加，删除命令
+B1. breakpoint command add 添加命令
+(lldb) breakpoint command add -o "po self" 3
+解释：为断点号为：3 的断点添加一条命令。 -o完整写法是--one-liner。
+(lldb) breakpoint command add 3
+Enter your debugger command(s).  Type 'DONE' to end.
+> frame variable
+> continue
+> DONE
+解释：为断点ID为：3的断点添加多个命令，这些命令以“ DONE”作为结束符。
+B2. breakpoint command list 3
+获取断点ID为：3的 断点的命令列表
+B3. breakpoint command delete 3
+删除断点ID为：3的 断点的所有命令
+
+C. breakpoint list
+获取工程中所有断点的列表
+
+D. breakpoint disable/enable
+断点的失效/生效
+举例如下：
+(lldb) breakpoint disable 1
+1 breakpoints disabled.
+(lldb) breakpoint disable 1
+1 breakpoints disabled.
+
+F. breakpoint delete
+删除断点
+(lldb) breakpoint delete 1 
+删除断点ID为：1的断点
+(lldb) breakpoint delete 
+About to delete all breakpoints, do you want to do that?: [Y/n] y
+All breakpoints removed. (1 breakpoint)
+删除工程中所有的断点
+(lldb) breakpoint delete -f
+All breakpoints removed. (1 breakpoint)
+强制所有的断点，忽略提示
+
+7. watchpoint
+breakpoint有一个孪生兄弟watchpoint。如果说breakpoint是对方法生效的断点，watchpoint就是对地址生效的断点
+在开发过程中，平时我们简称一个属性的变化通常是使用属性的set方法，如果属性没有经过set方法，是直接通过self->属性直接修改的话，用set方法就不行了，此时可以通过watchpoint命令监听属性的内存地址，一旦address的内容被修改，程序就会自动断开。
+A. watchpoint set
+设置观测点
+watchpoint set variable  <变量参数> 为变量设置观测点
+(lldb) watchpoint set variable self->_string
+Watchpoint created: Watchpoint 1: addr = 0x7fcf3959c418 size = 8 state = enabled type = w
+    watchpoint spec = 'self->_string'
+    new value: 0x0000000000000000
+watchpoint set expression <变量地址参数> 为变量地址设置观测点
+(lldb) p &_model
+(Modek **) $3 = 0x00007fe0dbf23280
+(lldb) watchpoint set expression 0x00007fe0dbf23280
+Watchpoint created: Watchpoint 1: addr = 0x7fe0dbf23280 size = 8 state = enabled type = w
+    new value: 0
+
+B. watchpoint command
+跟breakpoint类似，在watchpoint中也可以添加命令
+
+C. watchpoint command add
+为观测点添加命令
+watchpoint command add -o 'po self' 1
+为ID为：1的观测点添加一条 命令
+(lldb) watchpoint command add 1
+Enter your debugger command(s).  Type 'DONE' to end.
+> po self
+> continue
+> DONE
+为ID为：1的观测点添加多条命令
+
+D. watchpoint command list
+查询观测点命令列表
+(lldb) watchpoint command list 1
+查询观测点ID为：1的观测点，命令列表
+
+F. watchpoint command delete
+(lldb) watchpoint command delete 1
+删除观测点ID为：1的观测点的命令列表
+
+E. watchpoint list
+查询工程中的所有观测点列表
+
+F. watchpoint disable
+(lldb) watchpoint disable 1
+设置观测点ID为：1的观测点为失效
+
+G. watchpoint enable
+(lldb) watchpoint enable 1
+设置观测点ID为：1的观测点为生效
+
+H. watchpoint delete
+(lldb) watchpoint delete 1
+删除观测点ID为：1的观测点
+(lldb) watchpoint delete 
+About to delete all watchpoints, do you want to do that?: [Y/n] y
+All watchpoints removed. (2 watchpoints)
+删除工程中的观测点
+
+
+
+
+
+
+
 
 
 

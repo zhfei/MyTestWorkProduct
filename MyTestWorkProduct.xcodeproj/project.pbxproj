@@ -372,6 +372,7 @@
 		DC8D14241E7E4EC1009EA61E /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D141C1E7E4EC1009EA61E /* BaiduMapAPI_Search.framework */; };
 		DC8D14251E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D141D1E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework */; };
 		DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC8D141E1E7E4EC1009EA61E /* mapapi.bundle */; };
+		DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */ = {isa = PBXBuildFile; fileRef = DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -813,6 +814,7 @@
 		DC8D141C1E7E4EC1009EA61E /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		DC8D141D1E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
 		DC8D141E1E7E4EC1009EA61E /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "认识xcode中的重要成员：lldb调试器"; sourceTree = "<group>"; };
 		DCE16E75864F3D4F6A797AB5 /* libPods-MyTestWorkProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTestWorkProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCD553C6C7BCA0A743DB3C2 /* Pods-MyTestWorkProduct.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestWorkProduct.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct.dailybuild.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1808,6 +1810,7 @@
 		91E07A281C0205E0009773B9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DC95F8981E9A96D00078D96A /* lldb */,
 				912E4B311E78D31200B6A254 /* ShellStudy */,
 				91F26B051CF9529000D5C3DC /* images */,
 				91E4B3C71C3C0887001DD5B2 /* DBManager */,
@@ -2128,6 +2131,14 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		DC95F8981E9A96D00078D96A /* lldb */ = {
+			isa = PBXGroup;
+			children = (
+				DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */,
+			);
+			path = lldb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2248,6 +2259,7 @@
 				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */,
+				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,

@@ -12,7 +12,7 @@
 
 
 @interface SingletonViewController ()
-
+@property (nonatomic, assign)CGFloat count;
 @end
 
 @implementation SingletonViewController
@@ -50,6 +50,24 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    NSInteger count1,count2;
+    count1 = 10;
+    count2 = 20;
+
+    [self subMethod];
+    NSLog(@"touches:%@",touches);
+    
+    self.count = 30;
+}
+
+- (BOOL)subMethod {
+
+    MyLog(@"%@",NSStringFromSelector(_cmd));
+    return YES;
 }
 
 /*
