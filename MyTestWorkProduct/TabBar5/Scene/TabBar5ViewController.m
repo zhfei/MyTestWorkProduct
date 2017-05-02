@@ -12,12 +12,17 @@
 #import "DateFormatterTableVC.h"
 #import "ZFObject.h"
 #import "DispatchGroupVC.h"
+#import "ImageCachePool.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    ImageCachePool * imageCachePool;
+}
 @property(nonatomic,retain)UIActivityIndicatorView *act;
 
 @property (strong,nonatomic) NSArray     *dataSource;
 @property (weak, nonatomic ) IBOutlet UITableView *tableView;
+@property (strong,nonatomic) ImageCachePool     *imageCachePool;
 
 @end
 
@@ -27,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 //    self.navigationController.tabBarItem.title=@"Collection";
+    
+    imageCachePool = [ImageCachePool imageCachePool];
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
@@ -50,18 +57,20 @@
     [obj updateObjectUsingChangePropertiesDict];
     MyLog(@"obj:%@",obj.address)
     
+    
+    
     {
-        UIImage * image1 = [UIImage imageNamed:@"afr-1"];
+        UIImage * image1 = [imageCachePool imageNamed:@"afr-1" fromBundle:nil];
         
-        UIImage * image2 = [UIImage imageNamed:@"afr-1"];
+        UIImage * image2 = [imageCachePool imageNamed:@"afr-1" fromBundle:nil];
         
         MyLog(@"obj:%p, %p",image1,image2);
     }
     
     
-    UIImage * image3 = [UIImage imageNamed:@"afr-1"];
+    UIImage * image3 = [imageCachePool imageNamed:@"afr-1" fromBundle:nil];
     
-    UIImage * image4 = [UIImage imageNamed:@"afr-1"];
+    UIImage * image4 = [imageCachePool imageNamed:@"afr-1" fromBundle:nil];
     
     MyLog(@"obj:%p, %p",image3,image4);
     

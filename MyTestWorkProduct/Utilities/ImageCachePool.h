@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface ImageCachePool : NSObject
+
+
++ (ImageCachePool *)imageCachePool;
+
+
 /*!
  *  @author zhoufei
  *
@@ -17,6 +22,6 @@
  *  @param bundleName 包名
  *  @return 图片实例
  */
-+ (UIImage *)imageNamed:(NSString *)name fromBundle:(NSString *)bundleName;
+- (UIImage *)imageNamed:(NSString *)name fromBundle:(NSString *)bundleName;
 
 @end
