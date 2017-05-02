@@ -11,12 +11,13 @@
 #import "SingletonViewController.h"
 #import "DateFormatterTableVC.h"
 #import "ZFObject.h"
+#import "DispatchGroupVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,retain)UIActivityIndicatorView *act;
 
-@property (strong,nonatomic)NSArray *dataSource;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong,nonatomic) NSArray     *dataSource;
+@property (weak, nonatomic ) IBOutlet UITableView *tableView;
 
 @end
 
@@ -48,6 +49,21 @@
     [obj.changePropertiesDict setObject:@"南京" forKey:@"address"];
     [obj updateObjectUsingChangePropertiesDict];
     MyLog(@"obj:%@",obj.address)
+    
+    {
+        UIImage * image1 = [UIImage imageNamed:@"afr-1"];
+        
+        UIImage * image2 = [UIImage imageNamed:@"afr-1"];
+        
+        MyLog(@"obj:%p, %p",image1,image2);
+    }
+    
+    
+    UIImage * image3 = [UIImage imageNamed:@"afr-1"];
+    
+    UIImage * image4 = [UIImage imageNamed:@"afr-1"];
+    
+    MyLog(@"obj:%p, %p",image3,image4);
     
 }
 
@@ -136,6 +152,11 @@
         case 1: {
             DateFormatterTableVC *dft=[[DateFormatterTableVC alloc]init];
             [self.navigationController pushViewController:dft animated:YES];
+        }
+            break;
+        case 2: {
+            DispatchGroupVC * dgvc=[[DispatchGroupVC alloc]init];
+            [self.navigationController pushViewController:dgvc animated:YES];
         }
             break;
             

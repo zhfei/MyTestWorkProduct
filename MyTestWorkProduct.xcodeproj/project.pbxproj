@@ -121,6 +121,8 @@
 		918930A71E653FAF007D6879 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930811E653FAF007D6879 /* Utilities.m */; };
 		918930A81E653FAF007D6879 /* XSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189309D1E653FAF007D6879 /* XSqliteManager.m */; };
 		918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930AA1E653FCF007D6879 /* ModelJSON.m */; };
+		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
+		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
 		91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66A91C60AA8100259935 /* UserLoginInfo.m */; };
 		91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66AC1C60B31400259935 /* NSData+AES.m */; };
 		91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D788831BF0C28B0026A18E /* MyCollectionCell.m */; };
@@ -202,6 +204,7 @@
 		91F4FA081D6AEA0D0039EC40 /* SearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4FA061D6AEA0D0039EC40 /* SearchBarViewController.m */; };
 		91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F4FA071D6AEA0D0039EC40 /* SearchBarViewController.xib */; };
 		91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F4FA0C1D6AF0510039EC40 /* FlexSearchBar.m */; };
+		91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F55F731EB884C600EC6BBD /* ImageCachePool.m */; };
 		91F5B6D41C946A4F00C578B3 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F5B6D31C946A4F00C578B3 /* UIView+Image.m */; };
 		91F650951D34E36400212FD0 /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F650941D34E36400212FD0 /* BluetoothViewController.m */; };
 		91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E2DF1D1BE14B00A5A587 /* NSDate+IntervalSeconds.m */; };
@@ -599,6 +602,9 @@
 		9189309D1E653FAF007D6879 /* XSqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSqliteManager.m; sourceTree = "<group>"; };
 		918930A91E653FCF007D6879 /* ModelJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelJSON.h; sourceTree = "<group>"; };
 		918930AA1E653FCF007D6879 /* ModelJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelJSON.m; sourceTree = "<group>"; };
+		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
+		919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
+		919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
 		91CA66A81C60AA8100259935 /* UserLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginInfo.h; sourceTree = "<group>"; };
 		91CA66A91C60AA8100259935 /* UserLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginInfo.m; sourceTree = "<group>"; };
 		91CA66AB1C60B31400259935 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
@@ -740,6 +746,8 @@
 		91F4FA071D6AEA0D0039EC40 /* SearchBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
 		91F4FA0B1D6AF0510039EC40 /* FlexSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexSearchBar.h; sourceTree = "<group>"; };
 		91F4FA0C1D6AF0510039EC40 /* FlexSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexSearchBar.m; sourceTree = "<group>"; };
+		91F55F721EB884C600EC6BBD /* ImageCachePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCachePool.h; sourceTree = "<group>"; };
+		91F55F731EB884C600EC6BBD /* ImageCachePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCachePool.m; sourceTree = "<group>"; };
 		91F5B6D21C946A4F00C578B3 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		91F5B6D31C946A4F00C578B3 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		91F650931D34E36400212FD0 /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
@@ -1359,6 +1367,8 @@
 				918930811E653FAF007D6879 /* Utilities.m */,
 				9189309C1E653FAF007D6879 /* XSqliteManager.h */,
 				9189309D1E653FAF007D6879 /* XSqliteManager.m */,
+				91F55F721EB884C600EC6BBD /* ImageCachePool.h */,
+				91F55F731EB884C600EC6BBD /* ImageCachePool.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1394,6 +1404,16 @@
 				918930AA1E653FCF007D6879 /* ModelJSON.m */,
 			);
 			path = ModelJSON;
+			sourceTree = "<group>";
+		};
+		919CAB9D1EAB1BE200519412 /* DispatchGroup */ = {
+			isa = PBXGroup;
+			children = (
+				919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */,
+				919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */,
+				919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */,
+			);
+			path = DispatchGroup;
 			sourceTree = "<group>";
 		};
 		91DAB0E21BE907A4006695B7 /* UserDataCenter */ = {
@@ -2108,6 +2128,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				919CAB9D1EAB1BE200519412 /* DispatchGroup */,
 				9124D7941E5F1CA1008E01F3 /* DateFormatter */,
 				DC594A0E1E5B3D580043845D /* Singleton */,
 			);
@@ -2252,6 +2273,7 @@
 				911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */,
 				91DC45051BE7A60900E86CC0 /* LaunchScreen.storyboard in Resources */,
 				913D7EB21C92BFA200A862A4 /* MJRefresh.bundle in Resources */,
+				919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */,
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
 				9143540C1E026D1E00608E58 /* GCDTestViewController.xib in Resources */,
 				9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */,
@@ -2345,7 +2367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		91F072571CA18ECB007923EC /* ShellScript */ = {
@@ -2510,6 +2532,7 @@
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
+				919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */,
 				9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */,
 				91F90D831C77068300215E3B /* AFURLResponseSerialization.m in Sources */,
 				913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */,
@@ -2545,6 +2568,7 @@
 				9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */,
 				912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */,
 				91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */,
+				91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */,
 				91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,

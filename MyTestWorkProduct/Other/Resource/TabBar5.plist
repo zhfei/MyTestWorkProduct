@@ -4,5 +4,6 @@
 <array>
 	<string>单例模版</string>
 	<string>DateFormatter</string>
+	<string>Dispatch_Group</string>
 </array>
 </plist>
