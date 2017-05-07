@@ -17,7 +17,23 @@
 		9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102E08E1C8541D50086D752 /* XDownLoadProgressView.m */; };
 		9102E0941C8584BB0086D752 /* XDownLoadOriginalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9102E0931C8584BB0086D752 /* XDownLoadOriginalManager.m */; };
 		9104E2EE1D2123B100AB0EBE /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */; };
+		91071DD21EBF110F006CF932 /* AtBlueCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DD11EBF110F006CF932 /* AtBlueCarLicense.m */; };
+		91071DD51EBF1299006CF932 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DD41EBF1299006CF932 /* Tools.m */; };
+		91071DD81EBF143F006CF932 /* AtCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DD71EBF143F006CF932 /* AtCarLicenseFactory.m */; };
+		91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DDA1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m */; };
 		910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 910AC4E61D200DFE0094A250 /* UIDevice+Hardware.m */; };
+		910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4971EBED04F00D7628F /* CarLicenseFactory.m */; };
+		910BC49B1EBED27400D7628F /* BlueCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC49A1EBED27400D7628F /* BlueCarLicense.m */; };
+		910BC49E1EBED29D00D7628F /* YellowCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC49D1EBED29D00D7628F /* YellowCarLicense.m */; };
+		910BC4A01EBEDD2000D7628F /* SimpleFactory in Resources */ = {isa = PBXBuildFile; fileRef = 910BC49F1EBEDD2000D7628F /* SimpleFactory */; };
+		910BC4A41EBEE35F00D7628F /* BaseCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4A31EBEE35F00D7628F /* BaseCarLicenseFactory.m */; };
+		910BC4A71EBEE46700D7628F /* BlueCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4A61EBEE46700D7628F /* BlueCarLicenseFactory.m */; };
+		910BC4AA1EBEE4E300D7628F /* YellowCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4A91EBEE4E300D7628F /* YellowCarLicenseFactory.m */; };
+		910BC4AC1EBEE58000D7628F /* Factory in Resources */ = {isa = PBXBuildFile; fileRef = 910BC4AB1EBEE58000D7628F /* Factory */; };
+		910BC4AF1EBF084700D7628F /* AbstractFactory in Resources */ = {isa = PBXBuildFile; fileRef = 910BC4AE1EBF084700D7628F /* AbstractFactory */; };
+		910BC4C51EBF103C00D7628F /* AtBeiJingBlueCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4BE1EBF103C00D7628F /* AtBeiJingBlueCarLicense.m */; };
+		910BC4C61EBF103C00D7628F /* AtBeiJingYellowCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4C01EBF103C00D7628F /* AtBeiJingYellowCarLicense.m */; };
+		910BC4C81EBF103C00D7628F /* AtYellowCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4C41EBF103C00D7628F /* AtYellowCarLicense.m */; };
 		910BDE081CA9742D00A499CF /* FontSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BDE071CA9742D00A499CF /* FontSettingsViewController.m */; };
 		910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */; };
 		910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A11D3DC74200F3873C /* HanyuPinyinOutputFormat.m */; };
@@ -110,6 +126,9 @@
 		91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91752AA81E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib */; };
 		91752AB31E4D9A6A00F6C634 /* MyRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752AB21E4D9A6A00F6C634 /* MyRealm.m */; };
 		91752ABE1E4DB95A00F6C634 /* RealmPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752ABD1E4DB95A00F6C634 /* RealmPerson.m */; };
+		9182B3C61EBE1B3700D3A870 /* DesignModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */; };
+		9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */; };
+		9182B3CB1EBE30D000D3A870 /* CarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3CA1EBE30D000D3A870 /* CarLicense.m */; };
 		9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189306C1E653FAF007D6879 /* CalculatorManager.m */; };
 		9189309F1E653FAF007D6879 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189306F1E653FAF007D6879 /* FileDownloader.m */; };
 		918930A01E653FAF007D6879 /* FileMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930711E653FAF007D6879 /* FileMultiDownloader.m */; };
@@ -408,8 +427,38 @@
 		9102E0931C8584BB0086D752 /* XDownLoadOriginalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDownLoadOriginalManager.m; sourceTree = "<group>"; };
 		9104E2EC1D2123B100AB0EBE /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
 		9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		91071DD11EBF110F006CF932 /* AtBlueCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtBlueCarLicense.m; sourceTree = "<group>"; };
+		91071DD31EBF1299006CF932 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		91071DD41EBF1299006CF932 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		91071DD61EBF143F006CF932 /* AtCarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtCarLicenseFactory.h; sourceTree = "<group>"; };
+		91071DD71EBF143F006CF932 /* AtCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtCarLicenseFactory.m; sourceTree = "<group>"; };
+		91071DD91EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtBeiJingCarLicenseFactory.h; sourceTree = "<group>"; };
+		91071DDA1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtBeiJingCarLicenseFactory.m; sourceTree = "<group>"; };
 		910AC4E51D200DFE0094A250 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		910AC4E61D200DFE0094A250 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		910BC4961EBED04F00D7628F /* CarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicenseFactory.h; sourceTree = "<group>"; };
+		910BC4971EBED04F00D7628F /* CarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLicenseFactory.m; sourceTree = "<group>"; };
+		910BC4991EBED27400D7628F /* BlueCarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueCarLicense.h; sourceTree = "<group>"; };
+		910BC49A1EBED27400D7628F /* BlueCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueCarLicense.m; sourceTree = "<group>"; };
+		910BC49C1EBED29D00D7628F /* YellowCarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowCarLicense.h; sourceTree = "<group>"; };
+		910BC49D1EBED29D00D7628F /* YellowCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowCarLicense.m; sourceTree = "<group>"; };
+		910BC49F1EBEDD2000D7628F /* SimpleFactory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFactory; sourceTree = "<group>"; };
+		910BC4A21EBEE35F00D7628F /* BaseCarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCarLicenseFactory.h; sourceTree = "<group>"; };
+		910BC4A31EBEE35F00D7628F /* BaseCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCarLicenseFactory.m; sourceTree = "<group>"; };
+		910BC4A51EBEE46700D7628F /* BlueCarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueCarLicenseFactory.h; sourceTree = "<group>"; };
+		910BC4A61EBEE46700D7628F /* BlueCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueCarLicenseFactory.m; sourceTree = "<group>"; };
+		910BC4A81EBEE4E300D7628F /* YellowCarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowCarLicenseFactory.h; sourceTree = "<group>"; };
+		910BC4A91EBEE4E300D7628F /* YellowCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowCarLicenseFactory.m; sourceTree = "<group>"; };
+		910BC4AB1EBEE58000D7628F /* Factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Factory; sourceTree = "<group>"; };
+		910BC4AE1EBF084700D7628F /* AbstractFactory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory; sourceTree = "<group>"; };
+		910BC4B61EBF095700D7628F /* CarLicenseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicenseProtocol.h; sourceTree = "<group>"; };
+		910BC4BD1EBF103C00D7628F /* AtBeiJingBlueCarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtBeiJingBlueCarLicense.h; sourceTree = "<group>"; };
+		910BC4BE1EBF103C00D7628F /* AtBeiJingBlueCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtBeiJingBlueCarLicense.m; sourceTree = "<group>"; };
+		910BC4BF1EBF103C00D7628F /* AtBeiJingYellowCarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtBeiJingYellowCarLicense.h; sourceTree = "<group>"; };
+		910BC4C01EBF103C00D7628F /* AtBeiJingYellowCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtBeiJingYellowCarLicense.m; sourceTree = "<group>"; };
+		910BC4C11EBF103C00D7628F /* AtBlueCarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtBlueCarLicense.h; sourceTree = "<group>"; };
+		910BC4C31EBF103C00D7628F /* AtYellowCarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtYellowCarLicense.h; sourceTree = "<group>"; };
+		910BC4C41EBF103C00D7628F /* AtYellowCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtYellowCarLicense.m; sourceTree = "<group>"; };
 		910BDE061CA9742D00A499CF /* FontSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontSettingsViewController.h; sourceTree = "<group>"; };
 		910BDE071CA9742D00A499CF /* FontSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSettingsViewController.m; sourceTree = "<group>"; };
 		910C529E1D3DC74200F3873C /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
@@ -580,6 +629,11 @@
 		91752AB21E4D9A6A00F6C634 /* MyRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRealm.m; sourceTree = "<group>"; };
 		91752ABC1E4DB95A00F6C634 /* RealmPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmPerson.h; sourceTree = "<group>"; };
 		91752ABD1E4DB95A00F6C634 /* RealmPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmPerson.m; sourceTree = "<group>"; };
+		9182B3C31EBE1B3700D3A870 /* DesignModeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignModeVC.h; sourceTree = "<group>"; };
+		9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignModeVC.m; sourceTree = "<group>"; };
+		9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignModeVC.xib; sourceTree = "<group>"; };
+		9182B3C91EBE30D000D3A870 /* CarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicense.h; sourceTree = "<group>"; };
+		9182B3CA1EBE30D000D3A870 /* CarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLicense.m; sourceTree = "<group>"; };
 		9189306B1E653FAF007D6879 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
 		9189306C1E653FAF007D6879 /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
 		9189306E1E653FAF007D6879 /* FileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloader.h; sourceTree = "<group>"; };
@@ -932,6 +986,42 @@
 				9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */,
 			);
 			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		910BC4A11EBEE2B100D7628F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				910BC4AB1EBEE58000D7628F /* Factory */,
+				910BC4A21EBEE35F00D7628F /* BaseCarLicenseFactory.h */,
+				910BC4A31EBEE35F00D7628F /* BaseCarLicenseFactory.m */,
+				910BC4A51EBEE46700D7628F /* BlueCarLicenseFactory.h */,
+				910BC4A61EBEE46700D7628F /* BlueCarLicenseFactory.m */,
+				910BC4A81EBEE4E300D7628F /* YellowCarLicenseFactory.h */,
+				910BC4A91EBEE4E300D7628F /* YellowCarLicenseFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		910BC4AD1EBF083300D7628F /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				910BC4C11EBF103C00D7628F /* AtBlueCarLicense.h */,
+				91071DD11EBF110F006CF932 /* AtBlueCarLicense.m */,
+				910BC4C31EBF103C00D7628F /* AtYellowCarLicense.h */,
+				910BC4C41EBF103C00D7628F /* AtYellowCarLicense.m */,
+				910BC4BD1EBF103C00D7628F /* AtBeiJingBlueCarLicense.h */,
+				910BC4BE1EBF103C00D7628F /* AtBeiJingBlueCarLicense.m */,
+				910BC4BF1EBF103C00D7628F /* AtBeiJingYellowCarLicense.h */,
+				910BC4C01EBF103C00D7628F /* AtBeiJingYellowCarLicense.m */,
+				91071DD61EBF143F006CF932 /* AtCarLicenseFactory.h */,
+				91071DD71EBF143F006CF932 /* AtCarLicenseFactory.m */,
+				91071DD91EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.h */,
+				91071DDA1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m */,
+				910BC4AE1EBF084700D7628F /* AbstractFactory */,
+				91071DD31EBF1299006CF932 /* Tools.h */,
+				91071DD41EBF1299006CF932 /* Tools.m */,
+			);
+			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
 		910BDE051CA9741400A499CF /* FontSettings */ = {
@@ -1349,6 +1439,36 @@
 				91752ABD1E4DB95A00F6C634 /* RealmPerson.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
+			isa = PBXGroup;
+			children = (
+				910BC4AD1EBF083300D7628F /* AbstractFactory */,
+				910BC4A11EBEE2B100D7628F /* Factory */,
+				9182B3C81EBE303800D3A870 /* SimpleFactory */,
+				9182B3C31EBE1B3700D3A870 /* DesignModeVC.h */,
+				9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */,
+				9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */,
+			);
+			path = DesignMode;
+			sourceTree = "<group>";
+		};
+		9182B3C81EBE303800D3A870 /* SimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				910BC49F1EBEDD2000D7628F /* SimpleFactory */,
+				9182B3C91EBE30D000D3A870 /* CarLicense.h */,
+				9182B3CA1EBE30D000D3A870 /* CarLicense.m */,
+				910BC4991EBED27400D7628F /* BlueCarLicense.h */,
+				910BC49A1EBED27400D7628F /* BlueCarLicense.m */,
+				910BC49C1EBED29D00D7628F /* YellowCarLicense.h */,
+				910BC49D1EBED29D00D7628F /* YellowCarLicense.m */,
+				910BC4961EBED04F00D7628F /* CarLicenseFactory.h */,
+				910BC4971EBED04F00D7628F /* CarLicenseFactory.m */,
+				910BC4B61EBF095700D7628F /* CarLicenseProtocol.h */,
+			);
+			path = SimpleFactory;
 			sourceTree = "<group>";
 		};
 		9189306A1E653FAF007D6879 /* Utilities */ = {
@@ -2128,6 +2248,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				9182B3C21EBE1AF400D3A870 /* DesignMode */,
 				919CAB9D1EAB1BE200519412 /* DispatchGroup */,
 				9124D7941E5F1CA1008E01F3 /* DateFormatter */,
 				DC594A0E1E5B3D580043845D /* Singleton */,
@@ -2272,6 +2393,7 @@
 				911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */,
 				911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */,
 				91DC45051BE7A60900E86CC0 /* LaunchScreen.storyboard in Resources */,
+				910BC4A01EBEDD2000D7628F /* SimpleFactory in Resources */,
 				913D7EB21C92BFA200A862A4 /* MJRefresh.bundle in Resources */,
 				919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */,
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
@@ -2289,6 +2411,7 @@
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
+				910BC4AC1EBEE58000D7628F /* Factory in Resources */,
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
 				910C52B01D3DC74200F3873C /* unicode_to_hanyu_pinyin.txt in Resources */,
 				91DE33E21C3FD04F00125B25 /* AnimationScene2.xib in Resources */,
@@ -2296,11 +2419,13 @@
 				91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */,
 				91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */,
 				91DC45C31BE7C0A400E86CC0 /* TabBar1ViewController.xib in Resources */,
+				9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */,
 				91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */,
 				91DC45001BE7A60900E86CC0 /* Main.storyboard in Resources */,
 				91DC45C81BE7C0B500E86CC0 /* TabBar2ViewController.xib in Resources */,
 				91E188DA1C070106006BA41C /* SubScene1.xib in Resources */,
 				DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */,
+				910BC4AF1EBF084700D7628F /* AbstractFactory in Resources */,
 				91F26B071CF9529000D5C3DC /* user_header_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2424,11 +2549,13 @@
 				91DC44FD1BE7A60900E86CC0 /* ViewController.m in Sources */,
 				91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */,
 				91DE33E61C3FF12100125B25 /* MyHUDView.m in Sources */,
+				910BC4C61EBF103C00D7628F /* AtBeiJingYellowCarLicense.m in Sources */,
 				918930A11E653FAF007D6879 /* FileSingleDownloader.m in Sources */,
 				9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */,
 				913A95AD1D3CFC9200237473 /* BluetoothTransmissionViewController.m in Sources */,
 				918930A51E653FAF007D6879 /* SelectBoxAlertController.m in Sources */,
 				911F2ABB1E5C77480057FE33 /* UIButton+XStyle.m in Sources */,
+				910BC4A71EBEE46700D7628F /* BlueCarLicenseFactory.m in Sources */,
 				91DC457D1BE7B74B00E86CC0 /* BaseViewController.m in Sources */,
 				91DC457A1BE7B59200E86CC0 /* pinyin.c in Sources */,
 				91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */,
@@ -2451,6 +2578,7 @@
 				DC5887C41E8032A100373621 /* TestPerson.m in Sources */,
 				918930A21E653FAF007D6879 /* AsyncFileManager.m in Sources */,
 				91F90D801C77068300215E3B /* AFSecurityPolicy.m in Sources */,
+				910BC49B1EBED27400D7628F /* BlueCarLicense.m in Sources */,
 				9114D6CB1C8688C70087E5AC /* Main.m in Sources */,
 				9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */,
 				913D7EC11C92C0BB00A862A4 /* ImageLabelViewController.m in Sources */,
@@ -2473,10 +2601,12 @@
 				91020AFC1CBE8E3D00F5E55E /* ForwardInvocationOBJ.m in Sources */,
 				91ED409E1D198DC500190FC5 /* AnimationViewController.m in Sources */,
 				9102E0941C8584BB0086D752 /* XDownLoadOriginalManager.m in Sources */,
+				910BC49E1EBED29D00D7628F /* YellowCarLicense.m in Sources */,
 				91DC456E1BE7B17000E86CC0 /* UILabel+YYAdditions.m in Sources */,
 				91DE33E11C3FD04F00125B25 /* AnimationScene2.m in Sources */,
 				9104E2EE1D2123B100AB0EBE /* TransitionAnimation.m in Sources */,
 				91E188D91C070106006BA41C /* SubScene1.m in Sources */,
+				9182B3C61EBE1B3700D3A870 /* DesignModeVC.m in Sources */,
 				911CBA3C1E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m in Sources */,
 				91F90D821C77068300215E3B /* AFURLRequestSerialization.m in Sources */,
 				911F2AC61E5C77DA0057FE33 /* UIButton+Method.m in Sources */,
@@ -2491,6 +2621,8 @@
 				91E9C2CE1C0802DA0044D617 /* FAImageView.m in Sources */,
 				911F2AB91E5C77480057FE33 /* UIButton+ImageTitle.m in Sources */,
 				91F4FA081D6AEA0D0039EC40 /* SearchBarViewController.m in Sources */,
+				910BC4C81EBF103C00D7628F /* AtYellowCarLicense.m in Sources */,
+				91071DD81EBF143F006CF932 /* AtCarLicenseFactory.m in Sources */,
 				91DC45CC1BE7C0C700E86CC0 /* TabBar3ViewController.m in Sources */,
 				913D7EB31C92BFA200A862A4 /* MJRefreshConst.m in Sources */,
 				911F2ADF1E5C7B140057FE33 /* HUDView.m in Sources */,
@@ -2508,6 +2640,7 @@
 				91FC89161D0074F300527C4B /* CollectionViewController.m in Sources */,
 				918930A31E653FAF007D6879 /* XFileManager.m in Sources */,
 				918930A81E653FAF007D6879 /* XSqliteManager.m in Sources */,
+				910BC4C51EBF103C00D7628F /* AtBeiJingBlueCarLicense.m in Sources */,
 				91DC45C71BE7C0B500E86CC0 /* TabBar2ViewController.m in Sources */,
 				91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */,
 				911F2AC01E5C77480057FE33 /* UIImage+Scale.m in Sources */,
@@ -2523,9 +2656,11 @@
 				910C52B31D3DC7BA00F3873C /* NSArray+Additions.m in Sources */,
 				DC7B7BA81E817999008FCAEF /* XObject.m in Sources */,
 				913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */,
+				91071DD21EBF110F006CF932 /* AtBlueCarLicense.m in Sources */,
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
 				9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */,
+				91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */,
 				911F2AB61E5C77480057FE33 /* NSObject+MethodSwizzing.m in Sources */,
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
@@ -2550,6 +2685,7 @@
 				91FAFFC71D0582AB004F4CE8 /* LeftAlignedFlowLayout.m in Sources */,
 				91F1FE0C1CA56EF30042DCE3 /* VideoPlayerViewController.m in Sources */,
 				9102046F1CA433380073E7DC /* DIYDownLoadProgressViewController.m in Sources */,
+				910BC4A41EBEE35F00D7628F /* BaseCarLicenseFactory.m in Sources */,
 				91DC45791BE7B59200E86CC0 /* ChineseString.m in Sources */,
 				913D7EB61C92BFA200A862A4 /* UIView+MJExtension.m in Sources */,
 				9143540B1E026D1E00608E58 /* GCDTestViewController.m in Sources */,
@@ -2570,8 +2706,10 @@
 				91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */,
 				91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */,
 				91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */,
+				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,
+				910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */,
 				910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */,
 				913D7EAA1C92BFA200A862A4 /* MJRefreshAutoNormalFooter.m in Sources */,
 				91E4B3CA1C3C0887001DD5B2 /* DBManager.m in Sources */,
@@ -2584,10 +2722,12 @@
 				91E9C2D11C0802DA0044D617 /* UIImage+FontAwesome.m in Sources */,
 				911F2AB51E5C77480057FE33 /* NSObject+CallStack.m in Sources */,
 				913D7EAE1C92BFA200A862A4 /* MJRefreshBackStateFooter.m in Sources */,
+				910BC4AA1EBEE4E300D7628F /* YellowCarLicenseFactory.m in Sources */,
 				911D6D9B1E6436E100FBF188 /* CodingSubClass.m in Sources */,
 				91752ABE1E4DB95A00F6C634 /* RealmPerson.m in Sources */,
 				911F2ABC1E5C77480057FE33 /* UIImage+Color.m in Sources */,
 				913A95AA1D3C7EF700237473 /* UITextView+Additions.m in Sources */,
+				9182B3CB1EBE30D000D3A870 /* CarLicense.m in Sources */,
 				91FAFFC41D057E45004F4CE8 /* CollectionViewHeader.m in Sources */,
 				911F2AB41E5C77480057FE33 /* NSObject+AutoDescription.m in Sources */,
 				91DC45681BE7B17000E86CC0 /* NSString+YYAdditions.m in Sources */,

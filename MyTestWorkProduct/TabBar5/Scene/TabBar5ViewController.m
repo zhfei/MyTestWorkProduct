@@ -13,6 +13,7 @@
 #import "ZFObject.h"
 #import "DispatchGroupVC.h"
 #import "ImageCachePool.h"
+#import "DesignModeVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -32,13 +33,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 //    self.navigationController.tabBarItem.title=@"Collection";
-    
-    imageCachePool = [ImageCachePool imageCachePool];
-    
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
     NSString *path= [[NSBundle mainBundle] pathForResource:@"TabBar5" ofType:@"plist"];
-   
     self.dataSource=[NSArray arrayWithContentsOfFile:path];
     
     NSString *dateString=@"2017-02-23 08:07:40 +0000";
@@ -56,9 +53,14 @@
     [obj.changePropertiesDict setObject:@"南京" forKey:@"address"];
     [obj updateObjectUsingChangePropertiesDict];
     MyLog(@"obj:%@",obj.address)
+
     
-    
-    
+}
+
+- (void)imageCachePoolTest {
+
+    imageCachePool = [ImageCachePool sharedImageCachePool];
+
     {
         UIImage * image1 = [imageCachePool imageNamed:@"afr-1" fromBundle:nil];
         
@@ -73,7 +75,7 @@
     UIImage * image4 = [imageCachePool imageNamed:@"afr-1" fromBundle:nil];
     
     MyLog(@"obj:%p, %p",image3,image4);
-    
+
 }
 
 
@@ -117,17 +119,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-   }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -166,6 +159,11 @@
         case 2: {
             DispatchGroupVC * dgvc=[[DispatchGroupVC alloc]init];
             [self.navigationController pushViewController:dgvc animated:YES];
+        }
+            break;
+        case 3: {
+            DesignModeVC * dmvc=[[DesignModeVC alloc]init];
+            [self.navigationController pushViewController:dmvc animated:YES];
         }
             break;
             
