@@ -11,7 +11,6 @@
 #import "BlueCarLicenseFactory.h"
 #import "YellowCarLicenseFactory.h"
 #import "AtBeiJingCarLicenseFactory.h"
-#import "AdapterPlayerVC.h"
 
 @interface DesignModeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic)NSArray * dataSource;
@@ -26,8 +25,7 @@
     
     self.dataSource = @[@"简单工厂模式",
                         @"工厂模式",
-                        @"抽象工厂模式",
-                        @"适配器"];
+                        @"抽象工厂模式"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,11 +79,6 @@
             [self abstractFactoryTest];
         }
             break;
-        case 3:
-        {
-            [self adapterTest];
-        }
-            break;
         default:
             break;
     }
@@ -127,15 +120,6 @@
     NSLog(@"北京蓝车牌：%@",[blue printCarLicenseNumber]);
     
 }
-
-/*!**适配器***/
-- (void)adapterTest {
-
-    AdapterPlayerVC * adapter = [AdapterPlayerVC new];
-    [self.navigationController pushViewController:adapter animated:YES];
-}
-
-
 
 
 @end
