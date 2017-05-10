@@ -12,6 +12,7 @@
 #import "YellowCarLicenseFactory.h"
 #import "AtBeiJingCarLicenseFactory.h"
 #import "AdapterPlayerVC.h"
+#import "StrategyPlayerVC.h"
 
 @interface DesignModeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic)NSArray * dataSource;
@@ -27,7 +28,8 @@
     self.dataSource = @[@"简单工厂模式",
                         @"工厂模式",
                         @"抽象工厂模式",
-                        @"适配器"];
+                        @"适配器",
+                        @"策略模式"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,6 +88,11 @@
             [self adapterTest];
         }
             break;
+        case 4:
+        {
+            [self strategyTest];
+        }
+            break;
         default:
             break;
     }
@@ -135,6 +142,12 @@
     [self.navigationController pushViewController:adapter animated:YES];
 }
 
+/*!**策略模式***/
+- (void)strategyTest {
+    
+    StrategyPlayerVC * adapter = [StrategyPlayerVC new];
+    [self.navigationController pushViewController:adapter animated:YES];
+}
 
 
 

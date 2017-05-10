@@ -135,6 +135,9 @@
 		9182B3C61EBE1B3700D3A870 /* DesignModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */; };
 		9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */; };
 		9182B3CB1EBE30D000D3A870 /* CarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3CA1EBE30D000D3A870 /* CarLicense.m */; };
+		91884BD31EC2F1E200F2212D /* StNormalPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91884BD21EC2F1E200F2212D /* StNormalPlayer.m */; };
+		91884BD71EC2F4E800F2212D /* StrategyPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91884BD51EC2F4E800F2212D /* StrategyPlayerVC.m */; };
+		91884BD81EC2F4E800F2212D /* StrategyPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91884BD61EC2F4E800F2212D /* StrategyPlayerVC.xib */; };
 		9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189306C1E653FAF007D6879 /* CalculatorManager.m */; };
 		9189309F1E653FAF007D6879 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189306F1E653FAF007D6879 /* FileDownloader.m */; };
 		918930A01E653FAF007D6879 /* FileMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930711E653FAF007D6879 /* FileMultiDownloader.m */; };
@@ -203,6 +206,9 @@
 		91E4B3C61C3C086E001DD5B2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E4B3C11C3C086E001DD5B2 /* FMResultSet.m */; };
 		91E4B3CA1C3C0887001DD5B2 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E4B3C91C3C0887001DD5B2 /* DBManager.m */; };
 		91E4B3CC1C3C0A38001DD5B2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E4B3CB1C3C0A38001DD5B2 /* libsqlite3.0.tbd */; };
+		91E8DE791EC1904C0068C166 /* Strategy in Resources */ = {isa = PBXBuildFile; fileRef = 91E8DE781EC1904C0068C166 /* Strategy */; };
+		91E8DE7D1EC199360068C166 /* StAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E8DE7C1EC199360068C166 /* StAVPlayer.m */; };
+		91E8DE801EC19A590068C166 /* StNewPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E8DE7F1EC19A590068C166 /* StNewPlayer.m */; };
 		91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91E9C2C01C0801B60044D617 /* FontAwesome.ttf */; };
 		91E9C2CE1C0802DA0044D617 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E9C2C71C0802DA0044D617 /* FAImageView.m */; };
 		91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E9C2C91C0802DA0044D617 /* NSString+FontAwesome.m */; };
@@ -652,6 +658,11 @@
 		9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignModeVC.xib; sourceTree = "<group>"; };
 		9182B3C91EBE30D000D3A870 /* CarLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicense.h; sourceTree = "<group>"; };
 		9182B3CA1EBE30D000D3A870 /* CarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLicense.m; sourceTree = "<group>"; };
+		91884BD11EC2F1E200F2212D /* StNormalPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StNormalPlayer.h; sourceTree = "<group>"; };
+		91884BD21EC2F1E200F2212D /* StNormalPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StNormalPlayer.m; sourceTree = "<group>"; };
+		91884BD41EC2F4E800F2212D /* StrategyPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyPlayerVC.h; sourceTree = "<group>"; };
+		91884BD51EC2F4E800F2212D /* StrategyPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyPlayerVC.m; sourceTree = "<group>"; };
+		91884BD61EC2F4E800F2212D /* StrategyPlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrategyPlayerVC.xib; sourceTree = "<group>"; };
 		9189306B1E653FAF007D6879 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
 		9189306C1E653FAF007D6879 /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
 		9189306E1E653FAF007D6879 /* FileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloader.h; sourceTree = "<group>"; };
@@ -780,6 +791,12 @@
 		91E4B3C81C3C0887001DD5B2 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		91E4B3C91C3C0887001DD5B2 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		91E4B3CB1C3C0A38001DD5B2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		91E8DE781EC1904C0068C166 /* Strategy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Strategy; sourceTree = "<group>"; };
+		91E8DE7A1EC195B70068C166 /* StPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StPlayerProtocol.h; sourceTree = "<group>"; };
+		91E8DE7B1EC199360068C166 /* StAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StAVPlayer.h; sourceTree = "<group>"; };
+		91E8DE7C1EC199360068C166 /* StAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StAVPlayer.m; sourceTree = "<group>"; };
+		91E8DE7E1EC19A590068C166 /* StNewPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StNewPlayer.h; sourceTree = "<group>"; };
+		91E8DE7F1EC19A590068C166 /* StNewPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StNewPlayer.m; sourceTree = "<group>"; };
 		91E9C2C01C0801B60044D617 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		91E9C2C61C0802DA0044D617 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
 		91E9C2C71C0802DA0044D617 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
@@ -1481,6 +1498,7 @@
 		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				91E8DE771EC190360068C166 /* Strategy */,
 				9141F3A61EC00A6A0078E71E /* Adapter */,
 				910BC4AD1EBF083300D7628F /* AbstractFactory */,
 				910BC4A11EBEE2B100D7628F /* Factory */,
@@ -2035,6 +2053,24 @@
 			path = DBManager;
 			sourceTree = "<group>";
 		};
+		91E8DE771EC190360068C166 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				91E8DE781EC1904C0068C166 /* Strategy */,
+				91E8DE7A1EC195B70068C166 /* StPlayerProtocol.h */,
+				91E8DE7B1EC199360068C166 /* StAVPlayer.h */,
+				91E8DE7C1EC199360068C166 /* StAVPlayer.m */,
+				91E8DE7E1EC19A590068C166 /* StNewPlayer.h */,
+				91E8DE7F1EC19A590068C166 /* StNewPlayer.m */,
+				91884BD11EC2F1E200F2212D /* StNormalPlayer.h */,
+				91884BD21EC2F1E200F2212D /* StNormalPlayer.m */,
+				91884BD41EC2F4E800F2212D /* StrategyPlayerVC.h */,
+				91884BD51EC2F4E800F2212D /* StrategyPlayerVC.m */,
+				91884BD61EC2F4E800F2212D /* StrategyPlayerVC.xib */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		91E9C2BF1C08019B0044D617 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -2432,6 +2468,7 @@
 				911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */,
 				91DC45051BE7A60900E86CC0 /* LaunchScreen.storyboard in Resources */,
 				910BC4A01EBEDD2000D7628F /* SimpleFactory in Resources */,
+				91884BD81EC2F4E800F2212D /* StrategyPlayerVC.xib in Resources */,
 				913D7EB21C92BFA200A862A4 /* MJRefresh.bundle in Resources */,
 				919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */,
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
@@ -2443,6 +2480,7 @@
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */,
 				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
+				91E8DE791EC1904C0068C166 /* Strategy in Resources */,
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
@@ -2670,6 +2708,7 @@
 				911F2ADF1E5C7B140057FE33 /* HUDView.m in Sources */,
 				91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */,
 				913D7EB01C92BFA200A862A4 /* MJRefreshNormalHeader.m in Sources */,
+				91E8DE7D1EC199360068C166 /* StAVPlayer.m in Sources */,
 				911F2AB81E5C77480057FE33 /* UIButton+Badge.m in Sources */,
 				91E4B3C61C3C086E001DD5B2 /* FMResultSet.m in Sources */,
 				91F90D7C1C77068300215E3B /* AFHTTPRequestOperation.m in Sources */,
@@ -2692,6 +2731,7 @@
 				DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */,
 				91DC456F1BE7B17000E86CC0 /* UIScrollView+YYAdditions.m in Sources */,
 				91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */,
+				91884BD71EC2F4E800F2212D /* StrategyPlayerVC.m in Sources */,
 				913D7EAB1C92BFA200A862A4 /* MJRefreshAutoStateFooter.m in Sources */,
 				913D7EA41C92BFA200A862A4 /* MJRefreshAutoFooter.m in Sources */,
 				91FAFFBE1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m in Sources */,
@@ -2724,9 +2764,11 @@
 				9114D6CD1C8688C70087E5AC /* mztools.c in Sources */,
 				91DC456A1BE7B17000E86CC0 /* UIBarButtonItem+MF.m in Sources */,
 				DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */,
+				91E8DE801EC19A590068C166 /* StNewPlayer.m in Sources */,
 				91F00BC31CFF26600000D48A /* SwizzingViewController.m in Sources */,
 				91DC456C1BE7B17000E86CC0 /* UIColor+YYAdditions.m in Sources */,
 				91FAFFC71D0582AB004F4CE8 /* LeftAlignedFlowLayout.m in Sources */,
+				91884BD31EC2F1E200F2212D /* StNormalPlayer.m in Sources */,
 				91F1FE0C1CA56EF30042DCE3 /* VideoPlayerViewController.m in Sources */,
 				9102046F1CA433380073E7DC /* DIYDownLoadProgressViewController.m in Sources */,
 				910BC4A41EBEE35F00D7628F /* BaseCarLicenseFactory.m in Sources */,
