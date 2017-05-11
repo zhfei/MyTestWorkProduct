@@ -404,6 +404,13 @@
 		DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC594A141E5B3D580043845D /* SingletonViewController.xib */; };
 		DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA41E81791E008FCAEF /* ZFObject.m */; };
 		DC7B7BA81E817999008FCAEF /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA71E817999008FCAEF /* XObject.m */; };
+		DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */ = {isa = PBXBuildFile; fileRef = DC84DFF91EC4A87800FBE3E8 /* Builder */; };
+		DC84DFFD1EC4A90100FBE3E8 /* BuickCar.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84DFFC1EC4A90100FBE3E8 /* BuickCar.m */; };
+		DC84E0001EC4A99F00FBE3E8 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84DFFF1EC4A99F00FBE3E8 /* Director.m */; };
+		DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0021EC4A9E300FBE3E8 /* BuickBuilder.m */; };
+		DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0051EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m */; };
+		DC84E0091EC4AB1600FBE3E8 /* BuickVeranoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0081EC4AB1600FBE3E8 /* BuickVeranoBuilder.m */; };
+		DC84E00C1EC4ABAB00FBE3E8 /* BuilderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E00B1EC4ABAB00FBE3E8 /* BuilderVC.m */; };
 		DC8D141F1E7E4EC1009EA61E /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14171E7E4EC1009EA61E /* BaiduMapAPI_Base.framework */; };
 		DC8D14201E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14181E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework */; };
 		DC8D14211E7E4EC1009EA61E /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14191E7E4EC1009EA61E /* BaiduMapAPI_Location.framework */; };
@@ -919,6 +926,19 @@
 		DC7B7BA41E81791E008FCAEF /* ZFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFObject.m; sourceTree = "<group>"; };
 		DC7B7BA61E817999008FCAEF /* XObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XObject.h; sourceTree = "<group>"; };
 		DC7B7BA71E817999008FCAEF /* XObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XObject.m; sourceTree = "<group>"; };
+		DC84DFF91EC4A87800FBE3E8 /* Builder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder; sourceTree = "<group>"; };
+		DC84DFFB1EC4A90100FBE3E8 /* BuickCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuickCar.h; sourceTree = "<group>"; };
+		DC84DFFC1EC4A90100FBE3E8 /* BuickCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuickCar.m; sourceTree = "<group>"; };
+		DC84DFFE1EC4A99F00FBE3E8 /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		DC84DFFF1EC4A99F00FBE3E8 /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		DC84E0011EC4A9E300FBE3E8 /* BuickBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuickBuilder.h; sourceTree = "<group>"; };
+		DC84E0021EC4A9E300FBE3E8 /* BuickBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuickBuilder.m; sourceTree = "<group>"; };
+		DC84E0041EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuickExcelleGTBuilder.h; sourceTree = "<group>"; };
+		DC84E0051EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuickExcelleGTBuilder.m; sourceTree = "<group>"; };
+		DC84E0071EC4AB1600FBE3E8 /* BuickVeranoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuickVeranoBuilder.h; sourceTree = "<group>"; };
+		DC84E0081EC4AB1600FBE3E8 /* BuickVeranoBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuickVeranoBuilder.m; sourceTree = "<group>"; };
+		DC84E00A1EC4ABAB00FBE3E8 /* BuilderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderVC.h; sourceTree = "<group>"; };
+		DC84E00B1EC4ABAB00FBE3E8 /* BuilderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuilderVC.m; sourceTree = "<group>"; };
 		DC8D14171E7E4EC1009EA61E /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		DC8D14181E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		DC8D14191E7E4EC1009EA61E /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -1514,6 +1534,7 @@
 		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				DC84DFF81EC4A85900FBE3E8 /* Builder */,
 				91C5FA9A1EC41235006F3A02 /* Template */,
 				91E8DE771EC190360068C166 /* Strategy */,
 				9141F3A61EC00A6A0078E71E /* Adapter */,
@@ -2381,6 +2402,26 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		DC84DFF81EC4A85900FBE3E8 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				DC84DFF91EC4A87800FBE3E8 /* Builder */,
+				DC84DFFB1EC4A90100FBE3E8 /* BuickCar.h */,
+				DC84DFFC1EC4A90100FBE3E8 /* BuickCar.m */,
+				DC84E0011EC4A9E300FBE3E8 /* BuickBuilder.h */,
+				DC84E0021EC4A9E300FBE3E8 /* BuickBuilder.m */,
+				DC84E0041EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.h */,
+				DC84E0051EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m */,
+				DC84E0071EC4AB1600FBE3E8 /* BuickVeranoBuilder.h */,
+				DC84E0081EC4AB1600FBE3E8 /* BuickVeranoBuilder.m */,
+				DC84DFFE1EC4A99F00FBE3E8 /* Director.h */,
+				DC84DFFF1EC4A99F00FBE3E8 /* Director.m */,
+				DC84E00A1EC4ABAB00FBE3E8 /* BuilderVC.h */,
+				DC84E00B1EC4ABAB00FBE3E8 /* BuilderVC.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		DC95F8981E9A96D00078D96A /* lldb */ = {
 			isa = PBXGroup;
 			children = (
@@ -2518,6 +2559,7 @@
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
+				DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */,
 				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
@@ -2665,6 +2707,7 @@
 				91DE33E61C3FF12100125B25 /* MyHUDView.m in Sources */,
 				910BC4C61EBF103C00D7628F /* AtBeiJingYellowCarLicense.m in Sources */,
 				918930A11E653FAF007D6879 /* FileSingleDownloader.m in Sources */,
+				DC84E00C1EC4ABAB00FBE3E8 /* BuilderVC.m in Sources */,
 				9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */,
 				913A95AD1D3CFC9200237473 /* BluetoothTransmissionViewController.m in Sources */,
 				918930A51E653FAF007D6879 /* SelectBoxAlertController.m in Sources */,
@@ -2674,6 +2717,7 @@
 				91DC457A1BE7B59200E86CC0 /* pinyin.c in Sources */,
 				91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */,
 				913D7EA51C92BFA200A862A4 /* MJRefreshBackFooter.m in Sources */,
+				DC84E0001EC4A99F00FBE3E8 /* Director.m in Sources */,
 				9134AC591CFFD9CE00C2C49E /* UIView+Frame.m in Sources */,
 				91F90D671C77057600215E3B /* XDownLoadManager.m in Sources */,
 				91E4B3C31C3C086E001DD5B2 /* FMDatabaseAdditions.m in Sources */,
@@ -2782,10 +2826,12 @@
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
 				9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */,
 				91C5FAA91EC42AEE006F3A02 /* TemplateVC.m in Sources */,
+				DC84DFFD1EC4A90100FBE3E8 /* BuickCar.m in Sources */,
 				91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */,
 				911F2AB61E5C77480057FE33 /* NSObject+MethodSwizzing.m in Sources */,
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
+				DC84E0091EC4AB1600FBE3E8 /* BuickVeranoBuilder.m in Sources */,
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
@@ -2821,6 +2867,7 @@
 				918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */,
 				91DC45C21BE7C0A400E86CC0 /* TabBar1ViewController.m in Sources */,
 				913D7EA81C92BFA200A862A4 /* MJRefreshHeader.m in Sources */,
+				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
 				913D7EA71C92BFA200A862A4 /* MJRefreshFooter.m in Sources */,
 				910C52AF1D3DC74200F3873C /* PinyinHelper.m in Sources */,
@@ -2834,6 +2881,7 @@
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,
+				DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,
 				910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */,
 				910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */,

@@ -14,6 +14,7 @@
 #import "AdapterPlayerVC.h"
 #import "StrategyPlayerVC.h"
 #import "TemplateVC.h"
+#import "BuilderVC.h"
 
 @interface DesignModeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic)NSArray * dataSource;
@@ -31,7 +32,8 @@
                         @"抽象工厂模式",
                         @"适配器",
                         @"策略模式",
-                        @"模版模式"];
+                        @"模版模式",
+                        @"建造者模式"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,6 +102,11 @@
             [self templateTest];
         }
             break;
+        case 6:
+        {
+            [self builderTest];
+        }
+        break;
         default:
             break;
     }
@@ -162,6 +169,12 @@
     TemplateVC * template = [TemplateVC new];
     [self.navigationController pushViewController:template animated:YES];
 }
-
+    
+/*!**建造者模式***/
+- (void)builderTest {
+    
+    BuilderVC * builder = [BuilderVC new];
+    [self.navigationController pushViewController:builder animated:YES];
+}
 
 @end
