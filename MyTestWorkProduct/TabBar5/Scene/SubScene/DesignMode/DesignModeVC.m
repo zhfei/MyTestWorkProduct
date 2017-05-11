@@ -13,6 +13,7 @@
 #import "AtBeiJingCarLicenseFactory.h"
 #import "AdapterPlayerVC.h"
 #import "StrategyPlayerVC.h"
+#import "TemplateVC.h"
 
 @interface DesignModeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic)NSArray * dataSource;
@@ -29,7 +30,8 @@
                         @"工厂模式",
                         @"抽象工厂模式",
                         @"适配器",
-                        @"策略模式"];
+                        @"策略模式",
+                        @"模版模式"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -93,6 +95,11 @@
             [self strategyTest];
         }
             break;
+        case 5:
+        {
+            [self templateTest];
+        }
+            break;
         default:
             break;
     }
@@ -149,6 +156,12 @@
     [self.navigationController pushViewController:adapter animated:YES];
 }
 
+/*!**模版模式***/
+- (void)templateTest {
+    
+    TemplateVC * template = [TemplateVC new];
+    [self.navigationController pushViewController:template animated:YES];
+}
 
 
 @end

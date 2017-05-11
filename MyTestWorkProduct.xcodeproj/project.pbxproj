@@ -151,6 +151,12 @@
 		918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930AA1E653FCF007D6879 /* ModelJSON.m */; };
 		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
 		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
+		91C5FA9C1EC41266006F3A02 /* Template in Resources */ = {isa = PBXBuildFile; fileRef = 91C5FA9B1EC41266006F3A02 /* Template */; };
+		91C5FA9F1EC41361006F3A02 /* TpPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FA9E1EC41361006F3A02 /* TpPlayer.m */; };
+		91C5FAA21EC413C1006F3A02 /* TpAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FAA11EC413C1006F3A02 /* TpAVPlayer.m */; };
+		91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FAA41EC413D2006F3A02 /* TpNewPlayer.m */; };
+		91C5FAA91EC42AEE006F3A02 /* TemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FAA71EC42AEE006F3A02 /* TemplateVC.m */; };
+		91C5FAAA1EC42AEE006F3A02 /* TemplateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C5FAA81EC42AEE006F3A02 /* TemplateVC.xib */; };
 		91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66A91C60AA8100259935 /* UserLoginInfo.m */; };
 		91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66AC1C60B31400259935 /* NSData+AES.m */; };
 		91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D788831BF0C28B0026A18E /* MyCollectionCell.m */; };
@@ -688,6 +694,16 @@
 		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
 		919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
 		919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
+		91C5FA9B1EC41266006F3A02 /* Template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Template; sourceTree = "<group>"; };
+		91C5FA9D1EC41361006F3A02 /* TpPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TpPlayer.h; sourceTree = "<group>"; };
+		91C5FA9E1EC41361006F3A02 /* TpPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TpPlayer.m; sourceTree = "<group>"; };
+		91C5FAA01EC413C1006F3A02 /* TpAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TpAVPlayer.h; sourceTree = "<group>"; };
+		91C5FAA11EC413C1006F3A02 /* TpAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TpAVPlayer.m; sourceTree = "<group>"; };
+		91C5FAA31EC413D2006F3A02 /* TpNewPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TpNewPlayer.h; sourceTree = "<group>"; };
+		91C5FAA41EC413D2006F3A02 /* TpNewPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TpNewPlayer.m; sourceTree = "<group>"; };
+		91C5FAA61EC42AEE006F3A02 /* TemplateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateVC.h; sourceTree = "<group>"; };
+		91C5FAA71EC42AEE006F3A02 /* TemplateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateVC.m; sourceTree = "<group>"; };
+		91C5FAA81EC42AEE006F3A02 /* TemplateVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateVC.xib; sourceTree = "<group>"; };
 		91CA66A81C60AA8100259935 /* UserLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginInfo.h; sourceTree = "<group>"; };
 		91CA66A91C60AA8100259935 /* UserLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginInfo.m; sourceTree = "<group>"; };
 		91CA66AB1C60B31400259935 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
@@ -1498,6 +1514,7 @@
 		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				91C5FA9A1EC41235006F3A02 /* Template */,
 				91E8DE771EC190360068C166 /* Strategy */,
 				9141F3A61EC00A6A0078E71E /* Adapter */,
 				910BC4AD1EBF083300D7628F /* AbstractFactory */,
@@ -1590,6 +1607,23 @@
 				919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */,
 			);
 			path = DispatchGroup;
+			sourceTree = "<group>";
+		};
+		91C5FA9A1EC41235006F3A02 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				91C5FA9B1EC41266006F3A02 /* Template */,
+				91C5FA9D1EC41361006F3A02 /* TpPlayer.h */,
+				91C5FA9E1EC41361006F3A02 /* TpPlayer.m */,
+				91C5FAA01EC413C1006F3A02 /* TpAVPlayer.h */,
+				91C5FAA11EC413C1006F3A02 /* TpAVPlayer.m */,
+				91C5FAA31EC413D2006F3A02 /* TpNewPlayer.h */,
+				91C5FAA41EC413D2006F3A02 /* TpNewPlayer.m */,
+				91C5FAA61EC42AEE006F3A02 /* TemplateVC.h */,
+				91C5FAA71EC42AEE006F3A02 /* TemplateVC.m */,
+				91C5FAA81EC42AEE006F3A02 /* TemplateVC.xib */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 		91DAB0E21BE907A4006695B7 /* UserDataCenter */ = {
@@ -2492,8 +2526,10 @@
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
 				910C52B01D3DC74200F3873C /* unicode_to_hanyu_pinyin.txt in Resources */,
 				91DE33E21C3FD04F00125B25 /* AnimationScene2.xib in Resources */,
+				91C5FAAA1EC42AEE006F3A02 /* TemplateVC.xib in Resources */,
 				912365951E557BD90062B2E4 /* QRCodeViewController.xib in Resources */,
 				91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */,
+				91C5FA9C1EC41266006F3A02 /* Template in Resources */,
 				91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */,
 				91DC45C31BE7C0A400E86CC0 /* TabBar1ViewController.xib in Resources */,
 				9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */,
@@ -2648,9 +2684,11 @@
 				9134AC551CFFD9CE00C2C49E /* NSString+HTML.m in Sources */,
 				91DB3AB71CB69D690019A1EB /* CellAutoHeightViewController.m in Sources */,
 				913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */,
+				91C5FAA21EC413C1006F3A02 /* TpAVPlayer.m in Sources */,
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				911F2ABD1E5C77480057FE33 /* UIImage+Custom.m in Sources */,
 				910C52AD1D3DC74200F3873C /* NSString+PinYin4Cocoa.m in Sources */,
+				91C5FA9F1EC41361006F3A02 /* TpPlayer.m in Sources */,
 				91F90D7E1C77068300215E3B /* AFHTTPSessionManager.m in Sources */,
 				9134AC571CFFD9CE00C2C49E /* UIColor+Hexadecimal.m in Sources */,
 				DC5887C41E8032A100373621 /* TestPerson.m in Sources */,
@@ -2743,6 +2781,7 @@
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
 				9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */,
+				91C5FAA91EC42AEE006F3A02 /* TemplateVC.m in Sources */,
 				91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */,
 				911F2AB61E5C77480057FE33 /* NSObject+MethodSwizzing.m in Sources */,
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
@@ -2794,6 +2833,7 @@
 				91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */,
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
+				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,
 				910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */,
 				910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */,
