@@ -15,6 +15,7 @@
 #import "StrategyPlayerVC.h"
 #import "TemplateVC.h"
 #import "BuilderVC.h"
+#import "FacadeVC.h"
 
 @interface DesignModeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic)NSArray * dataSource;
@@ -33,7 +34,8 @@
                         @"适配器",
                         @"策略模式",
                         @"模版模式",
-                        @"建造者模式"];
+                        @"建造者模式",
+                        @"外观模式"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,6 +109,11 @@
             [self builderTest];
         }
         break;
+        case 7:
+        {
+            [self facadeTest];
+        }
+        break;
         default:
             break;
     }
@@ -175,6 +182,12 @@
     
     BuilderVC * builder = [BuilderVC new];
     [self.navigationController pushViewController:builder animated:YES];
+}
+/*!**外观模式***/
+- (void)facadeTest {
+    
+    FacadeVC * facade = [FacadeVC new];
+    [self.navigationController pushViewController:facade animated:YES];
 }
 
 @end

@@ -411,6 +411,13 @@
 		DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0051EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m */; };
 		DC84E0091EC4AB1600FBE3E8 /* BuickVeranoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0081EC4AB1600FBE3E8 /* BuickVeranoBuilder.m */; };
 		DC84E00C1EC4ABAB00FBE3E8 /* BuilderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E00B1EC4ABAB00FBE3E8 /* BuilderVC.m */; };
+		DC84E00F1EC4B3EF00FBE3E8 /* Facade in Resources */ = {isa = PBXBuildFile; fileRef = DC84E00E1EC4B3EF00FBE3E8 /* Facade */; };
+		DC84E0121EC4B45600FBE3E8 /* Finance.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0111EC4B45600FBE3E8 /* Finance.m */; };
+		DC84E0151EC4B48B00FBE3E8 /* Sales.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0141EC4B48B00FBE3E8 /* Sales.m */; };
+		DC84E0181EC4B4AE00FBE3E8 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E0171EC4B4AE00FBE3E8 /* Service.m */; };
+		DC84E01B1EC4B4F500FBE3E8 /* 4SWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E01A1EC4B4F500FBE3E8 /* 4SWaiter.m */; };
+		DC84E01F1EC4B63600FBE3E8 /* FacadeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84E01D1EC4B63600FBE3E8 /* FacadeVC.m */; };
+		DC84E0201EC4B63600FBE3E8 /* FacadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC84E01E1EC4B63600FBE3E8 /* FacadeVC.xib */; };
 		DC8D141F1E7E4EC1009EA61E /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14171E7E4EC1009EA61E /* BaiduMapAPI_Base.framework */; };
 		DC8D14201E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14181E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework */; };
 		DC8D14211E7E4EC1009EA61E /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D14191E7E4EC1009EA61E /* BaiduMapAPI_Location.framework */; };
@@ -939,6 +946,18 @@
 		DC84E0081EC4AB1600FBE3E8 /* BuickVeranoBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuickVeranoBuilder.m; sourceTree = "<group>"; };
 		DC84E00A1EC4ABAB00FBE3E8 /* BuilderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderVC.h; sourceTree = "<group>"; };
 		DC84E00B1EC4ABAB00FBE3E8 /* BuilderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuilderVC.m; sourceTree = "<group>"; };
+		DC84E00E1EC4B3EF00FBE3E8 /* Facade */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Facade; path = MyTestWorkProduct/TabBar5/Scene/SubScene/DesignMode/Adapter/Facade; sourceTree = SOURCE_ROOT; };
+		DC84E0101EC4B45600FBE3E8 /* Finance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finance.h; sourceTree = "<group>"; };
+		DC84E0111EC4B45600FBE3E8 /* Finance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finance.m; sourceTree = "<group>"; };
+		DC84E0131EC4B48B00FBE3E8 /* Sales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sales.h; sourceTree = "<group>"; };
+		DC84E0141EC4B48B00FBE3E8 /* Sales.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sales.m; sourceTree = "<group>"; };
+		DC84E0161EC4B4AE00FBE3E8 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		DC84E0171EC4B4AE00FBE3E8 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		DC84E0191EC4B4F500FBE3E8 /* 4SWaiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 4SWaiter.h; sourceTree = "<group>"; };
+		DC84E01A1EC4B4F500FBE3E8 /* 4SWaiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 4SWaiter.m; sourceTree = "<group>"; };
+		DC84E01C1EC4B63600FBE3E8 /* FacadeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacadeVC.h; sourceTree = "<group>"; };
+		DC84E01D1EC4B63600FBE3E8 /* FacadeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacadeVC.m; sourceTree = "<group>"; };
+		DC84E01E1EC4B63600FBE3E8 /* FacadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacadeVC.xib; sourceTree = "<group>"; };
 		DC8D14171E7E4EC1009EA61E /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		DC8D14181E7E4EC1009EA61E /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		DC8D14191E7E4EC1009EA61E /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -1534,6 +1553,7 @@
 		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				DC84E00D1EC4B3D600FBE3E8 /* Facade */,
 				DC84DFF81EC4A85900FBE3E8 /* Builder */,
 				91C5FA9A1EC41235006F3A02 /* Template */,
 				91E8DE771EC190360068C166 /* Strategy */,
@@ -2422,6 +2442,25 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		DC84E00D1EC4B3D600FBE3E8 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				DC84E00E1EC4B3EF00FBE3E8 /* Facade */,
+				DC84E0101EC4B45600FBE3E8 /* Finance.h */,
+				DC84E0111EC4B45600FBE3E8 /* Finance.m */,
+				DC84E0131EC4B48B00FBE3E8 /* Sales.h */,
+				DC84E0141EC4B48B00FBE3E8 /* Sales.m */,
+				DC84E0161EC4B4AE00FBE3E8 /* Service.h */,
+				DC84E0171EC4B4AE00FBE3E8 /* Service.m */,
+				DC84E0191EC4B4F500FBE3E8 /* 4SWaiter.h */,
+				DC84E01A1EC4B4F500FBE3E8 /* 4SWaiter.m */,
+				DC84E01C1EC4B63600FBE3E8 /* FacadeVC.h */,
+				DC84E01D1EC4B63600FBE3E8 /* FacadeVC.m */,
+				DC84E01E1EC4B63600FBE3E8 /* FacadeVC.xib */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
 		DC95F8981E9A96D00078D96A /* lldb */ = {
 			isa = PBXGroup;
 			children = (
@@ -2563,6 +2602,7 @@
 				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
+				DC84E0201EC4B63600FBE3E8 /* FacadeVC.xib in Resources */,
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
 				910BC4AC1EBEE58000D7628F /* Factory in Resources */,
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
@@ -2575,6 +2615,7 @@
 				91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */,
 				91DC45C31BE7C0A400E86CC0 /* TabBar1ViewController.xib in Resources */,
 				9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */,
+				DC84E00F1EC4B3EF00FBE3E8 /* Facade in Resources */,
 				9141F3A81EC00A900078E71E /* Adapter in Resources */,
 				91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */,
 				91DC45001BE7A60900E86CC0 /* Main.storyboard in Resources */,
@@ -2716,6 +2757,7 @@
 				91DC457D1BE7B74B00E86CC0 /* BaseViewController.m in Sources */,
 				91DC457A1BE7B59200E86CC0 /* pinyin.c in Sources */,
 				91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */,
+				DC84E0181EC4B4AE00FBE3E8 /* Service.m in Sources */,
 				913D7EA51C92BFA200A862A4 /* MJRefreshBackFooter.m in Sources */,
 				DC84E0001EC4A99F00FBE3E8 /* Director.m in Sources */,
 				9134AC591CFFD9CE00C2C49E /* UIView+Frame.m in Sources */,
@@ -2840,6 +2882,7 @@
 				9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */,
 				91F90D831C77068300215E3B /* AFURLResponseSerialization.m in Sources */,
 				913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */,
+				DC84E01F1EC4B63600FBE3E8 /* FacadeVC.m in Sources */,
 				91FC89191D007BEC00527C4B /* CollectionViewCell.m in Sources */,
 				91DC45701BE7B17000E86CC0 /* UITextField+YYAdditions.m in Sources */,
 				9114D6CE1C8688C70087E5AC /* unzip.c in Sources */,
@@ -2857,8 +2900,10 @@
 				91F1FE0C1CA56EF30042DCE3 /* VideoPlayerViewController.m in Sources */,
 				9102046F1CA433380073E7DC /* DIYDownLoadProgressViewController.m in Sources */,
 				910BC4A41EBEE35F00D7628F /* BaseCarLicenseFactory.m in Sources */,
+				DC84E0151EC4B48B00FBE3E8 /* Sales.m in Sources */,
 				91DC45791BE7B59200E86CC0 /* ChineseString.m in Sources */,
 				913D7EB61C92BFA200A862A4 /* UIView+MJExtension.m in Sources */,
+				DC84E01B1EC4B4F500FBE3E8 /* 4SWaiter.m in Sources */,
 				9143540B1E026D1E00608E58 /* GCDTestViewController.m in Sources */,
 				91DD18721C45568900B0FF70 /* RNActivityView.m in Sources */,
 				91DB3ABA1CB6A0800019A1EB /* AutoHeightCell.m in Sources */,
@@ -2866,6 +2911,7 @@
 				910C52AE1D3DC74200F3873C /* PinyinFormatter.m in Sources */,
 				918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */,
 				91DC45C21BE7C0A400E86CC0 /* TabBar1ViewController.m in Sources */,
+				DC84E0121EC4B45600FBE3E8 /* Finance.m in Sources */,
 				913D7EA81C92BFA200A862A4 /* MJRefreshHeader.m in Sources */,
 				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
