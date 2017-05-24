@@ -132,6 +132,12 @@
 		91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91752AA81E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib */; };
 		91752AB31E4D9A6A00F6C634 /* MyRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752AB21E4D9A6A00F6C634 /* MyRealm.m */; };
 		91752ABE1E4DB95A00F6C634 /* RealmPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752ABD1E4DB95A00F6C634 /* RealmPerson.m */; };
+		917952581ED5994500193487 /* DecouplingManyVCsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 917952561ED5994500193487 /* DecouplingManyVCsVC.m */; };
+		917952591ED5994500193487 /* DecouplingManyVCsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917952571ED5994500193487 /* DecouplingManyVCsVC.xib */; };
+		9179525D1ED599C600193487 /* TestVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179525C1ED599C600193487 /* TestVC1.m */; };
+		917952601ED599D400193487 /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179525F1ED599D400193487 /* TestVC2.m */; };
+		917952631ED599E400193487 /* TestVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 917952621ED599E400193487 /* TestVC3.m */; };
+		917952671ED59AF700193487 /* EventDistributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 917952661ED59AF700193487 /* EventDistributer.m */; };
 		9182B3C61EBE1B3700D3A870 /* DesignModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */; };
 		9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */; };
 		9182B3CB1EBE30D000D3A870 /* CarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3CA1EBE30D000D3A870 /* CarLicense.m */; };
@@ -673,6 +679,19 @@
 		91752AB21E4D9A6A00F6C634 /* MyRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRealm.m; sourceTree = "<group>"; };
 		91752ABC1E4DB95A00F6C634 /* RealmPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmPerson.h; sourceTree = "<group>"; };
 		91752ABD1E4DB95A00F6C634 /* RealmPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmPerson.m; sourceTree = "<group>"; };
+		917952551ED5994500193487 /* DecouplingManyVCsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecouplingManyVCsVC.h; sourceTree = "<group>"; };
+		917952561ED5994500193487 /* DecouplingManyVCsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecouplingManyVCsVC.m; sourceTree = "<group>"; };
+		917952571ED5994500193487 /* DecouplingManyVCsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecouplingManyVCsVC.xib; sourceTree = "<group>"; };
+		9179525B1ED599C600193487 /* TestVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC1.h; sourceTree = "<group>"; };
+		9179525C1ED599C600193487 /* TestVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC1.m; sourceTree = "<group>"; };
+		9179525E1ED599D400193487 /* TestVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC2.h; sourceTree = "<group>"; };
+		9179525F1ED599D400193487 /* TestVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC2.m; sourceTree = "<group>"; };
+		917952611ED599E400193487 /* TestVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC3.h; sourceTree = "<group>"; };
+		917952621ED599E400193487 /* TestVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC3.m; sourceTree = "<group>"; };
+		917952651ED59AF700193487 /* EventDistributer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDistributer.h; sourceTree = "<group>"; };
+		917952661ED59AF700193487 /* EventDistributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDistributer.m; sourceTree = "<group>"; };
+		917952691ED59D1E00193487 /* EventRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRegister.h; sourceTree = "<group>"; };
+		9179526A1ED59D8600193487 /* EventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventProtocol.h; sourceTree = "<group>"; };
 		9182B3C31EBE1B3700D3A870 /* DesignModeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignModeVC.h; sourceTree = "<group>"; };
 		9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignModeVC.m; sourceTree = "<group>"; };
 		9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignModeVC.xib; sourceTree = "<group>"; };
@@ -1550,6 +1569,42 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		917952541ED5991200193487 /* DecouplingManyVCs */ = {
+			isa = PBXGroup;
+			children = (
+				917952641ED59A2000193487 /* Utitlies */,
+				9179525A1ED599A400193487 /* SubVC */,
+				917952551ED5994500193487 /* DecouplingManyVCsVC.h */,
+				917952561ED5994500193487 /* DecouplingManyVCsVC.m */,
+				917952571ED5994500193487 /* DecouplingManyVCsVC.xib */,
+			);
+			path = DecouplingManyVCs;
+			sourceTree = "<group>";
+		};
+		9179525A1ED599A400193487 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				9179525B1ED599C600193487 /* TestVC1.h */,
+				9179525C1ED599C600193487 /* TestVC1.m */,
+				9179525E1ED599D400193487 /* TestVC2.h */,
+				9179525F1ED599D400193487 /* TestVC2.m */,
+				917952611ED599E400193487 /* TestVC3.h */,
+				917952621ED599E400193487 /* TestVC3.m */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		917952641ED59A2000193487 /* Utitlies */ = {
+			isa = PBXGroup;
+			children = (
+				917952651ED59AF700193487 /* EventDistributer.h */,
+				917952661ED59AF700193487 /* EventDistributer.m */,
+				917952691ED59D1E00193487 /* EventRegister.h */,
+				9179526A1ED59D8600193487 /* EventProtocol.h */,
+			);
+			path = Utitlies;
+			sourceTree = "<group>";
+		};
 		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2397,6 +2452,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				917952541ED5991200193487 /* DecouplingManyVCs */,
 				9182B3C21EBE1AF400D3A870 /* DesignMode */,
 				919CAB9D1EAB1BE200519412 /* DispatchGroup */,
 				9124D7941E5F1CA1008E01F3 /* DateFormatter */,
@@ -2606,6 +2662,7 @@
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
 				910BC4AC1EBEE58000D7628F /* Factory in Resources */,
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
+				917952591ED5994500193487 /* DecouplingManyVCsVC.xib in Resources */,
 				910C52B01D3DC74200F3873C /* unicode_to_hanyu_pinyin.txt in Resources */,
 				91DE33E21C3FD04F00125B25 /* AnimationScene2.xib in Resources */,
 				91C5FAAA1EC42AEE006F3A02 /* TemplateVC.xib in Resources */,
@@ -2770,6 +2827,7 @@
 				9134AC551CFFD9CE00C2C49E /* NSString+HTML.m in Sources */,
 				91DB3AB71CB69D690019A1EB /* CellAutoHeightViewController.m in Sources */,
 				913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */,
+				917952631ED599E400193487 /* TestVC3.m in Sources */,
 				91C5FAA21EC413C1006F3A02 /* TpAVPlayer.m in Sources */,
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				911F2ABD1E5C77480057FE33 /* UIImage+Custom.m in Sources */,
@@ -2792,8 +2850,10 @@
 				91F90D7F1C77068300215E3B /* AFNetworkReachabilityManager.m in Sources */,
 				911D6D981E6431B600FBF188 /* CodingTemplate.m in Sources */,
 				911F2ABE1E5C77480057FE33 /* UIImage+ImageEffects.m in Sources */,
+				917952581ED5994500193487 /* DecouplingManyVCsVC.m in Sources */,
 				91DC44FA1BE7A60900E86CC0 /* AppDelegate.m in Sources */,
 				91DC45661BE7B17000E86CC0 /* NSDictionary+YYAdditions.m in Sources */,
+				917952671ED59AF700193487 /* EventDistributer.m in Sources */,
 				91F802031D2BA50A00C8C791 /* FZMapViewController.m in Sources */,
 				9102AAFD1C4F34E9008D8C28 /* SSKeychain.m in Sources */,
 				91752AB31E4D9A6A00F6C634 /* MyRealm.m in Sources */,
@@ -2888,6 +2948,7 @@
 				9114D6CE1C8688C70087E5AC /* unzip.c in Sources */,
 				DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */,
 				91E4B3C41C3C086E001DD5B2 /* FMDatabasePool.m in Sources */,
+				917952601ED599D400193487 /* TestVC2.m in Sources */,
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
 				9114D6CD1C8688C70087E5AC /* mztools.c in Sources */,
 				91DC456A1BE7B17000E86CC0 /* UIBarButtonItem+MF.m in Sources */,
@@ -2911,6 +2972,7 @@
 				910C52AE1D3DC74200F3873C /* PinyinFormatter.m in Sources */,
 				918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */,
 				91DC45C21BE7C0A400E86CC0 /* TabBar1ViewController.m in Sources */,
+				9179525D1ED599C600193487 /* TestVC1.m in Sources */,
 				DC84E0121EC4B45600FBE3E8 /* Finance.m in Sources */,
 				913D7EA81C92BFA200A862A4 /* MJRefreshHeader.m in Sources */,
 				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
@@ -3187,7 +3249,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = DailyBuild;
 		};
@@ -3375,7 +3437,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -3425,7 +3487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
