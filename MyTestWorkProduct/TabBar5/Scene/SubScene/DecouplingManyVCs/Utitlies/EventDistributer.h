@@ -8,6 +8,7 @@
 //  事件分发器
 
 #import <Foundation/Foundation.h>
+#import "EventRegister.h"
 
 @interface EventDistributer : NSObject
 
@@ -28,6 +29,8 @@
  *  @param parametes 参数
  *  @return 结果
  */
-+ (BOOL)sendViewControllerEvent:(NSString *)className parametes:(id)parametes;
++ (id)sendViewControllerEvent:(NSString *)className parametes:(id)parametes;
+
+
 
 @end

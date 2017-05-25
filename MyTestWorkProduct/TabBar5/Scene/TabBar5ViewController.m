@@ -14,7 +14,7 @@
 #import "DispatchGroupVC.h"
 #import "ImageCachePool.h"
 #import "DesignModeVC.h"
-#import "SubProject.h"
+#import "DecouplingManyVCsVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -167,6 +167,13 @@
             [self.navigationController pushViewController:dmvc animated:YES];
         }
             break;
+        case 4: {
+            DecouplingManyVCsVC * dmvcs=[[DecouplingManyVCsVC alloc]init];
+            [self.navigationController pushViewController:dmvcs animated:YES];
+        }
+            break;
+            
+            
             
         default:
             break;

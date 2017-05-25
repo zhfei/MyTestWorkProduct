@@ -6,5 +6,6 @@
 	<string>DateFormatter</string>
 	<string>Dispatch_Group</string>
 	<string>设计模式</string>
+	<string>控制器多引用解耦</string>
 </array>
 </plist>

@@ -14,9 +14,19 @@
 
 @implementation TestVC3
 
++ (TestVC3 *)testVC3WithChannelId:(NSString *)channelId {
+    
+    TestVC3 * testVC3 = [TestVC3 new];
+    testVC3.channelId = channelId;
+    
+    return testVC3;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"TestVC3";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +43,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
++ (BOOL)eventCheckParametesAvaliable:(id)parametes {
+    
+    if (parametes && [parametes isEqualToString:@"123"]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
++ (id)eventNewObjectWithParametes:(id)parametes {
+    
+    return [TestVC3 testVC3WithChannelId:parametes];
+}
 
 @end

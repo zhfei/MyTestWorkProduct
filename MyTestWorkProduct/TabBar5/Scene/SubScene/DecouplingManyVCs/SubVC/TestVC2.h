@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventProtocol.h"
 
-@interface TestVC2 : UIViewController
 
+@interface TestVC2 : UIViewController<EventProtocol>
+@property (strong,nonatomic)NSString *channelId;
+
++ (TestVC2 *)testVC2WithChannelId:(NSString *)channelId;
 @end

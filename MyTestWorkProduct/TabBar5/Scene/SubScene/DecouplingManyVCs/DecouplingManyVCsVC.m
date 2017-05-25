@@ -7,6 +7,7 @@
 //
 
 #import "DecouplingManyVCsVC.h"
+#import "EventDistributer.h"
 
 @interface DecouplingManyVCsVC ()
 
@@ -22,6 +23,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    NSArray * array = @[KTestVC1,KTestVC2,KTestVC3];
+    
+    id vc = [EventDistributer sendViewControllerEvent:[array objectAtIndex:arc4random_uniform(3)] parametes:@"123"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
