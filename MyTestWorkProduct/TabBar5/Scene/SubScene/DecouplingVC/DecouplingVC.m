@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
     //分解控制器的基本思路是:定义新的对象来单独处理控制器里面的业务逻辑。
     
     /*

@@ -16,6 +16,7 @@
 #import "DesignModeVC.h"
 #import "DecouplingManyVCsVC.h"
 #import "DecouplingVC.h"
+#import "ShoppingVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -176,6 +177,12 @@
         case 5: {
             DecouplingVC * dvc=[[DecouplingVC alloc]init];
             [self.navigationController pushViewController:dvc animated:YES];
+        }
+            break;
+        case 6: {
+            ShoppingVC * sp=[[ShoppingVC alloc]init];
+            sp.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:sp animated:YES];
         }
             break;
             

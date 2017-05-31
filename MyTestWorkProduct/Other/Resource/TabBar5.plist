@@ -8,5 +8,6 @@
 	<string>设计模式</string>
 	<string>控制器多引用解耦</string>
 	<string>单控制器多任务解耦</string>
+	<string>点单</string>
 </array>
 </plist>
