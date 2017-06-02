@@ -9,7 +9,7 @@
 #import "CommodityCell.h"
 #import "AmountEditView.h"
 #import <Masonry/Masonry.h>
-#import "ShoppingCartAnimation.m"
+//#import "ShoppingCartAnimation.m"
 #import "ShoppingCartBar.h"
 
 @interface CommodityCell ()
