@@ -131,6 +131,7 @@
 		9144B6B81CAB60FF003146B2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144B6B71CAB60FF003146B2 /* CoreTelephony.framework */; };
 		9144B6BA1CAB611B003146B2 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144B6B91CAB611B003146B2 /* libstdc++.6.0.9.tbd */; };
 		91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91487D721C9672ED00A4A228 /* ImageLabel.m */; };
+		914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */; };
 		9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */; };
 		917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 917383C71DCB8C2600FC59BE /* libReveal.dylib */; };
 		91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752AA71E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m */; };
@@ -692,6 +693,8 @@
 		9144B6B91CAB611B003146B2 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		91487D711C9672ED00A4A228 /* ImageLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLabel.h; sourceTree = "<group>"; };
 		91487D721C9672ED00A4A228 /* ImageLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLabel.m; sourceTree = "<group>"; };
+		914F1E9E1EE4F68200BAB5A1 /* RedCircelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedCircelLabel.h; sourceTree = "<group>"; };
+		914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCircelLabel.m; sourceTree = "<group>"; };
 		9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAnimation.h; sourceTree = "<group>"; };
 		9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartAnimation.m; sourceTree = "<group>"; };
 		917383C71DCB8C2600FC59BE /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
@@ -1789,6 +1792,8 @@
 				91AE59001ED8366C00FD53F8 /* ShoppingCartBar.h */,
 				91AE59011ED8366C00FD53F8 /* ShoppingCartBar.m */,
 				91AE59031ED8368B00FD53F8 /* ShoppingCartBar.xib */,
+				914F1E9E1EE4F68200BAB5A1 /* RedCircelLabel.h */,
+				914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */,
 			);
 			path = ShoppingCartBar;
 			sourceTree = "<group>";
@@ -3054,6 +3059,7 @@
 				913A95A41D3C7B5900237473 /* PeripheralViewController.m in Sources */,
 				918930A71E653FAF007D6879 /* Utilities.m in Sources */,
 				91E032C11C3E607D0083842B /* Person.m in Sources */,
+				914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */,
 				DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */,
 				91DC456F1BE7B17000E86CC0 /* UIScrollView+YYAdditions.m in Sources */,
 				91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */,

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ShoppingCartBar : UIView
+@property (weak, nonatomic) IBOutlet UIImageView *imageFlag;
 
 + (ShoppingCartBar*)sharedShoppingCartBar;
 

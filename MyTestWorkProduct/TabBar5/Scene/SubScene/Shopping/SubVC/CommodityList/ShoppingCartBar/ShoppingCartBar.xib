@@ -27,6 +27,7 @@
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bBe-DE-cjm">
                     <rect key="frame" x="0.0" y="0.0" width="77" height="80"/>
+                    <color key="backgroundColor" red="0.3921568627" green="0.72549019609999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="Gph-kO-drt"/>
                     </constraints>
@@ -55,6 +56,9 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageFlag" destination="bBe-DE-cjm" id="3Ou-OH-I8C"/>
+            </connections>
             <point key="canvasLocation" x="48.5" y="-6"/>
         </view>
     </objects>
