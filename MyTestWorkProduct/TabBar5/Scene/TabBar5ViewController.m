@@ -17,6 +17,7 @@
 #import "DecouplingManyVCsVC.h"
 #import "DecouplingVC.h"
 #import "ShoppingVC.h"
+#import "ZFButtonViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -183,6 +184,11 @@
             ShoppingVC * sp=[[ShoppingVC alloc]init];
             sp.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:sp animated:YES];
+        }
+            break;
+        case 7: {
+            ZFButtonViewController * btnVC=[[ZFButtonViewController alloc]init];
+            [self.navigationController pushViewController:btnVC animated:YES];
         }
             break;
             

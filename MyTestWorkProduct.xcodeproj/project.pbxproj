@@ -172,6 +172,9 @@
 		91AF373E1ED6C931008B98F4 /* ClassifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AF373D1ED6C931008B98F4 /* ClassifyTableViewController.m */; };
 		91AF37421ED6C95C008B98F4 /* ClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AF37401ED6C95C008B98F4 /* ClassifyCell.m */; };
 		91AF37431ED6C95C008B98F4 /* ClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AF37411ED6C95C008B98F4 /* ClassifyCell.xib */; };
+		91C5E08D1EF623BF00A6C68F /* ZFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5E08C1EF623BF00A6C68F /* ZFButton.m */; };
+		91C5E0921EF628BD00A6C68F /* ZFButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5E0901EF628BD00A6C68F /* ZFButtonViewController.m */; };
+		91C5E0931EF628BD00A6C68F /* ZFButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C5E0911EF628BD00A6C68F /* ZFButtonViewController.xib */; };
 		91C5FA9C1EC41266006F3A02 /* Template in Resources */ = {isa = PBXBuildFile; fileRef = 91C5FA9B1EC41266006F3A02 /* Template */; };
 		91C5FA9F1EC41361006F3A02 /* TpPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FA9E1EC41361006F3A02 /* TpPlayer.m */; };
 		91C5FAA21EC413C1006F3A02 /* TpAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FAA11EC413C1006F3A02 /* TpAVPlayer.m */; };
@@ -423,7 +426,6 @@
 		DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A111E5B3D580043845D /* SingletonTemplate.m */; };
 		DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A131E5B3D580043845D /* SingletonViewController.m */; };
 		DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC594A141E5B3D580043845D /* SingletonViewController.xib */; };
-		DC73587C1EF2DCF100F4EBF3 /* ZFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73587B1EF2DCF100F4EBF3 /* ZFButton.m */; };
 		DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA41E81791E008FCAEF /* ZFObject.m */; };
 		DC7B7BA81E817999008FCAEF /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA71E817999008FCAEF /* XObject.m */; };
 		DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */ = {isa = PBXBuildFile; fileRef = DC84DFF91EC4A87800FBE3E8 /* Builder */; };
@@ -768,6 +770,11 @@
 		91AF373F1ED6C95C008B98F4 /* ClassifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyCell.h; sourceTree = "<group>"; };
 		91AF37401ED6C95C008B98F4 /* ClassifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyCell.m; sourceTree = "<group>"; };
 		91AF37411ED6C95C008B98F4 /* ClassifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyCell.xib; sourceTree = "<group>"; };
+		91C5E08B1EF623BF00A6C68F /* ZFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFButton.h; sourceTree = "<group>"; };
+		91C5E08C1EF623BF00A6C68F /* ZFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFButton.m; sourceTree = "<group>"; };
+		91C5E08F1EF628BD00A6C68F /* ZFButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFButtonViewController.h; sourceTree = "<group>"; };
+		91C5E0901EF628BD00A6C68F /* ZFButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFButtonViewController.m; sourceTree = "<group>"; };
+		91C5E0911EF628BD00A6C68F /* ZFButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFButtonViewController.xib; sourceTree = "<group>"; };
 		91C5FA9B1EC41266006F3A02 /* Template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Template; sourceTree = "<group>"; };
 		91C5FA9D1EC41361006F3A02 /* TpPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TpPlayer.h; sourceTree = "<group>"; };
 		91C5FA9E1EC41361006F3A02 /* TpPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TpPlayer.m; sourceTree = "<group>"; };
@@ -989,8 +996,6 @@
 		DC594A121E5B3D580043845D /* SingletonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		DC594A131E5B3D580043845D /* SingletonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		DC594A141E5B3D580043845D /* SingletonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
-		DC73587A1EF2DCF100F4EBF3 /* ZFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFButton.h; sourceTree = "<group>"; };
-		DC73587B1EF2DCF100F4EBF3 /* ZFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFButton.m; sourceTree = "<group>"; };
 		DC7B7BA31E81791E008FCAEF /* ZFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFObject.h; sourceTree = "<group>"; };
 		DC7B7BA41E81791E008FCAEF /* ZFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFObject.m; sourceTree = "<group>"; };
 		DC7B7BA61E817999008FCAEF /* XObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XObject.h; sourceTree = "<group>"; };
@@ -1291,6 +1296,8 @@
 		9116A16F1ED6E002005D515C /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				91C5E08B1EF623BF00A6C68F /* ZFButton.h */,
+				91C5E08C1EF623BF00A6C68F /* ZFButton.m */,
 				9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */,
 				9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */,
 				9116A1701ED6E887005D515C /* AmountEditView.h */,
@@ -1843,6 +1850,16 @@
 			path = Classify;
 			sourceTree = "<group>";
 		};
+		91C5E08E1EF628A400A6C68F /* ZFButton */ = {
+			isa = PBXGroup;
+			children = (
+				91C5E08F1EF628BD00A6C68F /* ZFButtonViewController.h */,
+				91C5E0901EF628BD00A6C68F /* ZFButtonViewController.m */,
+				91C5E0911EF628BD00A6C68F /* ZFButtonViewController.xib */,
+			);
+			path = ZFButton;
+			sourceTree = "<group>";
+		};
 		91C5FA9A1EC41235006F3A02 /* Template */ = {
 			isa = PBXGroup;
 			children = (
@@ -2168,7 +2185,6 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				DC7358791EF2DCA600F4EBF3 /* ZFButton */,
 				911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */,
 				912365901E557BC00062B2E4 /* QRCode */,
 				91752AA51E4D8C0300F6C634 /* LocalFileReadingAndWriting */,
@@ -2591,6 +2607,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				91C5E08E1EF628A400A6C68F /* ZFButton */,
 				91AF37311ED6BF64008B98F4 /* Shopping */,
 				91AF372B1ED6AA86008B98F4 /* DecouplingVC */,
 				917952541ED5991200193487 /* DecouplingManyVCs */,
@@ -2617,15 +2634,6 @@
 				911D6D9A1E6436E100FBF188 /* CodingSubClass.m */,
 			);
 			path = Singleton;
-			sourceTree = "<group>";
-		};
-		DC7358791EF2DCA600F4EBF3 /* ZFButton */ = {
-			isa = PBXGroup;
-			children = (
-				DC73587A1EF2DCF100F4EBF3 /* ZFButton.h */,
-				DC73587B1EF2DCF100F4EBF3 /* ZFButton.m */,
-			);
-			path = ZFButton;
 			sourceTree = "<group>";
 		};
 		DC84DFF81EC4A85900FBE3E8 /* Builder */ = {
@@ -2805,6 +2813,7 @@
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
+				91C5E0931EF628BD00A6C68F /* ZFButtonViewController.xib in Resources */,
 				DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */,
 				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
@@ -3098,7 +3107,6 @@
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
-				DC73587C1EF2DCF100F4EBF3 /* ZFButton.m in Sources */,
 				919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */,
 				9141F3B51EC017BF0078E71E /* NewPlayer.m in Sources */,
 				9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */,
@@ -3119,6 +3127,7 @@
 				DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */,
 				91E8DE801EC19A590068C166 /* StNewPlayer.m in Sources */,
 				91AE59021ED8366C00FD53F8 /* ShoppingCartBar.m in Sources */,
+				91C5E0921EF628BD00A6C68F /* ZFButtonViewController.m in Sources */,
 				91AF372F1ED6AAA5008B98F4 /* DecouplingVC.m in Sources */,
 				91F00BC31CFF26600000D48A /* SwizzingViewController.m in Sources */,
 				91DC456C1BE7B17000E86CC0 /* UIColor+YYAdditions.m in Sources */,
@@ -3169,6 +3178,7 @@
 				91DC44F71BE7A60900E86CC0 /* main.m in Sources */,
 				91E9C2D11C0802DA0044D617 /* UIImage+FontAwesome.m in Sources */,
 				911F2AB51E5C77480057FE33 /* NSObject+CallStack.m in Sources */,
+				91C5E08D1EF623BF00A6C68F /* ZFButton.m in Sources */,
 				913D7EAE1C92BFA200A862A4 /* MJRefreshBackStateFooter.m in Sources */,
 				910BC4AA1EBEE4E300D7628F /* YellowCarLicenseFactory.m in Sources */,
 				911D6D9B1E6436E100FBF188 /* CodingSubClass.m in Sources */,
