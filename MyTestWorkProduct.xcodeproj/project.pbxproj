@@ -423,6 +423,7 @@
 		DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A111E5B3D580043845D /* SingletonTemplate.m */; };
 		DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A131E5B3D580043845D /* SingletonViewController.m */; };
 		DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC594A141E5B3D580043845D /* SingletonViewController.xib */; };
+		DC73587C1EF2DCF100F4EBF3 /* ZFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC73587B1EF2DCF100F4EBF3 /* ZFButton.m */; };
 		DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA41E81791E008FCAEF /* ZFObject.m */; };
 		DC7B7BA81E817999008FCAEF /* XObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B7BA71E817999008FCAEF /* XObject.m */; };
 		DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */ = {isa = PBXBuildFile; fileRef = DC84DFF91EC4A87800FBE3E8 /* Builder */; };
@@ -988,6 +989,8 @@
 		DC594A121E5B3D580043845D /* SingletonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
 		DC594A131E5B3D580043845D /* SingletonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
 		DC594A141E5B3D580043845D /* SingletonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonViewController.xib; sourceTree = "<group>"; };
+		DC73587A1EF2DCF100F4EBF3 /* ZFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFButton.h; sourceTree = "<group>"; };
+		DC73587B1EF2DCF100F4EBF3 /* ZFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFButton.m; sourceTree = "<group>"; };
 		DC7B7BA31E81791E008FCAEF /* ZFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFObject.h; sourceTree = "<group>"; };
 		DC7B7BA41E81791E008FCAEF /* ZFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFObject.m; sourceTree = "<group>"; };
 		DC7B7BA61E817999008FCAEF /* XObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XObject.h; sourceTree = "<group>"; };
@@ -2165,6 +2168,7 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DC7358791EF2DCA600F4EBF3 /* ZFButton */,
 				911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */,
 				912365901E557BC00062B2E4 /* QRCode */,
 				91752AA51E4D8C0300F6C634 /* LocalFileReadingAndWriting */,
@@ -2613,6 +2617,15 @@
 				911D6D9A1E6436E100FBF188 /* CodingSubClass.m */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		DC7358791EF2DCA600F4EBF3 /* ZFButton */ = {
+			isa = PBXGroup;
+			children = (
+				DC73587A1EF2DCF100F4EBF3 /* ZFButton.h */,
+				DC73587B1EF2DCF100F4EBF3 /* ZFButton.m */,
+			);
+			path = ZFButton;
 			sourceTree = "<group>";
 		};
 		DC84DFF81EC4A85900FBE3E8 /* Builder */ = {
@@ -3085,6 +3098,7 @@
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
+				DC73587C1EF2DCF100F4EBF3 /* ZFButton.m in Sources */,
 				919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */,
 				9141F3B51EC017BF0078E71E /* NewPlayer.m in Sources */,
 				9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */,
