@@ -9,6 +9,7 @@
 	<string>控制器多引用解耦</string>
 	<string>单控制器多任务解耦</string>
 	<string>点单</string>
-	<string>ZFButton</string>
+	<string>自定义按钮</string>
+	<string>渐变色</string>
 </array>
 </plist>

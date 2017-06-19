@@ -133,6 +133,10 @@
 		91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91487D721C9672ED00A4A228 /* ImageLabel.m */; };
 		914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */; };
 		9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */; };
+		916002C11EF6496F00071E10 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C01EF6496F00071E10 /* GradientViewController.m */; };
+		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
+		916002C81EF6832900071E10 /* gradientView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C71EF6832900071E10 /* gradientView2.m */; };
+		916002CB1EF685E800071E10 /* gradientView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002CA1EF685E800071E10 /* gradientView3.m */; };
 		917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 917383C71DCB8C2600FC59BE /* libReveal.dylib */; };
 		91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752AA71E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m */; };
 		91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91752AA81E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib */; };
@@ -700,6 +704,14 @@
 		914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCircelLabel.m; sourceTree = "<group>"; };
 		9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAnimation.h; sourceTree = "<group>"; };
 		9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartAnimation.m; sourceTree = "<group>"; };
+		916002BF1EF6496F00071E10 /* GradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		916002C01EF6496F00071E10 /* GradientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
+		916002C31EF64B5B00071E10 /* gradientView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView1.h; sourceTree = "<group>"; };
+		916002C41EF64B5B00071E10 /* gradientView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView1.m; sourceTree = "<group>"; };
+		916002C61EF6832900071E10 /* gradientView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView2.h; sourceTree = "<group>"; };
+		916002C71EF6832900071E10 /* gradientView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView2.m; sourceTree = "<group>"; };
+		916002C91EF685E800071E10 /* gradientView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView3.h; sourceTree = "<group>"; };
+		916002CA1EF685E800071E10 /* gradientView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView3.m; sourceTree = "<group>"; };
 		917383C71DCB8C2600FC59BE /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
 		91752AA61E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileReadingAndWritingVC.h; sourceTree = "<group>"; };
 		91752AA71E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileReadingAndWritingVC.m; sourceTree = "<group>"; };
@@ -1636,6 +1648,29 @@
 				9143540A1E026D1E00608E58 /* GCDTestViewController.xib */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		916002BE1EF648D500071E10 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				916002C21EF64ABA00071E10 /* SubView */,
+				916002BF1EF6496F00071E10 /* GradientViewController.h */,
+				916002C01EF6496F00071E10 /* GradientViewController.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		916002C21EF64ABA00071E10 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				916002C31EF64B5B00071E10 /* gradientView1.h */,
+				916002C41EF64B5B00071E10 /* gradientView1.m */,
+				916002C61EF6832900071E10 /* gradientView2.h */,
+				916002C71EF6832900071E10 /* gradientView2.m */,
+				916002C91EF685E800071E10 /* gradientView3.h */,
+				916002CA1EF685E800071E10 /* gradientView3.m */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 		91752AA51E4D8C0300F6C634 /* LocalFileReadingAndWriting */ = {
@@ -2607,6 +2642,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				916002BE1EF648D500071E10 /* Gradient */,
 				91C5E08E1EF628A400A6C68F /* ZFButton */,
 				91AF37311ED6BF64008B98F4 /* Shopping */,
 				91AF372B1ED6AA86008B98F4 /* DecouplingVC */,
@@ -2979,6 +3015,7 @@
 				91DC457D1BE7B74B00E86CC0 /* BaseViewController.m in Sources */,
 				91DC457A1BE7B59200E86CC0 /* pinyin.c in Sources */,
 				91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */,
+				916002C51EF64B5B00071E10 /* gradientView1.m in Sources */,
 				DC84E0181EC4B4AE00FBE3E8 /* Service.m in Sources */,
 				913D7EA51C92BFA200A862A4 /* MJRefreshBackFooter.m in Sources */,
 				DC84E0001EC4A99F00FBE3E8 /* Director.m in Sources */,
@@ -2988,6 +3025,7 @@
 				913D7EA91C92BFA200A862A4 /* MJRefreshAutoGifFooter.m in Sources */,
 				91DC456D1BE7B17000E86CC0 /* UIImage+YYAdditions.m in Sources */,
 				913A95A71D3C7BB700237473 /* CentralViewController.m in Sources */,
+				916002C11EF6496F00071E10 /* GradientViewController.m in Sources */,
 				91FE24C01CB20129001C6DF0 /* AutoLayoutAnimViewController.m in Sources */,
 				9134AC551CFFD9CE00C2C49E /* NSString+HTML.m in Sources */,
 				91DB3AB71CB69D690019A1EB /* CellAutoHeightViewController.m in Sources */,
@@ -3045,6 +3083,7 @@
 				91E9C2D01C0802DA0044D617 /* UIFont+FontAwesome.m in Sources */,
 				911F2ABA1E5C77480057FE33 /* UIButton+Interval.m in Sources */,
 				91FDCA161C9F92FB00A5E684 /* DIYCollectionViewLayoutViewController.m in Sources */,
+				916002CB1EF685E800071E10 /* gradientView3.m in Sources */,
 				9141F3B81EC019880078E71E /* PlayerAdapter.m in Sources */,
 				9189309F1E653FAF007D6879 /* FileDownloader.m in Sources */,
 				918930A01E653FAF007D6879 /* FileMultiDownloader.m in Sources */,
@@ -3160,6 +3199,7 @@
 				912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */,
 				91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */,
 				91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */,
+				916002C81EF6832900071E10 /* gradientView2.m in Sources */,
 				91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */,
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,

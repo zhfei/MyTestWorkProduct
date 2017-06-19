@@ -18,6 +18,7 @@
 #import "DecouplingVC.h"
 #import "ShoppingVC.h"
 #import "ZFButtonViewController.h"
+#import "GradientViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -189,6 +190,11 @@
         case 7: {
             ZFButtonViewController * btnVC=[[ZFButtonViewController alloc]init];
             [self.navigationController pushViewController:btnVC animated:YES];
+        }
+            break;
+        case 8: {
+            GradientViewController * gVC=[[GradientViewController alloc]init];
+            [self.navigationController pushViewController:gVC animated:YES];
         }
             break;
             
