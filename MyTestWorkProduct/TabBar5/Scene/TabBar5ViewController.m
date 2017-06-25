@@ -19,6 +19,7 @@
 #import "ShoppingVC.h"
 #import "ZFButtonViewController.h"
 #import "GradientViewController.h"
+#import "DrawRectViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -195,6 +196,11 @@
         case 8: {
             GradientViewController * gVC=[[GradientViewController alloc]init];
             [self.navigationController pushViewController:gVC animated:YES];
+        }
+            break;
+        case 9: {
+            DrawRectViewController * drVC=[[DrawRectViewController alloc]init];
+            [self.navigationController pushViewController:drVC animated:YES];
         }
             break;
             

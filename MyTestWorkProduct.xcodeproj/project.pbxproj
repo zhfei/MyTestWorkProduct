@@ -454,6 +454,10 @@
 		DC8D14241E7E4EC1009EA61E /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D141C1E7E4EC1009EA61E /* BaiduMapAPI_Search.framework */; };
 		DC8D14251E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8D141D1E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework */; };
 		DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC8D141E1E7E4EC1009EA61E /* mapapi.bundle */; };
+		DC8E67241EFEB9B200691D6A /* DrawRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E67221EFEB9B200691D6A /* DrawRectViewController.m */; };
+		DC8E67251EFEB9B200691D6A /* DrawRectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8E67231EFEB9B200691D6A /* DrawRectViewController.xib */; };
+		DC8E67291EFEBA3900691D6A /* DrawRectView1.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E67281EFEBA3900691D6A /* DrawRectView1.m */; };
+		DC8E672C1EFEBDF200691D6A /* DrawRectView2.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E672B1EFEBDF200691D6A /* DrawRectView2.m */; };
 		DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */ = {isa = PBXBuildFile; fileRef = DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */; };
 /* End PBXBuildFile section */
 
@@ -1045,6 +1049,13 @@
 		DC8D141C1E7E4EC1009EA61E /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		DC8D141D1E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
 		DC8D141E1E7E4EC1009EA61E /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		DC8E67211EFEB9B200691D6A /* DrawRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectViewController.h; sourceTree = "<group>"; };
+		DC8E67221EFEB9B200691D6A /* DrawRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectViewController.m; sourceTree = "<group>"; };
+		DC8E67231EFEB9B200691D6A /* DrawRectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawRectViewController.xib; sourceTree = "<group>"; };
+		DC8E67271EFEBA3900691D6A /* DrawRectView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectView1.h; sourceTree = "<group>"; };
+		DC8E67281EFEBA3900691D6A /* DrawRectView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectView1.m; sourceTree = "<group>"; };
+		DC8E672A1EFEBDF200691D6A /* DrawRectView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectView2.h; sourceTree = "<group>"; };
+		DC8E672B1EFEBDF200691D6A /* DrawRectView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectView2.m; sourceTree = "<group>"; };
 		DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "认识xcode中的重要成员：lldb调试器"; sourceTree = "<group>"; };
 		DCE16E75864F3D4F6A797AB5 /* libPods-MyTestWorkProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTestWorkProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCD553C6C7BCA0A743DB3C2 /* Pods-MyTestWorkProduct.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestWorkProduct.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct.dailybuild.xcconfig"; sourceTree = "<group>"; };
@@ -2642,6 +2653,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				DC8E67201EFEB90D00691D6A /* DrawRect */,
 				916002BE1EF648D500071E10 /* Gradient */,
 				91C5E08E1EF628A400A6C68F /* ZFButton */,
 				91AF37311ED6BF64008B98F4 /* Shopping */,
@@ -2709,6 +2721,28 @@
 				DC84E01E1EC4B63600FBE3E8 /* FacadeVC.xib */,
 			);
 			path = Facade;
+			sourceTree = "<group>";
+		};
+		DC8E67201EFEB90D00691D6A /* DrawRect */ = {
+			isa = PBXGroup;
+			children = (
+				DC8E67261EFEBA0600691D6A /* SubView */,
+				DC8E67211EFEB9B200691D6A /* DrawRectViewController.h */,
+				DC8E67221EFEB9B200691D6A /* DrawRectViewController.m */,
+				DC8E67231EFEB9B200691D6A /* DrawRectViewController.xib */,
+			);
+			path = DrawRect;
+			sourceTree = "<group>";
+		};
+		DC8E67261EFEBA0600691D6A /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				DC8E67271EFEBA3900691D6A /* DrawRectView1.h */,
+				DC8E67281EFEBA3900691D6A /* DrawRectView1.m */,
+				DC8E672A1EFEBDF200691D6A /* DrawRectView2.h */,
+				DC8E672B1EFEBDF200691D6A /* DrawRectView2.m */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 		DC95F8981E9A96D00078D96A /* lldb */ = {
@@ -2880,6 +2914,7 @@
 				91E188DA1C070106006BA41C /* SubScene1.xib in Resources */,
 				DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */,
 				910BC4AF1EBF084700D7628F /* AbstractFactory in Resources */,
+				DC8E67251EFEB9B200691D6A /* DrawRectViewController.xib in Resources */,
 				91F26B071CF9529000D5C3DC /* user_header_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3095,6 +3130,7 @@
 				910BC4C81EBF103C00D7628F /* AtYellowCarLicense.m in Sources */,
 				91071DD81EBF143F006CF932 /* AtCarLicenseFactory.m in Sources */,
 				91DC45CC1BE7C0C700E86CC0 /* TabBar3ViewController.m in Sources */,
+				DC8E67241EFEB9B200691D6A /* DrawRectViewController.m in Sources */,
 				913D7EB31C92BFA200A862A4 /* MJRefreshConst.m in Sources */,
 				9116A16C1ED6D14B005D515C /* CommodityCell.m in Sources */,
 				911F2ADF1E5C7B140057FE33 /* HUDView.m in Sources */,
@@ -3132,6 +3168,7 @@
 				910C52B31D3DC7BA00F3873C /* NSArray+Additions.m in Sources */,
 				DC7B7BA81E817999008FCAEF /* XObject.m in Sources */,
 				913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */,
+				DC8E67291EFEBA3900691D6A /* DrawRectView1.m in Sources */,
 				91071DD21EBF110F006CF932 /* AtBlueCarLicense.m in Sources */,
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
@@ -3158,6 +3195,7 @@
 				9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */,
 				9114D6CE1C8688C70087E5AC /* unzip.c in Sources */,
 				DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */,
+				DC8E672C1EFEBDF200691D6A /* DrawRectView2.m in Sources */,
 				91E4B3C41C3C086E001DD5B2 /* FMDatabasePool.m in Sources */,
 				917952601ED599D400193487 /* TestVC2.m in Sources */,
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
