@@ -459,6 +459,7 @@
 		DC8E67291EFEBA3900691D6A /* DrawRectView1.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E67281EFEBA3900691D6A /* DrawRectView1.m */; };
 		DC8E672C1EFEBDF200691D6A /* DrawRectView2.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8E672B1EFEBDF200691D6A /* DrawRectView2.m */; };
 		DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */ = {isa = PBXBuildFile; fileRef = DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */; };
+		DCCB0A5C1F30D2630065D572 /* check.sh in Resources */ = {isa = PBXBuildFile; fileRef = DCCB0A5B1F30D2630065D572 /* check.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1057,6 +1058,7 @@
 		DC8E672A1EFEBDF200691D6A /* DrawRectView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectView2.h; sourceTree = "<group>"; };
 		DC8E672B1EFEBDF200691D6A /* DrawRectView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectView2.m; sourceTree = "<group>"; };
 		DC95F8991E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "认识xcode中的重要成员：lldb调试器"; sourceTree = "<group>"; };
+		DCCB0A5B1F30D2630065D572 /* check.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = check.sh; sourceTree = "<group>"; };
 		DCE16E75864F3D4F6A797AB5 /* libPods-MyTestWorkProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTestWorkProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCD553C6C7BCA0A743DB3C2 /* Pods-MyTestWorkProduct.dailybuild.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestWorkProduct.dailybuild.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct.dailybuild.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1470,6 +1472,7 @@
 		912E4B311E78D31200B6A254 /* ShellStudy */ = {
 			isa = PBXGroup;
 			children = (
+				DCCB0A5B1F30D2630065D572 /* check.sh */,
 				912E4B321E78D31200B6A254 /* test1.sh */,
 			);
 			path = ShellStudy;
@@ -2861,6 +2864,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */,
+				DCCB0A5C1F30D2630065D572 /* check.sh in Resources */,
 				91AE59041ED8368B00FD53F8 /* ShoppingCartBar.xib in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
 				911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */,
