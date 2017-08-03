@@ -130,13 +130,13 @@
         
         NSTextAttachment *textAtt =[[NSTextAttachment alloc]init];
         textAtt.image=[UIImage imageNamed:@"starPress_"];
+        textAtt.bounds = CGRectMake(0, 0, 10, 10);
         NSAttributedString *attributed =[NSAttributedString attributedStringWithAttachment:textAtt];
         
         
         NSMutableParagraphStyle *paraM =[[NSMutableParagraphStyle alloc]init];
         paraM.firstLineHeadIndent=15;
-        NSDictionary *attri =@{NSFontAttributeName:[UIFont systemFontOfSize:13],
-                               NSParagraphStyleAttributeName:paraM};
+        NSDictionary *attri =@{NSFontAttributeName:[UIFont systemFontOfSize:13]};
         
         
         NSMutableAttributedString *attributed3=[[NSMutableAttributedString alloc]initWithString:@"桃花潭水深千尺，不及汪伦送我情。" attributes:attri];

@@ -12,5 +12,6 @@
 	<string>自定义按钮</string>
 	<string>渐变色</string>
 	<string>绘画</string>
+	<string>图片缓存池</string>
 </array>
 </plist>

@@ -20,6 +20,7 @@
 #import "ZFButtonViewController.h"
 #import "GradientViewController.h"
 #import "DrawRectViewController.h"
+#import "ImageCachePoolVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -61,6 +62,10 @@
     MyLog(@"obj:%@",obj.address)
 
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:@"test"];
+    });
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"test2" object:@"test"];
 }
 
 - (void)imageCachePoolTest {
@@ -201,6 +206,11 @@
         case 9: {
             DrawRectViewController * drVC=[[DrawRectViewController alloc]init];
             [self.navigationController pushViewController:drVC animated:YES];
+        }
+            break;
+        case 10: {
+            ImageCachePoolVC * icpVC=[[ImageCachePoolVC alloc]init];
+            [self.navigationController pushViewController:icpVC animated:YES];
         }
             break;
             

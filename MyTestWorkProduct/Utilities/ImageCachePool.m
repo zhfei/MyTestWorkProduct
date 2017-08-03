@@ -9,6 +9,7 @@
 #import "ImageCachePool.h"
 
 static ImageCachePool *_instance=nil;
+static NSString       *mainBundle = @"mainBundle";
 
 @interface ImageCachePool ()
 
@@ -109,6 +110,10 @@ static ImageCachePool *_instance=nil;
  */
 - (UIImage *)cacheImage:(NSString *)name fromBundle:(NSString *)bundleName {
     
+    if (!bundleName.length) {
+        bundleName = mainBundle;
+    }
+    
     if (!bundleName || !name) {
         return nil;
     }
@@ -144,7 +149,11 @@ static ImageCachePool *_instance=nil;
 #pragma mark -- Set
 - (void)setImage:(UIImage *)image name:(NSString *)name fromBundle:(NSString *)bundleName {
     
-    if (!image || !name || !bundleName) {
+    if (!bundleName.length) {
+        bundleName = mainBundle;
+    }
+    
+    if (!image || !name ||!bundleName) {
         NSLog(@"图片缓存对象 或者 图片缓存名为空！图片对象:%@ /\n 图片名称:%@ /\n bundle名称:%@",image.description,name,bundleName);
         return;
     }

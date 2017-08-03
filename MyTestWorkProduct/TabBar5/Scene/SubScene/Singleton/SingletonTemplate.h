@@ -11,6 +11,9 @@
 
 @interface SingletonTemplate : NSObject
 
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
+- (instancetype)new UNAVAILABLE_ATTRIBUTE ;
+
 /*!**生成单例***/
 + (instancetype)sharedSingletonTemplate;
 /*!**销毁单例***/

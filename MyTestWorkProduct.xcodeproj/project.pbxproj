@@ -131,6 +131,10 @@
 		9144B6B81CAB60FF003146B2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144B6B71CAB60FF003146B2 /* CoreTelephony.framework */; };
 		9144B6BA1CAB611B003146B2 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144B6B91CAB611B003146B2 /* libstdc++.6.0.9.tbd */; };
 		91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91487D721C9672ED00A4A228 /* ImageLabel.m */; };
+		91489E9B1F28898B00B23579 /* ImageCachePoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91489E991F28898B00B23579 /* ImageCachePoolVC.m */; };
+		91489E9C1F28898B00B23579 /* ImageCachePoolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91489E9A1F28898B00B23579 /* ImageCachePoolVC.xib */; };
+		91489EA01F288C2400B23579 /* ICPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */; };
+		91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */; };
 		914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */; };
 		9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */; };
 		916002C11EF6496F00071E10 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C01EF6496F00071E10 /* GradientViewController.m */; };
@@ -704,6 +708,12 @@
 		9144B6B91CAB611B003146B2 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		91487D711C9672ED00A4A228 /* ImageLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLabel.h; sourceTree = "<group>"; };
 		91487D721C9672ED00A4A228 /* ImageLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLabel.m; sourceTree = "<group>"; };
+		91489E981F28898B00B23579 /* ImageCachePoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCachePoolVC.h; sourceTree = "<group>"; };
+		91489E991F28898B00B23579 /* ImageCachePoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCachePoolVC.m; sourceTree = "<group>"; };
+		91489E9A1F28898B00B23579 /* ImageCachePoolVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCachePoolVC.xib; sourceTree = "<group>"; };
+		91489E9D1F288C2400B23579 /* ICPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPCollectionViewCell.h; sourceTree = "<group>"; };
+		91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPCollectionViewCell.m; sourceTree = "<group>"; };
+		91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICPCollectionViewCell.xib; sourceTree = "<group>"; };
 		914F1E9E1EE4F68200BAB5A1 /* RedCircelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedCircelLabel.h; sourceTree = "<group>"; };
 		914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCircelLabel.m; sourceTree = "<group>"; };
 		9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAnimation.h; sourceTree = "<group>"; };
@@ -1659,6 +1669,19 @@
 				9143540A1E026D1E00608E58 /* GCDTestViewController.xib */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		91489E921F28892500B23579 /* ImageCachePool */ = {
+			isa = PBXGroup;
+			children = (
+				91489E981F28898B00B23579 /* ImageCachePoolVC.h */,
+				91489E991F28898B00B23579 /* ImageCachePoolVC.m */,
+				91489E9A1F28898B00B23579 /* ImageCachePoolVC.xib */,
+				91489E9D1F288C2400B23579 /* ICPCollectionViewCell.h */,
+				91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */,
+				91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */,
+			);
+			path = ImageCachePool;
 			sourceTree = "<group>";
 		};
 		916002BE1EF648D500071E10 /* Gradient */ = {
@@ -2653,6 +2676,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				91489E921F28892500B23579 /* ImageCachePool */,
 				DC8E67201EFEB90D00691D6A /* DrawRect */,
 				916002BE1EF648D500071E10 /* Gradient */,
 				91C5E08E1EF628A400A6C68F /* ZFButton */,
@@ -2889,8 +2913,10 @@
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
 				9116A16D1ED6D14B005D515C /* CommodityCell.xib in Resources */,
+				91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */,
 				DC84E0201EC4B63600FBE3E8 /* FacadeVC.xib in Resources */,
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
+				91489E9C1F28898B00B23579 /* ImageCachePoolVC.xib in Resources */,
 				910BC4AC1EBEE58000D7628F /* Factory in Resources */,
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
 				917952591ED5994500193487 /* DecouplingManyVCsVC.xib in Resources */,
@@ -3169,6 +3195,7 @@
 				DC7B7BA81E817999008FCAEF /* XObject.m in Sources */,
 				913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */,
 				DC8E67291EFEBA3900691D6A /* DrawRectView1.m in Sources */,
+				91489EA01F288C2400B23579 /* ICPCollectionViewCell.m in Sources */,
 				91071DD21EBF110F006CF932 /* AtBlueCarLicense.m in Sources */,
 				913D7EB11C92BFA200A862A4 /* MJRefreshStateHeader.m in Sources */,
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
@@ -3263,6 +3290,7 @@
 				91752ABE1E4DB95A00F6C634 /* RealmPerson.m in Sources */,
 				911F2ABC1E5C77480057FE33 /* UIImage+Color.m in Sources */,
 				913A95AA1D3C7EF700237473 /* UITextView+Additions.m in Sources */,
+				91489E9B1F28898B00B23579 /* ImageCachePoolVC.m in Sources */,
 				9182B3CB1EBE30D000D3A870 /* CarLicense.m in Sources */,
 				91FAFFC41D057E45004F4CE8 /* CollectionViewHeader.m in Sources */,
 				911F2AB41E5C77480057FE33 /* NSObject+AutoDescription.m in Sources */,
