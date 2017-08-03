@@ -125,18 +125,23 @@
         NSLog(@"sizeToFit后、label.frame:%@",NSStringFromCGRect(label.frame));
     }else if (indexPath.row==13) {
         UILabel *label =[[UILabel alloc]init];
-        label.numberOfLines=2;
+        label.numberOfLines=0;
         label.backgroundColor=[UIColor lightGrayColor];
         
         NSTextAttachment *textAtt =[[NSTextAttachment alloc]init];
         textAtt.image=[UIImage imageNamed:@"starPress_"];
         textAtt.bounds = CGRectMake(0, 0, 10, 10);
+
         NSAttributedString *attributed =[NSAttributedString attributedStringWithAttachment:textAtt];
         
         
         NSMutableParagraphStyle *paraM =[[NSMutableParagraphStyle alloc]init];
         paraM.firstLineHeadIndent=15;
-        NSDictionary *attri =@{NSFontAttributeName:[UIFont systemFontOfSize:13]};
+
+        paraM.lineSpacing=20;
+
+        NSDictionary *attri =@{NSFontAttributeName:[UIFont systemFontOfSize:28],
+                               NSParagraphStyleAttributeName:paraM};
         
         
         NSMutableAttributedString *attributed3=[[NSMutableAttributedString alloc]initWithString:@"桃花潭水深千尺，不及汪伦送我情。" attributes:attri];
@@ -145,11 +150,16 @@
         label.attributedText=attributed3;
         
         [cell.contentView addSubview:label];
-        [label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(UIEdgeInsetsMake(5, 5, 5, 5));
-        }];
+//        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.edges.mas_equalTo(UIEdgeInsetsMake(5, 5, 5, 5));
+//        }];
         
-        
+        label.frame=CGRectMake(10, 10, 80, 80);
+        NSLog(@"sizeToFit前、label.frame:%@",NSStringFromCGRect(label.frame));
+        CGSize size= [label systemLayoutSizeFittingSize:CGSizeMake(80, MAXFLOAT)];
+        label.frame=CGRectMake(10, 10, size.width, size.height);
+        NSLog(@"sizeToFit后、label.frame:%@",NSStringFromCGRect(label.frame));
+
         
     }
     
