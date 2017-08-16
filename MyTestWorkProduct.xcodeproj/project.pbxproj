@@ -35,6 +35,7 @@
 		910BC4C61EBF103C00D7628F /* AtBeiJingYellowCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4C01EBF103C00D7628F /* AtBeiJingYellowCarLicense.m */; };
 		910BC4C81EBF103C00D7628F /* AtYellowCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4C41EBF103C00D7628F /* AtYellowCarLicense.m */; };
 		910BDE081CA9742D00A499CF /* FontSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BDE071CA9742D00A499CF /* FontSettingsViewController.m */; };
+		910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */; };
 		910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */; };
 		910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A11D3DC74200F3873C /* HanyuPinyinOutputFormat.m */; };
 		910C52AD1D3DC74200F3873C /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A31D3DC74200F3873C /* NSString+PinYin4Cocoa.m */; };
@@ -55,6 +56,9 @@
 		9116A16C1ED6D14B005D515C /* CommodityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116A16A1ED6D14B005D515C /* CommodityCell.m */; };
 		9116A16D1ED6D14B005D515C /* CommodityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9116A16B1ED6D14B005D515C /* CommodityCell.xib */; };
 		9116A1721ED6E887005D515C /* AmountEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116A1711ED6E887005D515C /* AmountEditView.m */; };
+		911B79741F3407620076CC36 /* CirculateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911B79721F3407620076CC36 /* CirculateViewController.m */; };
+		911B79751F3407620076CC36 /* CirculateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911B79731F3407620076CC36 /* CirculateViewController.xib */; };
+		911B79781F340CDE0076CC36 /* CirculateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 911B79771F340CDE0076CC36 /* CirculateModel.m */; };
 		911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */; };
 		911CBA3C1E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA371E5DD46E00C3AE53 /* CHDShoppingCartCommodity.m */; };
 		911CBA3D1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 911CBA391E5DD46E00C3AE53 /* ModelDictionaryTransferVC.m */; };
@@ -531,6 +535,8 @@
 		910BC4C41EBF103C00D7628F /* AtYellowCarLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtYellowCarLicense.m; sourceTree = "<group>"; };
 		910BDE061CA9742D00A499CF /* FontSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontSettingsViewController.h; sourceTree = "<group>"; };
 		910BDE071CA9742D00A499CF /* FontSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSettingsViewController.m; sourceTree = "<group>"; };
+		910BE4B71F43E93C002DDC93 /* SingletonViewController+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SingletonViewController+Sort.h"; sourceTree = "<group>"; };
+		910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SingletonViewController+Sort.m"; sourceTree = "<group>"; };
 		910C529E1D3DC74200F3873C /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
 		910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
 		910C52A01D3DC74200F3873C /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
@@ -571,6 +577,11 @@
 		9116A16B1ED6D14B005D515C /* CommodityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommodityCell.xib; sourceTree = "<group>"; };
 		9116A1701ED6E887005D515C /* AmountEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmountEditView.h; sourceTree = "<group>"; };
 		9116A1711ED6E887005D515C /* AmountEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmountEditView.m; sourceTree = "<group>"; };
+		911B79711F3407620076CC36 /* CirculateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirculateViewController.h; sourceTree = "<group>"; };
+		911B79721F3407620076CC36 /* CirculateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirculateViewController.m; sourceTree = "<group>"; };
+		911B79731F3407620076CC36 /* CirculateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CirculateViewController.xib; sourceTree = "<group>"; };
+		911B79761F340CDE0076CC36 /* CirculateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirculateModel.h; sourceTree = "<group>"; };
+		911B79771F340CDE0076CC36 /* CirculateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirculateModel.m; sourceTree = "<group>"; };
 		911CBA341E5DD46E00C3AE53 /* CHDBaseCommodity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDBaseCommodity.h; sourceTree = "<group>"; };
 		911CBA351E5DD46E00C3AE53 /* CHDBaseCommodity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDBaseCommodity.m; sourceTree = "<group>"; };
 		911CBA361E5DD46E00C3AE53 /* CHDShoppingCartCommodity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDShoppingCartCommodity.h; sourceTree = "<group>"; };
@@ -1341,6 +1352,18 @@
 				9116A1711ED6E887005D515C /* AmountEditView.m */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		911B79701F3407480076CC36 /* Circulate */ = {
+			isa = PBXGroup;
+			children = (
+				911B79711F3407620076CC36 /* CirculateViewController.h */,
+				911B79721F3407620076CC36 /* CirculateViewController.m */,
+				911B79731F3407620076CC36 /* CirculateViewController.xib */,
+				911B79761F340CDE0076CC36 /* CirculateModel.h */,
+				911B79771F340CDE0076CC36 /* CirculateModel.m */,
+			);
+			path = Circulate;
 			sourceTree = "<group>";
 		};
 		911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */ = {
@@ -2682,6 +2705,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				911B79701F3407480076CC36 /* Circulate */,
 				91489E921F28892500B23579 /* ImageCachePool */,
 				DC8E67201EFEB90D00691D6A /* DrawRect */,
 				916002BE1EF648D500071E10 /* Gradient */,
@@ -2706,6 +2730,8 @@
 				DC594A121E5B3D580043845D /* SingletonViewController.h */,
 				DC594A131E5B3D580043845D /* SingletonViewController.m */,
 				DC594A141E5B3D580043845D /* SingletonViewController.xib */,
+				910BE4B71F43E93C002DDC93 /* SingletonViewController+Sort.h */,
+				910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */,
 				911D6D961E6431B600FBF188 /* CodingTemplate.h */,
 				911D6D971E6431B600FBF188 /* CodingTemplate.m */,
 				911D6D991E6436E100FBF188 /* CodingSubClass.h */,
@@ -2905,6 +2931,7 @@
 				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
 				9143540C1E026D1E00608E58 /* GCDTestViewController.xib in Resources */,
 				9141F3B11EC00C970078E71E /* AdapterPlayerVC.xib in Resources */,
+				911B79751F3407620076CC36 /* CirculateViewController.xib in Resources */,
 				9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */,
 				91DC45CD1BE7C0C700E86CC0 /* TabBar3ViewController.xib in Resources */,
 				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
@@ -3236,6 +3263,7 @@
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
 				9114D6CD1C8688C70087E5AC /* mztools.c in Sources */,
 				91DC456A1BE7B17000E86CC0 /* UIBarButtonItem+MF.m in Sources */,
+				910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */,
 				DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */,
 				91E8DE801EC19A590068C166 /* StNewPlayer.m in Sources */,
 				91AE59021ED8366C00FD53F8 /* ShoppingCartBar.m in Sources */,
@@ -3267,6 +3295,7 @@
 				913D7EA71C92BFA200A862A4 /* MJRefreshFooter.m in Sources */,
 				910C52AF1D3DC74200F3873C /* PinyinHelper.m in Sources */,
 				913D7EAC1C92BFA200A862A4 /* MJRefreshBackGifFooter.m in Sources */,
+				911B79741F3407620076CC36 /* CirculateViewController.m in Sources */,
 				91F2888F1CF93931004B726B /* BlurEffectViewController.m in Sources */,
 				9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */,
 				912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */,
@@ -3286,6 +3315,7 @@
 				918930A41E653FAF007D6879 /* OptionHeadlineHelper.m in Sources */,
 				91FDCA191C9FEAB100A5E684 /* DIYCollectionViewLayout.m in Sources */,
 				91F650951D34E36400212FD0 /* BluetoothViewController.m in Sources */,
+				911B79781F340CDE0076CC36 /* CirculateModel.m in Sources */,
 				911F2AB71E5C77480057FE33 /* NSObject+RunTime.m in Sources */,
 				91F90D841C77068300215E3B /* AFURLSessionManager.m in Sources */,
 				91DC44F71BE7A60900E86CC0 /* main.m in Sources */,

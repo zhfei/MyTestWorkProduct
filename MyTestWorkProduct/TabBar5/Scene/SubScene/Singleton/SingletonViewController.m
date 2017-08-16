@@ -16,6 +16,21 @@
 @end
 
 @implementation SingletonViewController
+    
++ (void)load {
+
+    NSLog(@"SingletonViewController--%@--date:%@",NSStringFromSelector(_cmd),[NSDate date]);
+}
+    
++ (void)initialize {
+
+     NSLog(@"SingletonViewController--%@--date:%@",NSStringFromSelector(_cmd),[NSDate date]);
+}
+
+- (void)dealloc {
+
+     NSLog(@"SingletonViewController--%@--date:%@",NSStringFromSelector(_cmd),[NSDate date]);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

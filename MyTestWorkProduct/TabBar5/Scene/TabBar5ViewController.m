@@ -21,6 +21,7 @@
 #import "GradientViewController.h"
 #import "DrawRectViewController.h"
 #import "ImageCachePoolVC.h"
+#import "CirculateViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -213,8 +214,13 @@
             [self.navigationController pushViewController:icpVC animated:YES];
         }
             break;
+        case 11: {
+            CirculateViewController * ccVC=[[CirculateViewController alloc]init];
+            [self.navigationController pushViewController:ccVC animated:YES];
+        }
+            break;
             
-            
+          
             
             
         default:

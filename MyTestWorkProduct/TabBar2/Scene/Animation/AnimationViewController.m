@@ -42,6 +42,7 @@
     
 }
 
+#pragma mark 动画
 //活动指示器动画
 -(UIActivityIndicatorView *)activityIndicatorAnimation
 {
@@ -52,6 +53,117 @@
     [activityAnimation setHidesWhenStopped:YES];
     
     return activityAnimation;
+}
+
+- (UIView *)animationAction_1 {
+    UIView *block=[UIView new];
+    
+    [block setFrame:CGRectMake(0, 0, 50, 50)];
+    [block setBackgroundColor:[UIColor blueColor]];
+    
+    [UIView animateWithDuration:1 delay:1 options:UIViewAnimationOptionRepeat animations:^{
+        [block setFrame:CGRectMake(200, 250, 30, 50)];
+        [block setBackgroundColor:[UIColor redColor]];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    return block;
+}
+
+- (UIView *)animationAction_2 {
+    
+    UIView *block=[UIView new];
+    [block setFrame:CGRectMake(0, 0, 50, 50)];
+    [block setBackgroundColor:[UIColor blueColor]];
+    
+    [UIView animateKeyframesWithDuration:3 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
+        
+        [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:1/3.0 animations:^{
+            [block setFrame:CGRectMake(200, 250, 30, 50)];
+            [block setBackgroundColor:[UIColor redColor]];
+        }];
+        [UIView addKeyframeWithRelativeStartTime:1/3.0 relativeDuration:2/3.0 animations:^{
+            [block setFrame:CGRectMake(250, 10, 30, 50)];
+            [block setBackgroundColor:[UIColor yellowColor]];
+        }];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    return block;
+}
+
+- (UIView *)animationAction_3 {
+    
+    UIView *block=[UIView new];
+    [block setFrame:CGRectMake(0, 0, 50, 50)];
+    [block setBackgroundColor:[UIColor blueColor]];
+    
+    [UIView animateWithDuration:3 delay:0 usingSpringWithDamping:0.1 initialSpringVelocity:0.9 options:UIViewAnimationOptionRepeat animations:^{
+        [block setFrame:CGRectMake(200, 150, 30, 50)];
+        [block setBackgroundColor:[UIColor redColor]];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    return block;
+}
+
+- (UIView *)animationAction_4 {
+    
+    UIView *view =[UIView new];
+    view.bounds=CGRectMake(0, 0, 100, 100);
+    
+    view.center=CGPointMake(150, 150);
+    
+    view.layer.backgroundColor=[UIColor purpleColor].CGColor;
+    view.layer.cornerRadius=3;
+    view.layer.borderColor=[UIColor blueColor].CGColor;
+    view.layer.borderWidth=2;
+    
+    view.layer.shadowOffset=CGSizeMake(5, 5);
+    view.layer.shadowColor=[UIColor yellowColor].CGColor;
+    view.layer.shadowRadius=5;
+    view.layer.shadowOpacity=1;
+    
+    
+    [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionRepeat animations:^{
+        //            view.layer.transform=CATransform3DMakeScale(0, 0, 0);
+        view.layer.transform=CATransform3DRotate(view.layer.transform, M_PI, 1, 1, 1);
+        //            view.layer.transform=CATransform3DMakeTranslation(100, 100, 0);
+        
+    } completion:^(BOOL finished) {
+        
+    }];//
+    return view;
+}
+
+- (UIImageView *)animationAction_5 {
+   
+    CFAbsoluteTime start=CFAbsoluteTimeGetCurrent();
+    UIImageView *view =[UIImageView new];
+    view.frame=CGRectMake(0, 0, 300, 300);
+    
+    view.image=[UIImage imageNamed:@"paopao"];
+    view.contentMode=UIViewContentModeScaleAspectFit;
+    
+    CFAbsoluteTime end=CFAbsoluteTimeGetCurrent();
+    
+    NSLog(@"start:%.3f------end:%.3f-------%.3f",start,end,end-start);
+    //        CATransition *trans=[CATransition animation];
+    //        trans.type=@"pageCurl";
+    //        trans.duration=2;
+    //        [view.layer addAnimation:trans forKey:nil];
+    
+    [UIView transitionWithView:view duration:2 options:UIViewAnimationOptionRepeat animations:^{
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    return view;
 }
 
 
@@ -77,108 +189,27 @@
         
     }else if (indexPath.row==1){
 
-        UIView *block=[UIView new];
-        
-        [block setFrame:CGRectMake(0, 0, 50, 50)];
-        [block setBackgroundColor:[UIColor blueColor]];
-        
-        [UIView animateWithDuration:1 delay:1 options:UIViewAnimationOptionRepeat animations:^{
-            [block setFrame:CGRectMake(200, 250, 30, 50)];
-            [block setBackgroundColor:[UIColor redColor]];
-        } completion:^(BOOL finished) {
-            
-        }];
-        
+        UIView *block=[self animationAction_1];
         [cell addSubview:block];
     }else if (indexPath.row==2){
         
-        UIView *block=[UIView new];
-        [block setFrame:CGRectMake(0, 0, 50, 50)];
-        [block setBackgroundColor:[UIColor blueColor]];
+        UIView *block=[self animationAction_2];
         [cell addSubview:block];
-
-        [UIView animateKeyframesWithDuration:3 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
-            
-            [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:1/3.0 animations:^{
-                [block setFrame:CGRectMake(200, 250, 30, 50)];
-                [block setBackgroundColor:[UIColor redColor]];
-            }];
-            [UIView addKeyframeWithRelativeStartTime:1/3.0 relativeDuration:2/3.0 animations:^{
-                [block setFrame:CGRectMake(250, 10, 30, 50)];
-                [block setBackgroundColor:[UIColor yellowColor]];
-            }];
-                    
-        } completion:^(BOOL finished) {
-            
-        }];
         
     }else if (indexPath.row==3){
         
-        UIView *block=[UIView new];
-        [block setFrame:CGRectMake(0, 0, 50, 50)];
-        [block setBackgroundColor:[UIColor blueColor]];
+        UIView *block=[self animationAction_3];
         [cell addSubview:block];
-        
-        [UIView animateWithDuration:3 delay:0 usingSpringWithDamping:0.1 initialSpringVelocity:0.9 options:UIViewAnimationOptionRepeat animations:^{
-            [block setFrame:CGRectMake(200, 150, 30, 50)];
-            [block setBackgroundColor:[UIColor redColor]];
-        } completion:^(BOOL finished) {
-            
-        }];
         
     }else if (indexPath.row==4){
         
-        UIView *view =[UIView new];
-        view.bounds=CGRectMake(0, 0, 100, 100);
-        
+        UIView *view =[self animationAction_4];
         [cell addSubview:view];
-        view.center=CGPointMake(150, 150);
-        
-        view.layer.backgroundColor=[UIColor purpleColor].CGColor;
-        view.layer.cornerRadius=3;
-        view.layer.borderColor=[UIColor blueColor].CGColor;
-        view.layer.borderWidth=2;
-        
-        view.layer.shadowOffset=CGSizeMake(5, 5);
-        view.layer.shadowColor=[UIColor yellowColor].CGColor;
-        view.layer.shadowRadius=5;
-        view.layer.shadowOpacity=1;
-        
-       
-        [UIView animateWithDuration:2 delay:0 options:UIViewAnimationOptionRepeat animations:^{
-//            view.layer.transform=CATransform3DMakeScale(0, 0, 0);
-            view.layer.transform=CATransform3DRotate(view.layer.transform, M_PI, 1, 1, 1);
-//            view.layer.transform=CATransform3DMakeTranslation(100, 100, 0);
-
-        } completion:^(BOOL finished) {
-            
-        }];//
         
     }else if (indexPath.row==5){
         
-        CFAbsoluteTime start=CFAbsoluteTimeGetCurrent();
-        UIImageView *view =[UIImageView new];
-        view.frame=CGRectMake(0, 0, 300, 300);
-        
-        view.image=[UIImage imageNamed:@"paopao"];
-        view.contentMode=UIViewContentModeScaleAspectFit;
+        UIImageView *view =[self animationAction_5];
         [cell addSubview:view];
-        
-        CFAbsoluteTime end=CFAbsoluteTimeGetCurrent();
-
-        NSLog(@"start:%.3f------end:%.3f-------%.3f",start,end,end-start);
-//        CATransition *trans=[CATransition animation];
-//        trans.type=@"pageCurl";
-//        trans.duration=2;
-//        [view.layer addAnimation:trans forKey:nil];
-        
-        [UIView transitionWithView:view duration:2 options:UIViewAnimationOptionRepeat animations:^{
-            
-        } completion:^(BOOL finished) {
-            
-        }];
-        
-        
     }
 
     
