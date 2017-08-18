@@ -36,6 +36,7 @@
 		910BC4C81EBF103C00D7628F /* AtYellowCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4C41EBF103C00D7628F /* AtYellowCarLicense.m */; };
 		910BDE081CA9742D00A499CF /* FontSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BDE071CA9742D00A499CF /* FontSettingsViewController.m */; };
 		910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */; };
+		910BE4D51F4453C8002DDC93 /* 核心动画.mindnode in Resources */ = {isa = PBXBuildFile; fileRef = 910BE4D41F4453C8002DDC93 /* 核心动画.mindnode */; };
 		910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */; };
 		910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A11D3DC74200F3873C /* HanyuPinyinOutputFormat.m */; };
 		910C52AD1D3DC74200F3873C /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A31D3DC74200F3873C /* NSString+PinYin4Cocoa.m */; };
@@ -537,6 +538,7 @@
 		910BDE071CA9742D00A499CF /* FontSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSettingsViewController.m; sourceTree = "<group>"; };
 		910BE4B71F43E93C002DDC93 /* SingletonViewController+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SingletonViewController+Sort.h"; sourceTree = "<group>"; };
 		910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SingletonViewController+Sort.m"; sourceTree = "<group>"; };
+		910BE4D41F4453C8002DDC93 /* 核心动画.mindnode */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "核心动画.mindnode"; sourceTree = "<group>"; };
 		910C529E1D3DC74200F3873C /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
 		910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
 		910C52A01D3DC74200F3873C /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
@@ -1236,6 +1238,14 @@
 				910BDE071CA9742D00A499CF /* FontSettingsViewController.m */,
 			);
 			path = FontSettings;
+			sourceTree = "<group>";
+		};
+		910BE4D31F445302002DDC93 /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				910BE4D41F4453C8002DDC93 /* 核心动画.mindnode */,
+			);
+			path = Doc;
 			sourceTree = "<group>";
 		};
 		910C529C1D3DC74200F3873C /* PinYin4Objc */ = {
@@ -2482,6 +2492,7 @@
 		91ED409B1D198D9D00190FC5 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				910BE4D31F445302002DDC93 /* Doc */,
 				91ED409C1D198DC500190FC5 /* AnimationViewController.h */,
 				91ED409D1D198DC500190FC5 /* AnimationViewController.m */,
 			);
@@ -2937,6 +2948,7 @@
 				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */,
+				910BE4D51F4453C8002DDC93 /* 核心动画.mindnode in Resources */,
 				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
 				91E8DE791EC1904C0068C166 /* Strategy in Resources */,
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
