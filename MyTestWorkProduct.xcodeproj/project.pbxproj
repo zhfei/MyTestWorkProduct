@@ -435,6 +435,7 @@
 		91FE25D91CB219AE001C6DF0 /* TabBar2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DC45C61BE7C0B500E86CC0 /* TabBar2ViewController.xib */; };
 		91FE25DA1CB219AE001C6DF0 /* SubScene1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E188D81C070106006BA41C /* SubScene1.xib */; };
 		91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FF875D1CAAC91400B63004 /* MapViewController.m */; };
+		DC37E3961F45F5F000F1D905 /* test0.py in Resources */ = {isa = PBXBuildFile; fileRef = DC37E3951F45F5F000F1D905 /* test0.py */; };
 		DC5887C41E8032A100373621 /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5887C31E8032A100373621 /* TestPerson.m */; };
 		DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A111E5B3D580043845D /* SingletonTemplate.m */; };
 		DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC594A131E5B3D580043845D /* SingletonViewController.m */; };
@@ -1029,6 +1030,7 @@
 		91FF875C1CAAC91400B63004 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		91FF875D1CAAC91400B63004 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		9264B5EFA07B8AF6F99EB747 /* Pods-MyTestWorkProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTestWorkProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		DC37E3951F45F5F000F1D905 /* test0.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test0.py; sourceTree = "<group>"; };
 		DC5887C21E8032A100373621 /* TestPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPerson.h; sourceTree = "<group>"; };
 		DC5887C31E8032A100373621 /* TestPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPerson.m; sourceTree = "<group>"; };
 		DC594A0F1E5B3D580043845D /* SingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
@@ -2399,6 +2401,7 @@
 		91E07A281C0205E0009773B9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DC37E3941F45F5C600F1D905 /* python */,
 				DC95F8981E9A96D00078D96A /* lldb */,
 				912E4B311E78D31200B6A254 /* ShellStudy */,
 				91F26B051CF9529000D5C3DC /* images */,
@@ -2713,6 +2716,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC37E3941F45F5C600F1D905 /* python */ = {
+			isa = PBXGroup;
+			children = (
+				DC37E3951F45F5F000F1D905 /* test0.py */,
+			);
+			path = python;
+			sourceTree = "<group>";
+		};
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -2930,6 +2941,7 @@
 				917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */,
 				DCCB0A5C1F30D2630065D572 /* check.sh in Resources */,
 				91AE59041ED8368B00FD53F8 /* ShoppingCartBar.xib in Resources */,
+				DC37E3961F45F5F000F1D905 /* test0.py in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
 				911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */,
 				911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */,
