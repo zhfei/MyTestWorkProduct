@@ -12,7 +12,8 @@ target "MyTestWorkProduct" do
    pod 'ReactiveCocoa', '~> 2.5'
    
    
-   pod 'ZFFlowLayout', :path=>'../LeftAlignedCollectionView'
-   
+#   pod 'ZFFlowLayout', :path=>'../LeftAlignedCollectionView'
+   pod 'ZFFlowLayout', :path=>'subModule/ZFFlowLayout.podspec'
+
    
 end
