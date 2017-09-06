@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "CalculateTool.h"
 
 @interface MyTestWorkProductTests : XCTestCase
 
@@ -27,12 +28,18 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    CGFloat result = action(10, 10);
+    XCTAssert(result == 10,@"计算错误");
 }
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
+        for (int i = 0; i < 8000; i++) {
+            NSLog(@"%f",action(i, i+1));
+        }
     }];
 }
 

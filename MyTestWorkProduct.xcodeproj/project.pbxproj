@@ -284,6 +284,7 @@
 		91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6E2DF1D1BE14B00A5A587 /* NSDate+IntervalSeconds.m */; };
 		91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F7CEF11C50A68A0036D938 /* UUIDString.plist */; };
 		91F802031D2BA50A00C8C791 /* FZMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F802021D2BA50A00C8C791 /* FZMapViewController.m */; };
+		91F806831F555C5400818B50 /* CalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F806821F555C5400818B50 /* CalculateTool.m */; };
 		91F90D671C77057600215E3B /* XDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D661C77057600215E3B /* XDownLoadManager.m */; };
 		91F90D7C1C77068300215E3B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D6A1C77068300215E3B /* AFHTTPRequestOperation.m */; };
 		91F90D7D1C77068300215E3B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D6C1C77068300215E3B /* AFHTTPRequestOperationManager.m */; };
@@ -985,6 +986,8 @@
 		91F7CEF11C50A68A0036D938 /* UUIDString.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UUIDString.plist; sourceTree = "<group>"; };
 		91F802011D2BA50A00C8C791 /* FZMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMapViewController.h; sourceTree = "<group>"; };
 		91F802021D2BA50A00C8C791 /* FZMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMapViewController.m; sourceTree = "<group>"; };
+		91F806811F555C5400818B50 /* CalculateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateTool.h; sourceTree = "<group>"; };
+		91F806821F555C5400818B50 /* CalculateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateTool.m; sourceTree = "<group>"; };
 		91F90D651C77057600215E3B /* XDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDownLoadManager.h; sourceTree = "<group>"; };
 		91F90D661C77057600215E3B /* XDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDownLoadManager.m; sourceTree = "<group>"; };
 		91F90D691C77068300215E3B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -2623,6 +2626,15 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		91F806801F555BF300818B50 /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				91F806811F555C5400818B50 /* CalculateTool.h */,
+				91F806821F555C5400818B50 /* CalculateTool.m */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
 		91F90D681C77068300215E3B /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -2727,6 +2739,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				91F806801F555BF300818B50 /* UnitTest */,
 				911B79701F3407480076CC36 /* Circulate */,
 				91489E921F28892500B23579 /* ImageCachePool */,
 				DC8E67201EFEB90D00691D6A /* DrawRect */,
@@ -3244,6 +3257,7 @@
 				914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */,
 				DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */,
 				91DC456F1BE7B17000E86CC0 /* UIScrollView+YYAdditions.m in Sources */,
+				91F806831F555C5400818B50 /* CalculateTool.m in Sources */,
 				91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */,
 				91884BD71EC2F4E800F2212D /* StrategyPlayerVC.m in Sources */,
 				913D7EAB1C92BFA200A862A4 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -3555,6 +3569,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C7UNH8293N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -3738,6 +3753,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C7UNH8293N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -3793,6 +3809,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C7UNH8293N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyTestWorkProduct/Other/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",

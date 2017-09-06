@@ -10,4 +10,9 @@ target "MyTestWorkProduct" do
 
    pod 'SDWebImage'
    pod 'ReactiveCocoa', '~> 2.5'
+   
+   
+   pod 'ZFFlowLayout', :path=>'../LeftAlignedCollectionView'
+   
+   
 end
