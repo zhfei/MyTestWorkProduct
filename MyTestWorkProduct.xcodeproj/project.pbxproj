@@ -21,6 +21,7 @@
 		91071DD51EBF1299006CF932 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DD41EBF1299006CF932 /* Tools.m */; };
 		91071DD81EBF143F006CF932 /* AtCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DD71EBF143F006CF932 /* AtCarLicenseFactory.m */; };
 		91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DDA1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m */; };
+		9107D85A1F67C44E0024C1DD /* Models.m in Sources */ = {isa = PBXBuildFile; fileRef = 9107D8591F67C44E0024C1DD /* Models.m */; };
 		910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 910AC4E61D200DFE0094A250 /* UIDevice+Hardware.m */; };
 		910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4971EBED04F00D7628F /* CarLicenseFactory.m */; };
 		910BC49B1EBED27400D7628F /* BlueCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC49A1EBED27400D7628F /* BlueCarLicense.m */; };
@@ -146,6 +147,9 @@
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
 		916002C81EF6832900071E10 /* gradientView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C71EF6832900071E10 /* gradientView2.m */; };
 		916002CB1EF685E800071E10 /* gradientView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002CA1EF685E800071E10 /* gradientView3.m */; };
+		917348811F69342600BBBC85 /* MultiModelNestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173487F1F69342600BBBC85 /* MultiModelNestVC.m */; };
+		917348821F69342600BBBC85 /* MultiModelNestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917348801F69342600BBBC85 /* MultiModelNestVC.xib */; };
+		917348851F693A5E00BBBC85 /* MultiModelNestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 917348841F693A5E00BBBC85 /* MultiModelNestHelper.m */; };
 		917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 917383C71DCB8C2600FC59BE /* libReveal.dylib */; };
 		91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91752AA71E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m */; };
 		91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91752AA81E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib */; };
@@ -511,6 +515,9 @@
 		91071DD71EBF143F006CF932 /* AtCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtCarLicenseFactory.m; sourceTree = "<group>"; };
 		91071DD91EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtBeiJingCarLicenseFactory.h; sourceTree = "<group>"; };
 		91071DDA1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtBeiJingCarLicenseFactory.m; sourceTree = "<group>"; };
+		9107D8581F67C44E0024C1DD /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		9107D8591F67C44E0024C1DD /* Models.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Models.m; sourceTree = "<group>"; };
+		9107D85F1F67C80B0024C1DD /* MultiModelNestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiModelNestProtocol.h; sourceTree = "<group>"; };
 		910AC4E51D200DFE0094A250 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		910AC4E61D200DFE0094A250 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		910BC4961EBED04F00D7628F /* CarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicenseFactory.h; sourceTree = "<group>"; };
@@ -743,6 +750,11 @@
 		916002C71EF6832900071E10 /* gradientView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView2.m; sourceTree = "<group>"; };
 		916002C91EF685E800071E10 /* gradientView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView3.h; sourceTree = "<group>"; };
 		916002CA1EF685E800071E10 /* gradientView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView3.m; sourceTree = "<group>"; };
+		9173487E1F69342600BBBC85 /* MultiModelNestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiModelNestVC.h; sourceTree = "<group>"; };
+		9173487F1F69342600BBBC85 /* MultiModelNestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiModelNestVC.m; sourceTree = "<group>"; };
+		917348801F69342600BBBC85 /* MultiModelNestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiModelNestVC.xib; sourceTree = "<group>"; };
+		917348831F693A5E00BBBC85 /* MultiModelNestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiModelNestHelper.h; sourceTree = "<group>"; };
+		917348841F693A5E00BBBC85 /* MultiModelNestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiModelNestHelper.m; sourceTree = "<group>"; };
 		917383C71DCB8C2600FC59BE /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
 		91752AA61E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileReadingAndWritingVC.h; sourceTree = "<group>"; };
 		91752AA71E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileReadingAndWritingVC.m; sourceTree = "<group>"; };
@@ -1198,6 +1210,29 @@
 				9104E2ED1D2123B100AB0EBE /* TransitionAnimation.m */,
 			);
 			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		9107D8531F67C3E10024C1DD /* MultiModelNest */ = {
+			isa = PBXGroup;
+			children = (
+				9107D8541F67C3FB0024C1DD /* model */,
+				9107D85F1F67C80B0024C1DD /* MultiModelNestProtocol.h */,
+				917348831F693A5E00BBBC85 /* MultiModelNestHelper.h */,
+				917348841F693A5E00BBBC85 /* MultiModelNestHelper.m */,
+				9173487E1F69342600BBBC85 /* MultiModelNestVC.h */,
+				9173487F1F69342600BBBC85 /* MultiModelNestVC.m */,
+				917348801F69342600BBBC85 /* MultiModelNestVC.xib */,
+			);
+			path = MultiModelNest;
+			sourceTree = "<group>";
+		};
+		9107D8541F67C3FB0024C1DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9107D8581F67C44E0024C1DD /* Models.h */,
+				9107D8591F67C44E0024C1DD /* Models.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		910BC4A11EBEE2B100D7628F /* Factory */ = {
@@ -2739,6 +2774,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				9107D8531F67C3E10024C1DD /* MultiModelNest */,
 				91F806801F555BF300818B50 /* UnitTest */,
 				911B79701F3407480076CC36 /* Circulate */,
 				91489E921F28892500B23579 /* ImageCachePool */,
@@ -3003,6 +3039,7 @@
 				91AF37431ED6C95C008B98F4 /* ClassifyCell.xib in Resources */,
 				91DC45C31BE7C0A400E86CC0 /* TabBar1ViewController.xib in Resources */,
 				91AF37361ED6BF80008B98F4 /* ShoppingVC.xib in Resources */,
+				917348821F69342600BBBC85 /* MultiModelNestVC.xib in Resources */,
 				9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */,
 				DC84E00F1EC4B3EF00FBE3E8 /* Facade in Resources */,
 				9141F3A81EC00A900078E71E /* Adapter in Resources */,
@@ -3137,6 +3174,7 @@
 				9116A1721ED6E887005D515C /* AmountEditView.m in Sources */,
 				91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */,
 				91DE33E61C3FF12100125B25 /* MyHUDView.m in Sources */,
+				9107D85A1F67C44E0024C1DD /* Models.m in Sources */,
 				910BC4C61EBF103C00D7628F /* AtBeiJingYellowCarLicense.m in Sources */,
 				918930A11E653FAF007D6879 /* FileSingleDownloader.m in Sources */,
 				DC84E00C1EC4ABAB00FBE3E8 /* BuilderVC.m in Sources */,
@@ -3250,6 +3288,7 @@
 				910BC4C51EBF103C00D7628F /* AtBeiJingBlueCarLicense.m in Sources */,
 				91DC45C71BE7C0B500E86CC0 /* TabBar2ViewController.m in Sources */,
 				91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */,
+				917348811F69342600BBBC85 /* MultiModelNestVC.m in Sources */,
 				911F2AC01E5C77480057FE33 /* UIImage+Scale.m in Sources */,
 				913A95A41D3C7B5900237473 /* PeripheralViewController.m in Sources */,
 				918930A71E653FAF007D6879 /* Utilities.m in Sources */,
@@ -3361,6 +3400,7 @@
 				911F2AB51E5C77480057FE33 /* NSObject+CallStack.m in Sources */,
 				91C5E08D1EF623BF00A6C68F /* ZFButton.m in Sources */,
 				913D7EAE1C92BFA200A862A4 /* MJRefreshBackStateFooter.m in Sources */,
+				917348851F693A5E00BBBC85 /* MultiModelNestHelper.m in Sources */,
 				910BC4AA1EBEE4E300D7628F /* YellowCarLicenseFactory.m in Sources */,
 				911D6D9B1E6436E100FBF188 /* CodingSubClass.m in Sources */,
 				91752ABE1E4DB95A00F6C634 /* RealmPerson.m in Sources */,

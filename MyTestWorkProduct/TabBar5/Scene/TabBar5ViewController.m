@@ -22,6 +22,7 @@
 #import "DrawRectViewController.h"
 #import "ImageCachePoolVC.h"
 #import "CirculateViewController.h"
+#import "MultiModelNestVC.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -219,6 +220,12 @@
             [self.navigationController pushViewController:ccVC animated:YES];
         }
             break;
+        case 12: {
+            MultiModelNestVC * mmnVC=[[MultiModelNestVC alloc]init];
+            [self.navigationController pushViewController:mmnVC animated:YES];
+        }
+            break;
+            
             
           
             

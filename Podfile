@@ -13,7 +13,7 @@ target "MyTestWorkProduct" do
    
    
 #   pod 'ZFFlowLayout', :path=>'../LeftAlignedCollectionView'
-   pod 'ZFFlowLayout', :path=>'subModule/ZFFlowLayout.podspec'
+#   pod 'ZFFlowLayout', :path=>'subModule/ZFFlowLayout.podspec'
 
    
 end
