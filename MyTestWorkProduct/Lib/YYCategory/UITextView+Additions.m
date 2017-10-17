@@ -17,9 +17,10 @@
 
 + (UITextView *)textView
 {
+    
     UITextView * textView =[[UITextView alloc]init];
-    textView.bounds=CGRectMake(0, 0, ScreenWidth/2, ScreenHight/3);
-    textView.center=CGPointMake(ScreenWidth/2, ScreenHight/3);
+    textView.bounds=CGRectMake(0, 0, ScreenWidth/2, ScreenHeigh/3);
+    textView.center=CGPointMake(ScreenWidth/2, ScreenHeigh/3);
     textView.backgroundColor=[UIColor lightGrayColor];
     
     return textView;

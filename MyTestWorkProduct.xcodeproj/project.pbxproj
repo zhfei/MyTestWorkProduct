@@ -198,6 +198,7 @@
 		91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FAA41EC413D2006F3A02 /* TpNewPlayer.m */; };
 		91C5FAA91EC42AEE006F3A02 /* TemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5FAA71EC42AEE006F3A02 /* TemplateVC.m */; };
 		91C5FAAA1EC42AEE006F3A02 /* TemplateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C5FAA81EC42AEE006F3A02 /* TemplateVC.xib */; };
+		91C6C4311F95F443005BC0C4 /* NSObject+MethodCalledKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C6C4301F95F443005BC0C4 /* NSObject+MethodCalledKVO.m */; };
 		91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66A91C60AA8100259935 /* UserLoginInfo.m */; };
 		91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66AC1C60B31400259935 /* NSData+AES.m */; };
 		91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D788831BF0C28B0026A18E /* MyCollectionCell.m */; };
@@ -840,6 +841,8 @@
 		91C5FAA61EC42AEE006F3A02 /* TemplateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateVC.h; sourceTree = "<group>"; };
 		91C5FAA71EC42AEE006F3A02 /* TemplateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateVC.m; sourceTree = "<group>"; };
 		91C5FAA81EC42AEE006F3A02 /* TemplateVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateVC.xib; sourceTree = "<group>"; };
+		91C6C42F1F95F443005BC0C4 /* NSObject+MethodCalledKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodCalledKVO.h"; sourceTree = "<group>"; };
+		91C6C4301F95F443005BC0C4 /* NSObject+MethodCalledKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodCalledKVO.m"; sourceTree = "<group>"; };
 		91CA66A81C60AA8100259935 /* UserLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginInfo.h; sourceTree = "<group>"; };
 		91CA66A91C60AA8100259935 /* UserLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginInfo.m; sourceTree = "<group>"; };
 		91CA66AB1C60B31400259935 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
@@ -1451,6 +1454,8 @@
 				911F2A9D1E5C77480057FE33 /* NSObject+MethodSwizzing.m */,
 				911F2A9E1E5C77480057FE33 /* NSObject+RunTime.h */,
 				911F2A9F1E5C77480057FE33 /* NSObject+RunTime.m */,
+				91C6C42F1F95F443005BC0C4 /* NSObject+MethodCalledKVO.h */,
+				91C6C4301F95F443005BC0C4 /* NSObject+MethodCalledKVO.m */,
 			);
 			path = NSObject_Category;
 			sourceTree = "<group>";
@@ -3380,6 +3385,7 @@
 				91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */,
 				916002C81EF6832900071E10 /* gradientView2.m in Sources */,
 				91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */,
+				91C6C4311F95F443005BC0C4 /* NSObject+MethodCalledKVO.m in Sources */,
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "MultiModelNestVC.h"
 #import "Models.h"
+#import "NSObject+MethodCalledKVO.h"
 
 @interface MultiModelNestVC ()
 @property (strong, nonatomic)ModelC *modelC;
@@ -21,6 +22,9 @@
     
     [self setupData];
     
+    [self listen:@selector(touchesBegan:withEvent:) in:nil with:^(NSArray * _Nonnull array) {
+        NSLog(@"点击了...");
+    }];
 }
 
 - (void)setupData {
