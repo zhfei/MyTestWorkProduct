@@ -4,7 +4,7 @@ target "MyTestWorkProduct" do
     
    platform :ios, "8.0"
     
-   #pod 'Realm'
+   pod 'Realm'
    pod 'Masonry'
    pod 'MBProgressHUD'
 

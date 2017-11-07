@@ -37,6 +37,14 @@
 //    rp.name=@"小明";
 //    rp.address=@"北京人";
 //    rp.age=18;
+//    RLMArray *array = [[RLMArray alloc] initWithObjectClassName:[Dog className]];
+//    for (int i = 0; i< 100; i++) {
+//        Dog *dog = [Dog new];
+//        dog.name = @"旺财";
+//        dog.age = 1;
+//        [array addObject:dog];
+//    }
+//    rp.dogs = array;
 //    
 //    [[MyRealm defaultCashier] transactionWithBlock:^{
 //        [[MyRealm defaultCashier] addObject:rp];
@@ -49,20 +57,10 @@
 //    NSLog(@"path:%@--%@",NSHomeDirectory(),results);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self updateRealmObj];
 }
-*/
 
 - (IBAction)ReadingBtnAction:(UIButton *)sender {
     
@@ -123,7 +121,56 @@
     
 }
 
+#pragma mark - realm并发
 
+- (void)updateRealmObj {
+
+    dispatch_queue_t queue= dispatch_get_global_queue(0, 0);
+    dispatch_group_t group =dispatch_group_create();
+    
+    dispatch_group_async(group, queue, ^{
+        
+        RealmPerson *rp =[[RealmPerson alloc]init];
+        rp.name=@"小花";
+        rp.address=@"苗族人";
+        rp.age=18;
+        RLMArray *array = [[RLMArray alloc] initWithObjectClassName:[Dog className]];
+        for (int i = 0; i< 100; i++) {
+            Dog *dog = [Dog new];
+            dog.name = @"强强";
+            dog.age = 1;
+            [rp.dogs addObject:dog];
+        }
+
+        [[MyRealm defaultCashier] transactionWithBlock:^{
+            [[MyRealm defaultCashier] addObject:rp];
+        }];
+        
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            RealmPerson * per = [[RealmPerson allObjectsInRealm:[MyRealm defaultCashier]] lastObject];
+            NSLog(@"opention1开始-----:%@",[NSThread currentThread]);
+            [[MyRealm defaultCashier] transactionWithBlock:^{
+                per.name = @"麦穗";
+                
+//                for (int i = 0; i<10; i++) {
+//                    Dog *dog = per.dogs[i];
+//                    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//                        [[MyRealm defaultCashier] transactionWithBlock:^{
+//                            dog.name = @"皮皮";
+//                            NSLog(@"名字更新-----:%@",[NSThread currentThread]);
+//                        }];
+//                    });
+//                }
+            }];
+        });
+    });
+
+
+}
 
 
 @end

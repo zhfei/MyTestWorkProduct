@@ -180,6 +180,7 @@
 		918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930AA1E653FCF007D6879 /* ModelJSON.m */; };
 		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
 		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
+		91A959901FAD78B2004524F4 /* work.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91A9598F1FAD78B2004524F4 /* work.txt */; };
 		91AE59021ED8366C00FD53F8 /* ShoppingCartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AE59011ED8366C00FD53F8 /* ShoppingCartBar.m */; };
 		91AE59041ED8368B00FD53F8 /* ShoppingCartBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AE59031ED8368B00FD53F8 /* ShoppingCartBar.xib */; };
 		91AF372F1ED6AAA5008B98F4 /* DecouplingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AF372D1ED6AAA5008B98F4 /* DecouplingVC.m */; };
@@ -201,6 +202,7 @@
 		91C6C4311F95F443005BC0C4 /* NSObject+MethodCalledKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C6C4301F95F443005BC0C4 /* NSObject+MethodCalledKVO.m */; };
 		91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66A91C60AA8100259935 /* UserLoginInfo.m */; };
 		91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA66AC1C60B31400259935 /* NSData+AES.m */; };
+		91D732681FAAC4D20074E31B /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D732671FAAC4D20074E31B /* Dog.m */; };
 		91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D788831BF0C28B0026A18E /* MyCollectionCell.m */; };
 		91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D788841BF0C28B0026A18E /* MyCollectionCell.xib */; };
 		91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAB0EE1BE90CA0006695B7 /* TabBar5ViewController.m */; };
@@ -812,6 +814,7 @@
 		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
 		919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
 		919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
+		91A9598F1FAD78B2004524F4 /* work.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = work.txt; sourceTree = "<group>"; };
 		91AE59001ED8366C00FD53F8 /* ShoppingCartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartBar.h; sourceTree = "<group>"; };
 		91AE59011ED8366C00FD53F8 /* ShoppingCartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartBar.m; sourceTree = "<group>"; };
 		91AE59031ED8368B00FD53F8 /* ShoppingCartBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartBar.xib; sourceTree = "<group>"; };
@@ -847,6 +850,8 @@
 		91CA66A91C60AA8100259935 /* UserLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginInfo.m; sourceTree = "<group>"; };
 		91CA66AB1C60B31400259935 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
 		91CA66AC1C60B31400259935 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		91D732661FAAC4D20074E31B /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		91D732671FAAC4D20074E31B /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		91D788821BF0C28B0026A18E /* MyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCell.h; sourceTree = "<group>"; };
 		91D788831BF0C28B0026A18E /* MyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionCell.m; sourceTree = "<group>"; };
 		91D788841BF0C28B0026A18E /* MyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
@@ -1809,6 +1814,8 @@
 			children = (
 				91752ABC1E4DB95A00F6C634 /* RealmPerson.h */,
 				91752ABD1E4DB95A00F6C634 /* RealmPerson.m */,
+				91D732661FAAC4D20074E31B /* Dog.h */,
+				91D732671FAAC4D20074E31B /* Dog.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2513,6 +2520,7 @@
 		91E9C2BF1C08019B0044D617 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				91A9598F1FAD78B2004524F4 /* work.txt */,
 				91E9C2C01C0801B60044D617 /* FontAwesome.ttf */,
 				911CBA3F1E5DDC8A00C3AE53 /* OptionHeadline.plist */,
 				9124D79F1E5F2023008E01F3 /* TabBar5.plist */,
@@ -3046,6 +3054,7 @@
 				91AF37361ED6BF80008B98F4 /* ShoppingVC.xib in Resources */,
 				917348821F69342600BBBC85 /* MultiModelNestVC.xib in Resources */,
 				9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */,
+				91A959901FAD78B2004524F4 /* work.txt in Resources */,
 				DC84E00F1EC4B3EF00FBE3E8 /* Facade in Resources */,
 				9141F3A81EC00A900078E71E /* Adapter in Resources */,
 				91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */,
@@ -3224,6 +3233,7 @@
 				9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */,
 				913D7EC11C92C0BB00A862A4 /* ImageLabelViewController.m in Sources */,
 				9114D6CF1C8688C70087E5AC /* zip.c in Sources */,
+				91D732681FAAC4D20074E31B /* Dog.m in Sources */,
 				913D7EAF1C92BFA200A862A4 /* MJRefreshGifHeader.m in Sources */,
 				91F5B6D41C946A4F00C578B3 /* UIView+Image.m in Sources */,
 				9102AAFE1C4F34E9008D8C28 /* SSKeychainQuery.m in Sources */,
