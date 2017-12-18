@@ -10,9 +10,11 @@
 #import <Foundation/Foundation.h>
 
 @interface SingletonTemplate : NSObject
+//+(instancetype) alloc __attribute__((unavailable("call sharedInstance instead")));
++(instancetype) new __attribute__((unavailable("call sharedInstance instead")));
+-(instancetype) copy __attribute__((unavailable("call sharedInstance instead")));
+-(instancetype) mutableCopy __attribute__((unavailable("call sharedInstance instead")));
 
-- (instancetype)init UNAVAILABLE_ATTRIBUTE;
-- (instancetype)new UNAVAILABLE_ATTRIBUTE ;
 
 /*!**生成单例***/
 + (instancetype)sharedSingletonTemplate;

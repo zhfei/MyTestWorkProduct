@@ -90,6 +90,11 @@
 		9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */; };
 		9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */; };
 		9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9124D79F1E5F2023008E01F3 /* TabBar5.plist */; };
+		912635001FE3929E007802D1 /* DelaySwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912634FE1FE3929E007802D1 /* DelaySwitchViewController.m */; };
+		912635011FE3929E007802D1 /* DelaySwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912634FF1FE3929E007802D1 /* DelaySwitchViewController.xib */; };
+		912635071FE393C0007802D1 /* UISwitch+DelaySwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 912635061FE393C0007802D1 /* UISwitch+DelaySwitch.m */; };
+		912AE7561FCD4EEE00261915 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912AE7541FCD4EEE00261915 /* NavigationViewController.m */; };
+		912AE7571FCD4EEE00261915 /* NavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912AE7551FCD4EEE00261915 /* NavigationViewController.xib */; };
 		912E4B331E78D31200B6A254 /* test1.sh in Resources */ = {isa = PBXBuildFile; fileRef = 912E4B321E78D31200B6A254 /* test1.sh */; };
 		9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9130FB131D47315D00EE5275 /* LeftEdgeTitleViewController.m */; };
 		9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9130FB191D47511E00EE5275 /* LeftEdgeCollectionViewCell.m */; };
@@ -180,7 +185,8 @@
 		918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930AA1E653FCF007D6879 /* ModelJSON.m */; };
 		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
 		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
-		91A959901FAD78B2004524F4 /* work.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91A9598F1FAD78B2004524F4 /* work.txt */; };
+		91A9C6FA1FD1287E00F2F01A /* EditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */; };
+		91A9C6FB1FD1287E00F2F01A /* EditTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9C6F91FD1287E00F2F01A /* EditTableViewController.xib */; };
 		91AE59021ED8366C00FD53F8 /* ShoppingCartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AE59011ED8366C00FD53F8 /* ShoppingCartBar.m */; };
 		91AE59041ED8368B00FD53F8 /* ShoppingCartBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AE59031ED8368B00FD53F8 /* ShoppingCartBar.xib */; };
 		91AF372F1ED6AAA5008B98F4 /* DecouplingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AF372D1ED6AAA5008B98F4 /* DecouplingVC.m */; };
@@ -649,6 +655,14 @@
 		9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatterTableVC.m; sourceTree = "<group>"; };
 		9124D79C1E5F1D41008E01F3 /* DateFormatterTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateFormatterTableVC.xib; sourceTree = "<group>"; };
 		9124D79F1E5F2023008E01F3 /* TabBar5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBar5.plist; sourceTree = "<group>"; };
+		912634FD1FE3929E007802D1 /* DelaySwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelaySwitchViewController.h; sourceTree = "<group>"; };
+		912634FE1FE3929E007802D1 /* DelaySwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelaySwitchViewController.m; sourceTree = "<group>"; };
+		912634FF1FE3929E007802D1 /* DelaySwitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelaySwitchViewController.xib; sourceTree = "<group>"; };
+		912635051FE393C0007802D1 /* UISwitch+DelaySwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISwitch+DelaySwitch.h"; sourceTree = "<group>"; };
+		912635061FE393C0007802D1 /* UISwitch+DelaySwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+DelaySwitch.m"; sourceTree = "<group>"; };
+		912AE7531FCD4EEE00261915 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		912AE7541FCD4EEE00261915 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		912AE7551FCD4EEE00261915 /* NavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationViewController.xib; sourceTree = "<group>"; };
 		912E4B321E78D31200B6A254 /* test1.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test1.sh; sourceTree = "<group>"; };
 		9130FB121D47315D00EE5275 /* LeftEdgeTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftEdgeTitleViewController.h; sourceTree = "<group>"; };
 		9130FB131D47315D00EE5275 /* LeftEdgeTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftEdgeTitleViewController.m; sourceTree = "<group>"; };
@@ -814,7 +828,9 @@
 		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
 		919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
 		919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
-		91A9598F1FAD78B2004524F4 /* work.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = work.txt; sourceTree = "<group>"; };
+		91A9C6F71FD1287E00F2F01A /* EditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
+		91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTableViewController.m; sourceTree = "<group>"; };
+		91A9C6F91FD1287E00F2F01A /* EditTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTableViewController.xib; sourceTree = "<group>"; };
 		91AE59001ED8366C00FD53F8 /* ShoppingCartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartBar.h; sourceTree = "<group>"; };
 		91AE59011ED8366C00FD53F8 /* ShoppingCartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartBar.m; sourceTree = "<group>"; };
 		91AE59031ED8368B00FD53F8 /* ShoppingCartBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartBar.xib; sourceTree = "<group>"; };
@@ -1564,6 +1580,28 @@
 			path = DateFormatter;
 			sourceTree = "<group>";
 		};
+		912634FC1FE39263007802D1 /* DelaySwitch */ = {
+			isa = PBXGroup;
+			children = (
+				912634FD1FE3929E007802D1 /* DelaySwitchViewController.h */,
+				912634FE1FE3929E007802D1 /* DelaySwitchViewController.m */,
+				912634FF1FE3929E007802D1 /* DelaySwitchViewController.xib */,
+				912635051FE393C0007802D1 /* UISwitch+DelaySwitch.h */,
+				912635061FE393C0007802D1 /* UISwitch+DelaySwitch.m */,
+			);
+			path = DelaySwitch;
+			sourceTree = "<group>";
+		};
+		912AE7521FCD4ECE00261915 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				912AE7531FCD4EEE00261915 /* NavigationViewController.h */,
+				912AE7541FCD4EEE00261915 /* NavigationViewController.m */,
+				912AE7551FCD4EEE00261915 /* NavigationViewController.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		912E4B311E78D31200B6A254 /* ShellStudy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1954,6 +1992,16 @@
 				919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */,
 			);
 			path = DispatchGroup;
+			sourceTree = "<group>";
+		};
+		91A9C6F61FD1285900F2F01A /* EditTable */ = {
+			isa = PBXGroup;
+			children = (
+				91A9C6F71FD1287E00F2F01A /* EditTableViewController.h */,
+				91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */,
+				91A9C6F91FD1287E00F2F01A /* EditTableViewController.xib */,
+			);
+			path = EditTable;
 			sourceTree = "<group>";
 		};
 		91AE58FF1ED8356B00FD53F8 /* ShoppingCartBar */ = {
@@ -2520,7 +2568,6 @@
 		91E9C2BF1C08019B0044D617 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				91A9598F1FAD78B2004524F4 /* work.txt */,
 				91E9C2C01C0801B60044D617 /* FontAwesome.ttf */,
 				911CBA3F1E5DDC8A00C3AE53 /* OptionHeadline.plist */,
 				9124D79F1E5F2023008E01F3 /* TabBar5.plist */,
@@ -2787,6 +2834,9 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				912634FC1FE39263007802D1 /* DelaySwitch */,
+				91A9C6F61FD1285900F2F01A /* EditTable */,
+				912AE7521FCD4ECE00261915 /* Navigation */,
 				9107D8531F67C3E10024C1DD /* MultiModelNest */,
 				91F806801F555BF300818B50 /* UnitTest */,
 				911B79701F3407480076CC36 /* Circulate */,
@@ -3019,15 +3069,18 @@
 				911B79751F3407620076CC36 /* CirculateViewController.xib in Resources */,
 				9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */,
 				91DC45CD1BE7C0C700E86CC0 /* TabBar3ViewController.xib in Resources */,
+				91A9C6FB1FD1287E00F2F01A /* EditTableViewController.xib in Resources */,
 				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */,
 				910BE4D51F4453C8002DDC93 /* 核心动画.mindnode in Resources */,
+				912AE7571FCD4EEE00261915 /* NavigationViewController.xib in Resources */,
 				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
 				91E8DE791EC1904C0068C166 /* Strategy in Resources */,
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
+				912635011FE3929E007802D1 /* DelaySwitchViewController.xib in Resources */,
 				91C5E0931EF628BD00A6C68F /* ZFButtonViewController.xib in Resources */,
 				DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */,
 				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
@@ -3054,7 +3107,6 @@
 				91AF37361ED6BF80008B98F4 /* ShoppingVC.xib in Resources */,
 				917348821F69342600BBBC85 /* MultiModelNestVC.xib in Resources */,
 				9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */,
-				91A959901FAD78B2004524F4 /* work.txt in Resources */,
 				DC84E00F1EC4B3EF00FBE3E8 /* Facade in Resources */,
 				9141F3A81EC00A900078E71E /* Adapter in Resources */,
 				91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */,
@@ -3194,6 +3246,7 @@
 				DC84E00C1EC4ABAB00FBE3E8 /* BuilderVC.m in Sources */,
 				9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */,
 				913A95AD1D3CFC9200237473 /* BluetoothTransmissionViewController.m in Sources */,
+				91A9C6FA1FD1287E00F2F01A /* EditTableViewController.m in Sources */,
 				918930A51E653FAF007D6879 /* SelectBoxAlertController.m in Sources */,
 				911F2ABB1E5C77480057FE33 /* UIButton+XStyle.m in Sources */,
 				910BC4A71EBEE46700D7628F /* BlueCarLicenseFactory.m in Sources */,
@@ -3235,6 +3288,7 @@
 				9114D6CF1C8688C70087E5AC /* zip.c in Sources */,
 				91D732681FAAC4D20074E31B /* Dog.m in Sources */,
 				913D7EAF1C92BFA200A862A4 /* MJRefreshGifHeader.m in Sources */,
+				912AE7561FCD4EEE00261915 /* NavigationViewController.m in Sources */,
 				91F5B6D41C946A4F00C578B3 /* UIView+Image.m in Sources */,
 				9102AAFE1C4F34E9008D8C28 /* SSKeychainQuery.m in Sources */,
 				91F90D7F1C77068300215E3B /* AFNetworkReachabilityManager.m in Sources */,
@@ -3297,6 +3351,7 @@
 				91DC45A31BE7B7F300E86CC0 /* MainTabBarViewController.mm in Sources */,
 				9102AB011C4F36E0008D8C28 /* NSString+UUID.m in Sources */,
 				91EC16801D01BFC7000322B5 /* BoundFlowLayout.m in Sources */,
+				912635001FE3929E007802D1 /* DelaySwitchViewController.m in Sources */,
 				91FC89161D0074F300527C4B /* CollectionViewController.m in Sources */,
 				918930A31E653FAF007D6879 /* XFileManager.m in Sources */,
 				918930A81E653FAF007D6879 /* XSqliteManager.m in Sources */,
@@ -3393,6 +3448,7 @@
 				912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */,
 				91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */,
 				91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */,
+				912635071FE393C0007802D1 /* UISwitch+DelaySwitch.m in Sources */,
 				916002C81EF6832900071E10 /* gradientView2.m in Sources */,
 				91FF875E1CAAC91400B63004 /* MapViewController.m in Sources */,
 				91C6C4311F95F443005BC0C4 /* NSObject+MethodCalledKVO.m in Sources */,
