@@ -147,6 +147,14 @@
 		91489EA01F288C2400B23579 /* ICPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */; };
 		91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */; };
 		914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */; };
+		9150383B1FE79A59008ECA28 /* AbroadShoppingHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915038391FE79A59008ECA28 /* AbroadShoppingHomeViewController.m */; };
+		9150383C1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9150383A1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib */; };
+		915038401FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150383F1FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m */; };
+		915038441FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 915038431FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m */; };
+		915038481FE7A281008ECA28 /* AbroadShoppingHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915038471FE7A281008ECA28 /* AbroadShoppingHomeView.m */; };
+		9150384B1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150384A1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m */; };
+		9150384E1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150384D1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m */; };
+		915038521FE7A77E008ECA28 /* AbroadShoppingHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 915038511FE7A77E008ECA28 /* AbroadShoppingHomeModel.m */; };
 		9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */; };
 		916002C11EF6496F00071E10 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C01EF6496F00071E10 /* GradientViewController.m */; };
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
@@ -757,6 +765,22 @@
 		91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICPCollectionViewCell.xib; sourceTree = "<group>"; };
 		914F1E9E1EE4F68200BAB5A1 /* RedCircelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedCircelLabel.h; sourceTree = "<group>"; };
 		914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCircelLabel.m; sourceTree = "<group>"; };
+		915038361FE797CC008ECA28 /* InterfaceTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceTemplate.h; sourceTree = "<group>"; };
+		915038381FE79A59008ECA28 /* AbroadShoppingHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeViewController.h; sourceTree = "<group>"; };
+		915038391FE79A59008ECA28 /* AbroadShoppingHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeViewController.m; sourceTree = "<group>"; };
+		9150383A1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbroadShoppingHomeViewController.xib; sourceTree = "<group>"; };
+		9150383E1FE79AA3008ECA28 /* AbroadShoppingHomePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomePresenter.h; sourceTree = "<group>"; };
+		9150383F1FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomePresenter.m; sourceTree = "<group>"; };
+		915038421FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeViewModel.h; sourceTree = "<group>"; };
+		915038431FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeViewModel.m; sourceTree = "<group>"; };
+		915038461FE7A281008ECA28 /* AbroadShoppingHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeView.h; sourceTree = "<group>"; };
+		915038471FE7A281008ECA28 /* AbroadShoppingHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeView.m; sourceTree = "<group>"; };
+		915038491FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeHeaderView.h; sourceTree = "<group>"; };
+		9150384A1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeHeaderView.m; sourceTree = "<group>"; };
+		9150384C1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadSelectGoodsViewCell.h; sourceTree = "<group>"; };
+		9150384D1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadSelectGoodsViewCell.m; sourceTree = "<group>"; };
+		915038501FE7A77E008ECA28 /* AbroadShoppingHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeModel.h; sourceTree = "<group>"; };
+		915038511FE7A77E008ECA28 /* AbroadShoppingHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeModel.m; sourceTree = "<group>"; };
 		9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAnimation.h; sourceTree = "<group>"; };
 		9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartAnimation.m; sourceTree = "<group>"; };
 		916002BF1EF6496F00071E10 /* GradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
@@ -1811,6 +1835,64 @@
 			path = ImageCachePool;
 			sourceTree = "<group>";
 		};
+		915038321FE79734008ECA28 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				915038361FE797CC008ECA28 /* InterfaceTemplate.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		915038371FE79A14008ECA28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				915038381FE79A59008ECA28 /* AbroadShoppingHomeViewController.h */,
+				915038391FE79A59008ECA28 /* AbroadShoppingHomeViewController.m */,
+				9150383A1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9150383D1FE79A7E008ECA28 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9150383E1FE79AA3008ECA28 /* AbroadShoppingHomePresenter.h */,
+				9150383F1FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		915038411FE7A07E008ECA28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				915038421FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.h */,
+				915038431FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		915038451FE7A216008ECA28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				915038461FE7A281008ECA28 /* AbroadShoppingHomeView.h */,
+				915038471FE7A281008ECA28 /* AbroadShoppingHomeView.m */,
+				915038491FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.h */,
+				9150384A1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m */,
+				9150384C1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.h */,
+				9150384D1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9150384F1FE7A767008ECA28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				915038501FE7A77E008ECA28 /* AbroadShoppingHomeModel.h */,
+				915038511FE7A77E008ECA28 /* AbroadShoppingHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		916002BE1EF648D500071E10 /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -2347,9 +2429,13 @@
 		91DC45AD1BE7BF2800E86CC0 /* TabBar4 */ = {
 			isa = PBXGroup;
 			children = (
-				91DC45BC1BE7C07500E86CC0 /* Model */,
+				9150384F1FE7A767008ECA28 /* Model */,
+				915038451FE7A216008ECA28 /* View */,
+				915038411FE7A07E008ECA28 /* ViewModel */,
+				9150383D1FE79A7E008ECA28 /* Presenter */,
+				915038371FE79A14008ECA28 /* Controller */,
+				915038321FE79734008ECA28 /* Interface */,
 				91DC45BD1BE7C07500E86CC0 /* Scene */,
-				91DC45BE1BE7C07500E86CC0 /* SceneModel */,
 			);
 			path = TabBar4;
 			sourceTree = "<group>";
@@ -2449,13 +2535,6 @@
 			path = SceneModel;
 			sourceTree = "<group>";
 		};
-		91DC45BC1BE7C07500E86CC0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		91DC45BD1BE7C07500E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -2464,13 +2543,6 @@
 				91DC45D01BE7C0F600E86CC0 /* TabBar4ViewController.xib */,
 			);
 			path = Scene;
-			sourceTree = "<group>";
-		};
-		91DC45BE1BE7C07500E86CC0 /* SceneModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SceneModel;
 			sourceTree = "<group>";
 		};
 		91DD186D1C45568900B0FF70 /* RNActivityView */ = {
@@ -3068,6 +3140,7 @@
 				9141F3B11EC00C970078E71E /* AdapterPlayerVC.xib in Resources */,
 				911B79751F3407620076CC36 /* CirculateViewController.xib in Resources */,
 				9124D7A01E5F2023008E01F3 /* TabBar5.plist in Resources */,
+				9150383C1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib in Resources */,
 				91DC45CD1BE7C0C700E86CC0 /* TabBar3ViewController.xib in Resources */,
 				91A9C6FB1FD1287E00F2F01A /* EditTableViewController.xib in Resources */,
 				9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */,
@@ -3273,12 +3346,14 @@
 				9116A1671ED6D10C005D515C /* CommodityListViewController.m in Sources */,
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				911F2ABD1E5C77480057FE33 /* UIImage+Custom.m in Sources */,
+				915038521FE7A77E008ECA28 /* AbroadShoppingHomeModel.m in Sources */,
 				910C52AD1D3DC74200F3873C /* NSString+PinYin4Cocoa.m in Sources */,
 				91C5FA9F1EC41361006F3A02 /* TpPlayer.m in Sources */,
 				91F90D7E1C77068300215E3B /* AFHTTPSessionManager.m in Sources */,
 				9134AC571CFFD9CE00C2C49E /* UIColor+Hexadecimal.m in Sources */,
 				DC5887C41E8032A100373621 /* TestPerson.m in Sources */,
 				9141F3AB1EC00AE20078E71E /* AVPlayer.m in Sources */,
+				915038481FE7A281008ECA28 /* AbroadShoppingHomeView.m in Sources */,
 				918930A21E653FAF007D6879 /* AsyncFileManager.m in Sources */,
 				91F90D801C77068300215E3B /* AFSecurityPolicy.m in Sources */,
 				910BC49B1EBED27400D7628F /* BlueCarLicense.m in Sources */,
@@ -3371,6 +3446,7 @@
 				91884BD71EC2F4E800F2212D /* StrategyPlayerVC.m in Sources */,
 				913D7EAB1C92BFA200A862A4 /* MJRefreshAutoStateFooter.m in Sources */,
 				913D7EA41C92BFA200A862A4 /* MJRefreshAutoFooter.m in Sources */,
+				915038401FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m in Sources */,
 				91FAFFBE1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m in Sources */,
 				9141F3B01EC00C970078E71E /* AdapterPlayerVC.m in Sources */,
 				910C52B31D3DC7BA00F3873C /* NSArray+Additions.m in Sources */,
@@ -3404,7 +3480,9 @@
 				9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */,
 				9114D6CE1C8688C70087E5AC /* unzip.c in Sources */,
 				DC7B7BA51E81791E008FCAEF /* ZFObject.m in Sources */,
+				915038441FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m in Sources */,
 				DC8E672C1EFEBDF200691D6A /* DrawRectView2.m in Sources */,
+				9150383B1FE79A59008ECA28 /* AbroadShoppingHomeViewController.m in Sources */,
 				91E4B3C41C3C086E001DD5B2 /* FMDatabasePool.m in Sources */,
 				917952601ED599D400193487 /* TestVC2.m in Sources */,
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
@@ -3436,8 +3514,10 @@
 				91DC45C21BE7C0A400E86CC0 /* TabBar1ViewController.m in Sources */,
 				9179525D1ED599C600193487 /* TestVC1.m in Sources */,
 				DC84E0121EC4B45600FBE3E8 /* Finance.m in Sources */,
+				9150384B1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m in Sources */,
 				913D7EA81C92BFA200A862A4 /* MJRefreshHeader.m in Sources */,
 				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
+				9150384E1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
 				913D7EA71C92BFA200A862A4 /* MJRefreshFooter.m in Sources */,
 				910C52AF1D3DC74200F3873C /* PinyinHelper.m in Sources */,
