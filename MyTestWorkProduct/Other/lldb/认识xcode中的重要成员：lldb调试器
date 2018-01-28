@@ -1,0 +1,354 @@
+
+在编程区的下方，通常输出打印日志的地方，一旦程序进入暂停时，lldb调试器就可以发挥它的威力了。
+
+一、ldb的语法结构
+lldb的语法结构如下：
+<command> [<subcommand> [<subcommand>...]] <action> [-options [option-value]] [argument [argument...]]
+翻译一下：
+<命令> [<子命令> [<子命令>...]] <命令操作> [命令选项] [参数 [参数..]]
+一个命令对象为跟随其的子命令对象创建一个上下文，子命令又为其子命令创建一个上下文，依此类推.
+
+举个例子，假设我们给main方法设置一个断点，我们使用下面的命令：
+
+breakpoint set -n main
+这个命令对应到上面的语法就是：
+
+command: breakpoint 表示断点命令
+action: set 表示对命令怎样的操作
+option: -n 表示根据方法name设置断点(--name)
+arguement: 方法名mian 表示参数mian
+
+二、原始(raw)命令
+lldb支持不带命令选项(options)的原始(raw)命令，原始命令会将命令后面的所有东西当做参数(arguement)传递。
+不过很多原始命令也可以带命令选项，当你使用命令选项的时候，需要在命令选项后面加--区分命令选项和参数。
+
+expression命令 就是一个原始命令，举例如下：
+1.打印一个变量
+(lldb) expression count
+(int) $2 = 4
+2.打印一个对象，打印对象时需要用-O命令选项，选项后面是“--”分隔符，后面接着 参数
+(lldb) expression -O -- self
+<ViewController: 0x7f9000f17660>
+
+三、唯一匹配原则
+lldb的命令遵循唯一匹配原则,举例如下
+(lldb)  breakpoint set -n touchesBegan:withEvent:
+(lldb)  bre s -n touchesBegan:withEvent:
+这两个命令的效果是一样的，因为根据字母"bre"匹配到的命令只有“breakpoint”，根据字母"s"匹配到的命令操作只有“set”
+
+四、lldb常用命令
+1.expression
+expression命令的作用是执行一个表达式，并将表达式返回的结果输出。expression的完整语法是这样的：
+expression <cmd-options> -- <expr>
+对应的例子如下：
+(lldb) expression -O -- self
+<ViewController: 0x7f9000f17660>
+expression <命令选项>  “--”分隔符  执行的参数或表达式
+
+expression是lldb里面最重要的命令。他能实现2个非常重要的功能。
+a.执行表达式。
+在程序暂停时，可以通过lldb调试器直接修改页面属性，而不需要重新运行程序
+// 改变颜色
+(lldb) expression -- self.view.backgroundColor = [UIColor redColor]
+// 刷新界面
+(lldb) expression -- (void)[CATransaction flush]
+b.输出返回值
+(lldb) expression -- self.view
+(UIView *) $1 = 0x00007fe322c18a10
+
+2.p 、print 、 call 命令
+p、print、call。这三个命令其实都是expression --的别名（--表示不再接受命令选项）是对expression --的一层封装
+它们同样拥有expression的两项重要的功能，a.执行表达式，b.输出返回值
+(lldb) p self.count
+(CGFloat) $1 = 30
+(lldb) print self.count
+(CGFloat) $1 = 30
+(lldb) call self.count
+(CGFloat) $1 = 30
+(lldb) expression -- self.count
+(CGFloat) $2 = 30
+
+3.po
+在OC里所有的对象都是用指针表示的，所以一般用p、print、call、expression --打印的时候，打印出来的是对象的指针，而不是对象本身。如果我们想打印对象。我们需要使用命令选项:-O。为了更方便的使用，lldb为expression -O --定义了一个别名：po
+举例如下：
+(lldb) p self
+(SingletonViewController *) $3 = 0x00007fda32a8f9d0
+(lldb) po self
+<SingletonViewController: 0x7fda32a8f9d0>
+更多expression 的学习可以用 help expression获取，然后细细研究
+
+4.thread
+A. thread backtrace 、 bt
+在程序暂停时，若要获取此时线程的堆栈信息，可以通过thread backtrace 命令获取，该命令的语法如下：
+thread backtrace [-c <count>] [-s <frame-index>] [-e <boolean>]
+-c：设置打印堆栈的帧数(frame)
+-s：设置从哪个帧(frame)开始打印
+-e：是否显示额外的回溯
+实际上这些命令选项我们一般不需要使用。当程序暂定后，只需要调用thread backtrace命令就能将常用的信息打印出来.
+bt命令 同 thread backtrace 命令一样，举例如下：
+(lldb) thread backtrace
+* thread #1: tid = 0x3ae2, 0x0000000106ccc5a6 MyTestWorkProduct`-[SingletonViewController touchesBegan:withEvent:](self=0x00007fda32a8f9d0, _cmd="touchesBegan:withEvent:", touches=1 element, event=0x00007fda307057b0) + 86 at SingletonViewController.m:61, queue = 'com.apple.main-thread', stop reason = breakpoint 4.1
+  * frame #0: 0x0000000106ccc5a6 MyTestWorkProduct`-[SingletonViewController touchesBegan:withEvent:](self=0x00007fda32a8f9d0, _cmd="touchesBegan:withEvent:", touches=1 element, event=0x00007fda307057b0) + 86 at SingletonViewController.m:61
+    frame #1: 0x0000000108972227 UIKit`forwardTouchMethod + 349
+    frame #2: 0x00000001089720b9 UIKit`-[UIResponder touchesBegan:withEvent:] + 49
+    frame #3: 0x00000001087d3790 UIKit`-[UIWindow _sendTouchesForEvent:] + 308
+    frame #4: 0x00000001087d46d4 UIKit`-[UIWindow sendEvent:] + 865
+    frame #5: 0x000000010877fdc6 UIKit`-[UIApplication sendEvent:] + 263
+    frame #6: 0x0000000106c15d73 MyTestWorkProduct`-[UIApplication(self=<unavailable>, _cmd=<unavailable>, event=<unavailable>) btg_swizzleSendEvent:] + 72 at UIApplication+BTGMethodSwizzler.m:27 [opt]
+    frame #7: 0x0000000108759553 UIKit`_UIApplicationHandleEventQueue + 6660
+    frame #8: 0x000000010b32f301 CoreFoundation`__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+    frame #9: 0x000000010b32522c CoreFoundation`__CFRunLoopDoSources0 + 556
+    frame #10: 0x000000010b3246e3 CoreFoundation`__CFRunLoopRun + 867
+    frame #11: 0x000000010b3240f8 CoreFoundation`CFRunLoopRunSpecific + 488
+    frame #12: 0x000000010da06ad2 GraphicsServices`GSEventRunModal + 161
+    frame #13: 0x000000010875ef09 UIKit`UIApplicationMain + 171
+    frame #14: 0x0000000106d4204a MyTestWorkProduct`main(argc=1, argv=0x00007fff590025d8) + 138 at main.m:16
+    frame #15: 0x000000010c3c592d libdyld.dylib`start + 1
+    frame #16: 0x000000010c3c592d libdyld.dylib`start + 1
+(lldb) bt
+* thread #1: tid = 0x3ae2, 0x0000000106ccc5a6 MyTestWorkProduct`-[SingletonViewController touchesBegan:withEvent:](self=0x00007fda32a8f9d0, _cmd="touchesBegan:withEvent:", touches=1 element, event=0x00007fda307057b0) + 86 at SingletonViewController.m:61, queue = 'com.apple.main-thread', stop reason = breakpoint 4.1
+  * frame #0: 0x0000000106ccc5a6 MyTestWorkProduct`-[SingletonViewController touchesBegan:withEvent:](self=0x00007fda32a8f9d0, _cmd="touchesBegan:withEvent:", touches=1 element, event=0x00007fda307057b0) + 86 at SingletonViewController.m:61
+    frame #1: 0x0000000108972227 UIKit`forwardTouchMethod + 349
+    frame #2: 0x00000001089720b9 UIKit`-[UIResponder touchesBegan:withEvent:] + 49
+    frame #3: 0x00000001087d3790 UIKit`-[UIWindow _sendTouchesForEvent:] + 308
+    frame #4: 0x00000001087d46d4 UIKit`-[UIWindow sendEvent:] + 865
+    frame #5: 0x000000010877fdc6 UIKit`-[UIApplication sendEvent:] + 263
+    frame #6: 0x0000000106c15d73 MyTestWorkProduct`-[UIApplication(self=<unavailable>, _cmd=<unavailable>, event=<unavailable>) btg_swizzleSendEvent:] + 72 at UIApplication+BTGMethodSwizzler.m:27 [opt]
+    frame #7: 0x0000000108759553 UIKit`_UIApplicationHandleEventQueue + 6660
+    frame #8: 0x000000010b32f301 CoreFoundation`__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+    frame #9: 0x000000010b32522c CoreFoundation`__CFRunLoopDoSources0 + 556
+    frame #10: 0x000000010b3246e3 CoreFoundation`__CFRunLoopRun + 867
+    frame #11: 0x000000010b3240f8 CoreFoundation`CFRunLoopRunSpecific + 488
+    frame #12: 0x000000010da06ad2 GraphicsServices`GSEventRunModal + 161
+    frame #13: 0x000000010875ef09 UIKit`UIApplicationMain + 171
+    frame #14: 0x0000000106d4204a MyTestWorkProduct`main(argc=1, argv=0x00007fff590025d8) + 138 at main.m:16
+    frame #15: 0x000000010c3c592d libdyld.dylib`start + 1
+    frame #16: 0x000000010c3c592d libdyld.dylib`start + 1
+
+
+B. thread return
+Debug的时候，有时候会因为各种原因，不想让代码沿着方法继续执行了。要么直接返回，要么带上一个值直接返回。
+语法为：thread return [<expr>]
+举例如下：
+(lldb) thread return
+(lldb) thread return NO
+
+C. c 、n 、s 、 finish 
+在lldb调试器的做上角有个暂停按钮，右边三个顺序为：单步执行、进入方法、从当前方法返回到上一层frame
+这三个按钮平时都是手动点击进行调试，在lldb调试器中，也有相应的命令可以操作
+分别说明如下：
+c/ continue/ thread continue: 这三个命令效果都表示程序继续运行
+n/ next/ thread step-over: 这三个命令效果都表示单步运行
+s/ step/ thread step-in: 这三个命令效果都表示进入某个方法
+finish/ step-out: 这两个命令效果都表示直接走完当前方法，返回到上层frame
+
+D. thread其他不常用的命令
+thread list: 列出所有的线程
+thread select: 选择某个线程
+thread info: 输出当前线程的信息
+其他更多的命令可以使用命令help thread学习
+
+5. frame（帧）
+在第4项thread命令中，有个thread backtrace 命令，该命令会打印出当前线程的堆栈信息，其中里面的每一条就是一帧(frame)
+举例如下：
+frame #0: 0x0000000106ccc5a6 MyTestWorkProduct`-[SingletonViewController touchesBegan:withEvent:](self=0x00007fda32a8f9d0, _cmd="touchesBegan:withEvent:", touches=1 element, event=0x00007fda307057b0) + 86 at SingletonViewController.m:61
+frame #1: 0x0000000108972227 UIKit`forwardTouchMethod + 349
+frame #2: 0x00000001089720b9 UIKit`-[UIResponder touchesBegan:withEvent:] + 49
+
+A. frame variable 打印当前frame中的变量信息
+举例如下：
+(lldb) frame variable
+(SingletonViewController *) self = 0x00007fda32a8f9d0
+(SEL) _cmd = "touchesBegan:withEvent:"
+(__NSSetM *) touches = 0x00007fda32ad6a70 1 element
+(UITouchesEvent *) event = 0x00007fda307057b0
+(NSInteger) count1 = 10
+(NSInteger) count2 = 20
+(lldb) frame variable self->_count
+(CGFloat) self->_count = 30
+
+B. frame其他不常用命令
+frame info: 查看当前frame的信息
+frame select: 选择某个frame
+
+6. breakpoint 断点命令,lldb中的断点命令非常强大
+A. breakpoint set 断点设置，用于断点设置的方式有多种 分别如下：
+使用-n根据方法名设置断点：
+给所有类中的viewWillAppear:设置一个断点:
+(lldb) breakpoint set -n viewWillAppear:
+Breakpoint 13: 33 locations.
+使用-f指定文件
+只需要给ViewController.m文件中的viewDidLoad设置断点：
+(lldb) breakpoint set -f ViewController.m -n viewDidLoad
+Breakpoint 22: where = TLLDB`-[ViewController viewDidLoad] + 20 at ViewController.m:22, address = 0x000000010272a6f4
+这里需要注意，如果方法未写在文件中（比如写在category文件中，或者父类文件中），指定文件之后，将无法给这个方法设置断点。
+使用-l指定文件某一行设置断点
+给ViewController.m第38行设置断点
+(lldb) breakpoint set -f ViewController.m -l 38
+Breakpoint 23: where = TLLDB`-[ViewController text:] + 37 at ViewController.m:38, address = 0x000000010272a7d5
+使用-c设置条件断点
+text:方法接受一个ret的参数，我们想让ret == YES的时候程序中断：
+(lldb) breakpoint set -n text: -c ret == YES
+Breakpoint 7: where = TLLDB`-[ViewController text:] + 30 at ViewController.m:37, address = 0x0000000105ef37ce
+使用-o设置单次断点
+如果刚刚那个断点我们只想让他中断一次：
+(lldb) breakpoint set -n text: -o
+'breakpoint 3': where = TLLDB`-[ViewController text:] + 30 at ViewController.m:37, address = 0x000000010b6f97ce
+
+B. breakpoint command 命令 子命令
+在程序走到断点后，有时候需要执行一些命令，而这些命令是可以操作的。我们可以为断点添加，删除命令
+B1. breakpoint command add 添加命令
+(lldb) breakpoint command add -o "po self" 3
+解释：为断点号为：3 的断点添加一条命令。 -o完整写法是--one-liner。
+(lldb) breakpoint command add 3
+Enter your debugger command(s).  Type 'DONE' to end.
+> frame variable
+> continue
+> DONE
+解释：为断点ID为：3的断点添加多个命令，这些命令以“ DONE”作为结束符。
+B2. breakpoint command list 3
+获取断点ID为：3的 断点的命令列表
+B3. breakpoint command delete 3
+删除断点ID为：3的 断点的所有命令
+
+C. breakpoint list
+获取工程中所有断点的列表
+
+D. breakpoint disable/enable
+断点的失效/生效
+举例如下：
+(lldb) breakpoint disable 1
+1 breakpoints disabled.
+(lldb) breakpoint disable 1
+1 breakpoints disabled.
+
+F. breakpoint delete
+删除断点
+(lldb) breakpoint delete 1 
+删除断点ID为：1的断点
+(lldb) breakpoint delete 
+About to delete all breakpoints, do you want to do that?: [Y/n] y
+All breakpoints removed. (1 breakpoint)
+删除工程中所有的断点
+(lldb) breakpoint delete -f
+All breakpoints removed. (1 breakpoint)
+强制所有的断点，忽略提示
+
+7. watchpoint
+breakpoint有一个孪生兄弟watchpoint。如果说breakpoint是对方法生效的断点，watchpoint就是对地址生效的断点
+在开发过程中，平时我们简称一个属性的变化通常是使用属性的set方法，如果属性没有经过set方法，是直接通过self->属性直接修改的话，用set方法就不行了，此时可以通过watchpoint命令监听属性的内存地址，一旦address的内容被修改，程序就会自动断开。
+A. watchpoint set
+设置观测点
+watchpoint set variable  <变量参数> 为变量设置观测点
+(lldb) watchpoint set variable self->_string
+Watchpoint created: Watchpoint 1: addr = 0x7fcf3959c418 size = 8 state = enabled type = w
+    watchpoint spec = 'self->_string'
+    new value: 0x0000000000000000
+watchpoint set expression <变量地址参数> 为变量地址设置观测点
+(lldb) p &_model
+(Modek **) $3 = 0x00007fe0dbf23280
+(lldb) watchpoint set expression 0x00007fe0dbf23280
+Watchpoint created: Watchpoint 1: addr = 0x7fe0dbf23280 size = 8 state = enabled type = w
+    new value: 0
+
+B. watchpoint command
+跟breakpoint类似，在watchpoint中也可以添加命令
+
+C. watchpoint command add
+为观测点添加命令
+watchpoint command add -o 'po self' 1
+为ID为：1的观测点添加一条 命令
+(lldb) watchpoint command add 1
+Enter your debugger command(s).  Type 'DONE' to end.
+> po self
+> continue
+> DONE
+为ID为：1的观测点添加多条命令
+
+D. watchpoint command list
+查询观测点命令列表
+(lldb) watchpoint command list 1
+查询观测点ID为：1的观测点，命令列表
+
+F. watchpoint command delete
+(lldb) watchpoint command delete 1
+删除观测点ID为：1的观测点的命令列表
+
+E. watchpoint list
+查询工程中的所有观测点列表
+
+F. watchpoint disable
+(lldb) watchpoint disable 1
+设置观测点ID为：1的观测点为失效
+
+G. watchpoint enable
+(lldb) watchpoint enable 1
+设置观测点ID为：1的观测点为生效
+
+H. watchpoint delete
+(lldb) watchpoint delete 1
+删除观测点ID为：1的观测点
+(lldb) watchpoint delete 
+About to delete all watchpoints, do you want to do that?: [Y/n] y
+All watchpoints removed. (2 watchpoints)
+删除工程中的观测点
+
+8. target  根据参数 打印出参数信息对应在项目文件中的位置
+对于target这个命令，平时用的最多的是target modules lookup。由于LLDB给target modules取了个别名image，所以这个命令我们又可以写成image lookup。
+A.image lookup --address  根据所给的内存地址，找到符号所在项目文件中的位置。简写为image lookup -a
+当发生一个崩溃时，可以通过打印内存地址的方式定位到崩溃发生的地方。
+举例如下：
+2017-04-14 21:49:30.784 MyTestWorkProduct[955:18657] -[__NSDictionaryM addObject:]: unrecognized selector sent to instance 0x7fc50b0e4e70
+libc++abi.dylib: terminate_handler unexpectedly threw an exception
+(lldb) image lookup -a 0x7fc50b0e4e70
+B. image lookup --name 如果想查找一个方法或符号的位置，可通过此命令查找。 简写:image lookup -n
+举例如下：
+lldb) image lookup -n didReceiveMemoryWarning
+26 matches found in /Users/xuyefeng/Library/Developer/Xcode/DerivedData/MyTestWorkProduct-etxrcvqebgprfcfjyibavnioxbey/Build/Products/Debug-iphonesimulator/MyTestWorkProduct.app/MyTestWorkProduct:
+Address: MyTestWorkProduct[0x000000010000b742] (MyTestWorkProduct.__TEXT.__text + 40370)
+Summary: MyTestWorkProduct`-[BTGBaseViewController didReceiveMemoryWarning] at BTGBaseViewController.m:71        Address: MyTestWorkProduct[0x000000010005de80] (MyTestWorkProduct.__TEXT.__text + 378096)
+Summary: MyTestWorkProduct`-[ModelDictionaryTransferVC didReceiveMemoryWarning] at ModelDictionaryTransferVC.m:22        Address: MyTestWorkProduct[0x000000010005df00] (MyTestWorkProduct.__TEXT.__text + 378224)
+Summary: MyTestWorkProduct`-[ViewController didReceiveMemoryWarning] at ViewController.m:23        Address: MyTestWorkProduct[0x0000000100061510] (MyTestWorkProduct.__TEXT.__text + 392064)
+C. image lookup --type 如果想查找一个类的信息可以用这个命令。简写为image lookup -t
+举例如下：
+(lldb) image lookup -t Person
+Best match found in /Users/xuyefeng/Library/Developer/Xcode/DerivedData/MyTestWorkProduct-etxrcvqebgprfcfjyibavnioxbey/Build/Products/Debug-iphonesimulator/MyTestWorkProduct.app/MyTestWorkProduct:
+id = {0x000d796a}, name = "Person", byte-size = 40, decl = Person.h:13, compiler_type = "@interface Person : NSObject{
+    NSString * _name;
+    NSString * _adress;
+    NSNumber * _age;
+    NSInteger _ID;
+}
+@property ( getter = name,setter = setName:,readwrite,nonatomic ) NSString * name;
+@property ( getter = adress,setter = setAdress:,readwrite,nonatomic ) NSString * adress;
+@property ( getter = age,setter = setAge:,readwrite,nonatomic ) NSNumber * age;
+@property ( getter = ID,setter = setID:,assign,readwrite,nonatomic ) NSInteger ID;
+@end"
+
+D. target stop-hook  ,target stop-hook命令就是让你可以在每次stop的时候去执行一些命令
+target stop-hook add  、 display  添加命令的方式。
+举例如下：
+(lldb) target stop-hook add -o "frame variable"
+Stop hook #4 added.
+注释：-o的全称是--one-liner
+
+F. target stop-hook list
+获取全部命令列表
+E. target stop-hook delete & undisplay
+删除列表
+G. target stop-hook disable/enable
+使命令失效
+
+9. Extension
+在调试器中输入 e @import UIKit 可以打印出view的frame
+举例如下：
+(lldb) e @import UIKit
+(lldb) po self.view.frame
+(origin = (x = 0, y = 0), size = (width = 375, height = 667))
+
+
+10. 更多
+更多命令可以使用help 进行学习
+apropos 命令可以模糊搜索命令关键字。
+
+

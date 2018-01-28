@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFButtonViewController">
+            <connections>
+                <outlet property="centerImageCenterTitleBtn" destination="gU4-jT-WwO" id="Kpx-S5-fO3"/>
+                <outlet property="leftImageNoneTitle" destination="4xl-xO-9HV" id="OGS-QA-JLY"/>
+                <outlet property="rightImageLeftTitle" destination="giv-E5-Eg7" id="Pqu-p5-BoZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giv-E5-Eg7" customClass="ZFButton">
+                    <rect key="frame" x="50.5" y="244" width="220" height="44"/>
+                    <color key="backgroundColor" red="0.3921568627" green="0.72549019609999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="图片右，文字左" image="btnOrderWechat_">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xl-xO-9HV" customClass="ZFButton">
+                    <rect key="frame" x="50.5" y="318" width="220" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="图片左，文字无" image="btnOrderWechat_">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU4-jT-WwO" customClass="ZFButton">
+                    <rect key="frame" x="50.5" y="171" width="220" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PLz-Ua-uqe"/>
+                        <constraint firstAttribute="width" constant="220" id="aho-DF-NDd"/>
+                    </constraints>
+                    <state key="normal" title="图片，文字居中" image="btnOrderWechat_">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4xl-xO-9HV" firstAttribute="top" secondItem="giv-E5-Eg7" secondAttribute="bottom" constant="30" id="5ft-jK-GTa"/>
+                <constraint firstItem="4xl-xO-9HV" firstAttribute="width" secondItem="giv-E5-Eg7" secondAttribute="width" id="JZ9-Ge-H0X"/>
+                <constraint firstItem="giv-E5-Eg7" firstAttribute="width" secondItem="gU4-jT-WwO" secondAttribute="width" id="K4a-3G-86f"/>
+                <constraint firstItem="4xl-xO-9HV" firstAttribute="leading" secondItem="giv-E5-Eg7" secondAttribute="leading" id="PHx-d4-sjw"/>
+                <constraint firstItem="gU4-jT-WwO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="171" id="b21-at-r9K"/>
+                <constraint firstItem="giv-E5-Eg7" firstAttribute="height" secondItem="gU4-jT-WwO" secondAttribute="height" id="c9B-Gi-t4M"/>
+                <constraint firstItem="giv-E5-Eg7" firstAttribute="top" secondItem="gU4-jT-WwO" secondAttribute="bottom" constant="29" id="ecG-BD-s4W"/>
+                <constraint firstItem="4xl-xO-9HV" firstAttribute="height" secondItem="giv-E5-Eg7" secondAttribute="height" id="jWL-zX-Ed8"/>
+                <constraint firstItem="gU4-jT-WwO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lvc-YY-A5b"/>
+                <constraint firstItem="giv-E5-Eg7" firstAttribute="leading" secondItem="gU4-jT-WwO" secondAttribute="leading" id="y9L-3p-azv"/>
+            </constraints>
+            <point key="canvasLocation" x="20" y="-85"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnOrderWechat_" width="50" height="29"/>
+    </resources>
+</document>

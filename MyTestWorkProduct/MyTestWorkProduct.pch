@@ -1,0 +1,58 @@
+//
+//  MyTestWorkProduct.pch
+//  MyTestWorkProduct
+//
+//  Created by zhoufei on 15/11/2.
+//  Copyright © 2015年 zhoufei. All rights reserved.
+//
+
+#ifndef MyTestWorkProduct_pch
+#define MyTestWorkProduct_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "Header.h"
+
+#import "YYAdditionsHeader.h"
+#import <Masonry/Masonry.h>
+#import "MyNavigationtroller.h"
+#import "UIView+Frame.h"
+#import "HUDView.h"
+//#import "ReactiveCocoa.h"
+#import "UserLoginInfo.h"
+#import "Main.h"
+#import "FMDB.h"
+#import "YYAdditionsHeader.h"
+
+
+
+#if DEVELOPMENT 
+//发布环境
+#define APP_KEY @"fa2b50a904db32b90c09d97ddf4b3f5d"
+#define Baidu_KEY @"TsTaBUGLBUogbYVQeWtMsLr90koFLo5E"
+#else
+//开发环境
+#define APP_KEY @"fa2b50a904db32b90c09d97ddf4b3f5d"
+#define Baidu_KEY @"TsTaBUGLBUogbYVQeWtMsLr90koFLo5E"
+
+#endif
+
+
+
+
+
+
+
+
+static NSString *API_HOST       = @"http://7xqkjm.com1.z0.glb.clouddn.com/";//
+
+
+
+
+#endif
+
+
+#endif /* MyTestWorkProduct_pch */

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TemplateVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-63-ANA">
+                    <rect key="frame" x="115" y="335" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="停止">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="stop:" destination="-1" eventType="touchUpInside" id="rty-bL-2xn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-GR-FJS">
+                    <rect key="frame" x="172.5" y="116" width="89.5" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="NewPlayer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="newPlayerAction:" destination="-1" eventType="touchUpInside" id="kIU-Tz-E0c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUO-lu-FoV">
+                    <rect key="frame" x="115" y="262" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.58039215690000001" green="0.62352941179999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="暂停">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="Mba-yw-tPQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Re-XY-Wrg">
+                    <rect key="frame" x="58" y="116" width="89.5" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="AVPlayer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="avPlayerAction:" destination="-1" eventType="touchUpInside" id="2cz-Tv-vJ1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pck-2L-BLc">
+                    <rect key="frame" x="115" y="192" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.23529411759999999" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Mtq-ZF-Cik"/>
+                    </constraints>
+                    <state key="normal" title="开始">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="u3M-BP-kXs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Thg-GR-FJS" firstAttribute="leading" secondItem="8Re-XY-Wrg" secondAttribute="trailing" constant="24.5" id="3DZ-XY-U6D"/>
+                <constraint firstItem="Thg-GR-FJS" firstAttribute="width" secondItem="8Re-XY-Wrg" secondAttribute="width" id="7Th-rm-lGd"/>
+                <constraint firstItem="XUO-lu-FoV" firstAttribute="leading" secondItem="pck-2L-BLc" secondAttribute="leading" id="9iu-jC-dgO"/>
+                <constraint firstItem="XUO-lu-FoV" firstAttribute="width" secondItem="pck-2L-BLc" secondAttribute="width" id="B0y-gx-BcF"/>
+                <constraint firstItem="Thg-GR-FJS" firstAttribute="top" secondItem="8Re-XY-Wrg" secondAttribute="top" id="C5p-XT-VPa"/>
+                <constraint firstItem="pck-2L-BLc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L4Q-VC-SNd"/>
+                <constraint firstItem="XUO-lu-FoV" firstAttribute="top" secondItem="pck-2L-BLc" secondAttribute="bottom" constant="40" id="Q57-66-czp"/>
+                <constraint firstItem="x1D-63-ANA" firstAttribute="top" secondItem="XUO-lu-FoV" secondAttribute="bottom" constant="43" id="eu1-XY-YiC"/>
+                <constraint firstItem="Thg-GR-FJS" firstAttribute="width" secondItem="8Re-XY-Wrg" secondAttribute="width" id="htR-Rw-mHU"/>
+                <constraint firstAttribute="trailing" secondItem="Thg-GR-FJS" secondAttribute="trailing" constant="58" id="imI-AD-mep"/>
+                <constraint firstItem="x1D-63-ANA" firstAttribute="width" secondItem="pck-2L-BLc" secondAttribute="width" id="jGg-4a-rOu"/>
+                <constraint firstItem="8Re-XY-Wrg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="116" id="oTK-JG-Slz"/>
+                <constraint firstItem="8Re-XY-Wrg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="58" id="vY5-an-NOS"/>
+                <constraint firstItem="x1D-63-ANA" firstAttribute="leading" secondItem="pck-2L-BLc" secondAttribute="leading" id="wg5-lB-JV2"/>
+                <constraint firstItem="pck-2L-BLc" firstAttribute="top" secondItem="Thg-GR-FJS" secondAttribute="bottom" constant="46" id="xsW-lx-Sei"/>
+                <constraint firstItem="Thg-GR-FJS" firstAttribute="top" secondItem="8Re-XY-Wrg" secondAttribute="top" id="zfM-9E-GtV"/>
+                <constraint firstItem="Thg-GR-FJS" firstAttribute="leading" secondItem="8Re-XY-Wrg" secondAttribute="trailing" constant="25" id="zsw-ee-0v7"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

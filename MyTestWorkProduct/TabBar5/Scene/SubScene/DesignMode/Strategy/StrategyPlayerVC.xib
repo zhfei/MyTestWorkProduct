@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StrategyPlayerVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO1-mM-jI6">
+                    <rect key="frame" x="173" y="119" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="NewPlayer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="newPlayerAction:" destination="-1" eventType="touchUpInside" id="0iP-uc-WzQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvB-DM-UEB">
+                    <rect key="frame" x="57" y="119" width="91" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="AVPlayer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="avPlayerAction:" destination="-1" eventType="touchUpInside" id="aed-7f-Flc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksj-7k-LeT">
+                    <rect key="frame" x="115" y="195" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.23529411759999999" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Tkr-FD-VFJ"/>
+                    </constraints>
+                    <state key="normal" title="开始">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="GdZ-Oz-bUZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auO-L3-fde">
+                    <rect key="frame" x="115" y="265" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.58039215690000001" green="0.62352941179999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="暂停">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="pwS-HX-XPo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heu-yR-doo">
+                    <rect key="frame" x="115" y="338" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="停止">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="stop:" destination="-1" eventType="touchUpInside" id="1aQ-TU-jWo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ksj-7k-LeT" firstAttribute="top" secondItem="dO1-mM-jI6" secondAttribute="bottom" constant="46" id="29n-L6-NwS"/>
+                <constraint firstItem="HvB-DM-UEB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="57" id="3wT-3W-zU8"/>
+                <constraint firstItem="HvB-DM-UEB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="AKw-Ov-fDi"/>
+                <constraint firstItem="auO-L3-fde" firstAttribute="top" secondItem="Ksj-7k-LeT" secondAttribute="bottom" constant="40" id="EEk-5x-iKS"/>
+                <constraint firstItem="heu-yR-doo" firstAttribute="width" secondItem="Ksj-7k-LeT" secondAttribute="width" id="GZZ-dn-Ytn"/>
+                <constraint firstItem="auO-L3-fde" firstAttribute="width" secondItem="Ksj-7k-LeT" secondAttribute="width" id="Pvt-F5-vkp"/>
+                <constraint firstItem="auO-L3-fde" firstAttribute="leading" secondItem="Ksj-7k-LeT" secondAttribute="leading" id="U8j-Q6-vQm"/>
+                <constraint firstItem="heu-yR-doo" firstAttribute="top" secondItem="auO-L3-fde" secondAttribute="bottom" constant="43" id="VzX-Oq-Hlo"/>
+                <constraint firstAttribute="trailing" secondItem="dO1-mM-jI6" secondAttribute="trailing" constant="57" id="bm9-tn-nxl"/>
+                <constraint firstItem="dO1-mM-jI6" firstAttribute="leading" secondItem="HvB-DM-UEB" secondAttribute="trailing" constant="25" id="eid-li-8od"/>
+                <constraint firstItem="dO1-mM-jI6" firstAttribute="top" secondItem="HvB-DM-UEB" secondAttribute="top" id="iKV-Ki-nXf"/>
+                <constraint firstItem="Ksj-7k-LeT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nLW-az-ihR"/>
+                <constraint firstItem="dO1-mM-jI6" firstAttribute="width" secondItem="HvB-DM-UEB" secondAttribute="width" id="p4h-SO-cl8"/>
+                <constraint firstItem="heu-yR-doo" firstAttribute="leading" secondItem="Ksj-7k-LeT" secondAttribute="leading" id="qfa-Sd-tlX"/>
+            </constraints>
+            <point key="canvasLocation" x="-89" y="-18"/>
+        </view>
+    </objects>
+</document>
