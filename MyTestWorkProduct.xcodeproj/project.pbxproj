@@ -160,6 +160,9 @@
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
 		916002C81EF6832900071E10 /* gradientView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C71EF6832900071E10 /* gradientView2.m */; };
 		916002CB1EF685E800071E10 /* gradientView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002CA1EF685E800071E10 /* gradientView3.m */; };
+		917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009D720218A46009FB442 /* LocalNotificationViewController.m */; };
+		917009DA20218A46009FB442 /* LocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917009D820218A46009FB442 /* LocalNotificationViewController.xib */; };
+		917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009DC2021D2D3009FB442 /* LocalNotificationService.m */; };
 		917348811F69342600BBBC85 /* MultiModelNestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9173487F1F69342600BBBC85 /* MultiModelNestVC.m */; };
 		917348821F69342600BBBC85 /* MultiModelNestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917348801F69342600BBBC85 /* MultiModelNestVC.xib */; };
 		917348851F693A5E00BBBC85 /* MultiModelNestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 917348841F693A5E00BBBC85 /* MultiModelNestHelper.m */; };
@@ -794,6 +797,11 @@
 		916002C71EF6832900071E10 /* gradientView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView2.m; sourceTree = "<group>"; };
 		916002C91EF685E800071E10 /* gradientView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView3.h; sourceTree = "<group>"; };
 		916002CA1EF685E800071E10 /* gradientView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView3.m; sourceTree = "<group>"; };
+		917009D620218A46009FB442 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
+		917009D720218A46009FB442 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
+		917009D820218A46009FB442 /* LocalNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalNotificationViewController.xib; sourceTree = "<group>"; };
+		917009DB2021D2D3009FB442 /* LocalNotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationService.h; sourceTree = "<group>"; };
+		917009DC2021D2D3009FB442 /* LocalNotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationService.m; sourceTree = "<group>"; };
 		9173487E1F69342600BBBC85 /* MultiModelNestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiModelNestVC.h; sourceTree = "<group>"; };
 		9173487F1F69342600BBBC85 /* MultiModelNestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiModelNestVC.m; sourceTree = "<group>"; };
 		917348801F69342600BBBC85 /* MultiModelNestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiModelNestVC.xib; sourceTree = "<group>"; };
@@ -1924,6 +1932,18 @@
 			path = SubView;
 			sourceTree = "<group>";
 		};
+		917009D520218A29009FB442 /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				917009D620218A46009FB442 /* LocalNotificationViewController.h */,
+				917009D720218A46009FB442 /* LocalNotificationViewController.m */,
+				917009D820218A46009FB442 /* LocalNotificationViewController.xib */,
+				917009DB2021D2D3009FB442 /* LocalNotificationService.h */,
+				917009DC2021D2D3009FB442 /* LocalNotificationService.m */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
 		91752AA51E4D8C0300F6C634 /* LocalFileReadingAndWriting */ = {
 			isa = PBXGroup;
 			children = (
@@ -2926,6 +2946,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				917009D520218A29009FB442 /* LocalNotification */,
 				91F0D9D6200CFE4C002B2597 /* RespondChain */,
 				912634FC1FE39263007802D1 /* DelaySwitch */,
 				91A9C6F61FD1285900F2F01A /* EditTable */,
@@ -3168,6 +3189,7 @@
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */,
 				910BE4D51F4453C8002DDC93 /* 核心动画.mindnode in Resources */,
+				917009DA20218A46009FB442 /* LocalNotificationViewController.xib in Resources */,
 				912AE7571FCD4EEE00261915 /* NavigationViewController.xib in Resources */,
 				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
 				91E8DE791EC1904C0068C166 /* Strategy in Resources */,
@@ -3543,6 +3565,7 @@
 				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
 				9150384E1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
+				917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */,
 				913D7EA71C92BFA200A862A4 /* MJRefreshFooter.m in Sources */,
 				910C52AF1D3DC74200F3873C /* PinyinHelper.m in Sources */,
 				913D7EAC1C92BFA200A862A4 /* MJRefreshBackGifFooter.m in Sources */,
@@ -3559,6 +3582,7 @@
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,
+				917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */,
 				DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,
 				910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */,
