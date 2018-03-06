@@ -26,6 +26,8 @@
 #import "NavigationViewController.h"
 #import "EditTableViewController.h"
 #import "DelaySwitchViewController.h"
+#import "RespondChainVC.h"
+#import "LocalNotificationViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -245,6 +247,18 @@
             break;
             
             
+        case 16: {
+            RespondChainVC * rcVC=[[RespondChainVC alloc]init];
+            [self.navigationController pushViewController:rcVC animated:YES];
+        }
+            break;
+        case 17: {
+            LocalNotificationViewController * lnVC=[[LocalNotificationViewController alloc]init];
+            [self.navigationController pushViewController:lnVC animated:YES];
+        }
+            break;
+            
+         
           
             
             
