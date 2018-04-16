@@ -23,6 +23,11 @@
 #import "ImageCachePoolVC.h"
 #import "CirculateViewController.h"
 #import "MultiModelNestVC.h"
+#import "NavigationViewController.h"
+#import "EditTableViewController.h"
+#import "DelaySwitchViewController.h"
+#import "RespondChainVC.h"
+#import "LocalNotificationViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -248,8 +253,35 @@
             [self.navigationController pushViewController:mmnVC animated:YES];
         }
             break;
+        case 13: {
+            NavigationViewController * nVC=[[NavigationViewController alloc]init];
+            [self.navigationController pushViewController:nVC animated:YES];
+        }
+            break;
+        case 14: {
+            EditTableViewController * etVC=[[EditTableViewController alloc]init];
+            [self.navigationController pushViewController:etVC animated:YES];
+        }
+            break;
+        case 15: {
+            DelaySwitchViewController * dsVC=[[DelaySwitchViewController alloc]init];
+            [self.navigationController pushViewController:dsVC animated:YES];
+        }
+            break;
             
             
+        case 16: {
+            RespondChainVC * rcVC=[[RespondChainVC alloc]init];
+            [self.navigationController pushViewController:rcVC animated:YES];
+        }
+            break;
+        case 17: {
+            LocalNotificationViewController * lnVC=[[LocalNotificationViewController alloc]init];
+            [self.navigationController pushViewController:lnVC animated:YES];
+        }
+            break;
+            
+         
           
             
             

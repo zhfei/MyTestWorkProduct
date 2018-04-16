@@ -6,8 +6,8 @@
 //  Copyright © 2017年 zhoufei. All rights reserved.
 //
 
-//#import "RealmPerson.h"
-//
-//@implementation RealmPerson
-//
-//@end
+#import "RealmPerson.h"
+
+@implementation RealmPerson
+
+@end

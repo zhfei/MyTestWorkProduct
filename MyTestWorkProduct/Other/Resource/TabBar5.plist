@@ -15,5 +15,10 @@
 	<string>图片缓存池</string>
 	<string>循环遍历</string>
 	<string>多模型嵌套</string>
+	<string>导航条</string>
+	<string>列表编辑</string>
+	<string>延时开关</string>
+	<string>响应链</string>
+	<string>本地通知</string>
 </array>
 </plist>
