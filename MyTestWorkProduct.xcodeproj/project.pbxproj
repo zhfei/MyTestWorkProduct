@@ -160,6 +160,9 @@
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
 		916002C81EF6832900071E10 /* gradientView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C71EF6832900071E10 /* gradientView2.m */; };
 		916002CB1EF685E800071E10 /* gradientView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002CA1EF685E800071E10 /* gradientView3.m */; };
+		9167A7232084DC8000EFAA36 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */; };
+		9167A72A2084DD0400EFAA36 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */; };
+		9167A72B2084DD0400EFAA36 /* JavaScriptCoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */; };
 		917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009D720218A46009FB442 /* LocalNotificationViewController.m */; };
 		917009DA20218A46009FB442 /* LocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917009D820218A46009FB442 /* LocalNotificationViewController.xib */; };
 		917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009DC2021D2D3009FB442 /* LocalNotificationService.m */; };
@@ -322,6 +325,7 @@
 		91F90D821C77068300215E3B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D771C77068300215E3B /* AFURLRequestSerialization.m */; };
 		91F90D831C77068300215E3B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D791C77068300215E3B /* AFURLResponseSerialization.m */; };
 		91F90D841C77068300215E3B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F90D7B1C77068300215E3B /* AFURLSessionManager.m */; };
+		91F9A8F82084F5B400CECE9C /* JSProtolObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F9A8F72084F5B400CECE9C /* JSProtolObj.m */; };
 		91FAFFBE1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFBD1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m */; };
 		91FAFFC11D057BFA004F4CE8 /* CollectionViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFC01D057BFA004F4CE8 /* CollectionViewHeaderCell.m */; };
 		91FAFFC41D057E45004F4CE8 /* CollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FAFFC31D057E45004F4CE8 /* CollectionViewHeader.m */; };
@@ -797,6 +801,11 @@
 		916002C71EF6832900071E10 /* gradientView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView2.m; sourceTree = "<group>"; };
 		916002C91EF685E800071E10 /* gradientView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView3.h; sourceTree = "<group>"; };
 		916002CA1EF685E800071E10 /* gradientView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView3.m; sourceTree = "<group>"; };
+		9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9167A7272084DD0400EFAA36 /* JavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JavaScriptCoreViewController.xib; sourceTree = "<group>"; };
+		9167A72D2084F48900EFAA36 /* JSExportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSExportTest.h; sourceTree = "<group>"; };
 		917009D620218A46009FB442 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
 		917009D720218A46009FB442 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
 		917009D820218A46009FB442 /* LocalNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalNotificationViewController.xib; sourceTree = "<group>"; };
@@ -1085,6 +1094,8 @@
 		91F90D791C77068300215E3B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		91F90D7A1C77068300215E3B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		91F90D7B1C77068300215E3B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		91F9A8F62084F5B400CECE9C /* JSProtolObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProtolObj.h; sourceTree = "<group>"; };
+		91F9A8F72084F5B400CECE9C /* JSProtolObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProtolObj.m; sourceTree = "<group>"; };
 		91FAFFBC1D057BB3004F4CE8 /* CollectionViewHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderViewController.h; sourceTree = "<group>"; };
 		91FAFFBD1D057BB3004F4CE8 /* CollectionViewHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeaderViewController.m; sourceTree = "<group>"; };
 		91FAFFBF1D057BFA004F4CE8 /* CollectionViewHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderCell.h; sourceTree = "<group>"; };
@@ -1174,6 +1185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9167A7232084DC8000EFAA36 /* JavaScriptCore.framework in Frameworks */,
 				DC8D14231E7E4EC1009EA61E /* BaiduMapAPI_Radar.framework in Frameworks */,
 				9144B6BA1CAB611B003146B2 /* libstdc++.6.0.9.tbd in Frameworks */,
 				DC8D14241E7E4EC1009EA61E /* BaiduMapAPI_Search.framework in Frameworks */,
@@ -1930,6 +1942,27 @@
 				916002CA1EF685E800071E10 /* gradientView3.m */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		9167A7262084DCE900EFAA36 /* JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				9167A72C2084F44F00EFAA36 /* Model */,
+				9167A7272084DD0400EFAA36 /* JavaScriptCoreViewController.h */,
+				9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */,
+				9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */,
+			);
+			path = JavaScriptCore;
+			sourceTree = "<group>";
+		};
+		9167A72C2084F44F00EFAA36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9167A72D2084F48900EFAA36 /* JSExportTest.h */,
+				91F9A8F62084F5B400CECE9C /* JSProtolObj.h */,
+				91F9A8F72084F5B400CECE9C /* JSProtolObj.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		917009D520218A29009FB442 /* LocalNotification */ = {
@@ -2930,6 +2963,7 @@
 		9A323D38459A24453C686AB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */,
 				DCE16E75864F3D4F6A797AB5 /* libPods-MyTestWorkProduct.a */,
 			);
 			name = Frameworks;
@@ -2946,6 +2980,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				9167A7262084DCE900EFAA36 /* JavaScriptCore */,
 				917009D520218A29009FB442 /* LocalNotification */,
 				91F0D9D6200CFE4C002B2597 /* RespondChain */,
 				912634FC1FE39263007802D1 /* DelaySwitch */,
@@ -3199,6 +3234,7 @@
 				912635011FE3929E007802D1 /* DelaySwitchViewController.xib in Resources */,
 				91C5E0931EF628BD00A6C68F /* ZFButtonViewController.xib in Resources */,
 				DC84DFFA1EC4A87800FBE3E8 /* Builder in Resources */,
+				9167A72B2084DD0400EFAA36 /* JavaScriptCoreViewController.xib in Resources */,
 				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
@@ -3383,6 +3419,7 @@
 				913D7EA91C92BFA200A862A4 /* MJRefreshAutoGifFooter.m in Sources */,
 				91DC456D1BE7B17000E86CC0 /* UIImage+YYAdditions.m in Sources */,
 				913A95A71D3C7BB700237473 /* CentralViewController.m in Sources */,
+				91F9A8F82084F5B400CECE9C /* JSProtolObj.m in Sources */,
 				916002C11EF6496F00071E10 /* GradientViewController.m in Sources */,
 				91FE24C01CB20129001C6DF0 /* AutoLayoutAnimViewController.m in Sources */,
 				9134AC551CFFD9CE00C2C49E /* NSString+HTML.m in Sources */,
@@ -3509,6 +3546,7 @@
 				91C5FAA91EC42AEE006F3A02 /* TemplateVC.m in Sources */,
 				DC84DFFD1EC4A90100FBE3E8 /* BuickCar.m in Sources */,
 				91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */,
+				9167A72A2084DD0400EFAA36 /* JavaScriptCoreViewController.m in Sources */,
 				911F2AB61E5C77480057FE33 /* NSObject+MethodSwizzing.m in Sources */,
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,

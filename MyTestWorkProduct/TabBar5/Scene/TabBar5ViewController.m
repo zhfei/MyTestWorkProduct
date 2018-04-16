@@ -28,6 +28,7 @@
 #import "DelaySwitchViewController.h"
 #import "RespondChainVC.h"
 #import "LocalNotificationViewController.h"
+#import "JavaScriptCoreViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -280,9 +281,10 @@
             [self.navigationController pushViewController:lnVC animated:YES];
         }
             break;
-            
-         
-          
+        case 18: {
+            JavaScriptCoreViewController * jsVC = [[JavaScriptCoreViewController alloc]init];
+            [self.navigationController pushViewController:jsVC animated:YES];
+        }
             
             
         default:
