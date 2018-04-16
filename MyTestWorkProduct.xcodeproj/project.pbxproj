@@ -160,7 +160,6 @@
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
 		916002C81EF6832900071E10 /* gradientView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C71EF6832900071E10 /* gradientView2.m */; };
 		916002CB1EF685E800071E10 /* gradientView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002CA1EF685E800071E10 /* gradientView3.m */; };
-
 		917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009D720218A46009FB442 /* LocalNotificationViewController.m */; };
 		917009DA20218A46009FB442 /* LocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917009D820218A46009FB442 /* LocalNotificationViewController.xib */; };
 		917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009DC2021D2D3009FB442 /* LocalNotificationService.m */; };
@@ -294,7 +293,6 @@
 		91F072521CA1815C007923EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F072511CA1815C007923EC /* SystemConfiguration.framework */; };
 		91F072541CA18164007923EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F072531CA18164007923EC /* Security.framework */; };
 		91F072561CA18179007923EC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F072551CA18179007923EC /* CFNetwork.framework */; };
-
 		91F0D9DA200CFE6B002B2597 /* RespondChainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0D9D8200CFE6B002B2597 /* RespondChainVC.m */; };
 		91F0D9DB200CFE6B002B2597 /* RespondChainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F0D9D9200CFE6B002B2597 /* RespondChainVC.xib */; };
 		91F0D9DE200D0183002B2597 /* UIResponder+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0D9DD200D0183002B2597 /* UIResponder+Chain.m */; };
@@ -799,7 +797,6 @@
 		916002C71EF6832900071E10 /* gradientView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView2.m; sourceTree = "<group>"; };
 		916002C91EF685E800071E10 /* gradientView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView3.h; sourceTree = "<group>"; };
 		916002CA1EF685E800071E10 /* gradientView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView3.m; sourceTree = "<group>"; };
-
 		917009D620218A46009FB442 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
 		917009D720218A46009FB442 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
 		917009D820218A46009FB442 /* LocalNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalNotificationViewController.xib; sourceTree = "<group>"; };
@@ -1036,7 +1033,6 @@
 		91F072511CA1815C007923EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		91F072531CA18164007923EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		91F072551CA18179007923EC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-
 		91F0D9D7200CFE6B002B2597 /* RespondChainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RespondChainVC.h; sourceTree = "<group>"; };
 		91F0D9D8200CFE6B002B2597 /* RespondChainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RespondChainVC.m; sourceTree = "<group>"; };
 		91F0D9D9200CFE6B002B2597 /* RespondChainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RespondChainVC.xib; sourceTree = "<group>"; };
@@ -1936,7 +1932,6 @@
 			path = SubView;
 			sourceTree = "<group>";
 		};
-
 		917009D520218A29009FB442 /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -2714,7 +2709,6 @@
 			path = Swizzing;
 			sourceTree = "<group>";
 		};
-
 		91F0D9D6200CFE4C002B2597 /* RespondChain */ = {
 			isa = PBXGroup;
 			children = (
@@ -2952,7 +2946,6 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
-
 				917009D520218A29009FB442 /* LocalNotification */,
 				91F0D9D6200CFE4C002B2597 /* RespondChain */,
 				912634FC1FE39263007802D1 /* DelaySwitch */,
@@ -3196,7 +3189,6 @@
 				91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */,
 				DC8D14261E7E4EC1009EA61E /* mapapi.bundle in Resources */,
 				910BE4D51F4453C8002DDC93 /* 核心动画.mindnode in Resources */,
-
 				917009DA20218A46009FB442 /* LocalNotificationViewController.xib in Resources */,
 				912AE7571FCD4EEE00261915 /* NavigationViewController.xib in Resources */,
 				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
@@ -3216,7 +3208,6 @@
 				91DC45A41BE7B7F300E86CC0 /* MainTabBarViewController.xib in Resources */,
 				91489E9C1F28898B00B23579 /* ImageCachePoolVC.xib in Resources */,
 				910BC4AC1EBEE58000D7628F /* Factory in Resources */,
-
 				91F0D9DB200CFE6B002B2597 /* RespondChainVC.xib in Resources */,
 				91F4FA091D6AEA0D0039EC40 /* SearchBarViewController.xib in Resources */,
 				917952591ED5994500193487 /* DecouplingManyVCsVC.xib in Resources */,
@@ -3402,7 +3393,6 @@
 				9116A1671ED6D10C005D515C /* CommodityListViewController.m in Sources */,
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				911F2ABD1E5C77480057FE33 /* UIImage+Custom.m in Sources */,
-
 				91F0D9DE200D0183002B2597 /* UIResponder+Chain.m in Sources */,
 				915038521FE7A77E008ECA28 /* AbroadShoppingHomeModel.m in Sources */,
 				910C52AD1D3DC74200F3873C /* NSString+PinYin4Cocoa.m in Sources */,
@@ -3570,7 +3560,6 @@
 				910C52AE1D3DC74200F3873C /* PinyinFormatter.m in Sources */,
 				918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */,
 				91DC45C21BE7C0A400E86CC0 /* TabBar1ViewController.m in Sources */,
-
 				91F0D9DA200CFE6B002B2597 /* RespondChainVC.m in Sources */,
 				9179525D1ED599C600193487 /* TestVC1.m in Sources */,
 				DC84E0121EC4B45600FBE3E8 /* Finance.m in Sources */,
@@ -3579,7 +3568,6 @@
 				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
 				9150384E1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
-
 				917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */,
 				913D7EA71C92BFA200A862A4 /* MJRefreshFooter.m in Sources */,
 				910C52AF1D3DC74200F3873C /* PinyinHelper.m in Sources */,
@@ -3597,7 +3585,6 @@
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
 				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,
-
 				917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */,
 				DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,
@@ -3847,6 +3834,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = MyTestWorkProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4035,6 +4023,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = MyTestWorkProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4087,6 +4076,7 @@
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
 				);
 				INFOPLIST_FILE = MyTestWorkProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
