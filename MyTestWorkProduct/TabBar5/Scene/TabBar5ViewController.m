@@ -68,6 +68,29 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:@"test"];
     });
     [[NSNotificationCenter defaultCenter] postNotificationName:@"test2" object:@"test"];
+    
+    [self timerDemo];
+}
+
+- (void)timerDemo {
+    
+    
+
+    NSThread * thread = [[NSThread alloc] initWithBlock:^{
+        
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+            [self performSelector:@selector(timerAction)];
+        }];
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] run];
+    }];
+    
+    [thread start];
+}
+
+- (void)timerAction {
+
+    NSLog(@"timer 启动了！！---%@",[NSThread currentThread]);
 }
 
 - (void)imageCachePoolTest {
