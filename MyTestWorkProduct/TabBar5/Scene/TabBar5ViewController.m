@@ -29,6 +29,7 @@
 #import "RespondChainVC.h"
 #import "LocalNotificationViewController.h"
 #import "JavaScriptCoreViewController.h"
+#import "StoryBoardViewController.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -285,6 +286,14 @@
             JavaScriptCoreViewController * jsVC = [[JavaScriptCoreViewController alloc]init];
             [self.navigationController pushViewController:jsVC animated:YES];
         }
+        case 19: {
+            UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"StoryBoardViewController" bundle:nil];
+            StoryBoardViewController *sbVC = [storyBoard instantiateViewControllerWithIdentifier:@"StoryBoardViewController"];
+            
+            [self.navigationController pushViewController:sbVC animated:YES];
+        }
+            
+            
             
             
         default:

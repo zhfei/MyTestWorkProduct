@@ -155,6 +155,9 @@
 		9150384B1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150384A1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m */; };
 		9150384E1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150384D1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m */; };
 		915038521FE7A77E008ECA28 /* AbroadShoppingHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 915038511FE7A77E008ECA28 /* AbroadShoppingHomeModel.m */; };
+		9150AA5720863338000D1E39 /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150AA5620863338000D1E39 /* StoryBoardViewController.m */; };
+		9150AA5920863350000D1E39 /* StoryBoardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9150AA5820863350000D1E39 /* StoryBoardViewController.storyboard */; };
+		9150AA5C208639EB000D1E39 /* StoryBoardVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150AA5B208639EB000D1E39 /* StoryBoardVC2.m */; };
 		9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */; };
 		916002C11EF6496F00071E10 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C01EF6496F00071E10 /* GradientViewController.m */; };
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
@@ -791,6 +794,11 @@
 		9150384D1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadSelectGoodsViewCell.m; sourceTree = "<group>"; };
 		915038501FE7A77E008ECA28 /* AbroadShoppingHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeModel.h; sourceTree = "<group>"; };
 		915038511FE7A77E008ECA28 /* AbroadShoppingHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeModel.m; sourceTree = "<group>"; };
+		9150AA5520863338000D1E39 /* StoryBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardViewController.h; sourceTree = "<group>"; };
+		9150AA5620863338000D1E39 /* StoryBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardViewController.m; sourceTree = "<group>"; };
+		9150AA5820863350000D1E39 /* StoryBoardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryBoardViewController.storyboard; sourceTree = "<group>"; };
+		9150AA5A208639EB000D1E39 /* StoryBoardVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardVC2.h; sourceTree = "<group>"; };
+		9150AA5B208639EB000D1E39 /* StoryBoardVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardVC2.m; sourceTree = "<group>"; };
 		9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAnimation.h; sourceTree = "<group>"; };
 		9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartAnimation.m; sourceTree = "<group>"; };
 		916002BF1EF6496F00071E10 /* GradientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
@@ -1921,6 +1929,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9150AA5420863312000D1E39 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				9150AA5520863338000D1E39 /* StoryBoardViewController.h */,
+				9150AA5620863338000D1E39 /* StoryBoardViewController.m */,
+				9150AA5820863350000D1E39 /* StoryBoardViewController.storyboard */,
+				9150AA5A208639EB000D1E39 /* StoryBoardVC2.h */,
+				9150AA5B208639EB000D1E39 /* StoryBoardVC2.m */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		916002BE1EF648D500071E10 /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -2980,6 +3000,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				9150AA5420863312000D1E39 /* StoryBoard */,
 				9167A7262084DCE900EFAA36 /* JavaScriptCore */,
 				917009D520218A29009FB442 /* LocalNotification */,
 				91F0D9D6200CFE4C002B2597 /* RespondChain */,
@@ -3201,6 +3222,7 @@
 			files = (
 				917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */,
 				DCCB0A5C1F30D2630065D572 /* check.sh in Resources */,
+				9150AA5920863350000D1E39 /* StoryBoardViewController.storyboard in Resources */,
 				91AE59041ED8368B00FD53F8 /* ShoppingCartBar.xib in Resources */,
 				DC37E3961F45F5F000F1D905 /* test0.py in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
@@ -3537,6 +3559,7 @@
 				910C52B31D3DC7BA00F3873C /* NSArray+Additions.m in Sources */,
 				DC7B7BA81E817999008FCAEF /* XObject.m in Sources */,
 				913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */,
+				9150AA5C208639EB000D1E39 /* StoryBoardVC2.m in Sources */,
 				DC8E67291EFEBA3900691D6A /* DrawRectView1.m in Sources */,
 				91489EA01F288C2400B23579 /* ICPCollectionViewCell.m in Sources */,
 				91071DD21EBF110F006CF932 /* AtBlueCarLicense.m in Sources */,
@@ -3654,6 +3677,7 @@
 				91DC45681BE7B17000E86CC0 /* NSString+YYAdditions.m in Sources */,
 				9114E75F1C86CD360087E5AC /* YYClassInfo.m in Sources */,
 				911F2ADB1E5C79A80057FE33 /* MyNavigationtroller.m in Sources */,
+				9150AA5720863338000D1E39 /* StoryBoardViewController.m in Sources */,
 				91DC45691BE7B17000E86CC0 /* NSURL+YYAdditions.m in Sources */,
 				9114E7511C868A1F0087E5AC /* XZipProductsFileManager.m in Sources */,
 			);
