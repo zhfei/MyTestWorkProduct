@@ -166,6 +166,8 @@
 		9167A7232084DC8000EFAA36 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */; };
 		9167A72A2084DD0400EFAA36 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */; };
 		9167A72B2084DD0400EFAA36 /* JavaScriptCoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */; };
+		916820F220BC63C40005656A /* PizzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 916820EF20BC63C40005656A /* PizzleView.m */; };
+		916820F320BC63C40005656A /* PizzleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916820F120BC63C40005656A /* PizzleView.xib */; };
 		917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009D720218A46009FB442 /* LocalNotificationViewController.m */; };
 		917009DA20218A46009FB442 /* LocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917009D820218A46009FB442 /* LocalNotificationViewController.xib */; };
 		917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009DC2021D2D3009FB442 /* LocalNotificationService.m */; };
@@ -818,6 +820,9 @@
 		9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
 		9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JavaScriptCoreViewController.xib; sourceTree = "<group>"; };
 		9167A72D2084F48900EFAA36 /* JSExportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSExportTest.h; sourceTree = "<group>"; };
+		916820EF20BC63C40005656A /* PizzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PizzleView.m; sourceTree = "<group>"; };
+		916820F020BC63C40005656A /* PizzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PizzleView.h; sourceTree = "<group>"; };
+		916820F120BC63C40005656A /* PizzleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PizzleView.xib; sourceTree = "<group>"; };
 		917009D620218A46009FB442 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
 		917009D720218A46009FB442 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
 		917009D820218A46009FB442 /* LocalNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalNotificationViewController.xib; sourceTree = "<group>"; };
@@ -1997,6 +2002,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		916820EE20BC63B00005656A /* ImageClipe */ = {
+			isa = PBXGroup;
+			children = (
+				916820F020BC63C40005656A /* PizzleView.h */,
+				916820EF20BC63C40005656A /* PizzleView.m */,
+				916820F120BC63C40005656A /* PizzleView.xib */,
+			);
+			path = ImageClipe;
+			sourceTree = "<group>";
+		};
 		917009D520218A29009FB442 /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -3035,6 +3050,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				916820EE20BC63B00005656A /* ImageClipe */,
 				91D7D94F208C1E1000607CAF /* OC:Swift:C:C++ */,
 				9150AA5420863312000D1E39 /* StoryBoard */,
 				9167A7262084DCE900EFAA36 /* JavaScriptCore */,
@@ -3311,6 +3327,7 @@
 				912365951E557BD90062B2E4 /* QRCodeViewController.xib in Resources */,
 				91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */,
 				91C5FA9C1EC41266006F3A02 /* Template in Resources */,
+				916820F320BC63C40005656A /* PizzleView.xib in Resources */,
 				91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */,
 				91AF37301ED6AAA5008B98F4 /* DecouplingVC.xib in Resources */,
 				91AF37431ED6C95C008B98F4 /* ClassifyCell.xib in Resources */,
@@ -3509,6 +3526,7 @@
 				913D7EAF1C92BFA200A862A4 /* MJRefreshGifHeader.m in Sources */,
 				912AE7561FCD4EEE00261915 /* NavigationViewController.m in Sources */,
 				91F5B6D41C946A4F00C578B3 /* UIView+Image.m in Sources */,
+				916820F220BC63C40005656A /* PizzleView.m in Sources */,
 				9102AAFE1C4F34E9008D8C28 /* SSKeychainQuery.m in Sources */,
 				91F90D7F1C77068300215E3B /* AFNetworkReachabilityManager.m in Sources */,
 				911D6D981E6431B600FBF188 /* CodingTemplate.m in Sources */,
