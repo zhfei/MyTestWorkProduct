@@ -18,11 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self testArray1];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)testArray1 {
+
+    NSArray *array1 = @[@"1",@"2",@"3",@"4"];
+    NSInteger index = 1;
+    NSLog(@"target:%@",array1[index++]);
 }
 
 /*

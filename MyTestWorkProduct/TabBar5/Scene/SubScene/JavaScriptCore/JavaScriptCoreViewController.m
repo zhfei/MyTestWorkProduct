@@ -8,9 +8,10 @@
 
 #import "JavaScriptCoreViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import <WebKit/WebKit.h>
 #import "JSProtolObj.h"
 
-@interface JavaScriptCoreViewController ()<UIWebViewDelegate>
+@interface JavaScriptCoreViewController ()<UIWebViewDelegate,WKScriptMessageHandler,WKScriptMessageHandler>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) JSContext *jsContent;
@@ -30,6 +31,20 @@
     [self OC_Call_JS];
     
     [self JS_Call_OC];
+}
+
+- (void)creatWKWebView {
+    
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    config.preferences.minimumFontSize = 10.f;
+    [config.userContentController addScriptMessageHandler:self name:@"playSound"];
+
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
+    
+    
+    
+    [webView evaluateJavaScript:@"playSount()" completionHandler:nil];
+
 }
 
 - (void)OC_Call_JS {
@@ -71,6 +86,13 @@
 #pragma mark - UIWebViewDelegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    NSString *urlString = webView.request.URL.absoluteString;
+    NSString *schem = webView.request.URL.scheme;
+    if ([schem containsString:@"jsCallBack://"]) {
+        //action...
+        return NO;
+    }
 
     NSLog(@"webView:%@",webView);
     return YES;
@@ -89,6 +111,20 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
 
 }
+
+#pragma mark - WKScriptMessageHandler
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+
+    if ([message.name isEqualToString:@"playSound"]) {
+        [self playSound];
+    }
+}
+
+- (void)playSound {
+
+    NSLog(@"playSound");
+}
+
 
 
 @end

@@ -228,6 +228,10 @@
 		91D732681FAAC4D20074E31B /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D732671FAAC4D20074E31B /* Dog.m */; };
 		91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D788831BF0C28B0026A18E /* MyCollectionCell.m */; };
 		91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D788841BF0C28B0026A18E /* MyCollectionCell.xib */; };
+		91D7D952208C1E5100607CAF /* OC_Swift_C_C++_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D7D951208C1E5100607CAF /* OC_Swift_C_C++_VC.m */; };
+		91D7D955208C1ECC00607CAF /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91D7D954208C1ECC00607CAF /* CppViewController.mm */; };
+		91D7D959208C1FB300607CAF /* cppModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91D7D957208C1FB300607CAF /* cppModel.cpp */; };
+		91D7D95E208C24BA00607CAF /* aa.c in Sources */ = {isa = PBXBuildFile; fileRef = 91D7D95C208C24BA00607CAF /* aa.c */; };
 		91DAB0F01BE90CA0006695B7 /* TabBar5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DAB0EE1BE90CA0006695B7 /* TabBar5ViewController.m */; };
 		91DAB0F11BE90CA0006695B7 /* TabBar5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAB0EF1BE90CA0006695B7 /* TabBar5ViewController.xib */; };
 		91DB3AB71CB69D690019A1EB /* CellAutoHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DB3AB61CB69D690019A1EB /* CellAutoHeightViewController.m */; };
@@ -923,6 +927,14 @@
 		91D788821BF0C28B0026A18E /* MyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCell.h; sourceTree = "<group>"; };
 		91D788831BF0C28B0026A18E /* MyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionCell.m; sourceTree = "<group>"; };
 		91D788841BF0C28B0026A18E /* MyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
+		91D7D950208C1E5100607CAF /* OC_Swift_C_C++_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_Swift_C_C++_VC.h"; sourceTree = "<group>"; };
+		91D7D951208C1E5100607CAF /* OC_Swift_C_C++_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_Swift_C_C++_VC.m"; sourceTree = "<group>"; };
+		91D7D953208C1ECC00607CAF /* CppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
+		91D7D954208C1ECC00607CAF /* CppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
+		91D7D957208C1FB300607CAF /* cppModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cppModel.cpp; sourceTree = "<group>"; };
+		91D7D958208C1FB300607CAF /* cppModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cppModel.hpp; sourceTree = "<group>"; };
+		91D7D95C208C24BA00607CAF /* aa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aa.c; sourceTree = "<group>"; };
+		91D7D95D208C24BA00607CAF /* aa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aa.h; sourceTree = "<group>"; };
 		91DAB0DB1BE905CF006695B7 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		91DAB0ED1BE90CA0006695B7 /* TabBar5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar5ViewController.h; sourceTree = "<group>"; };
 		91DAB0EE1BE90CA0006695B7 /* TabBar5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar5ViewController.m; sourceTree = "<group>"; };
@@ -2248,6 +2260,29 @@
 			path = Template;
 			sourceTree = "<group>";
 		};
+		91D7D94F208C1E1000607CAF /* OC:Swift:C:C++ */ = {
+			isa = PBXGroup;
+			children = (
+				91D7D956208C1F8C00607CAF /* cppModel */,
+				91D7D950208C1E5100607CAF /* OC_Swift_C_C++_VC.h */,
+				91D7D951208C1E5100607CAF /* OC_Swift_C_C++_VC.m */,
+			);
+			path = "OC:Swift:C:C++";
+			sourceTree = "<group>";
+		};
+		91D7D956208C1F8C00607CAF /* cppModel */ = {
+			isa = PBXGroup;
+			children = (
+				91D7D953208C1ECC00607CAF /* CppViewController.h */,
+				91D7D954208C1ECC00607CAF /* CppViewController.mm */,
+				91D7D957208C1FB300607CAF /* cppModel.cpp */,
+				91D7D958208C1FB300607CAF /* cppModel.hpp */,
+				91D7D95C208C24BA00607CAF /* aa.c */,
+				91D7D95D208C24BA00607CAF /* aa.h */,
+			);
+			name = cppModel;
+			sourceTree = "<group>";
+		};
 		91DAB0E21BE907A4006695B7 /* UserDataCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -3000,6 +3035,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				91D7D94F208C1E1000607CAF /* OC:Swift:C:C++ */,
 				9150AA5420863312000D1E39 /* StoryBoard */,
 				9167A7262084DCE900EFAA36 /* JavaScriptCore */,
 				917009D520218A29009FB442 /* LocalNotification */,
@@ -3444,6 +3480,7 @@
 				91F9A8F82084F5B400CECE9C /* JSProtolObj.m in Sources */,
 				916002C11EF6496F00071E10 /* GradientViewController.m in Sources */,
 				91FE24C01CB20129001C6DF0 /* AutoLayoutAnimViewController.m in Sources */,
+				91D7D959208C1FB300607CAF /* cppModel.cpp in Sources */,
 				9134AC551CFFD9CE00C2C49E /* NSString+HTML.m in Sources */,
 				91DB3AB71CB69D690019A1EB /* CellAutoHeightViewController.m in Sources */,
 				913D7EA61C92BFA200A862A4 /* MJRefreshComponent.m in Sources */,
@@ -3574,6 +3611,7 @@
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
 				DC84E0091EC4AB1600FBE3E8 /* BuickVeranoBuilder.m in Sources */,
+				91D7D955208C1ECC00607CAF /* CppViewController.mm in Sources */,
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
@@ -3635,6 +3673,7 @@
 				913D7EAC1C92BFA200A862A4 /* MJRefreshBackGifFooter.m in Sources */,
 				911B79741F3407620076CC36 /* CirculateViewController.m in Sources */,
 				91F2888F1CF93931004B726B /* BlurEffectViewController.m in Sources */,
+				91D7D95E208C24BA00607CAF /* aa.c in Sources */,
 				9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */,
 				912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */,
 				91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */,
@@ -3645,6 +3684,7 @@
 				91C6C4311F95F443005BC0C4 /* NSObject+MethodCalledKVO.m in Sources */,
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
+				91D7D952208C1E5100607CAF /* OC_Swift_C_C++_VC.m in Sources */,
 				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,
 				917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */,
 				DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */,

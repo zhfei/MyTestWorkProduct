@@ -32,5 +32,11 @@
                 <constraint firstAttribute="trailing" secondItem="16Q-D1-FEA" secondAttribute="trailing" id="jZQ-Xt-74e"/>
             </constraints>
         </view>
+        <view contentMode="scaleToFill" id="ixQ-0y-ExD">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="453" y="61"/>
+        </view>
     </objects>
 </document>
