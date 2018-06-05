@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (Method)
-- (instancetype)initMethod;
-
 @property (strong,nonatomic)NSString *name;
 
 @end
