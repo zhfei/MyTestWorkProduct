@@ -19,6 +19,7 @@
 #import "AutoLayoutAnimViewController.h"
 #import "CellAutoHeightViewController.h"
 #import "BlurEffectViewController.h"
+#import "GPUImageViewController.h"
 
 #import <objc/message.h>
 
@@ -65,7 +66,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.dataSource=[NSMutableArray arrayWithObjects:@"drawRect绘画",@"圆形进度条",@"自定义UICollectionViewLayout",@"自定义下载进度条",@"视频播放器",@"字体设置",@"地图",@"自动布局动画",@"Cell自适应高度",@"图片模糊效果", nil];
+    self.dataSource=[NSMutableArray arrayWithObjects:@"drawRect绘画",@"圆形进度条",@"自定义UICollectionViewLayout",@"自定义下载进度条",@"视频播放器",@"字体设置",@"地图",@"自动布局动画",@"Cell自适应高度",@"图片模糊效果",@"GPUImage图片处理", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -222,6 +223,14 @@
                     
                     [self.navigationController pushViewController:blurEffect animated:YES];
                 }
+                case 10:
+                {
+                    GPUImageViewController *gpuiv =[[GPUImageViewController alloc] init];
+                    
+                    [self.navigationController pushViewController:gpuiv animated:YES];
+                }
+                    
+                    
                     break;
                     
                 default:

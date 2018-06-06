@@ -128,6 +128,8 @@
 		913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7EBB1C92C07100A862A4 /* CircleProgressViewController.m */; };
 		913D7EC11C92C0BB00A862A4 /* ImageLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7EC01C92C0BB00A862A4 /* ImageLabelViewController.m */; };
 		91407FE720C7F52A00713C35 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91407FE620C7F52A00713C35 /* Dog.swift */; };
+		91407FED20C8096400713C35 /* GPUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91407FEB20C8096400713C35 /* GPUImageViewController.m */; };
+		91407FEE20C8096400713C35 /* GPUImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91407FEC20C8096400713C35 /* GPUImageViewController.xib */; };
 		9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */; };
 		9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */; };
 		9141F3A81EC00A900078E71E /* Adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9141F3A71EC00A900078E71E /* Adapter */; };
@@ -757,6 +759,9 @@
 		913D7EC01C92C0BB00A862A4 /* ImageLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLabelViewController.m; sourceTree = "<group>"; };
 		91407FE620C7F52A00713C35 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		91407FE820C7F76B00713C35 /* MyTestWorkProduct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTestWorkProduct-Bridging-Header.h"; sourceTree = "<group>"; };
+		91407FEA20C8096400713C35 /* GPUImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageViewController.h; sourceTree = "<group>"; };
+		91407FEB20C8096400713C35 /* GPUImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageViewController.m; sourceTree = "<group>"; };
+		91407FEC20C8096400713C35 /* GPUImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPUImageViewController.xib; sourceTree = "<group>"; };
 		9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editor_list_icon@2x.png"; sourceTree = "<group>"; };
 		9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_framework_icon@2x.png"; sourceTree = "<group>"; };
 		9141F3A71EC00A900078E71E /* Adapter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter; sourceTree = "<group>"; };
@@ -1847,6 +1852,16 @@
 			path = ImageLable;
 			sourceTree = "<group>";
 		};
+		91407FE920C8091300713C35 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				91407FEA20C8096400713C35 /* GPUImageViewController.h */,
+				91407FEB20C8096400713C35 /* GPUImageViewController.m */,
+				91407FEC20C8096400713C35 /* GPUImageViewController.xib */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
 		9140D1FC1D0662130033BA62 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -2928,6 +2943,7 @@
 		91F6250A1C87D7D600351461 /* SubScenes */ = {
 			isa = PBXGroup;
 			children = (
+				91407FE920C8091300713C35 /* GPUImage */,
 				91F2888C1CF93908004B726B /* BlurEffect */,
 				91DB3AB41CB69D440019A1EB /* CellAutoHeight */,
 				91FE24BD1CB20113001C6DF0 /* AutoLayoutAnimation */,
@@ -3207,6 +3223,7 @@
 				91DC44EF1BE7A60900E86CC0 /* Frameworks */,
 				91DC44F01BE7A60900E86CC0 /* Resources */,
 				91F072571CA18ECB007923EC /* ShellScript */,
+				C5754D0E92149C2B0F640397 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3339,6 +3356,7 @@
 				9167A72B2084DD0400EFAA36 /* JavaScriptCoreViewController.xib in Resources */,
 				912E4B331E78D31200B6A254 /* test1.sh in Resources */,
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
+				91407FEE20C8096400713C35 /* GPUImageViewController.xib in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
 				9116A16D1ED6D14B005D515C /* CommodityCell.xib in Resources */,
 				91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */,
@@ -3454,6 +3472,32 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "SKIP_DEBUG_BUILDS=0 #在 Debug 模式下编译是否自动上传符号表: 0 上传, 1 不上传;\nSKIP_SIMULATOR_BUILDS=0 #在模拟器环境下编译是否自动上传符号表: 0 上传, 1 不上传;\nAPP_KEY=\"fa2b50a904db32b90c09d97ddf4b3f5d\" #请填写应用的 App Key;\nAPP_SECRET=\"004b232fe9e305be779e25cf06d50aa6\" #请填写应用的 App Secret，可向应用拥有者索要;\nSCRIPT_SRC=$(find \"$PROJECT_DIR\" -name 'Bugtags_dsym_autoupload.sh' | head -1)\nif [ ! \"${SCRIPT_SRC}\" ]; then\necho \"Bugtags: err: script not found. Make sure that you're including 'Bugtags.bundle' in your project directory\"\nexit 1\nfi\nsource \"${SCRIPT_SRC}\"\n";
+		};
+		C5754D0E92149C2B0F640397 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTestWorkProduct/Pods-MyTestWorkProduct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3711,6 +3755,7 @@
 				91407FE720C7F52A00713C35 /* Dog.swift in Sources */,
 				910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */,
 				910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */,
+				91407FED20C8096400713C35 /* GPUImageViewController.m in Sources */,
 				913D7EAA1C92BFA200A862A4 /* MJRefreshAutoNormalFooter.m in Sources */,
 				91E4B3CA1C3C0887001DD5B2 /* DBManager.m in Sources */,
 				918930A41E653FAF007D6879 /* OptionHeadlineHelper.m in Sources */,

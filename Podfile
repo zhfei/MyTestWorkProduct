@@ -10,7 +10,7 @@ target "MyTestWorkProduct" do
 
    pod 'SDWebImage'
    pod 'ReactiveCocoa', '~> 2.5'
-   
+   pod 'GPUImage'
    
 #   pod 'ZFFlowLayout', :path=>'../LeftAlignedCollectionView'
 #   pod 'ZFFlowLayout', :path=>'subModule/ZFFlowLayout.podspec'
