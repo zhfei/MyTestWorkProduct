@@ -198,6 +198,7 @@
 		91884BD31EC2F1E200F2212D /* StNormalPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91884BD21EC2F1E200F2212D /* StNormalPlayer.m */; };
 		91884BD71EC2F4E800F2212D /* StrategyPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91884BD51EC2F4E800F2212D /* StrategyPlayerVC.m */; };
 		91884BD81EC2F4E800F2212D /* StrategyPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91884BD61EC2F4E800F2212D /* StrategyPlayerVC.xib */; };
+		9188A34220C82F7A00C1C590 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188A34120C82F7A00C1C590 /* HttpTool.swift */; };
 		9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189306C1E653FAF007D6879 /* CalculatorManager.m */; };
 		9189309F1E653FAF007D6879 /* FileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189306F1E653FAF007D6879 /* FileDownloader.m */; };
 		918930A01E653FAF007D6879 /* FileMultiDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930711E653FAF007D6879 /* FileMultiDownloader.m */; };
@@ -879,6 +880,7 @@
 		91884BD41EC2F4E800F2212D /* StrategyPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyPlayerVC.h; sourceTree = "<group>"; };
 		91884BD51EC2F4E800F2212D /* StrategyPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyPlayerVC.m; sourceTree = "<group>"; };
 		91884BD61EC2F4E800F2212D /* StrategyPlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrategyPlayerVC.xib; sourceTree = "<group>"; };
+		9188A34120C82F7A00C1C590 /* HttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		9189306B1E653FAF007D6879 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
 		9189306C1E653FAF007D6879 /* CalculatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorManager.m; sourceTree = "<group>"; };
 		9189306E1E653FAF007D6879 /* FileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloader.h; sourceTree = "<group>"; };
@@ -1927,6 +1929,7 @@
 				914F854B20C776DD00C9BC4E /* SwiftViewController.swift */,
 				914F854D20C7770000C9BC4E /* PersonClass.swift */,
 				91407FE620C7F52A00713C35 /* Dog.swift */,
+				9188A34120C82F7A00C1C590 /* HttpTool.swift */,
 			);
 			path = ClassStu;
 			sourceTree = "<group>";
@@ -3561,6 +3564,7 @@
 				918930A21E653FAF007D6879 /* AsyncFileManager.m in Sources */,
 				91F90D801C77068300215E3B /* AFSecurityPolicy.m in Sources */,
 				910BC49B1EBED27400D7628F /* BlueCarLicense.m in Sources */,
+				9188A34220C82F7A00C1C590 /* HttpTool.swift in Sources */,
 				9114D6CB1C8688C70087E5AC /* Main.m in Sources */,
 				9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */,
 				913D7EC11C92C0BB00A862A4 /* ImageLabelViewController.m in Sources */,

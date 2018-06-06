@@ -30,11 +30,15 @@ class SwiftViewController: UIViewController {
         let mt = MathTool()
         let result = mt.add(num1: 10, num2: 10)
         print(result)
+        
+        let httpTool = HttpTool()
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let p = PersonClass(name: "ww", age: 18)
         print("name:\(p.name!), age:\(p.age)")
     }
+    
 
 }
