@@ -33,6 +33,7 @@
 #import "NSArray+Additions.h"
 #import "SearchBarViewController.h"
 #import "CalculatorManager.h"
+#import "MyTestWorkProduct-Swift.h"
 
 @interface TabBar2ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
@@ -60,7 +61,7 @@
     //self.title=@"主题二";
     MyLog(@"path:%@",NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]);
     
-    UIButton *btn =[[UIButton alloc] initMethod];
+    UIButton *btn =[[UIButton alloc] init];
     
     [btn setImage:[UIImage imageNamed:@"a"] forState:UIControlStateNormal];
     
@@ -91,7 +92,9 @@
         return result;
     }] result];
     
-   
+    SwiftViewController *swiftvc = [[SwiftViewController alloc]init];
+    
+    NSLog(@"%@",swiftvc);
 
 }
 

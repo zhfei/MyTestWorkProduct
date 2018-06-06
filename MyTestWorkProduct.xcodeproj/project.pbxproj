@@ -127,6 +127,7 @@
 		913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7EB91C92C07100A862A4 /* CircleProgressView.m */; };
 		913D7EBD1C92C07100A862A4 /* CircleProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7EBB1C92C07100A862A4 /* CircleProgressViewController.m */; };
 		913D7EC11C92C0BB00A862A4 /* ImageLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913D7EC01C92C0BB00A862A4 /* ImageLabelViewController.m */; };
+		91407FE720C7F52A00713C35 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91407FE620C7F52A00713C35 /* Dog.swift */; };
 		9140D1FE1D0662750033BA62 /* editor_list_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */; };
 		9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */; };
 		9141F3A81EC00A900078E71E /* Adapter in Resources */ = {isa = PBXBuildFile; fileRef = 9141F3A71EC00A900078E71E /* Adapter */; };
@@ -147,6 +148,8 @@
 		91489EA01F288C2400B23579 /* ICPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */; };
 		91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */; };
 		914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */; };
+		914F854C20C776DD00C9BC4E /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F854B20C776DD00C9BC4E /* SwiftViewController.swift */; };
+		914F854E20C7770000C9BC4E /* PersonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F854D20C7770000C9BC4E /* PersonClass.swift */; };
 		9150383B1FE79A59008ECA28 /* AbroadShoppingHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915038391FE79A59008ECA28 /* AbroadShoppingHomeViewController.m */; };
 		9150383C1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9150383A1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib */; };
 		915038401FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150383F1FE79AA3008ECA28 /* AbroadShoppingHomePresenter.m */; };
@@ -752,6 +755,8 @@
 		913D7EBB1C92C07100A862A4 /* CircleProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressViewController.m; sourceTree = "<group>"; };
 		913D7EBF1C92C0BB00A862A4 /* ImageLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLabelViewController.h; sourceTree = "<group>"; };
 		913D7EC01C92C0BB00A862A4 /* ImageLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLabelViewController.m; sourceTree = "<group>"; };
+		91407FE620C7F52A00713C35 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		91407FE820C7F76B00713C35 /* MyTestWorkProduct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTestWorkProduct-Bridging-Header.h"; sourceTree = "<group>"; };
 		9140D1FD1D0662750033BA62 /* editor_list_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editor_list_icon@2x.png"; sourceTree = "<group>"; };
 		9140D1FF1D0678360033BA62 /* choose_framework_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose_framework_icon@2x.png"; sourceTree = "<group>"; };
 		9141F3A71EC00A900078E71E /* Adapter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter; sourceTree = "<group>"; };
@@ -783,6 +788,8 @@
 		91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICPCollectionViewCell.xib; sourceTree = "<group>"; };
 		914F1E9E1EE4F68200BAB5A1 /* RedCircelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedCircelLabel.h; sourceTree = "<group>"; };
 		914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCircelLabel.m; sourceTree = "<group>"; };
+		914F854B20C776DD00C9BC4E /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		914F854D20C7770000C9BC4E /* PersonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonClass.swift; sourceTree = "<group>"; };
 		915038361FE797CC008ECA28 /* InterfaceTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceTemplate.h; sourceTree = "<group>"; };
 		915038381FE79A59008ECA28 /* AbroadShoppingHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbroadShoppingHomeViewController.h; sourceTree = "<group>"; };
 		915038391FE79A59008ECA28 /* AbroadShoppingHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbroadShoppingHomeViewController.m; sourceTree = "<group>"; };
@@ -1891,6 +1898,24 @@
 			path = ImageCachePool;
 			sourceTree = "<group>";
 		};
+		914F854520C7764D00C9BC4E /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				914F854620C7764D00C9BC4E /* ClassStu */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		914F854620C7764D00C9BC4E /* ClassStu */ = {
+			isa = PBXGroup;
+			children = (
+				914F854B20C776DD00C9BC4E /* SwiftViewController.swift */,
+				914F854D20C7770000C9BC4E /* PersonClass.swift */,
+				91407FE620C7F52A00713C35 /* Dog.swift */,
+			);
+			path = ClassStu;
+			sourceTree = "<group>";
+		};
 		915038321FE79734008ECA28 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -2391,6 +2416,7 @@
 		91DC44F41BE7A60900E86CC0 /* MyTestWorkProduct */ = {
 			isa = PBXGroup;
 			children = (
+				914F854520C7764D00C9BC4E /* Swift */,
 				9189306A1E653FAF007D6879 /* Utilities */,
 				911F2AE01E5C7BC80057FE33 /* ThirdParty */,
 				911F2ADC1E5C7AC30057FE33 /* Common */,
@@ -2422,6 +2448,7 @@
 				91DC44F61BE7A60900E86CC0 /* main.m */,
 				91DC45731BE7B35600E86CC0 /* MyTestWorkProduct.pch */,
 				91DAB0DB1BE905CF006695B7 /* Header.h */,
+				91407FE820C7F76B00713C35 /* MyTestWorkProduct-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3464,6 +3491,7 @@
 				91E4B3C31C3C086E001DD5B2 /* FMDatabaseAdditions.m in Sources */,
 				913D7EA91C92BFA200A862A4 /* MJRefreshAutoGifFooter.m in Sources */,
 				91DC456D1BE7B17000E86CC0 /* UIImage+YYAdditions.m in Sources */,
+				914F854E20C7770000C9BC4E /* PersonClass.swift in Sources */,
 				913A95A71D3C7BB700237473 /* CentralViewController.m in Sources */,
 				91F9A8F82084F5B400CECE9C /* JSProtolObj.m in Sources */,
 				916002C11EF6496F00071E10 /* GradientViewController.m in Sources */,
@@ -3627,6 +3655,7 @@
 				910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */,
 				DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */,
 				91E8DE801EC19A590068C166 /* StNewPlayer.m in Sources */,
+				914F854C20C776DD00C9BC4E /* SwiftViewController.swift in Sources */,
 				91AE59021ED8366C00FD53F8 /* ShoppingCartBar.m in Sources */,
 				91C5E0921EF628BD00A6C68F /* ZFButtonViewController.m in Sources */,
 				91AF372F1ED6AAA5008B98F4 /* DecouplingVC.m in Sources */,
@@ -3679,6 +3708,7 @@
 				917009DD2021D2D3009FB442 /* LocalNotificationService.m in Sources */,
 				DC84E0061EC4AAF800FBE3E8 /* BuickExcelleGTBuilder.m in Sources */,
 				910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */,
+				91407FE720C7F52A00713C35 /* Dog.swift in Sources */,
 				910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */,
 				910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */,
 				913D7EAA1C92BFA200A862A4 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -3942,7 +3972,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = DailyBuild;
@@ -3950,6 +3981,7 @@
 		9157BB5A1DD9CA4A00F4281C /* DailyBuild */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MyTestWorkProductTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4131,8 +4163,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -4184,7 +4217,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyTestWorkProduct/TabBar2/Model/MyTestWorkProduct-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
@@ -4192,6 +4226,7 @@
 		91DC45181BE7A60900E86CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MyTestWorkProductTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4204,6 +4239,7 @@
 		91DC45191BE7A60900E86CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MyTestWorkProductTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
