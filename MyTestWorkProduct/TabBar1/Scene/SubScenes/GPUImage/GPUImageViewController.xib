@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-nb-5qS">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Duck" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-nb-5qS">
                     <rect key="frame" x="0.0" y="117" width="375" height="341"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="341" id="70O-14-0SR"/>
@@ -39,6 +39,6 @@
         </view>
     </objects>
     <resources>
-        <image name="sheep" width="600" height="416"/>
+        <image name="Duck" width="314" height="316"/>
     </resources>
 </document>
