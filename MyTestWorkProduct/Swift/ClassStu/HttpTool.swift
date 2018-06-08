@@ -9,7 +9,7 @@
 import UIKit
 
 class HttpTool: NSObject {
-    func requestData(block:(_ param:[String:Any])->()) -> Void {
-        block(["name":"wh"])
+    func requestData(block:()->()) -> Void {
+        block()
     }
 }
