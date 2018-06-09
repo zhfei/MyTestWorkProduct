@@ -20,7 +20,6 @@ class PersonClass: NSObject {
     init(name:String, age:Int) {
         
     }
-    
     init(dict:[String:Any]) {
         self.name = dict["name"] as? String
         self.age = dict["age"] as! Int
