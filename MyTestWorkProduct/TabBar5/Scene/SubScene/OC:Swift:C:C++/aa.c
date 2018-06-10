@@ -7,3 +7,6 @@
 //
 
 #include "aa.h"
+int sum(int sum1, int sum2) {
+    return sum1 + sum2;
+}

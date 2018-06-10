@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int sum(int sum1, int sum2);
+
 #endif /* aa_h */
