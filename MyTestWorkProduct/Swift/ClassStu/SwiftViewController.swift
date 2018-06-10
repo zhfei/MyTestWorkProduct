@@ -57,6 +57,17 @@ class SwiftViewController: UIViewController {
         let p = PersonClass(name: "ww", age: 18)
         print("name:\(p.name!), age:\(p.age)")
     }
+    
+    func loadWebView() -> Void {
+        let url = URL(string: "www.baidu.com")
+        let request = URLRequest(url: url!)
+        
+        let webView = UIWebView(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+        let dataTask = URLSession.shared.dataTask(with: url!) { (data, request, error) in
+            print(error!)
+        }
+        
+    }
 }
 
 extension SwiftViewController:UITableViewDelegate,UITableViewDataSource {
