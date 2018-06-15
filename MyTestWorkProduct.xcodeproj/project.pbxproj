@@ -213,6 +213,7 @@
 		919B397D20C6B7CC00257E38 /* NSString+RegularExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 919B397C20C6B7CC00257E38 /* NSString+RegularExp.m */; };
 		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
 		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
+		91A3E21320D3666D0059FD56 /* HollowOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3E21220D3666D0059FD56 /* HollowOutVC.swift */; };
 		91A9C6FA1FD1287E00F2F01A /* EditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */; };
 		91A9C6FB1FD1287E00F2F01A /* EditTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9C6F91FD1287E00F2F01A /* EditTableViewController.xib */; };
 		91AE59021ED8366C00FD53F8 /* ShoppingCartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AE59011ED8366C00FD53F8 /* ShoppingCartBar.m */; };
@@ -908,6 +909,7 @@
 		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
 		919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
 		919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
+		91A3E21220D3666D0059FD56 /* HollowOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollowOutVC.swift; sourceTree = "<group>"; };
 		91A9C6F71FD1287E00F2F01A /* EditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
 		91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTableViewController.m; sourceTree = "<group>"; };
 		91A9C6F91FD1287E00F2F01A /* EditTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTableViewController.xib; sourceTree = "<group>"; };
@@ -2230,6 +2232,14 @@
 			path = DispatchGroup;
 			sourceTree = "<group>";
 		};
+		91A3E21120D366480059FD56 /* HollowOut */ = {
+			isa = PBXGroup;
+			children = (
+				91A3E21220D3666D0059FD56 /* HollowOutVC.swift */,
+			);
+			path = HollowOut;
+			sourceTree = "<group>";
+		};
 		91A9C6F61FD1285900F2F01A /* EditTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -3099,6 +3109,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				91A3E21120D366480059FD56 /* HollowOut */,
 				916820EE20BC63B00005656A /* ImageClipe */,
 				91D7D94F208C1E1000607CAF /* OC:Swift:C:C++ */,
 				9150AA5420863312000D1E39 /* StoryBoard */,
@@ -3643,6 +3654,7 @@
 				91DC45C71BE7C0B500E86CC0 /* TabBar2ViewController.m in Sources */,
 				91CA66AD1C60B31400259935 /* NSData+AES.m in Sources */,
 				917348811F69342600BBBC85 /* MultiModelNestVC.m in Sources */,
+				91A3E21320D3666D0059FD56 /* HollowOutVC.swift in Sources */,
 				911F2AC01E5C77480057FE33 /* UIImage+Scale.m in Sources */,
 				913A95A41D3C7B5900237473 /* PeripheralViewController.m in Sources */,
 				918930A71E653FAF007D6879 /* Utilities.m in Sources */,
