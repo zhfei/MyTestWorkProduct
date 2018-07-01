@@ -9,9 +9,6 @@
 #import "TestPerson.h"
 #import <objc/runtime.h>
 
-@interface TestPerson()<NSCoding>
-
-@end
 
 @implementation TestPerson
 
@@ -51,11 +48,18 @@
     return self;
 }
 
+#pragma mark - life circle
+
+#pragma mark - getter、setter
+
+
 - (void)eat
 {}
 - (void)sleep
 {}
 - (void)work
 {}
+
+
 
 @end

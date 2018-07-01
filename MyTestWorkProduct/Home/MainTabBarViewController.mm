@@ -27,6 +27,7 @@
 }
 @end
 
+
 @implementation MainTabBarViewController
 
 - (void)viewDidLoad {
@@ -36,6 +37,8 @@
     NSDictionary * dict=[[OptionHeadlineHelper sharedOptionHeadlineHelper] dictionayInfo];
     
     [self createControls];
+    
+    
 }
 
 -(void)createControls

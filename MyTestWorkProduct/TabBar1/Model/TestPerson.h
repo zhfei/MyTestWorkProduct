@@ -19,12 +19,17 @@
 @property (strong,nonatomic)NSString*name;
 @property (strong,nonatomic)NSString*address;
 
-@property (strong,nonatomic)NSString*sex;
+@property (strong,nonatomic, )NSString*sex;
 @property (strong,nonatomic)NSString*collegeName;
 @property (strong,nonatomic)NSNumber *age;
 
 - (void)eat;
 - (void)sleep;
 - (void)work;
+
+- (void)configName:(NSString *)name;
+- (void)configAge:(NSInteger)age;
+- (void)configSex:(NSInteger)sex;
+
 
 @end

@@ -11,9 +11,16 @@ target "MyTestWorkProduct" do
    pod 'SDWebImage'
    pod 'ReactiveCocoa', '~> 2.5'
    pod 'GPUImage'
+   pod 'CocoaAsyncSocket'
    
 #   pod 'ZFFlowLayout', :path=>'../LeftAlignedCollectionView'
 #   pod 'ZFFlowLayout', :path=>'subModule/ZFFlowLayout.podspec'
 
-   
 end
+
+#target 'StillOne_Weex_iOS' do
+#    platform :ios, '8.0'
+#    pod 'WeexSDK'
+#    pod 'SDWebImage'
+#
+#end

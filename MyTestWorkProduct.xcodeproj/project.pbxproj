@@ -173,6 +173,8 @@
 		9167A7232084DC8000EFAA36 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */; };
 		9167A72A2084DD0400EFAA36 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */; };
 		9167A72B2084DD0400EFAA36 /* JavaScriptCoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */; };
+		9167DDDF20E9278900B2F89F /* SocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167DDDE20E9278900B2F89F /* SocketServer.m */; };
+		9167DDE220E927B100B2F89F /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167DDE120E927B100B2F89F /* SocketClient.m */; };
 		916820F220BC63C40005656A /* PizzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 916820EF20BC63C40005656A /* PizzleView.m */; };
 		916820F320BC63C40005656A /* PizzleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916820F120BC63C40005656A /* PizzleView.xib */; };
 		917009D920218A46009FB442 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917009D720218A46009FB442 /* LocalNotificationViewController.m */; };
@@ -837,6 +839,11 @@
 		9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
 		9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JavaScriptCoreViewController.xib; sourceTree = "<group>"; };
 		9167A72D2084F48900EFAA36 /* JSExportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSExportTest.h; sourceTree = "<group>"; };
+		9167DDDD20E9278900B2F89F /* SocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketServer.h; sourceTree = "<group>"; };
+		9167DDDE20E9278900B2F89F /* SocketServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketServer.m; sourceTree = "<group>"; };
+		9167DDE020E927B100B2F89F /* SocketClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
+		9167DDE120E927B100B2F89F /* SocketClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketClient.m; sourceTree = "<group>"; };
+		9167DDE320E92CEF00B2F89F /* SocketMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketMacro.h; sourceTree = "<group>"; };
 		916820EF20BC63C40005656A /* PizzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PizzleView.m; sourceTree = "<group>"; };
 		916820F020BC63C40005656A /* PizzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PizzleView.h; sourceTree = "<group>"; };
 		916820F120BC63C40005656A /* PizzleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PizzleView.xib; sourceTree = "<group>"; };
@@ -2050,6 +2057,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9167DDD720E90FE000B2F89F /* SocketDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9167DDDD20E9278900B2F89F /* SocketServer.h */,
+				9167DDDE20E9278900B2F89F /* SocketServer.m */,
+				9167DDE020E927B100B2F89F /* SocketClient.h */,
+				9167DDE120E927B100B2F89F /* SocketClient.m */,
+				9167DDE320E92CEF00B2F89F /* SocketMacro.h */,
+			);
+			path = SocketDemo;
+			sourceTree = "<group>";
+		};
 		916820EE20BC63B00005656A /* ImageClipe */ = {
 			isa = PBXGroup;
 			children = (
@@ -2444,6 +2463,7 @@
 		91DC44F41BE7A60900E86CC0 /* MyTestWorkProduct */ = {
 			isa = PBXGroup;
 			children = (
+				9167DDD720E90FE000B2F89F /* SocketDemo */,
 				914F854520C7764D00C9BC4E /* Swift */,
 				9189306A1E653FAF007D6879 /* Utilities */,
 				911F2AE01E5C7BC80057FE33 /* ThirdParty */,
@@ -3681,6 +3701,7 @@
 				910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */,
 				9130FB1A1D47511E00EE5275 /* LeftEdgeCollectionViewCell.m in Sources */,
 				91C5FAA91EC42AEE006F3A02 /* TemplateVC.m in Sources */,
+				9167DDE220E927B100B2F89F /* SocketClient.m in Sources */,
 				DC84DFFD1EC4A90100FBE3E8 /* BuickCar.m in Sources */,
 				91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */,
 				9167A72A2084DD0400EFAA36 /* JavaScriptCoreViewController.m in Sources */,
@@ -3699,6 +3720,7 @@
 				913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */,
 				DC84E01F1EC4B63600FBE3E8 /* FacadeVC.m in Sources */,
 				91FC89191D007BEC00527C4B /* CollectionViewCell.m in Sources */,
+				9167DDDF20E9278900B2F89F /* SocketServer.m in Sources */,
 				91DC45701BE7B17000E86CC0 /* UITextField+YYAdditions.m in Sources */,
 				91AF37351ED6BF80008B98F4 /* ShoppingVC.m in Sources */,
 				9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */,
