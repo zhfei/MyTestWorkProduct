@@ -10,5 +10,6 @@
 #define MyTestWorkProduct_Bridging_Header_h
 
 #import "TabBar2ViewController.h"
+#import "PageScrollView.h"
 
 #endif /* MyTestWorkProduct_Bridging_Header_h */
