@@ -11,5 +11,6 @@
 
 #import "TabBar2ViewController.h"
 #import "PageScrollView.h"
+#import "SDCCycleScrollView.h"
 
 #endif /* MyTestWorkProduct_Bridging_Header_h */

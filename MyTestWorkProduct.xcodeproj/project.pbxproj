@@ -85,6 +85,9 @@
 		911F2AC61E5C77DA0057FE33 /* UIButton+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2AC51E5C77DA0057FE33 /* UIButton+Method.m */; };
 		911F2ADB1E5C79A80057FE33 /* MyNavigationtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2ADA1E5C79A80057FE33 /* MyNavigationtroller.m */; };
 		911F2ADF1E5C7B140057FE33 /* HUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911F2ADE1E5C7B140057FE33 /* HUDView.m */; };
+		9122159D2118576B00C9B598 /* SDCCycleScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 912215972118576A00C9B598 /* SDCCycleScrollViewCell.m */; };
+		9122159E2118576B00C9B598 /* SDCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 912215982118576A00C9B598 /* SDCCycleScrollView.m */; };
+		9122159F2118576B00C9B598 /* SDCCycleScrollViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 912215992118576B00C9B598 /* SDCCycleScrollViewFlowLayout.m */; };
 		912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912365921E557BD90062B2E4 /* QRCodeViewController.m */; };
 		912365951E557BD90062B2E4 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912365931E557BD90062B2E4 /* QRCodeViewController.xib */; };
 		9124D79D1E5F1D41008E01F3 /* DateFormatterTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9124D79B1E5F1D41008E01F3 /* DateFormatterTableVC.m */; };
@@ -720,6 +723,12 @@
 		911F2ADA1E5C79A80057FE33 /* MyNavigationtroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationtroller.m; sourceTree = "<group>"; };
 		911F2ADD1E5C7B140057FE33 /* HUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDView.h; sourceTree = "<group>"; };
 		911F2ADE1E5C7B140057FE33 /* HUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDView.m; sourceTree = "<group>"; };
+		912215972118576A00C9B598 /* SDCCycleScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCycleScrollViewCell.m; sourceTree = "<group>"; };
+		912215982118576A00C9B598 /* SDCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCycleScrollView.m; sourceTree = "<group>"; };
+		912215992118576B00C9B598 /* SDCCycleScrollViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCCycleScrollViewFlowLayout.m; sourceTree = "<group>"; };
+		9122159A2118576B00C9B598 /* SDCCycleScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCycleScrollViewCell.h; sourceTree = "<group>"; };
+		9122159B2118576B00C9B598 /* SDCCycleScrollViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCycleScrollViewFlowLayout.h; sourceTree = "<group>"; };
+		9122159C2118576B00C9B598 /* SDCCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCCycleScrollView.h; sourceTree = "<group>"; };
 		912365911E557BD90062B2E4 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		912365921E557BD90062B2E4 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		912365931E557BD90062B2E4 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
@@ -1722,6 +1731,19 @@
 			path = BaiduMap;
 			sourceTree = "<group>";
 		};
+		912215962118573E00C9B598 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				9122159C2118576B00C9B598 /* SDCCycleScrollView.h */,
+				912215982118576A00C9B598 /* SDCCycleScrollView.m */,
+				9122159A2118576B00C9B598 /* SDCCycleScrollViewCell.h */,
+				912215972118576A00C9B598 /* SDCCycleScrollViewCell.m */,
+				9122159B2118576B00C9B598 /* SDCCycleScrollViewFlowLayout.h */,
+				912215992118576B00C9B598 /* SDCCycleScrollViewFlowLayout.m */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 		912365901E557BC00062B2E4 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2144,6 +2166,7 @@
 		91695ED620FDC7320026BDC1 /* PageScroll */ = {
 			isa = PBXGroup;
 			children = (
+				912215962118573E00C9B598 /* Third */,
 				91695ED720FDC7650026BDC1 /* PageScrollVC.swift */,
 				91695EDB20FDC8580026BDC1 /* PageScrollView.h */,
 				91695EDC20FDC8580026BDC1 /* PageScrollView.m */,
@@ -3794,6 +3817,7 @@
 				916B658F20ECD30C00FE18F5 /* VPN2VC.swift in Sources */,
 				9102AAFD1C4F34E9008D8C28 /* SSKeychain.m in Sources */,
 				91752AB31E4D9A6A00F6C634 /* MyRealm.m in Sources */,
+				9122159F2118576B00C9B598 /* SDCCycleScrollViewFlowLayout.m in Sources */,
 				91DC456B1BE7B17000E86CC0 /* UIButton+YYAdditions.m in Sources */,
 				91F90D7D1C77068300215E3B /* AFHTTPRequestOperationManager.m in Sources */,
 				911F2ABF1E5C77480057FE33 /* UIImage+MaskImage.m in Sources */,
@@ -3842,6 +3866,7 @@
 				91E4B3C51C3C086E001DD5B2 /* FMDatabaseQueue.m in Sources */,
 				91DD18731C45568900B0FF70 /* UIView+RNActivityView.m in Sources */,
 				91DC45A31BE7B7F300E86CC0 /* MainTabBarViewController.mm in Sources */,
+				9122159D2118576B00C9B598 /* SDCCycleScrollViewCell.m in Sources */,
 				9102AB011C4F36E0008D8C28 /* NSString+UUID.m in Sources */,
 				91EC16801D01BFC7000322B5 /* BoundFlowLayout.m in Sources */,
 				912635001FE3929E007802D1 /* DelaySwitchViewController.m in Sources */,
@@ -3954,6 +3979,7 @@
 				91F2888F1CF93931004B726B /* BlurEffectViewController.m in Sources */,
 				91D7D95E208C24BA00607CAF /* aa.c in Sources */,
 				9130FB141D47315D00EE5275 /* LeftEdgeTitleViewController.m in Sources */,
+				9122159E2118576B00C9B598 /* SDCCycleScrollView.m in Sources */,
 				912365941E557BD90062B2E4 /* QRCodeViewController.m in Sources */,
 				91F4FA0D1D6AF0510039EC40 /* FlexSearchBar.m in Sources */,
 				91F55F741EB884C600EC6BBD /* ImageCachePool.m in Sources */,

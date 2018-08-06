@@ -17,22 +17,25 @@ class PageScrollVC: UIViewController {
         let pgV = PageScrollView.init(frame: CGRect.init(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 200))
         self.view.addSubview(pgV)
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let imageVs = ["coupon_placeholder","photo_","map0_"]
+        let banner = SDCCycleScrollView(frame: CGRect(x: 0, y: 300, width: UIScreen.main.bounds.width, height: 200), shouldInfiniteLoop: true, imageGroups: imageVs)
+        banner?.autoScrollTimeInterval = 3;
+        banner?.autoScroll = true;
+        banner?.isZoom = true;
+        banner?.itemSpace = 0;
+        banner?.imgCornerRadius = 0;
+        banner?.itemWidth = self.view.frame.size.width - 100;
+        banner?.delegate = self;
+        self.view.addSubview(banner!)
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension PageScrollVC:DCCycleScrollViewDelegate {
+    func cycleScrollView(_ cycleScrollView: SDCCycleScrollView!, didSelectItemAt index: Int) {
+        print(index)
     }
-    */
-
+    
+    
 }
