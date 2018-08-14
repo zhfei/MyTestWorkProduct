@@ -50,6 +50,13 @@ class SwiftViewController: UIViewController {
             self.view.backgroundColor = UIColor.red
         }
         
+        let sum: ((Int,Int) -> Int) = {(a, b) in
+            return a + b
+        }
+        let res = sum(1, 2)
+        print(res)
+        
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

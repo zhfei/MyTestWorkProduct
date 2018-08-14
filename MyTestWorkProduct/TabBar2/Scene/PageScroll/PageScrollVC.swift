@@ -8,6 +8,66 @@
 
 import UIKit
 
+enum SDCEnumType: Int {
+    case circle = 20
+    case check
+    
+    func enumTypeString(type: SDCEnumType) -> String {
+        switch type {
+        case .circle:
+            return "circle"
+        default:
+            if type.rawValue == 21 {
+                return "check"
+            } else {
+                return "其他情况"
+            }
+        }
+    }
+    
+    enum SDCEnumSubType {
+        case square(SDCEnumType)
+        case ellipse(SDCEnumType)
+    }
+}
+
+struct Animal {
+    let region = "中国"
+    var name: String?
+    var color = UIColor.red
+    
+    init(name: String,color: UIColor) {
+        self.name = name
+        self.color = color
+    }
+    
+    struct Dog {
+        let legNum = 4
+        func run() -> String {
+            return "跑回家"
+        }
+    }
+}
+
+
+protocol Student {
+    var name: String{get set}
+    var age: Int {get}
+    static func study(date:Date) -> Date
+    
+    init(name:String)
+}
+extension Student {
+    var score:Float{
+        return 80.8
+    }
+    
+}
+protocol Childe:Student {
+    
+}
+
+
 class PageScrollVC: UIViewController {
 
     override func viewDidLoad() {
@@ -30,6 +90,11 @@ class PageScrollVC: UIViewController {
         self.view.addSubview(banner!)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        
+    }
+    
 }
 
 extension PageScrollVC:DCCycleScrollViewDelegate {
@@ -39,3 +104,35 @@ extension PageScrollVC:DCCycleScrollViewDelegate {
     
     
 }
+
+struct IntStack{
+    var items = [Int]()
+    //压栈
+    mutating func push(item:Int){
+        items .append(item)
+    }
+    //出栈
+    mutating func pop()->Int{
+        return items.removeLast()
+    }
+}
+
+struct Stack<Ele>{
+    var items = [Ele]()
+    mutating func push(item:Ele){
+        items.append(item)
+    }
+    mutating func pop()->Ele{
+        return items.removeLast()
+    }
+}
+
+
+
+
+
+
+
+
+
+

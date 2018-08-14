@@ -81,6 +81,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         initVPNTunnelProviderManager()
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.VPNStatusDidChange(_:)), name: NSNotification.Name.NEVPNStatusDidChange, object: nil)
+        
+        let title = UILabel()
+        self.view.addSubview(title)
+        title.mas_makeConstraints { (maker) in
+            maker?.size.mas_equalTo()(CGSize(width: 55, height: 55))
+            maker?.centerX.mas_equalTo()(self.view.mas_centerX)
+            maker?.top.mas_equalTo()(41)
+        }
     }
     
     override func didReceiveMemoryWarning() {

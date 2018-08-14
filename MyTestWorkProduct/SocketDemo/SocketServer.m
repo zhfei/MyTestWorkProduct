@@ -52,6 +52,15 @@
     _socket = newSocket; //使用这个newSocket和client通信，客户端方自己也有一个socket与服务器通信，这俩你个socket的建立通信通道是同一个的
 //    self.display.text = [self.display.text stringByAppendingString:@"成功和一个客户端建立连接\n"];
     
+//    (NSInteger)(^SumBlock)(NSInteger, NSInteger) = ^NSInteger(a, b) {
+//        return a + b;
+//    }
+//    sum()
+    
+    int (^SumBlock) (int , int) = ^(int x, int y) {
+        return  x + y;
+    };
+
 }
 
 

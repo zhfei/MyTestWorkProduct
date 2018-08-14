@@ -9,5 +9,12 @@
 import UIKit
 
 class Dog: NSObject {
-
+    let origin: String = "中国"
+    fileprivate var name: String?
+    private var age: Int?
+    
+    init(_ name: String?, age: Int = 1) {
+        self.name = name ?? "旺财"
+        self.age = age
+    }
 }
