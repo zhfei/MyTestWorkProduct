@@ -48,7 +48,7 @@
     self.title=@"CollectionView随机宽高布局";
      self.navigationController.tabBarItem.title=@"Collection";
     // Do any additional setup after loading the view from its nib.
-    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务",@"左边缘标题",@"搜索条",@"GCD测试",@"读写本地数据流",@"分页滚动"];
+    self.dataSource=@[@"FMDB数据库",@"HUD动画",@"swizzing",@"弹性列表",@"collection表头",@"动画",@"转场动画",@"蓝牙",@"外围服务",@"中心服务",@"左边缘标题",@"搜索条",@"GCD测试",@"读写本地数据流",@"分页滚动",@"轴线列表"];
     
 //    NSDictionary *dict= [NSArray pinYinGroupSortWithArray:self.dataSource];
     
@@ -204,7 +204,12 @@
     }else if (indexPath.row==14){
         PageScrollVC *psVC =[[PageScrollVC alloc]init];
         [self.navigationController pushViewController:psVC animated:YES];
+    }else if (indexPath.row==15){
+        AxisListViewController *alVC =[[AxisListViewController alloc]init];
+        [self.navigationController pushViewController:alVC animated:YES];
     }
+    
+    
  
 }
 //返回这个UICollectionView是否可以被选择

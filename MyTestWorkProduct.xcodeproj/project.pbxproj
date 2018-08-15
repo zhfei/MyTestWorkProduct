@@ -22,6 +22,11 @@
 		91071DD81EBF143F006CF932 /* AtCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DD71EBF143F006CF932 /* AtCarLicenseFactory.m */; };
 		91071DDB1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91071DDA1EBF15A7006CF932 /* AtBeiJingCarLicenseFactory.m */; };
 		9107D85A1F67C44E0024C1DD /* Models.m in Sources */ = {isa = PBXBuildFile; fileRef = 9107D8591F67C44E0024C1DD /* Models.m */; };
+		91080109212289C600698A5D /* AxisListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91080107212289C600698A5D /* AxisListViewController.swift */; };
+		9108010A212289C600698A5D /* AxisListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91080108212289C600698A5D /* AxisListViewController.xib */; };
+		910801132122D5C800698A5D /* AxisCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910801112122D5C800698A5D /* AxisCollectionVC.swift */; };
+		910801142122D5C800698A5D /* AxisCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910801122122D5C800698A5D /* AxisCollectionVC.xib */; };
+		910801162122DB1500698A5D /* AxisFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910801152122DB1500698A5D /* AxisFlowLayout.swift */; };
 		910AC4E71D200DFE0094A250 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 910AC4E61D200DFE0094A250 /* UIDevice+Hardware.m */; };
 		910BC4981EBED04F00D7628F /* CarLicenseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC4971EBED04F00D7628F /* CarLicenseFactory.m */; };
 		910BC49B1EBED27400D7628F /* BlueCarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BC49A1EBED27400D7628F /* BlueCarLicense.m */; };
@@ -152,6 +157,7 @@
 		91489E9C1F28898B00B23579 /* ImageCachePoolVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91489E9A1F28898B00B23579 /* ImageCachePoolVC.xib */; };
 		91489EA01F288C2400B23579 /* ICPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */; };
 		91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */; };
+		914BADB42123C2F400B7A4D7 /* AxisScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BADB32123C2F400B7A4D7 /* AxisScrollView.swift */; };
 		914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */; };
 		914F854C20C776DD00C9BC4E /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F854B20C776DD00C9BC4E /* SwiftViewController.swift */; };
 		914F854E20C7770000C9BC4E /* PersonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F854D20C7770000C9BC4E /* PersonClass.swift */; };
@@ -602,6 +608,11 @@
 		9107D8581F67C44E0024C1DD /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		9107D8591F67C44E0024C1DD /* Models.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Models.m; sourceTree = "<group>"; };
 		9107D85F1F67C80B0024C1DD /* MultiModelNestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiModelNestProtocol.h; sourceTree = "<group>"; };
+		91080107212289C600698A5D /* AxisListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisListViewController.swift; sourceTree = "<group>"; };
+		91080108212289C600698A5D /* AxisListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AxisListViewController.xib; sourceTree = "<group>"; };
+		910801112122D5C800698A5D /* AxisCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisCollectionVC.swift; sourceTree = "<group>"; };
+		910801122122D5C800698A5D /* AxisCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AxisCollectionVC.xib; sourceTree = "<group>"; };
+		910801152122DB1500698A5D /* AxisFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisFlowLayout.swift; sourceTree = "<group>"; };
 		910AC4E51D200DFE0094A250 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		910AC4E61D200DFE0094A250 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		910BC4961EBED04F00D7628F /* CarLicenseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLicenseFactory.h; sourceTree = "<group>"; };
@@ -841,6 +852,7 @@
 		91489E9D1F288C2400B23579 /* ICPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPCollectionViewCell.h; sourceTree = "<group>"; };
 		91489E9E1F288C2400B23579 /* ICPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPCollectionViewCell.m; sourceTree = "<group>"; };
 		91489E9F1F288C2400B23579 /* ICPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICPCollectionViewCell.xib; sourceTree = "<group>"; };
+		914BADB32123C2F400B7A4D7 /* AxisScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisScrollView.swift; sourceTree = "<group>"; };
 		914F1E9E1EE4F68200BAB5A1 /* RedCircelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedCircelLabel.h; sourceTree = "<group>"; };
 		914F1E9F1EE4F68200BAB5A1 /* RedCircelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedCircelLabel.m; sourceTree = "<group>"; };
 		914F854B20C776DD00C9BC4E /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
@@ -1428,6 +1440,19 @@
 				9107D8591F67C44E0024C1DD /* Models.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		91080106212289AA00698A5D /* AxisList */ = {
+			isa = PBXGroup;
+			children = (
+				91080107212289C600698A5D /* AxisListViewController.swift */,
+				91080108212289C600698A5D /* AxisListViewController.xib */,
+				910801112122D5C800698A5D /* AxisCollectionVC.swift */,
+				910801122122D5C800698A5D /* AxisCollectionVC.xib */,
+				910801152122DB1500698A5D /* AxisFlowLayout.swift */,
+				914BADB32123C2F400B7A4D7 /* AxisScrollView.swift */,
+			);
+			path = AxisList;
 			sourceTree = "<group>";
 		};
 		910BC4A11EBEE2B100D7628F /* Factory */ = {
@@ -2804,6 +2829,7 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				91080106212289AA00698A5D /* AxisList */,
 				91695ED620FDC7320026BDC1 /* PageScroll */,
 				911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */,
 				912365901E557BC00062B2E4 /* QRCode */,
@@ -3538,6 +3564,7 @@
 				917383C91DCB8CAD00FC59BE /* libReveal.dylib in Resources */,
 				DCCB0A5C1F30D2630065D572 /* check.sh in Resources */,
 				9150AA5920863350000D1E39 /* StoryBoardViewController.storyboard in Resources */,
+				910801142122D5C800698A5D /* AxisCollectionVC.xib in Resources */,
 				91AE59041ED8368B00FD53F8 /* ShoppingCartBar.xib in Resources */,
 				DC37E3961F45F5F000F1D905 /* test0.py in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
@@ -3576,6 +3603,7 @@
 				91DC45021BE7A60900E86CC0 /* Assets.xcassets in Resources */,
 				91407FEE20C8096400713C35 /* GPUImageViewController.xib in Resources */,
 				9140D2001D0678360033BA62 /* choose_framework_icon@2x.png in Resources */,
+				9108010A212289C600698A5D /* AxisListViewController.xib in Resources */,
 				9116A16D1ED6D14B005D515C /* CommodityCell.xib in Resources */,
 				91489EA11F288C2400B23579 /* ICPCollectionViewCell.xib in Resources */,
 				DC84E0201EC4B63600FBE3E8 /* FacadeVC.xib in Resources */,
@@ -3857,6 +3885,7 @@
 				911F2ADF1E5C7B140057FE33 /* HUDView.m in Sources */,
 				91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */,
 				913D7EB01C92BFA200A862A4 /* MJRefreshNormalHeader.m in Sources */,
+				914BADB42123C2F400B7A4D7 /* AxisScrollView.swift in Sources */,
 				91E8DE7D1EC199360068C166 /* StAVPlayer.m in Sources */,
 				919B397D20C6B7CC00257E38 /* NSString+RegularExp.m in Sources */,
 				911F2AB81E5C77480057FE33 /* UIButton+Badge.m in Sources */,
@@ -3869,6 +3898,7 @@
 				9122159D2118576B00C9B598 /* SDCCycleScrollViewCell.m in Sources */,
 				9102AB011C4F36E0008D8C28 /* NSString+UUID.m in Sources */,
 				91EC16801D01BFC7000322B5 /* BoundFlowLayout.m in Sources */,
+				910801132122D5C800698A5D /* AxisCollectionVC.swift in Sources */,
 				912635001FE3929E007802D1 /* DelaySwitchViewController.m in Sources */,
 				91FC89161D0074F300527C4B /* CollectionViewController.m in Sources */,
 				918930A31E653FAF007D6879 /* XFileManager.m in Sources */,
@@ -3968,6 +3998,7 @@
 				DC84E0121EC4B45600FBE3E8 /* Finance.m in Sources */,
 				9150384B1FE7A3AF008ECA28 /* AbroadShoppingHomeHeaderView.m in Sources */,
 				913D7EA81C92BFA200A862A4 /* MJRefreshHeader.m in Sources */,
+				910801162122DB1500698A5D /* AxisFlowLayout.swift in Sources */,
 				DC84E0031EC4A9E300FBE3E8 /* BuickBuilder.m in Sources */,
 				9150384E1FE7A3D1008ECA28 /* AbroadSelectGoodsViewCell.m in Sources */,
 				91E4B3C21C3C086E001DD5B2 /* FMDatabase.m in Sources */,
@@ -4006,6 +4037,7 @@
 				91F650951D34E36400212FD0 /* BluetoothViewController.m in Sources */,
 				911B79781F340CDE0076CC36 /* CirculateModel.m in Sources */,
 				911F2AB71E5C77480057FE33 /* NSObject+RunTime.m in Sources */,
+				91080109212289C600698A5D /* AxisListViewController.swift in Sources */,
 				91F90D841C77068300215E3B /* AFURLSessionManager.m in Sources */,
 				91DC44F71BE7A60900E86CC0 /* main.m in Sources */,
 				91E9C2D11C0802DA0044D617 /* UIImage+FontAwesome.m in Sources */,
