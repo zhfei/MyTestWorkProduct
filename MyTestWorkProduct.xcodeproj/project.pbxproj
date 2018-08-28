@@ -179,6 +179,10 @@
 		916002C51EF64B5B00071E10 /* gradientView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C41EF64B5B00071E10 /* gradientView1.m */; };
 		916002C81EF6832900071E10 /* gradientView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C71EF6832900071E10 /* gradientView2.m */; };
 		916002CB1EF685E800071E10 /* gradientView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002CA1EF685E800071E10 /* gradientView3.m */; };
+		91616D472134E7990090D9DA /* HideNagationBarVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91616D462134E7990090D9DA /* HideNagationBarVC1.swift */; };
+		91616D492134E7AB0090D9DA /* HideNagationBarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91616D482134E7AB0090D9DA /* HideNagationBarVC.storyboard */; };
+		91616D4B2134E8970090D9DA /* HideNagationBarVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91616D4A2134E8970090D9DA /* HideNagationBarVC2.swift */; };
+		91616D4D2134E8A20090D9DA /* HideNagationBarVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91616D4C2134E8A20090D9DA /* HideNagationBarVC3.swift */; };
 		9167A7232084DC8000EFAA36 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */; };
 		9167A72A2084DD0400EFAA36 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */; };
 		9167A72B2084DD0400EFAA36 /* JavaScriptCoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9167A7292084DD0400EFAA36 /* JavaScriptCoreViewController.xib */; };
@@ -892,6 +896,10 @@
 		916002C71EF6832900071E10 /* gradientView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView2.m; sourceTree = "<group>"; };
 		916002C91EF685E800071E10 /* gradientView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gradientView3.h; sourceTree = "<group>"; };
 		916002CA1EF685E800071E10 /* gradientView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gradientView3.m; sourceTree = "<group>"; };
+		91616D462134E7990090D9DA /* HideNagationBarVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNagationBarVC1.swift; sourceTree = "<group>"; };
+		91616D482134E7AB0090D9DA /* HideNagationBarVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HideNagationBarVC.storyboard; sourceTree = "<group>"; };
+		91616D4A2134E8970090D9DA /* HideNagationBarVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNagationBarVC2.swift; sourceTree = "<group>"; };
+		91616D4C2134E8A20090D9DA /* HideNagationBarVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNagationBarVC3.swift; sourceTree = "<group>"; };
 		9167A7222084DC8000EFAA36 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9167A7272084DD0400EFAA36 /* JavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreViewController.h; sourceTree = "<group>"; };
 		9167A7282084DD0400EFAA36 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
@@ -2145,6 +2153,17 @@
 			path = SubView;
 			sourceTree = "<group>";
 		};
+		91616D452134E6760090D9DA /* HideNagationBar */ = {
+			isa = PBXGroup;
+			children = (
+				91616D462134E7990090D9DA /* HideNagationBarVC1.swift */,
+				91616D4A2134E8970090D9DA /* HideNagationBarVC2.swift */,
+				91616D4C2134E8A20090D9DA /* HideNagationBarVC3.swift */,
+				91616D482134E7AB0090D9DA /* HideNagationBarVC.storyboard */,
+			);
+			path = HideNagationBar;
+			sourceTree = "<group>";
+		};
 		9167A7262084DCE900EFAA36 /* JavaScriptCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -2829,6 +2848,7 @@
 		91DC45B71BE7C05600E86CC0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				91616D452134E6760090D9DA /* HideNagationBar */,
 				91080106212289AA00698A5D /* AxisList */,
 				91695ED620FDC7320026BDC1 /* PageScroll */,
 				911CBA321E5DD46E00C3AE53 /* ModelDictionaryTransfer */,
@@ -3618,6 +3638,7 @@
 				91C5FAAA1EC42AEE006F3A02 /* TemplateVC.xib in Resources */,
 				912365951E557BD90062B2E4 /* QRCodeViewController.xib in Resources */,
 				91D788861BF0C28B0026A18E /* MyCollectionCell.xib in Resources */,
+				91616D492134E7AB0090D9DA /* HideNagationBarVC.storyboard in Resources */,
 				91C5FA9C1EC41266006F3A02 /* Template in Resources */,
 				916820F320BC63C40005656A /* PizzleView.xib in Resources */,
 				91E9C2C11C0801B60044D617 /* FontAwesome.ttf in Resources */,
@@ -3886,11 +3907,13 @@
 				91CA66AA1C60AA8100259935 /* UserLoginInfo.m in Sources */,
 				913D7EB01C92BFA200A862A4 /* MJRefreshNormalHeader.m in Sources */,
 				914BADB42123C2F400B7A4D7 /* AxisScrollView.swift in Sources */,
+				91616D4D2134E8A20090D9DA /* HideNagationBarVC3.swift in Sources */,
 				91E8DE7D1EC199360068C166 /* StAVPlayer.m in Sources */,
 				919B397D20C6B7CC00257E38 /* NSString+RegularExp.m in Sources */,
 				911F2AB81E5C77480057FE33 /* UIButton+Badge.m in Sources */,
 				91E4B3C61C3C086E001DD5B2 /* FMResultSet.m in Sources */,
 				91F90D7C1C77068300215E3B /* AFHTTPRequestOperation.m in Sources */,
+				91616D4B2134E8970090D9DA /* HideNagationBarVC2.swift in Sources */,
 				913D7EB41C92BFA200A862A4 /* UIScrollView+MJExtension.m in Sources */,
 				91E4B3C51C3C086E001DD5B2 /* FMDatabaseQueue.m in Sources */,
 				91DD18731C45568900B0FF70 /* UIView+RNActivityView.m in Sources */,
@@ -3984,6 +4007,7 @@
 				DC84E0151EC4B48B00FBE3E8 /* Sales.m in Sources */,
 				91DC45791BE7B59200E86CC0 /* ChineseString.m in Sources */,
 				913D7EB61C92BFA200A862A4 /* UIView+MJExtension.m in Sources */,
+				91616D472134E7990090D9DA /* HideNagationBarVC1.swift in Sources */,
 				DC84E01B1EC4B4F500FBE3E8 /* 4SWaiter.m in Sources */,
 				9143540B1E026D1E00608E58 /* GCDTestViewController.m in Sources */,
 				91DD18721C45568900B0FF70 /* RNActivityView.m in Sources */,
