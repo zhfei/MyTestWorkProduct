@@ -30,6 +30,7 @@
 #import "LocalNotificationViewController.h"
 #import "JavaScriptCoreViewController.h"
 #import "StoryBoardViewController.h"
+#import "QRCodeScanViewController.h"
 #import "MyTestWorkProduct-Swift.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -296,6 +297,10 @@
         case 20: {
             HollowOutVC * hovc = [HollowOutVC new];
             [self.navigationController pushViewController:hovc animated:YES];
+        }
+        case 21: {
+            QRCodeScanViewController * qrvc = [QRCodeScanViewController new];
+            [self.navigationController pushViewController:qrvc animated:YES];
         }
             
             

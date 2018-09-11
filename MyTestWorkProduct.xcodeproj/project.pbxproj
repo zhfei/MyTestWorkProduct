@@ -173,6 +173,8 @@
 		9150AA5920863350000D1E39 /* StoryBoardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9150AA5820863350000D1E39 /* StoryBoardViewController.storyboard */; };
 		9150AA5C208639EB000D1E39 /* StoryBoardVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9150AA5B208639EB000D1E39 /* StoryBoardVC2.m */; };
 		9153F6221ED98C2E00D729E3 /* ShoppingCartAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */; };
+		915995C3214614E900237E63 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915995C2214614E900237E63 /* QRCodeScanViewController.m */; };
+		915995C62146535F00237E63 /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915995C52146535F00237E63 /* CameraView.m */; };
 		915B49A220C65B6300217D14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915B49A020C65B6200217D14 /* AppDelegate.m */; };
 		915B49A520C65B6E00217D14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915B49A320C65B6D00217D14 /* ViewController.m */; };
 		916002C11EF6496F00071E10 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916002C01EF6496F00071E10 /* GradientViewController.m */; };
@@ -884,6 +886,10 @@
 		9150AA5B208639EB000D1E39 /* StoryBoardVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardVC2.m; sourceTree = "<group>"; };
 		9153F6201ED98C2E00D729E3 /* ShoppingCartAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartAnimation.h; sourceTree = "<group>"; };
 		9153F6211ED98C2E00D729E3 /* ShoppingCartAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartAnimation.m; sourceTree = "<group>"; };
+		915995C1214614E900237E63 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
+		915995C2214614E900237E63 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
+		915995C42146535F00237E63 /* CameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
+		915995C52146535F00237E63 /* CameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
 		915B49A020C65B6200217D14 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MyTestWorkProduct/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		915B49A120C65B6200217D14 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MyTestWorkProduct/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		915B49A320C65B6D00217D14 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MyTestWorkProduct/ViewController.m; sourceTree = SOURCE_ROOT; };
@@ -1323,6 +1329,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F0724A1CA1811C007923EC /* AVFoundation.framework in Frameworks */,
 				9167A7232084DC8000EFAA36 /* JavaScriptCore.framework in Frameworks */,
 				DC8D14231E7E4EC1009EA61E /* BaiduMapAPI_Radar.framework in Frameworks */,
 				9144B6BA1CAB611B003146B2 /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -1342,7 +1349,6 @@
 				91F0724E1CA18143007923EC /* Foundation.framework in Frameworks */,
 				91F0724C1CA18129007923EC /* CoreLocation.framework in Frameworks */,
 				91BEE56420EF55870024F3A7 /* TestFrwork.framework in Frameworks */,
-				91F0724A1CA1811C007923EC /* AVFoundation.framework in Frameworks */,
 				DC8D14251E7E4EC1009EA61E /* BaiduMapAPI_Utils.framework in Frameworks */,
 				91F072481CA18103007923EC /* QuartzCore.framework in Frameworks */,
 				91F072461CA180F5007923EC /* UIKit.framework in Frameworks */,
@@ -2128,6 +2134,17 @@
 				9150AA5B208639EB000D1E39 /* StoryBoardVC2.m */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		915995BC21460FA700237E63 /* QRCodeScan */ = {
+			isa = PBXGroup;
+			children = (
+				915995C1214614E900237E63 /* QRCodeScanViewController.h */,
+				915995C2214614E900237E63 /* QRCodeScanViewController.m */,
+				915995C42146535F00237E63 /* CameraView.h */,
+				915995C52146535F00237E63 /* CameraView.m */,
+			);
+			path = QRCodeScan;
 			sourceTree = "<group>";
 		};
 		916002BE1EF648D500071E10 /* Gradient */ = {
@@ -3292,6 +3309,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				915995BC21460FA700237E63 /* QRCodeScan */,
 				91A3E21120D366480059FD56 /* HollowOut */,
 				916820EE20BC63B00005656A /* ImageClipe */,
 				91D7D94F208C1E1000607CAF /* OC:Swift:C:C++ */,
@@ -3937,6 +3955,7 @@
 				91E032C11C3E607D0083842B /* Person.m in Sources */,
 				914F1EA01EE4F68200BAB5A1 /* RedCircelLabel.m in Sources */,
 				DC594A161E5B3D580043845D /* SingletonViewController.m in Sources */,
+				915995C62146535F00237E63 /* CameraView.m in Sources */,
 				91DC456F1BE7B17000E86CC0 /* UIScrollView+YYAdditions.m in Sources */,
 				91F806831F555C5400818B50 /* CalculateTool.m in Sources */,
 				91E9C2CF1C0802DA0044D617 /* NSString+FontAwesome.m in Sources */,
@@ -3985,6 +4004,7 @@
 				915038441FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m in Sources */,
 				DC8E672C1EFEBDF200691D6A /* DrawRectView2.m in Sources */,
 				9150383B1FE79A59008ECA28 /* AbroadShoppingHomeViewController.m in Sources */,
+				915995C3214614E900237E63 /* QRCodeScanViewController.m in Sources */,
 				91E4B3C41C3C086E001DD5B2 /* FMDatabasePool.m in Sources */,
 				917952601ED599D400193487 /* TestVC2.m in Sources */,
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
@@ -4280,6 +4300,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4321,6 +4342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -4697,6 +4719,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4742,6 +4765,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -4756,6 +4780,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7UNH8293N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4796,6 +4821,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.MyTestWorkProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyTestWorkProduct/MyTestWorkProduct-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
