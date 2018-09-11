@@ -42,6 +42,11 @@ typedef void(^ScanResultBlock)(NSString *result);
     }];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self stopRunning];
+}
+
 - (void)loadScanView {
     //1.初始化捕捉设备（AVCaptureDevice），类型为AVMediaTypeVideo
     AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -76,7 +81,7 @@ typedef void(^ScanResultBlock)(NSString *result);
     CGFloat scaleY = (1-(scaleHeigh))*0.5;
     _boxView = [[UIView alloc] initWithFrame:CGRectMake(_viewPreview.bounds.size.width * scaleX, _viewPreview.bounds.size.height*scaleY, _viewPreview.bounds.size.width - _viewPreview.bounds.size.width * scaleX*2, _viewPreview.bounds.size.height - _viewPreview.bounds.size.height * scaleY*2)];
     //10.设置扫描范围
-    output.rectOfInterest = CGRectMake(scaleX, scaleY, scaleWidth, scaleHeigh);
+    output.rectOfInterest = CGRectMake(0.2f, 0.2f, 0.8f, 0.8f);
     [_viewPreview addSubview:_boxView];
     
     _scanLayer = [[CALayer alloc] init];
