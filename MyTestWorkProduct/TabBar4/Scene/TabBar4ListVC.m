@@ -9,6 +9,8 @@
 #import "TabBar4ListVC.h"
 #import "TabBar4ListCell.h"
 #import "TabBar4ListViewModel.h"
+#import "UIViewController+Pro.h"
+#import "MyTestWorkProduct-Swift.h"
 
 @interface TabBar4ListVC ()
 @property (strong, nonatomic) TabBar4ListViewModel *viewModel;
@@ -46,12 +48,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TabBar4ListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TabBar4ListCell" forIndexPath:indexPath];
-    
-    // si_science0
-    cell.flag.image = [UIImage imageNamed:[NSString stringWithFormat:@"si_science%d",arc4random_uniform(8)]];
-    cell.title.text = self.viewModel.dataSouce[indexPath.row];
-    
+    cell.imageName = [NSString stringWithFormat:@"si_science%d",arc4random_uniform(8)];
+    NSDictionary *dict = self.viewModel.dataSouce[indexPath.row];
+    cell.title.text = dict.allValues[0];
     return cell;
+}
+
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dict = self.viewModel.dataSouce[indexPath.row];
+    UIViewController *desVC = [[UIStoryboard storyboardWithName:@"TabBar4SubViewController" bundle:nil] instantiateViewControllerWithIdentifier:dict.allKeys[0]];
+    [desVC setAssist:[(TabBar4ListCell *)[tableView cellForRowAtIndexPath:indexPath] imageName]];
+    [self.navigationController pushViewController:desVC animated:YES];
 }
 
 

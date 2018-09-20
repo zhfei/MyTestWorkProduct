@@ -11,5 +11,6 @@
 @interface TabBar4ListCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UIImageView *flag;
+@property (strong, nonatomic) NSString *imageName;
 
 @end

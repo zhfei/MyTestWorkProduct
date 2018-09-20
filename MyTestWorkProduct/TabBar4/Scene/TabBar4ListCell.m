@@ -21,4 +21,9 @@
     // Configure the view for the selected state
 }
 
+-(void)setImageName:(NSString *)imageName {
+    _imageName = imageName;
+    self.flag.image = [UIImage imageNamed:imageName];
+}
+
 @end

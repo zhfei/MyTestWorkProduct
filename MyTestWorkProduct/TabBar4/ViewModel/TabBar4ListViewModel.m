@@ -15,7 +15,7 @@
 @implementation TabBar4ListViewModel
 + (instancetype)viewModel {
     TabBar4ListViewModel *obj = [self new];
-    obj.tabBar4ListDataes = @[@"高价函数"];
+    obj.tabBar4ListDataes = @[@{@"HigherOrderFuncVC":@"高价函数"}];
     return obj;
 }
 - (NSArray<NSString *> *)dataSouce {

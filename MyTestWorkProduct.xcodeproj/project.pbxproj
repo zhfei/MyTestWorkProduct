@@ -233,6 +233,9 @@
 		91918F6E215342E9002C42F1 /* TabBar4ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F6D215342E9002C42F1 /* TabBar4ListVC.m */; };
 		91918F712153446E002C42F1 /* TabBar4ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F702153446E002C42F1 /* TabBar4ListCell.m */; };
 		91918F7421537312002C42F1 /* TabBar4ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F7321537312002C42F1 /* TabBar4ListViewModel.m */; };
+		91918F77215376F6002C42F1 /* HigherOrderFuncVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91918F76215376F6002C42F1 /* HigherOrderFuncVC.swift */; };
+		91918F7921537770002C42F1 /* TabBar4SubViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91918F7821537770002C42F1 /* TabBar4SubViewController.storyboard */; };
+		91918F7D21537EBC002C42F1 /* UIViewController+Pro.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F7C21537EBC002C42F1 /* UIViewController+Pro.m */; };
 		919B397D20C6B7CC00257E38 /* NSString+RegularExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 919B397C20C6B7CC00257E38 /* NSString+RegularExp.m */; };
 		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
 		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
@@ -996,6 +999,10 @@
 		91918F702153446E002C42F1 /* TabBar4ListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar4ListCell.m; sourceTree = "<group>"; };
 		91918F7221537312002C42F1 /* TabBar4ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBar4ListViewModel.h; sourceTree = "<group>"; };
 		91918F7321537312002C42F1 /* TabBar4ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar4ListViewModel.m; sourceTree = "<group>"; };
+		91918F76215376F6002C42F1 /* HigherOrderFuncVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigherOrderFuncVC.swift; sourceTree = "<group>"; };
+		91918F7821537770002C42F1 /* TabBar4SubViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar4SubViewController.storyboard; sourceTree = "<group>"; };
+		91918F7B21537E3D002C42F1 /* UIViewController+Pro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Pro.h"; sourceTree = "<group>"; };
+		91918F7C21537EBC002C42F1 /* UIViewController+Pro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Pro.m"; sourceTree = "<group>"; };
 		919B397B20C6B7CC00257E38 /* NSString+RegularExp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExp.h"; sourceTree = "<group>"; };
 		919B397C20C6B7CC00257E38 /* NSString+RegularExp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExp.m"; sourceTree = "<group>"; };
 		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
@@ -1874,6 +1881,8 @@
 				91F6E2DF1D1BE14B00A5A587 /* NSDate+IntervalSeconds.m */,
 				919B397B20C6B7CC00257E38 /* NSString+RegularExp.h */,
 				919B397C20C6B7CC00257E38 /* NSString+RegularExp.m */,
+				91918F7B21537E3D002C42F1 /* UIViewController+Pro.h */,
+				91918F7C21537EBC002C42F1 /* UIViewController+Pro.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2087,6 +2096,7 @@
 		915038371FE79A14008ECA28 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91918F75215376D9002C42F1 /* HigherOrderFuncVC */,
 				915038381FE79A59008ECA28 /* AbroadShoppingHomeViewController.h */,
 				915038391FE79A59008ECA28 /* AbroadShoppingHomeViewController.m */,
 				9150383A1FE79A59008ECA28 /* AbroadShoppingHomeViewController.xib */,
@@ -2407,6 +2417,14 @@
 				918930AA1E653FCF007D6879 /* ModelJSON.m */,
 			);
 			path = ModelJSON;
+			sourceTree = "<group>";
+		};
+		91918F75215376D9002C42F1 /* HigherOrderFuncVC */ = {
+			isa = PBXGroup;
+			children = (
+				91918F76215376F6002C42F1 /* HigherOrderFuncVC.swift */,
+			);
+			path = HigherOrderFuncVC;
 			sourceTree = "<group>";
 		};
 		919CAB9D1EAB1BE200519412 /* DispatchGroup */ = {
@@ -2947,6 +2965,7 @@
 				91918F702153446E002C42F1 /* TabBar4ListCell.m */,
 				919E075F2151F6FF00FEEF66 /* TabBar4ViewController.storyboard */,
 				919E07612152576E00FEEF66 /* TabBar4ViewController2.storyboard */,
+				91918F7821537770002C42F1 /* TabBar4SubViewController.storyboard */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -3693,6 +3712,7 @@
 				DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */,
 				910BC4AF1EBF084700D7628F /* AbstractFactory in Resources */,
 				DC8E67251EFEB9B200691D6A /* DrawRectViewController.xib in Resources */,
+				91918F7921537770002C42F1 /* TabBar4SubViewController.storyboard in Resources */,
 				91F26B071CF9529000D5C3DC /* user_header_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4009,6 +4029,7 @@
 				91F90D811C77068300215E3B /* AFURLConnectionOperation.m in Sources */,
 				919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */,
 				9141F3B51EC017BF0078E71E /* NewPlayer.m in Sources */,
+				91918F77215376F6002C42F1 /* HigherOrderFuncVC.swift in Sources */,
 				9102E08F1C8541D50086D752 /* XDownLoadProgressView.m in Sources */,
 				91F90D831C77068300215E3B /* AFURLResponseSerialization.m in Sources */,
 				913D7EBC1C92C07100A862A4 /* CircleProgressView.m in Sources */,
@@ -4084,6 +4105,7 @@
 				91C6C4311F95F443005BC0C4 /* NSObject+MethodCalledKVO.m in Sources */,
 				91071DD51EBF1299006CF932 /* Tools.m in Sources */,
 				91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */,
+				91918F7D21537EBC002C42F1 /* UIViewController+Pro.m in Sources */,
 				91D7D952208C1E5100607CAF /* OC_Swift_C_C++_VC.m in Sources */,
 				91695EDD20FDC8580026BDC1 /* PageScrollView.m in Sources */,
 				91C5FAA51EC413D2006F3A02 /* TpNewPlayer.m in Sources */,
