@@ -74,9 +74,9 @@
     nav3.tabBarItem.image=[UIImage imageNamed:@"tab03_"];
     nav3.tabBarItem.selectedImage=[UIImage imageNamed:@"tabPre03_"];
     
-    TabBar4ViewController *tab4=[[TabBar4ViewController alloc]init];
+    TabBar4ViewController *tab4=[[UIStoryboard storyboardWithName:@"TabBar4ViewController" bundle:nil] instantiateInitialViewController];
     MyNavigationtroller *nav4=[[MyNavigationtroller alloc]initWithRootViewController:tab4];
-    nav4.title=@"第四项";
+    tab4.title = @"算法";
     nav4.tabBarItem.image=[UIImage imageNamed:@"tab04_"];
     nav4.tabBarItem.selectedImage=[UIImage imageNamed:@"tabPre04_"];
     

@@ -230,9 +230,14 @@
 		918930A71E653FAF007D6879 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930811E653FAF007D6879 /* Utilities.m */; };
 		918930A81E653FAF007D6879 /* XSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9189309D1E653FAF007D6879 /* XSqliteManager.m */; };
 		918930AB1E653FCF007D6879 /* ModelJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 918930AA1E653FCF007D6879 /* ModelJSON.m */; };
+		91918F6E215342E9002C42F1 /* TabBar4ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F6D215342E9002C42F1 /* TabBar4ListVC.m */; };
+		91918F712153446E002C42F1 /* TabBar4ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F702153446E002C42F1 /* TabBar4ListCell.m */; };
+		91918F7421537312002C42F1 /* TabBar4ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91918F7321537312002C42F1 /* TabBar4ListViewModel.m */; };
 		919B397D20C6B7CC00257E38 /* NSString+RegularExp.m in Sources */ = {isa = PBXBuildFile; fileRef = 919B397C20C6B7CC00257E38 /* NSString+RegularExp.m */; };
 		919CABA11EAB1C0500519412 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */; };
 		919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */; };
+		919E07602151F6FF00FEEF66 /* TabBar4ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919E075F2151F6FF00FEEF66 /* TabBar4ViewController.storyboard */; };
+		919E07622152576E00FEEF66 /* TabBar4ViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919E07612152576E00FEEF66 /* TabBar4ViewController2.storyboard */; };
 		91A3E21320D3666D0059FD56 /* HollowOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3E21220D3666D0059FD56 /* HollowOutVC.swift */; };
 		91A9C6FA1FD1287E00F2F01A /* EditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */; };
 		91A9C6FB1FD1287E00F2F01A /* EditTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9C6F91FD1287E00F2F01A /* EditTableViewController.xib */; };
@@ -301,7 +306,6 @@
 		91DC45CC1BE7C0C700E86CC0 /* TabBar3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DC45CA1BE7C0C700E86CC0 /* TabBar3ViewController.m */; };
 		91DC45CD1BE7C0C700E86CC0 /* TabBar3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DC45CB1BE7C0C700E86CC0 /* TabBar3ViewController.xib */; };
 		91DC45D11BE7C0F600E86CC0 /* TabBar4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DC45CF1BE7C0F600E86CC0 /* TabBar4ViewController.m */; };
-		91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DC45D01BE7C0F600E86CC0 /* TabBar4ViewController.xib */; };
 		91DD18721C45568900B0FF70 /* RNActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD186F1C45568900B0FF70 /* RNActivityView.m */; };
 		91DD18731C45568900B0FF70 /* UIView+RNActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DD18711C45568900B0FF70 /* UIView+RNActivityView.m */; };
 		91DE33E11C3FD04F00125B25 /* AnimationScene2.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE33DF1C3FD04F00125B25 /* AnimationScene2.m */; };
@@ -491,7 +495,6 @@
 		91FE25C71CB219AE001C6DF0 /* Bugtags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91022A481CACE1470084DC67 /* Bugtags.bundle */; };
 		91FE25C81CB219AE001C6DF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DC45031BE7A60900E86CC0 /* LaunchScreen.storyboard */; };
 		91FE25CA1CB219AE001C6DF0 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 913D7E9A1C92BFA200A862A4 /* MJRefresh.bundle */; };
-		91FE25CC1CB219AE001C6DF0 /* TabBar4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DC45D01BE7C0F600E86CC0 /* TabBar4ViewController.xib */; };
 		91FE25CD1CB219AE001C6DF0 /* TabBar3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DC45CB1BE7C0C700E86CC0 /* TabBar3ViewController.xib */; };
 		91FE25CE1CB219AE001C6DF0 /* TabBar5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91DAB0EF1BE90CA0006695B7 /* TabBar5ViewController.xib */; };
 		91FE25CF1CB219AE001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FE24C11CB20151001C6DF0 /* AutoLayoutAnimViewController.xib */; };
@@ -987,11 +990,19 @@
 		9189309D1E653FAF007D6879 /* XSqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSqliteManager.m; sourceTree = "<group>"; };
 		918930A91E653FCF007D6879 /* ModelJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelJSON.h; sourceTree = "<group>"; };
 		918930AA1E653FCF007D6879 /* ModelJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelJSON.m; sourceTree = "<group>"; };
+		91918F6C215342E9002C42F1 /* TabBar4ListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBar4ListVC.h; sourceTree = "<group>"; };
+		91918F6D215342E9002C42F1 /* TabBar4ListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar4ListVC.m; sourceTree = "<group>"; };
+		91918F6F2153446E002C42F1 /* TabBar4ListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBar4ListCell.h; sourceTree = "<group>"; };
+		91918F702153446E002C42F1 /* TabBar4ListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar4ListCell.m; sourceTree = "<group>"; };
+		91918F7221537312002C42F1 /* TabBar4ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBar4ListViewModel.h; sourceTree = "<group>"; };
+		91918F7321537312002C42F1 /* TabBar4ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar4ListViewModel.m; sourceTree = "<group>"; };
 		919B397B20C6B7CC00257E38 /* NSString+RegularExp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RegularExp.h"; sourceTree = "<group>"; };
 		919B397C20C6B7CC00257E38 /* NSString+RegularExp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExp.m"; sourceTree = "<group>"; };
 		919CAB9E1EAB1C0500519412 /* DispatchGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
 		919CAB9F1EAB1C0500519412 /* DispatchGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
 		919CABA01EAB1C0500519412 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
+		919E075F2151F6FF00FEEF66 /* TabBar4ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar4ViewController.storyboard; sourceTree = "<group>"; };
+		919E07612152576E00FEEF66 /* TabBar4ViewController2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar4ViewController2.storyboard; sourceTree = "<group>"; };
 		91A3E21220D3666D0059FD56 /* HollowOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollowOutVC.swift; sourceTree = "<group>"; };
 		91A9C6F71FD1287E00F2F01A /* EditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
 		91A9C6F81FD1287E00F2F01A /* EditTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTableViewController.m; sourceTree = "<group>"; };
@@ -1112,7 +1123,6 @@
 		91DC45CB1BE7C0C700E86CC0 /* TabBar3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBar3ViewController.xib; sourceTree = "<group>"; };
 		91DC45CE1BE7C0F600E86CC0 /* TabBar4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar4ViewController.h; sourceTree = "<group>"; };
 		91DC45CF1BE7C0F600E86CC0 /* TabBar4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar4ViewController.m; sourceTree = "<group>"; };
-		91DC45D01BE7C0F600E86CC0 /* TabBar4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBar4ViewController.xib; sourceTree = "<group>"; };
 		91DD186E1C45568900B0FF70 /* RNActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNActivityView.h; sourceTree = "<group>"; };
 		91DD186F1C45568900B0FF70 /* RNActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNActivityView.m; sourceTree = "<group>"; };
 		91DD18701C45568900B0FF70 /* UIView+RNActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RNActivityView.h"; sourceTree = "<group>"; };
@@ -2098,6 +2108,8 @@
 			children = (
 				915038421FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.h */,
 				915038431FE7A0B2008ECA28 /* AbroadShoppingHomeViewModel.m */,
+				91918F7221537312002C42F1 /* TabBar4ListViewModel.h */,
+				91918F7321537312002C42F1 /* TabBar4ListViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -2929,7 +2941,12 @@
 			children = (
 				91DC45CE1BE7C0F600E86CC0 /* TabBar4ViewController.h */,
 				91DC45CF1BE7C0F600E86CC0 /* TabBar4ViewController.m */,
-				91DC45D01BE7C0F600E86CC0 /* TabBar4ViewController.xib */,
+				91918F6C215342E9002C42F1 /* TabBar4ListVC.h */,
+				91918F6D215342E9002C42F1 /* TabBar4ListVC.m */,
+				91918F6F2153446E002C42F1 /* TabBar4ListCell.h */,
+				91918F702153446E002C42F1 /* TabBar4ListCell.m */,
+				919E075F2151F6FF00FEEF66 /* TabBar4ViewController.storyboard */,
+				919E07612152576E00FEEF66 /* TabBar4ViewController2.storyboard */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -3614,7 +3631,7 @@
 				913D7EB21C92BFA200A862A4 /* MJRefresh.bundle in Resources */,
 				DC8C2D7A1F322A9D00EC5B93 /* check2.sh in Resources */,
 				919CABA21EAB1C0500519412 /* DispatchGroupVC.xib in Resources */,
-				91DC45D21BE7C0F600E86CC0 /* TabBar4ViewController.xib in Resources */,
+				919E07602151F6FF00FEEF66 /* TabBar4ViewController.storyboard in Resources */,
 				9143540C1E026D1E00608E58 /* GCDTestViewController.xib in Resources */,
 				9141F3B11EC00C970078E71E /* AdapterPlayerVC.xib in Resources */,
 				911B79751F3407620076CC36 /* CirculateViewController.xib in Resources */,
@@ -3630,6 +3647,7 @@
 				912AE7571FCD4EEE00261915 /* NavigationViewController.xib in Resources */,
 				DC95F89A1E9A96D00078D96A /* 认识xcode中的重要成员：lldb调试器 in Resources */,
 				91E8DE791EC1904C0068C166 /* Strategy in Resources */,
+				919E07622152576E00FEEF66 /* TabBar4ViewController2.storyboard in Resources */,
 				91752AAA1E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.xib in Resources */,
 				91FE24C21CB20151001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
 				9124D79E1E5F1D41008E01F3 /* DateFormatterTableVC.xib in Resources */,
@@ -3694,7 +3712,6 @@
 				91F12B9A1CB225F6009E9AF1 /* MyTestWorkProduct Dev-Info.plist in Resources */,
 				91FE25C81CB219AE001C6DF0 /* LaunchScreen.storyboard in Resources */,
 				91FE25CA1CB219AE001C6DF0 /* MJRefresh.bundle in Resources */,
-				91FE25CC1CB219AE001C6DF0 /* TabBar4ViewController.xib in Resources */,
 				91FE25CD1CB219AE001C6DF0 /* TabBar3ViewController.xib in Resources */,
 				91FE25CE1CB219AE001C6DF0 /* TabBar5ViewController.xib in Resources */,
 				91FE25CF1CB219AE001C6DF0 /* AutoLayoutAnimViewController.xib in Resources */,
@@ -3848,6 +3865,7 @@
 				917952631ED599E400193487 /* TestVC3.m in Sources */,
 				91C5FAA21EC413C1006F3A02 /* TpAVPlayer.m in Sources */,
 				9116A1671ED6D10C005D515C /* CommodityListViewController.m in Sources */,
+				91918F7421537312002C42F1 /* TabBar4ListViewModel.m in Sources */,
 				91F6E2E01D1BE14B00A5A587 /* NSDate+IntervalSeconds.m in Sources */,
 				911F2ABD1E5C77480057FE33 /* UIImage+Custom.m in Sources */,
 				91F0D9DE200D0183002B2597 /* UIResponder+Chain.m in Sources */,
@@ -3984,6 +4002,7 @@
 				91D788851BF0C28B0026A18E /* MyCollectionCell.m in Sources */,
 				91487D731C9672ED00A4A228 /* ImageLabel.m in Sources */,
 				DC84E0091EC4AB1600FBE3E8 /* BuickVeranoBuilder.m in Sources */,
+				91918F6E215342E9002C42F1 /* TabBar4ListVC.m in Sources */,
 				91D7D955208C1ECC00607CAF /* CppViewController.mm in Sources */,
 				91DC45671BE7B17000E86CC0 /* NSNumber+YYAdditons.m in Sources */,
 				911CBA3B1E5DD46E00C3AE53 /* CHDBaseCommodity.m in Sources */,
@@ -4009,6 +4028,7 @@
 				917952601ED599D400193487 /* TestVC2.m in Sources */,
 				91752AA91E4D8C2800F6C634 /* LocalFileReadingAndWritingVC.m in Sources */,
 				9114D6CD1C8688C70087E5AC /* mztools.c in Sources */,
+				91918F712153446E002C42F1 /* TabBar4ListCell.m in Sources */,
 				91DC456A1BE7B17000E86CC0 /* UIBarButtonItem+MF.m in Sources */,
 				910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */,
 				DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */,
