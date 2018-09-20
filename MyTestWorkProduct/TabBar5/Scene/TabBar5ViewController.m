@@ -287,20 +287,24 @@
         case 18: {
             JavaScriptCoreViewController * jsVC = [[JavaScriptCoreViewController alloc]init];
             [self.navigationController pushViewController:jsVC animated:YES];
+            break;
         }
         case 19: {
             UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"StoryBoardViewController" bundle:nil];
             StoryBoardViewController *sbVC = [storyBoard instantiateViewControllerWithIdentifier:@"StoryBoardViewController"];
             
             [self.navigationController pushViewController:sbVC animated:YES];
+            break;
         }
         case 20: {
             HollowOutVC * hovc = [HollowOutVC new];
             [self.navigationController pushViewController:hovc animated:YES];
+            break;
         }
         case 21: {
             QRCodeScanViewController * qrvc = [QRCodeScanViewController new];
             [self.navigationController pushViewController:qrvc animated:YES];
+            break;
         }
             
             
