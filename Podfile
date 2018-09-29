@@ -18,9 +18,7 @@ target "MyTestWorkProduct" do
 
 end
 
-#target 'StillOne_Weex_iOS' do
-#    platform :ios, '8.0'
-#    pod 'WeexSDK'
-#    pod 'SDWebImage'
-#
-#end
+target 'MyTodayExtension' do
+    platform :ios, '8.0'
+    pod 'WeexSDK'
+end

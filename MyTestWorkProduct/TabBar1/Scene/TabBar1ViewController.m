@@ -77,37 +77,37 @@
 #pragma mark UITableViewDataSource
 
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    
-    UILabel *headerLabel =[[UILabel alloc]init];
-    headerLabel.textAlignment=NSTextAlignmentCenter;
-    headerLabel.text=[NSString stringWithFormat:@"这是第%li个Header",(long)section];
-    headerLabel.textColor=[UIColor whiteColor];
-    headerLabel.font=[UIFont systemFontOfSize:20];
-    headerLabel.layer.borderWidth=1;
-    headerLabel.layer.borderColor=[UIColor lightGrayColor].CGColor;
-    headerLabel.layer.masksToBounds=YES;
-    [headerLabel setBackgroundColor:RGBACOLOR(108, 203, 222, 1)];
-    
-    
-    return headerLabel;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
-    UILabel *footerLabel =[[UILabel alloc]init];
-    footerLabel.textAlignment=NSTextAlignmentCenter;
-    footerLabel.text=[NSString stringWithFormat:@"这是第%li个Footer",(long)section];
-    footerLabel.textColor=[UIColor whiteColor];
-    footerLabel.font=[UIFont systemFontOfSize:20];
-    footerLabel.layer.borderWidth=1;
-    footerLabel.layer.borderColor=[UIColor lightGrayColor].CGColor;
-    footerLabel.layer.masksToBounds=YES;
-    [footerLabel setBackgroundColor:[UIColor lightGrayColor]];
-    
-    return footerLabel;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//
+//    UILabel *headerLabel =[[UILabel alloc]init];
+//    headerLabel.textAlignment=NSTextAlignmentCenter;
+//    headerLabel.text=[NSString stringWithFormat:@"这是第%li个Header",(long)section];
+//    headerLabel.textColor=[UIColor whiteColor];
+//    headerLabel.font=[UIFont systemFontOfSize:20];
+//    headerLabel.layer.borderWidth=1;
+//    headerLabel.layer.borderColor=[UIColor lightGrayColor].CGColor;
+//    headerLabel.layer.masksToBounds=YES;
+//    [headerLabel setBackgroundColor:RGBACOLOR(108, 203, 222, 1)];
+//
+//
+//    return headerLabel;
+//}
+//
+//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+//{
+//    UILabel *footerLabel =[[UILabel alloc]init];
+//    footerLabel.textAlignment=NSTextAlignmentCenter;
+//    footerLabel.text=[NSString stringWithFormat:@"这是第%li个Footer",(long)section];
+//    footerLabel.textColor=[UIColor whiteColor];
+//    footerLabel.font=[UIFont systemFontOfSize:20];
+//    footerLabel.layer.borderWidth=1;
+//    footerLabel.layer.borderColor=[UIColor lightGrayColor].CGColor;
+//    footerLabel.layer.masksToBounds=YES;
+//    [footerLabel setBackgroundColor:[UIColor lightGrayColor]];
+//    
+//    return footerLabel;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
