@@ -20,5 +20,5 @@ end
 
 target 'MyTodayExtension' do
     platform :ios, '8.0'
-    pod 'WeexSDK'
+    pod 'CocoaAsyncSocket'
 end
