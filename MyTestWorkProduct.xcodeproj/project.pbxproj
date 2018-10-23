@@ -44,6 +44,9 @@
 		910BDE081CA9742D00A499CF /* FontSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BDE071CA9742D00A499CF /* FontSettingsViewController.m */; };
 		910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */; };
 		910BE4D51F4453C8002DDC93 /* 核心动画.mindnode in Resources */ = {isa = PBXBuildFile; fileRef = 910BE4D41F4453C8002DDC93 /* 核心动画.mindnode */; };
+		910C48E32179E34C002E7D6A /* TabBar5Coordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C48E22179E34C002E7D6A /* TabBar5Coordinator.m */; };
+		910C48ED2179F15E002E7D6A /* SystemSharedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C48EA2179F15E002E7D6A /* SystemSharedVC.m */; };
+		910C48EE2179F15E002E7D6A /* SystemSharedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910C48EB2179F15E002E7D6A /* SystemSharedVC.xib */; };
 		910C52AB1D3DC74200F3873C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */; };
 		910C52AC1D3DC74200F3873C /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A11D3DC74200F3873C /* HanyuPinyinOutputFormat.m */; };
 		910C52AD1D3DC74200F3873C /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 910C52A31D3DC74200F3873C /* NSString+PinYin4Cocoa.m */; };
@@ -668,6 +671,12 @@
 		910BE4B71F43E93C002DDC93 /* SingletonViewController+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SingletonViewController+Sort.h"; sourceTree = "<group>"; };
 		910BE4B81F43E93C002DDC93 /* SingletonViewController+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SingletonViewController+Sort.m"; sourceTree = "<group>"; };
 		910BE4D41F4453C8002DDC93 /* 核心动画.mindnode */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "核心动画.mindnode"; sourceTree = "<group>"; };
+		910C48E02179E30F002E7D6A /* CoordinatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatorProtocol.h; sourceTree = "<group>"; };
+		910C48E12179E34C002E7D6A /* TabBar5Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBar5Coordinator.h; sourceTree = "<group>"; };
+		910C48E22179E34C002E7D6A /* TabBar5Coordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar5Coordinator.m; sourceTree = "<group>"; };
+		910C48EA2179F15E002E7D6A /* SystemSharedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemSharedVC.m; sourceTree = "<group>"; };
+		910C48EB2179F15E002E7D6A /* SystemSharedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemSharedVC.xib; sourceTree = "<group>"; };
+		910C48EC2179F15E002E7D6A /* SystemSharedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemSharedVC.h; sourceTree = "<group>"; };
 		910C529E1D3DC74200F3873C /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
 		910C529F1D3DC74200F3873C /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
 		910C52A01D3DC74200F3873C /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
@@ -1568,6 +1577,16 @@
 				910BE4D41F4453C8002DDC93 /* 核心动画.mindnode */,
 			);
 			path = Doc;
+			sourceTree = "<group>";
+		};
+		910C48E92179F15E002E7D6A /* SystemShared */ = {
+			isa = PBXGroup;
+			children = (
+				910C48EC2179F15E002E7D6A /* SystemSharedVC.h */,
+				910C48EA2179F15E002E7D6A /* SystemSharedVC.m */,
+				910C48EB2179F15E002E7D6A /* SystemSharedVC.xib */,
+			);
+			path = SystemShared;
 			sourceTree = "<group>";
 		};
 		910C529C1D3DC74200F3873C /* PinYin4Objc */ = {
@@ -2499,6 +2518,16 @@
 			path = DispatchGroup;
 			sourceTree = "<group>";
 		};
+		919DEB612179D88A003237BE /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				910C48E02179E30F002E7D6A /* CoordinatorProtocol.h */,
+				910C48E12179E34C002E7D6A /* TabBar5Coordinator.h */,
+				910C48E22179E34C002E7D6A /* TabBar5Coordinator.m */,
+			);
+			path = Protocal;
+			sourceTree = "<group>";
+		};
 		91A3E21120D366480059FD56 /* HollowOut */ = {
 			isa = PBXGroup;
 			children = (
@@ -2658,6 +2687,7 @@
 		91DAB0E91BE90C4C006695B7 /* TabBar5 */ = {
 			isa = PBXGroup;
 			children = (
+				919DEB612179D88A003237BE /* Protocal */,
 				91DAB0EA1BE90C77006695B7 /* Model */,
 				91DAB0EB1BE90C77006695B7 /* Scene */,
 				91DAB0EC1BE90C77006695B7 /* SceneModel */,
@@ -3412,6 +3442,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				910C48E92179F15E002E7D6A /* SystemShared */,
 				915995BC21460FA700237E63 /* QRCodeScan */,
 				91A3E21120D366480059FD56 /* HollowOut */,
 				916820EE20BC63B00005656A /* ImageClipe */,
@@ -3719,6 +3750,7 @@
 				DC37E3961F45F5F000F1D905 /* test0.py in Resources */,
 				91022A491CACE1470084DC67 /* Bugtags.bundle in Resources */,
 				911CBA3E1E5DD46E00C3AE53 /* ModelDictionaryTransferVC.xib in Resources */,
+				910C48EE2179F15E002E7D6A /* SystemSharedVC.xib in Resources */,
 				911CBA401E5DDC8A00C3AE53 /* OptionHeadline.plist in Resources */,
 				91DC45051BE7A60900E86CC0 /* LaunchScreen.storyboard in Resources */,
 				910BC4A01EBEDD2000D7628F /* SimpleFactory in Resources */,
@@ -3999,6 +4031,7 @@
 				9114D6CB1C8688C70087E5AC /* Main.m in Sources */,
 				9189309E1E653FAF007D6879 /* CalculatorManager.m in Sources */,
 				913D7EC11C92C0BB00A862A4 /* ImageLabelViewController.m in Sources */,
+				910C48ED2179F15E002E7D6A /* SystemSharedVC.m in Sources */,
 				9114D6CF1C8688C70087E5AC /* zip.c in Sources */,
 				91D732681FAAC4D20074E31B /* Dog.m in Sources */,
 				913D7EAF1C92BFA200A862A4 /* MJRefreshGifHeader.m in Sources */,
@@ -4216,6 +4249,7 @@
 				918930A41E653FAF007D6879 /* OptionHeadlineHelper.m in Sources */,
 				91FDCA191C9FEAB100A5E684 /* DIYCollectionViewLayout.m in Sources */,
 				91F650951D34E36400212FD0 /* BluetoothViewController.m in Sources */,
+				910C48E32179E34C002E7D6A /* TabBar5Coordinator.m in Sources */,
 				911B79781F340CDE0076CC36 /* CirculateModel.m in Sources */,
 				911F2AB71E5C77480057FE33 /* NSObject+RunTime.m in Sources */,
 				91080109212289C600698A5D /* AxisListViewController.swift in Sources */,

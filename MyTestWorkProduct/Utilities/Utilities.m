@@ -315,4 +315,9 @@
    return [[UIDevice currentDevice]systemVersion];
 }
 
++ (UINavigationController *)currentNavigationCtl {
+    UITabBarController *tabBarCtl = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    return tabBarCtl.selectedViewController;
+}
+
 @end

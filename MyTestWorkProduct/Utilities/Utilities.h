@@ -74,4 +74,6 @@
  */
 +(NSString*)systemVerson;
 
++ (UINavigationController *)currentNavigationCtl;
+
 @end

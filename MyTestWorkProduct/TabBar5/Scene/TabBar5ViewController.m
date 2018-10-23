@@ -31,6 +31,8 @@
 #import "JavaScriptCoreViewController.h"
 #import "StoryBoardViewController.h"
 #import "QRCodeScanViewController.h"
+#import "TabBar5Coordinator.h"
+#import "SystemSharedVC.h"
 #import "MyTestWorkProduct-Swift.h"
 
 @interface TabBar5ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -306,10 +308,15 @@
             [self.navigationController pushViewController:qrvc animated:YES];
             break;
         }
-            
-            
-            
-            
+        case 22: {
+            TabBar5Coordinator *coor = [TabBar5Coordinator coordinatorWithTargetVC:[SystemSharedVC new]];
+            coor.showUsingPush;
+            break;
+        }
+        
+           
+//         TabBar5Coordinator
+           
             
         default:
             break;

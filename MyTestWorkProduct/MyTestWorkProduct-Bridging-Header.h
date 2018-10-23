@@ -13,5 +13,6 @@
 #import "PageScrollView.h"
 #import "SDCCycleScrollView.h"
 #import "UIViewController+Pro.h"
+#import "Utilities.h"
 
 #endif /* MyTestWorkProduct_Bridging_Header_h */

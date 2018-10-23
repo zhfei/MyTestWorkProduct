@@ -41,9 +41,7 @@
     
 }
 
--(void)createControls
-{
-    
+-(void)createControls {
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:15],NSFontAttributeName, nil]forState:UIControlStateNormal];
     
     
@@ -92,9 +90,6 @@
     nav4.tabBarItem.titlePositionAdjustment=UIOffsetMake(0, kTopY);
     nav5.tabBarItem.titlePositionAdjustment=UIOffsetMake(0, kTopY);
 
-
-    
-    
     controlArray=[[NSMutableArray alloc]initWithObjects:nav1,nav2,nav3,nav4,nav5, nil];
     self.viewControllers=controlArray;
     
