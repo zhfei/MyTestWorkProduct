@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lad-KJ-339">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coordinate Sys ProblemVC-->
+        <scene sceneID="6gG-Z4-Lxt">
+            <objects>
+                <viewController storyboardIdentifier="CoordinateSysProblemVC" id="Lad-KJ-339" customClass="CoordinateSysProblemVC" customModule="MyTestWorkProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="krA-Yq-aqh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-4B-Jdt" customClass="CoordinateView" customModule="MyTestWorkProduct" customModuleProvider="target">
+                                <rect key="frame" x="70" y="40" width="180" height="180"/>
+                                <color key="backgroundColor" red="1" green="0.8980392157" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="OHu-AA-5cP"/>
+                                    <constraint firstAttribute="width" constant="180" id="aQM-Yd-OQo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TjL-Kg-EN3" customClass="CoordinateView" customModule="MyTestWorkProduct" customModuleProvider="target">
+                                <rect key="frame" x="70" y="240" width="180" height="180"/>
+                                <color key="backgroundColor" red="1" green="0.8980392157" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="7Ra-lA-8ex"/>
+                                    <constraint firstAttribute="width" constant="180" id="QRW-3i-rm4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TjL-Kg-EN3" firstAttribute="top" secondItem="cYZ-4B-Jdt" secondAttribute="bottom" constant="20" id="32K-jX-dVZ"/>
+                            <constraint firstItem="cYZ-4B-Jdt" firstAttribute="top" secondItem="1QD-Fc-fmh" secondAttribute="top" constant="20" id="Zlj-vC-cDd"/>
+                            <constraint firstItem="TjL-Kg-EN3" firstAttribute="centerX" secondItem="krA-Yq-aqh" secondAttribute="centerX" id="bsd-45-zq8"/>
+                            <constraint firstItem="cYZ-4B-Jdt" firstAttribute="centerX" secondItem="krA-Yq-aqh" secondAttribute="centerX" id="hbp-Xc-Kj9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1QD-Fc-fmh"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomCoordinate" destination="TjL-Kg-EN3" id="cPB-mJ-LPS"/>
+                        <outlet property="topCoordinate" destination="cYZ-4B-Jdt" id="7OQ-u1-Tyh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NC-Gw-1YK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.25" y="-179.57746478873239"/>
+        </scene>
+    </scenes>
+</document>

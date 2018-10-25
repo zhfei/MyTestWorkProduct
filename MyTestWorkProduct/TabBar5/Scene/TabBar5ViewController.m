@@ -313,6 +313,10 @@
             coor.showUsingPush;
             break;
         }
+        case 23: {
+            [TabBar5Coordinator pushStoryBoardVC:@"CoordinateSysProblemVC"];
+            break;
+        }
         
            
 //         TabBar5Coordinator

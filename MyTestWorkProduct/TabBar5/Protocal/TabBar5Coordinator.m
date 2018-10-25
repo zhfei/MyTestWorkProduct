@@ -16,6 +16,11 @@
     return coor;
 }
 
++ (void)pushStoryBoardVC:(NSString *)storyBoardID {
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"TabBar5" bundle:nil] instantiateViewControllerWithIdentifier:storyBoardID];
+    [[Utilities currentNavigationCtl] pushViewController:vc animated:YES];
+}
+
 - (void)showUsingPush {
     [[Utilities currentNavigationCtl] pushViewController:self.targetVC animated:YES];
 }

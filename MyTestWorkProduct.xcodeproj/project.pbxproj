@@ -222,6 +222,9 @@
 		917952601ED599D400193487 /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9179525F1ED599D400193487 /* TestVC2.m */; };
 		917952631ED599E400193487 /* TestVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 917952621ED599E400193487 /* TestVC3.m */; };
 		917952671ED59AF700193487 /* EventDistributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 917952661ED59AF700193487 /* EventDistributer.m */; };
+		918146FC2181A14A00C1E421 /* TabBar5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918146FB2181A14A00C1E421 /* TabBar5.storyboard */; };
+		918146FE2181A17E00C1E421 /* CoordinateSysProblemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918146FD2181A17E00C1E421 /* CoordinateSysProblemVC.swift */; };
+		918147002181A19900C1E421 /* CoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918146FF2181A19900C1E421 /* CoordinateView.swift */; };
 		9182B3C61EBE1B3700D3A870 /* DesignModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */; };
 		9182B3C71EBE1B3700D3A870 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */; };
 		9182B3CB1EBE30D000D3A870 /* CarLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 9182B3CA1EBE30D000D3A870 /* CarLicense.m */; };
@@ -995,6 +998,9 @@
 		917952661ED59AF700193487 /* EventDistributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDistributer.m; sourceTree = "<group>"; };
 		917952691ED59D1E00193487 /* EventRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRegister.h; sourceTree = "<group>"; };
 		9179526A1ED59D8600193487 /* EventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventProtocol.h; sourceTree = "<group>"; };
+		918146FB2181A14A00C1E421 /* TabBar5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar5.storyboard; sourceTree = "<group>"; };
+		918146FD2181A17E00C1E421 /* CoordinateSysProblemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSysProblemVC.swift; sourceTree = "<group>"; };
+		918146FF2181A19900C1E421 /* CoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateView.swift; sourceTree = "<group>"; };
 		9182B3C31EBE1B3700D3A870 /* DesignModeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignModeVC.h; sourceTree = "<group>"; };
 		9182B3C41EBE1B3700D3A870 /* DesignModeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignModeVC.m; sourceTree = "<group>"; };
 		9182B3C51EBE1B3700D3A870 /* DesignModeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignModeVC.xib; sourceTree = "<group>"; };
@@ -2410,6 +2416,15 @@
 			path = Utitlies;
 			sourceTree = "<group>";
 		};
+		918146FA2181A10A00C1E421 /* CoordinateSysProblem */ = {
+			isa = PBXGroup;
+			children = (
+				918146FD2181A17E00C1E421 /* CoordinateSysProblemVC.swift */,
+				918146FF2181A19900C1E421 /* CoordinateView.swift */,
+			);
+			path = CoordinateSysProblem;
+			sourceTree = "<group>";
+		};
 		9182B3C21EBE1AF400D3A870 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2709,6 +2724,7 @@
 				91DAB0ED1BE90CA0006695B7 /* TabBar5ViewController.h */,
 				91DAB0EE1BE90CA0006695B7 /* TabBar5ViewController.m */,
 				91DAB0EF1BE90CA0006695B7 /* TabBar5ViewController.xib */,
+				918146FB2181A14A00C1E421 /* TabBar5.storyboard */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -3442,6 +3458,7 @@
 		DC594A0D1E5B3D580043845D /* SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				918146FA2181A10A00C1E421 /* CoordinateSysProblem */,
 				910C48E92179F15E002E7D6A /* SystemShared */,
 				915995BC21460FA700237E63 /* QRCodeScan */,
 				91A3E21120D366480059FD56 /* HollowOut */,
@@ -3815,6 +3832,7 @@
 				9141F3A81EC00A900078E71E /* Adapter in Resources */,
 				91F7CEF21C50A68A0036D938 /* UUIDString.plist in Resources */,
 				91DC45001BE7A60900E86CC0 /* Main.storyboard in Resources */,
+				918146FC2181A14A00C1E421 /* TabBar5.storyboard in Resources */,
 				91DC45C81BE7C0B500E86CC0 /* TabBar2ViewController.xib in Resources */,
 				91E188DA1C070106006BA41C /* SubScene1.xib in Resources */,
 				DC594A171E5B3D580043845D /* SingletonViewController.xib in Resources */,
@@ -4180,6 +4198,7 @@
 				91918F712153446E002C42F1 /* TabBar4ListCell.m in Sources */,
 				91DC456A1BE7B17000E86CC0 /* UIBarButtonItem+MF.m in Sources */,
 				910BE4B91F43E93C002DDC93 /* SingletonViewController+Sort.m in Sources */,
+				918147002181A19900C1E421 /* CoordinateView.swift in Sources */,
 				DC594A151E5B3D580043845D /* SingletonTemplate.m in Sources */,
 				91E8DE801EC19A590068C166 /* StNewPlayer.m in Sources */,
 				914F854C20C776DD00C9BC4E /* SwiftViewController.swift in Sources */,
@@ -4260,6 +4279,7 @@
 				91C5E08D1EF623BF00A6C68F /* ZFButton.m in Sources */,
 				913D7EAE1C92BFA200A862A4 /* MJRefreshBackStateFooter.m in Sources */,
 				917348851F693A5E00BBBC85 /* MultiModelNestHelper.m in Sources */,
+				918146FE2181A17E00C1E421 /* CoordinateSysProblemVC.swift in Sources */,
 				910BC4AA1EBEE4E300D7628F /* YellowCarLicenseFactory.m in Sources */,
 				911D6D9B1E6436E100FBF188 /* CodingSubClass.m in Sources */,
 				91752ABE1E4DB95A00F6C634 /* RealmPerson.m in Sources */,

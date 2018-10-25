@@ -11,4 +11,5 @@
 
 @interface TabBar5Coordinator : NSObject <CoordinatorProtocol>
 + (instancetype)coordinatorWithTargetVC:(UIViewController *)targetVC;
++ (void)pushStoryBoardVC:(NSString *)storyBoardID;
 @end
