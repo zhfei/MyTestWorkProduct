@@ -10,6 +10,7 @@
 
 @implementation ForwardInvocationOBJ
 
+
 /**
  *  消息转发方法覆盖
  *
@@ -48,6 +49,34 @@
     
     return NO;
 }
+
+//1.
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    return NO;
+}
+//2.
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    return nil;
+}
+//3.
+//最后一步，返回方法签名
+////询问此选择器是否是有效的
+//-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+//    NSLog(@"methodSignatureForSelector");
+//    if ([NSStringFromSelector(aSelector) isEqualToString:@"showSelf"]) {
+//        return [[SubObject new] methodSignatureForSelector:aSelector];
+//    }
+//    return [super methodSignatureForSelector:aSelector];
+//}
+////处理消息
+//-(void)forwardInvocation:(NSInvocation *)anInvocation{
+//    NSLog(@"forwardInvocation");
+//    if ([NSStringFromSelector(anInvocation.selector) isEqualToString:@"showSelf"]) {
+//        [anInvocation invokeWithTarget:[SubObject new]];
+//    }else{
+//        [super forwardInvocation:anInvocation];
+//    }
+//}
 
 
 @end
